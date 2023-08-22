@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 1254120515}
   - component: {fileID: 1254120516}
   - component: {fileID: 1254120517}
+  - component: {fileID: 1254120518}
   m_Layer: 0
   m_Name: Basic Enemy
   m_TagString: Untagged
@@ -677,6 +678,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9504626, y: 3.9591548}
   m_EdgeRadius: 0
+--- !u!114 &1254120518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254120510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c45497639724a146af373911a8ceb52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1446669955
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +703,7 @@ GameObject:
   - component: {fileID: 1446669957}
   - component: {fileID: 1446669960}
   - component: {fileID: 1446669961}
+  - component: {fileID: 1446669963}
   - component: {fileID: 1446669962}
   m_Layer: 0
   m_Name: Player
@@ -843,6 +857,20 @@ MonoBehaviour:
   shootPoint: {fileID: 1456411456}
   pizzaSpeed: 30
   cooldown: 0.5
+--- !u!114 &1446669963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446669955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69e8ad849a3b9b540a15c0b68571c146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 0
 --- !u!1 &1456411455
 GameObject:
   m_ObjectHideFlags: 0
