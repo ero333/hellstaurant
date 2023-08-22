@@ -49,6 +49,7 @@ public class AdvanceTime : MonoBehaviour
             StartCoroutine(routine:advanceHourOverTime());
 
         if (timeHours == 8)
+           
            WIN.gameObject.SetActive(true);
            
              
