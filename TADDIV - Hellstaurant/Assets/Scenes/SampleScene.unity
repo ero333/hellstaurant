@@ -152,11 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a70a97710ec414da91dbcf83c39a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 12
-  TimeUntilHourChange: 1
-  timeText: {fileID: 184923670}
-  timeLimit: 8
-  WIN: {fileID: 1933297748}
+  startingTime: 0
+  TimeUntilHourChange: 0
+  timeText: {fileID: 0}
+  timeLimit: 0
+  WIN: {fileID: 0}
 --- !u!4 &81647602
 Transform:
   m_ObjectHideFlags: 0
@@ -616,9 +616,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdc0fbebf0ddc1745ab0d81fb1c4911b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1446669955}
-  flip: 1
-  speed: 3
+  player: {fileID: 0}
+  flip: 0
+  speed: 0
   distance: 0
 --- !u!114 &1254120516
 MonoBehaviour:
@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb62cb1f971c3a49876e1d375fd642c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 2
+  enemyLife: 0
 --- !u!61 &1254120517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -690,6 +690,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c45497639724a146af373911a8ceb52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1387389917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1387389919}
+  - component: {fileID: 1387389918}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1387389918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387389917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8070f56c78d6fa04a8788f98949b9dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1387389919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387389917}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.67, y: -0.03, z: 1512.663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446669955
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,9 +897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd4e5af14adfa34db9ffc2e32579850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pizzaPrefab: {fileID: 3709804286691382550, guid: 517eca063809def409083a2ad0c56861, type: 3}
-  shootPoint: {fileID: 1456411456}
-  pizzaSpeed: 30
+  pizzaPrefab: {fileID: 0}
+  shootPoint: {fileID: 0}
+  pizzaSpeed: 10
   cooldown: 0.5
 --- !u!114 &1446669963
 MonoBehaviour:
@@ -869,8 +913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e8ad849a3b9b540a15c0b68571c146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 0
 --- !u!1 &1456411455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,3 +1145,4 @@ SceneRoots:
   - {fileID: 1700517271}
   - {fileID: 1208999342}
   - {fileID: 81647602}
+  - {fileID: 1387389919}
