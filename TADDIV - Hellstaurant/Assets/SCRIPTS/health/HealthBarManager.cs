@@ -16,7 +16,7 @@ public class HealthBarManager : MonoBehaviour
     public void DrawHearts()
     {
         ClearHearts();
-        //determina cantindad total de corazones basado en la salud max
+        // Determina cantidad total de corazones basado en la salud máxima
         float maxHealthRemainder = playerHealth.MaxHealth % 2;
         int heartsToMake = (int)(playerHealth.MaxHealth / 2 + maxHealthRemainder);
         for(int i = 0; i < heartsToMake; i++)
@@ -24,13 +24,12 @@ public class HealthBarManager : MonoBehaviour
             CreateEmptyHeart();
         }
 
-        for(int i = 0; 1 < hearts.Count; i++)
+        for(int i = 0; i < hearts.Count; i++) // Corrección en esta línea
         {
-            int heartStatusRemainder = (int)Mathf.Clamp(playerHealth.Health - (i*2), 0, 2);
+            int heartStatusRemainder = (int)Mathf.Clamp(playerHealth.Health - (i * 2), 0, 2);
             hearts[i].SetHeartImage((HeartStatus)heartStatusRemainder);
         }
     }
-
 
     public void CreateEmptyHeart()
     {
@@ -40,10 +39,7 @@ public class HealthBarManager : MonoBehaviour
         HealthHeart HeartComponent = newHeart.GetComponent<HealthHeart>();
         HeartComponent.SetHeartImage(HeartStatus.Empty);
         hearts.Add(HeartComponent);
-
     }
-
-
 
     public void ClearHearts()
     {
@@ -54,3 +50,4 @@ public class HealthBarManager : MonoBehaviour
         hearts = new List<HealthHeart>();
     }
 }
+
