@@ -13,6 +13,8 @@ public class PlayerHealthController : MonoBehaviour
 
     public UIController controlUI;
 
+    public GameObject gameOverScreen; // Referencia al cartel de Game Over
+
     public static PlayerHealthController instance;
 
     void Start()
@@ -57,6 +59,7 @@ public class PlayerHealthController : MonoBehaviour
             {
                 currentHealth = 0;
                 gameObject.SetActive(false);
+                ShowGameOver(); // Mostrar el cartel de Game Over
             }
             else
             {
@@ -65,6 +68,14 @@ public class PlayerHealthController : MonoBehaviour
             }
 
             UIController.Instance.UpdateHealthDisplay();
+        }
+    }
+
+    void ShowGameOver()
+    {
+        if (gameOverScreen != null)
+        {
+            gameOverScreen.SetActive(true); // Activar el cartel de Game Over
         }
     }
 }
