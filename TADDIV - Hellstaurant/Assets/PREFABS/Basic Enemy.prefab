@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5145100244629811313}
   m_Layer: 0
   m_Name: Basic Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   flip: 1
-  speed: 3
+  speed: 2
   distance: 0
 --- !u!114 &1762007028990447074
 MonoBehaviour:
@@ -198,7 +198,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1066159, y: -0.07996142}
+  m_Offset: {x: 0.18180525, y: -0.29478619}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -209,5 +209,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9504626, y: 3.9591548}
+  m_Size: {x: 1.511136, y: 2.3264866}
   m_EdgeRadius: 0
