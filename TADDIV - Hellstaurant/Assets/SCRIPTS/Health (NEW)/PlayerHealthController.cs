@@ -41,7 +41,7 @@ public class PlayerHealthController : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
         {
@@ -59,6 +59,7 @@ public class PlayerHealthController : MonoBehaviour
             {
                 currentHealth = 0;
                 gameObject.SetActive(false);
+
                 ShowGameOver(); // Mostrar el cartel de Game Over
             }
             else
