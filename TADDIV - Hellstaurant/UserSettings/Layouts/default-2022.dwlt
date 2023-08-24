@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 767
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 314
     height: 499
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -409,7 +409,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 69}
     m_SelectedIDs: 34630000
     m_LastClickedID: 25396
-    m_ExpandedIDs: 000000003463000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000346300004e63000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -579,7 +579,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 14fbffff
+      m_ExpandedIDs: bc51ffff0452ffffaa53ffffe653ffff0659ffff4e59ffff145bffff545bffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -972,9 +972,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.4095023, y: 1.6546723, z: -0.06881944}
+    m_Target: {x: -1.701339, y: 1.7113062, z: -0.06212461}
     speed: 2
-    m_Value: {x: -1.4095023, y: 1.6546723, z: -0.06881944}
+    m_Value: {x: -1.701339, y: 1.7113062, z: -0.06212461}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1024,9 +1024,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.700911
+    m_Target: 12.03142
     speed: 2
-    m_Value: 12.700911
+    m_Value: 12.03142
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1118,7 +1118,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
