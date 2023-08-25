@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8cec94b7515d319429b72be3dc4067e9
+guid: 46249c8033247e844ad6f95a7e0ecdc7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ss enemigo basico caminata_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 739
+        width: 391
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab560c173775a2d408487f266907e873
+      internalID: -2041347137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss enemigo basico caminata_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 730
+        width: 391
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78321e572a75444db35c9bc7ecd4198
+      internalID: 668287042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss enemigo basico caminata_2
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 739
+        width: 391
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6020bc7a75d9a7d4eb7e951a9e8460e6
+      internalID: 1699226966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss enemigo basico caminata_3
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 730
+        width: 390
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4469c7fa08c0af429e067f88a155a49
+      internalID: 2049426036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ss enemigo basico caminata_0: -2041347137
+      ss enemigo basico caminata_1: 668287042
+      ss enemigo basico caminata_2: 1699226966
+      ss enemigo basico caminata_3: 2049426036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
