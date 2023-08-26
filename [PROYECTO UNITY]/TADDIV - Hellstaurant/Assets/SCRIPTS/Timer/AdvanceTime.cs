@@ -15,6 +15,7 @@ public class AdvanceTime : MonoBehaviour
 
     
     public GameObject WIN;
+    private Animator WinAnimator;
 
 
     // Start is called before the first frame update
@@ -51,8 +52,8 @@ public class AdvanceTime : MonoBehaviour
         if (timeHours == 8)
            
            WIN.gameObject.SetActive(true);
-           
-             
+
+
     }
 
     

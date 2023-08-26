@@ -17,6 +17,8 @@ public class PlayerHealthController : MonoBehaviour
 
     public static PlayerHealthController instance;
 
+    // private Animator GameOverAnimator; 
+     
     void Start()
     {
         currentHealth = maxHealth;
@@ -77,6 +79,7 @@ public class PlayerHealthController : MonoBehaviour
         if (gameOverScreen != null)
         {
             gameOverScreen.SetActive(true); // Activar el cartel de Game Over
+           // GameOverAnimator.Play("GameOver");  En revision
         }
     }
 }
