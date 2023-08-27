@@ -17,6 +17,12 @@ public class PlayerHealthController : MonoBehaviour
 
     public static PlayerHealthController instance;
 
+    public AdvanceTime advanceTime;
+
+    public Puntaje puntaje;
+
+    
+     
     void Start()
     {
         currentHealth = maxHealth;
@@ -54,9 +60,16 @@ public class PlayerHealthController : MonoBehaviour
         if (invincibleCounter <= 0)
         {
             currentHealth--;
+            
+            if (puntaje.puntos >= 10)
+            {
+                puntaje.puntos = puntaje.puntos - 10;
+            }
+            
 
             if (currentHealth <= 0)
             {
+                advanceTime.playerAlive = false;
                 currentHealth = 0;
                 gameObject.SetActive(false);
 
@@ -76,7 +89,9 @@ public class PlayerHealthController : MonoBehaviour
     {
         if (gameOverScreen != null)
         {
+            
             gameOverScreen.SetActive(true); // Activar el cartel de Game Over
+           
         }
     }
 }

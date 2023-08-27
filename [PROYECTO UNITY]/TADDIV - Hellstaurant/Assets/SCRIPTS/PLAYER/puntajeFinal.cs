@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class stopGame : MonoBehaviour
+public class puntajeFinal : MonoBehaviour
 {
 
-    public GameObject player;
+    public Text texto;
 
-    public GameObject enemy;
-
-    public EnemySpawner spawner;
-
-    
-
+    public Puntaje puntaje;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,14 +18,11 @@ public class stopGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
+        
     }
 
     public void OnEnable()
     {
-        player.SetActive(false);
-        spawner.stopSpawn();
-        spawner.deleteClones();
-        
+        texto.text = puntaje.puntos.ToString();
     }
 }
