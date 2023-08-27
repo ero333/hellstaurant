@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class stopGame : MonoBehaviour
 {
+
+    public GameObject player;
+
+    public GameObject enemy;
+
+    public EnemySpawner spawner;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +25,8 @@ public class stopGame : MonoBehaviour
 
     public void OnEnable()
     {
-        Time.timeScale = 0;
+        player.SetActive(false);
+        enemy.SetActive(false);
+        spawner.canSpawn = false;
     }
 }

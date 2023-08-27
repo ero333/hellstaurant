@@ -1,20 +1,23 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour{
   
-[SerializeField] private float spawnRate = 1f;
+ public float spawnRate = 1f;
 
-[SerializeField] private GameObject[] enemyPrefabs;
+ public GameObject[] enemyPrefabs;
 
-[SerializeField] private bool canSpawn = true;
+public bool canSpawn = true;
 
-private void Start () {
+    public List<GameObject> enemyClones = new List<GameObject>();
+
+    public void Start () {
 	StartCoroutine(Spawner());
 	}
 
-private IEnumerator Spawner () {
+public IEnumerator Spawner () {
 	WaitForSeconds wait = new WaitForSeconds(spawnRate);
 
 	while (canSpawn) {
@@ -24,9 +27,11 @@ private IEnumerator Spawner () {
 
 		Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
 	}
-
-
-
 }
+
+	public void stopSpawn()
+	{
+		canSpawn = false;
+	}
 }
 
