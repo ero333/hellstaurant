@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingTime: 12
-  TimeUntilHourChange: 3
+  TimeUntilHourChange: 1
   timeText: {fileID: 184923670}
   timeLimit: 8
   WIN: {fileID: 1933297748}
@@ -1991,6 +1991,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
   canSpawn: 1
+  enemyClones: []
 --- !u!4 &1387389919
 Transform:
   m_ObjectHideFlags: 0

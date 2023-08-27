@@ -11,6 +11,8 @@ public class stopGame : MonoBehaviour
 
     public EnemySpawner spawner;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,8 @@ public class stopGame : MonoBehaviour
     public void OnEnable()
     {
         player.SetActive(false);
-        enemy.SetActive(false);
-        spawner.canSpawn = false;
+        spawner.stopSpawn();
+        spawner.deleteClones();
+        
     }
 }

@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour{
 
 public bool canSpawn = true;
 
-    public List<GameObject> enemyClones = new List<GameObject>();
+public List<GameObject> enemyClones = new List<GameObject>();
 
     public void Start () {
 	StartCoroutine(Spawner());
@@ -25,13 +25,23 @@ public IEnumerator Spawner () {
 		int rand = Random.Range(0, enemyPrefabs.Length);
 		GameObject enemyToSpawn = enemyPrefabs[rand];
 
-		Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
-	}
+		GameObject enemyClone = Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+		enemyClones.Add(enemyClone);
+
+    }
 }
 
 	public void stopSpawn()
 	{
 		canSpawn = false;
 	}
+
+    public void deleteClones()
+    {
+        foreach (GameObject enemyClone in enemyClones)
+		{
+			Destroy(enemyClone);
+		}
+    }
 }
 
