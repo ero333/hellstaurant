@@ -17,6 +17,8 @@ public class PlayerHealthController : MonoBehaviour
 
     public static PlayerHealthController instance;
 
+    public AdvanceTime advanceTime;
+
     // private Animator GameOverAnimator; 
      
     void Start()
@@ -59,6 +61,7 @@ public class PlayerHealthController : MonoBehaviour
 
             if (currentHealth <= 0)
             {
+                advanceTime.playerAlive = false;
                 currentHealth = 0;
                 gameObject.SetActive(false);
 
@@ -78,8 +81,9 @@ public class PlayerHealthController : MonoBehaviour
     {
         if (gameOverScreen != null)
         {
+            
             gameOverScreen.SetActive(true); // Activar el cartel de Game Over
-           // GameOverAnimator.Play("GameOver");  En revision
+           
         }
     }
 }
