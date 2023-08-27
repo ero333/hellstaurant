@@ -19,7 +19,9 @@ public class PlayerHealthController : MonoBehaviour
 
     public AdvanceTime advanceTime;
 
-    // private Animator GameOverAnimator; 
+    public Puntaje puntaje;
+
+    
      
     void Start()
     {
@@ -58,6 +60,12 @@ public class PlayerHealthController : MonoBehaviour
         if (invincibleCounter <= 0)
         {
             currentHealth--;
+            
+            if (puntaje.puntos >= 10)
+            {
+                puntaje.puntos = puntaje.puntos - 10;
+            }
+            
 
             if (currentHealth <= 0)
             {
