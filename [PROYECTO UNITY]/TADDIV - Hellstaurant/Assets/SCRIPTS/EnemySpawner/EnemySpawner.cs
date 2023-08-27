@@ -13,11 +13,14 @@ public bool canSpawn = true;
 
 public List<GameObject> enemyClones = new List<GameObject>();
 
+	
+
     public void Start () {
 	StartCoroutine(Spawner());
 	}
 
 public IEnumerator Spawner () {
+
 	WaitForSeconds wait = new WaitForSeconds(spawnRate);
 
 	while (canSpawn) {
@@ -25,8 +28,11 @@ public IEnumerator Spawner () {
 		int rand = Random.Range(0, enemyPrefabs.Length);
 		GameObject enemyToSpawn = enemyPrefabs[rand];
 
+		
 		GameObject enemyClone = Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
-		enemyClones.Add(enemyClone);
+
+
+            enemyClones.Add(enemyClone);
 
     }
 }
@@ -43,5 +49,6 @@ public IEnumerator Spawner () {
 			Destroy(enemyClone);
 		}
     }
+
 }
 
