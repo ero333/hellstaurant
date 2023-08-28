@@ -8,9 +8,18 @@ public class EnemyBasicDamage : MonoBehaviour
 
     public float enemyLife; // Variable de la vida del enemigo
 
+    public int puntosEnemigo;
+
+    public GameObject contadorPuntos;
+
+    public Puntaje puntaje;
+
+    
+
     void Start()
     {
-        
+        contadorPuntos = GameObject.FindGameObjectWithTag("Score");
+        puntaje = contadorPuntos.GetComponent<Puntaje>();
     }
 
     // Update is called once per frame
@@ -28,9 +37,15 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0) 
             {
-                Destroy(gameObject); //Cuando la vida es menor o igual a cero se destruye el enemigo
+                onDeath();
             }
         }
 
+    }
+
+    public void onDeath()
+    {
+        puntaje.obtenerPuntaje(puntosEnemigo);
+        Destroy(gameObject); //Cuando la vida es menor o igual a cero se destruye el enemigo
     }
 }

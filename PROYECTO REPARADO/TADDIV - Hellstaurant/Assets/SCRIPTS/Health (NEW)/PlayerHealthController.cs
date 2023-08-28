@@ -17,6 +17,18 @@ public class PlayerHealthController : MonoBehaviour
 
     public static PlayerHealthController instance;
 
+    public AdvanceTime advanceTime;
+
+    public Puntaje puntaje;
+
+    public GameObject healingItemPrefab; // Prefab healing item
+
+    private bool canUseHealingItem = true; 
+
+
+
+
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -39,6 +51,34 @@ public class PlayerHealthController : MonoBehaviour
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, 1f);
             }
         }
+
+        if (Input.GetMouseButtonDown(1) && canUseHealingItem)
+        {
+            UseHealingItem();
+        }
+
+    }
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        UIController.Instance.UpdateHealthDisplay();
+    }
+
+    void UseHealingItem()
+    {
+        if (currentHealth < maxHealth)
+        {
+            // Use healing item
+            Instantiate(healingItemPrefab, transform.position, Quaternion.identity);
+
+            // Disable the healing item
+            canUseHealingItem = false;
+        }
     }
 
     public void OnTriggerStay2D(Collider2D other)
@@ -54,9 +94,16 @@ public class PlayerHealthController : MonoBehaviour
         if (invincibleCounter <= 0)
         {
             currentHealth--;
+            
+            if (puntaje.puntos >= 10)
+            {
+                puntaje.puntos = puntaje.puntos - 10;
+            }
+            
 
             if (currentHealth <= 0)
             {
+                advanceTime.playerAlive = false;
                 currentHealth = 0;
                 gameObject.SetActive(false);
 
@@ -76,7 +123,9 @@ public class PlayerHealthController : MonoBehaviour
     {
         if (gameOverScreen != null)
         {
+            
             gameOverScreen.SetActive(true); // Activar el cartel de Game Over
+           
         }
     }
 }

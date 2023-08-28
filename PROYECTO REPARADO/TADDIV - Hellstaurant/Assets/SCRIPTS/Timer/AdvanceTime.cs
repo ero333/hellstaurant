@@ -13,14 +13,19 @@ public class AdvanceTime : MonoBehaviour
 
     [NonSerialized] public int timeHours;
 
-    
+    public bool playerAlive;
+
     public GameObject WIN;
+    private Animator WinAnimator;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        playerAlive = true;
         timeHours = startingTime;
+        
+        
         StartCoroutine(routine:advanceHourOverTime());
 
 
@@ -38,22 +43,38 @@ public class AdvanceTime : MonoBehaviour
 
     private IEnumerator advanceHourOverTime()
     {
-        yield return new WaitForSeconds(TimeUntilHourChange);
+        if (playerAlive)
+        {
+            yield return new WaitForSeconds(TimeUntilHourChange);
 
-        if (timeHours == 12)
-            timeHours = 1;
+            if (timeHours == 12)
+                timeHours = 1;
+            else
+                timeHours++;
+
+            if (timeHours < timeLimit)
+                StartCoroutine(routine: advanceHourOverTime());
+
+            if (timeHours == 8)
+
+                WIN.gameObject.SetActive(true);
+
+        }
         else
-            timeHours++;
+        {
+            stopTimer();
+        }
 
-        if (timeHours < timeLimit)
-            StartCoroutine(routine:advanceHourOverTime());
-
-        if (timeHours == 8)
-           
-           WIN.gameObject.SetActive(true);
-           
-             
     }
 
-    
+    public void stopTimer()
+    {
+        if (!playerAlive)
+        {   
+            StopAllCoroutines();
+            timeHours = 0;
+        }
+    }
+
+
 }
