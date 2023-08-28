@@ -3341,6 +3341,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hiperactivo
       objectReference: {fileID: 0}
+    - target: {fileID: 5045796902283660357, guid: 49619e02f7e1a7145bdc0e3d249b1059, type: 3}
+      propertyPath: puntaje
+      value: 
+      objectReference: {fileID: 1514669352}
+    - target: {fileID: 5045796902283660357, guid: 49619e02f7e1a7145bdc0e3d249b1059, type: 3}
+      propertyPath: collectible
+      value: 
+      objectReference: {fileID: 3423561466690333586, guid: ffc9a332ed6e0fa4b93c89ffc00c88cf, type: 3}
+    - target: {fileID: 5045796902283660357, guid: 49619e02f7e1a7145bdc0e3d249b1059, type: 3}
+      propertyPath: chanceToDrop
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7801673591317869057, guid: 49619e02f7e1a7145bdc0e3d249b1059, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3542,6 +3554,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 884260661402182638, guid: a6a9157c20590cf41a417ecf2d442425, type: 3}
+      propertyPath: puntaje
+      value: 
+      objectReference: {fileID: 1514669352}
+    - target: {fileID: 884260661402182638, guid: a6a9157c20590cf41a417ecf2d442425, type: 3}
+      propertyPath: collectible
+      value: 
+      objectReference: {fileID: 3423561466690333586, guid: ffc9a332ed6e0fa4b93c89ffc00c88cf, type: 3}
+    - target: {fileID: 884260661402182638, guid: a6a9157c20590cf41a417ecf2d442425, type: 3}
+      propertyPath: chanceToDrop
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3672981612928149022, guid: a6a9157c20590cf41a417ecf2d442425, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3611,6 +3635,14 @@ PrefabInstance:
       propertyPath: puntaje
       value: 
       objectReference: {fileID: 1514669352}
+    - target: {fileID: 1762007028990447074, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
+      propertyPath: collectible
+      value: 
+      objectReference: {fileID: 3423561466690333586, guid: ffc9a332ed6e0fa4b93c89ffc00c88cf, type: 3}
+    - target: {fileID: 1762007028990447074, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
+      propertyPath: chanceToDrop
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1762007028990447074, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
       propertyPath: puntosEnemigo
       value: 20
