@@ -169,8 +169,8 @@ MonoBehaviour:
   puntosEnemigo: 20
   contadorPuntos: {fileID: 0}
   puntaje: {fileID: 0}
-  chanceToDrop: 0
-  collectible: {fileID: 0}
+  chanceToDrop: 100
+  collectible: {fileID: 3423561466690333586, guid: ffc9a332ed6e0fa4b93c89ffc00c88cf, type: 3}
 --- !u!61 &5145100244629811313
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -203,7 +203,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18180525, y: -0.29478619}
+  m_Offset: {x: 0.0865041, y: -0.5616336}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -214,5 +214,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.511136, y: 2.3264866}
+  m_Size: {x: 1.9558794, y: 2.86018}
   m_EdgeRadius: 0

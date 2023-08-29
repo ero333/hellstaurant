@@ -21,9 +21,11 @@ public class PlayerHealthController : MonoBehaviour
 
     public Puntaje puntaje;
 
-    public GameObject healingItemPrefab; // Prefab healing item
+    public Animator anim;
 
-    private bool canUseHealingItem = true; 
+    
+
+   
 
 
 
@@ -33,6 +35,7 @@ public class PlayerHealthController : MonoBehaviour
     {
         currentHealth = maxHealth;
         theSR = GetComponent<SpriteRenderer>();
+        anim = gameObject.GetComponent<Animator>();
     }
 
     private void Awake()
@@ -52,9 +55,9 @@ public class PlayerHealthController : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(1) && canUseHealingItem)
+        if (Input.GetMouseButtonDown(1))
         {
-            UseHealingItem();
+            Heal();
         }
 
     }
@@ -69,16 +72,24 @@ public class PlayerHealthController : MonoBehaviour
         UIController.Instance.UpdateHealthDisplay();
     }
 
-    void UseHealingItem()
+    void Heal()
     {
         if (currentHealth < maxHealth)
         {
-            // Use healing item
-            Instantiate(healingItemPrefab, transform.position, Quaternion.identity);
-
-            // Disable the healing item
-            canUseHealingItem = false;
+            StartCoroutine(healingProcess());
         }
+    }
+
+    IEnumerator healingProcess()
+    {
+        anim.SetBool("Curandose", true);
+        yield return new WaitForSeconds(1f);
+
+        currentHealth++;
+        UIController.Instance.UpdateHealthDisplay();
+
+        anim.SetBool("Curandose", false);
+
     }
 
     public void OnTriggerStay2D(Collider2D other)
