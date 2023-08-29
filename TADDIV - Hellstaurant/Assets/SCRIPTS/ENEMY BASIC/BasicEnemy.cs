@@ -9,6 +9,8 @@ public class NewBehaviourScript : MonoBehaviour
     public bool flip;
     public float speed;
     public float distance;
+
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");

@@ -23,13 +23,8 @@ public class PlayerHealthController : MonoBehaviour
 
     public Animator anim;
 
-    
-
+    public PlayerMovement playerMovement; // llamando al script en donde esta el knockback
    
-
-
-
-
 
     void Start()
     {
@@ -96,6 +91,15 @@ public class PlayerHealthController : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            playerMovement.KBCounter = playerMovement.KBTotalTime; // revisa el script y resetea el KB 
+            if(other.transform.position.x <= transform.position.x) // indicando direcciones para el KB
+            {
+                playerMovement.KnockFromRight = true;
+            }
+            if (other.transform.position.x > transform.position.x) 
+            {
+                playerMovement.KnockFromRight = false;
+            }
             DealDamage();
         }
     }

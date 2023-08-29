@@ -2392,6 +2392,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1170127940833486984, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
   m_PrefabInstance: {fileID: 7464852032880874425}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1446669960 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7442340460101119668, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+  m_PrefabInstance: {fileID: 7464852032880874425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446669955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e1a21a1210910f41a10e662df5e3ac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1498803173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,6 +3273,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7442340460101119668, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: KBForce
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442340460101119668, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: KBCounter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442340460101119668, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: KBTotalTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442340460101119668, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: KnockFromRight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: puntaje
       value: 
@@ -3278,6 +3305,10 @@ PrefabInstance:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 151086489}
+    - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1446669960}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

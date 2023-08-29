@@ -10,6 +10,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Animator playerAnimator;
 
+    public float KBForce; // fuerza del knockback
+    public float KBCounter; // cuanto tiempo queda del efecto
+    public float KBTotalTime; // cuanto dura el efecto en total
+
+    public bool KnockFromRight; // marca la direcion del knockback
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
@@ -31,7 +36,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
+        if(KBCounter <= 0) // instancia en la cual si no hay knockback, el jugador se puede mover
+        {
+            playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
+        }  
+        else
+        {
+            if (KnockFromRight == true) // si lo atacan por la derecha
+            {
+                playerRb.velocity = new Vector2(-KBForce, KBForce); // se mueve para la izquierda (negativo)
+            }
+            if (KnockFromRight == false) 
+            {
+                playerRb.velocity = new Vector2(KBForce, KBForce); // se mueve a la derecha
+            }
+
+            KBCounter -= Time.deltaTime; // para que el knockback no sea eterno y termine
+
+        }
     }
 
      public void RotarSprite()   // Agregar RotarSprite();  en el Update para que funcione
