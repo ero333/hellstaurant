@@ -12,6 +12,8 @@ public class EnemyBasicDamage : MonoBehaviour
     [Range(0, 100)] public float chanceToDrop; // enemigo dropea monedas
     public GameObject collectible; // lo que vamos a dropear
 
+    public int amountToDrop; // Cantidad de monedas a dropear
+
     void Start()
     {
         contadorPuntos = GameObject.FindGameObjectWithTag("Score");
@@ -44,9 +46,13 @@ public class EnemyBasicDamage : MonoBehaviour
 
         float dropSelect = Random.Range(0, 100f);
 
-        if (dropSelect <= chanceToDrop) //aca salen las monedas 
+        if (dropSelect <= chanceToDrop) 
         {
-            Instantiate(collectible, transform.position, Quaternion.identity); // Instancia en la posición del enemigo
+            for (int i = 0; i < amountToDrop; i++) //para drop mas de una moneda que no queden encimadas 
+            {
+                float xOffset = (i - (amountToDrop - 1) * 0.5f) * 0.5f;
+                Instantiate(collectible, transform.position + new Vector3(xOffset, 0, 0), Quaternion.identity);
+            }
         }
     }
 }
