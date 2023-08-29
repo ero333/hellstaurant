@@ -15,7 +15,7 @@ C:/Users/maria/OneDrive/Desktop/hellstaurant/TADDIV - Hellstaurant
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64332
+64383
 Successfully changed project path to: C:/Users/maria/OneDrive/Desktop/hellstaurant/TADDIV - Hellstaurant
 C:/Users/maria/OneDrive/Desktop/hellstaurant/TADDIV - Hellstaurant
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/maria/OneDrive/Desktop/hellstaurant/TADDIV - Hellstaurant
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2388] Host "[IP] 192.168.0.242 [Port] 0 [Flags] 2 [Guid] 3448119724 [EditorId] 3448119724 [Version] 1048832 [Id] WindowsEditor(7,kata) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19800] Host "[IP] 192.168.0.242 [Port] 0 [Flags] 2 [Guid] 1493816497 [EditorId] 1493816497 [Version] 1048832 [Id] WindowsEditor(7,kata) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [2388] Host "[IP] 192.168.0.242 [Port] 0 [Flags] 2 [Guid] 3448119724 [EditorId] 3448119724 [Version] 1048832 [Id] WindowsEditor(7,kata) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19800] Host "[IP] 192.168.0.242 [Port] 0 [Flags] 2 [Guid] 1493816497 [EditorId] 1493816497 [Version] 1048832 [Id] WindowsEditor(7,kata) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 38.58 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 35.96 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.019896 seconds.
-- Loaded All Assemblies, in  1.014 seconds
+Registered in 0.014919 seconds.
+- Loaded All Assemblies, in  0.742 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.722 seconds
-Domain Reload Profiling: 1731ms
-	BeginReloadAssembly (286ms)
+- Finished resetting the current domain, in  0.438 seconds
+Domain Reload Profiling: 1179ms
+	BeginReloadAssembly (251ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (106ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (171ms)
-	LoadAllAssembliesAndSetupDomain (422ms)
-		LoadAssemblies (281ms)
+	RebuildCommonClasses (86ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (108ms)
+	LoadAllAssembliesAndSetupDomain (272ms)
+		LoadAssemblies (248ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (417ms)
-			TypeCache.Refresh (415ms)
-				TypeCache.ScanAssembly (371ms)
+		AnalyzeDomain (268ms)
+			TypeCache.Refresh (266ms)
+				TypeCache.ScanAssembly (243ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (722ms)
+	FinalizeReload (440ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (504ms)
+		SetupLoadedEditorAssemblies (331ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			SetLoadedEditorAssemblies (16ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (11ms)
-			ProcessInitializeOnLoadAttributes (348ms)
-			ProcessInitializeOnLoadMethodAttributes (97ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,99 +116,119 @@ Domain Reload Profiling: 1731ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\maria\OneDrive\Desktop\hellstaurant\TADDIV - Hellstaurant\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\maria\OneDrive\Desktop\hellstaurant\TADDIV - Hellstaurant\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.618 seconds
-Refreshing native plugins compatible for Editor in 13.23 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.310 seconds
+Refreshing native plugins compatible for Editor in 14.19 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.163 seconds
-Domain Reload Profiling: 2772ms
-	BeginReloadAssembly (484ms)
+- Finished resetting the current domain, in  1.184 seconds
+Domain Reload Profiling: 2487ms
+	BeginReloadAssembly (311ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (27ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (74ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (90ms)
-	LoadAllAssembliesAndSetupDomain (938ms)
-		LoadAssemblies (825ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (65ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (829ms)
+		LoadAssemblies (640ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (416ms)
-			TypeCache.Refresh (340ms)
-				TypeCache.ScanAssembly (297ms)
-			ScanForSourceGeneratedMonoScriptInfo (57ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (1164ms)
+		AnalyzeDomain (369ms)
+			TypeCache.Refresh (308ms)
+				TypeCache.ScanAssembly (269ms)
+			ScanForSourceGeneratedMonoScriptInfo (44ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1185ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (887ms)
+		SetupLoadedEditorAssemblies (826ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (7ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (146ms)
-			ProcessInitializeOnLoadAttributes (600ms)
-			ProcessInitializeOnLoadMethodAttributes (101ms)
-			AfterProcessingInitializeOnLoad (18ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (559ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Failed to load shader (instanceID 420, GUID dd89cf5b9246416f84610a006f916af7)
-Failed to load shader (instanceID 430, GUID 7cbb3655339ec401ca75ba5fe26884f4)
-Failed to load shader (instanceID 424, GUID 14eb328de4b8eb245bb7cea29e4ac00b)
-Failed to load shader (instanceID 404, GUID 68e6db2ebdc24f95958faec2be5558d6)
-Failed to load shader (instanceID 432, GUID bedd19944f451ba4d83e7ed69be98d5c)
-Failed to load shader (instanceID 400, GUID bc1ede39bf3643ee8e493720e4259791)
-Failed to load shader (instanceID 414, GUID 3230fdc399f8287488325e5941a00527)
-Failed to load shader (instanceID 398, GUID fe393ace9b354375a9cb14cdbbc28be4)
-Failed to load shader (instanceID 410, GUID cf81c85f95fe47e1a27f6ae460cf182c)
-Failed to load shader (instanceID 434, GUID 9c442dc870b456e48b615cd8add0e9ef)
-Failed to load shader (instanceID 422, GUID 48bb5f55d8670e349b6e614913f9d910)
-Failed to load shader (instanceID 406, GUID 85187c2149c549c5b33f0cdb02836b17)
-Failed to load shader (instanceID 428, GUID 128e987d567d4e2c824d754223b3f3b0)
-Failed to load shader (instanceID 402, GUID f7ada0af4f174f0694ca6a487b8f543d)
-Failed to load shader (instanceID 408, GUID a02a7d8c237544f1962732b55a9aebf1)
-Failed to load shader (instanceID 426, GUID c8d12adcee749c344b8117cf7c7eb912)
-Failed to load shader (instanceID 416, GUID 1e3b057af24249748ff873be7fafee47)
-Failed to load shader (instanceID 418, GUID 603d454d711fe784cba9ce08dd22b881)
-Failed to load shader (instanceID 412, GUID 0a8f4dcd626bcd14bbbfa5a5e116b16e)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 12.46 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (19ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 11.96 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3 unused Assets / (39.9 KB). Loaded Objects now: 493.
-Memory consumption went from 63.5 MB to 63.5 MB.
-Total: 5.273600 ms (FindLiveObjects: 0.066700 ms CreateObjectMapping: 0.005800 ms MarkObjects: 5.114400 ms  DeleteObjects: 0.085000 ms)
+Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 63 unused Assets / (60.5 KB). Loaded Objects now: 4526.
+Memory consumption went from 141.0 MB to 140.9 MB.
+Total: 7.264200 ms (FindLiveObjects: 0.998700 ms CreateObjectMapping: 0.842700 ms MarkObjects: 5.208800 ms  DeleteObjects: 0.212400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 498406.063050 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(2fe65ffa8b3f0d1408685fd5d3c585f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(2fe65ffa8b3f0d1408685fd5d3c585f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6208c56c4eaf4182a4162a340c062fa') in 0.004509 seconds
+  Time since last request: 498607.900965 seconds.
+  path: Assets/PREFABS/Hiperactivo.prefab
+  artifactKey: Guid(49619e02f7e1a7145bdc0e3d249b1059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/Hiperactivo.prefab using Guid(49619e02f7e1a7145bdc0e3d249b1059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e137cf46baee7b0562e7c4a0b0ccd59b') in 0.231257 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 31
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Scenes/Nivel 0 (tutorial).unity
-  artifactKey: Guid(67b5b724c470c3340940d287d5f78ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nivel 0 (tutorial).unity using Guid(67b5b724c470c3340940d287d5f78ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304c6e642ff9350602be0243e4330ca4') in 0.000749 seconds
+  Time since last request: 0.000056 seconds.
+  path: Assets/PREFABS/Basic Enemy.prefab
+  artifactKey: Guid(e4cb172cbbd12ef42be889feebda1c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PREFABS/Basic Enemy.prefab using Guid(e4cb172cbbd12ef42be889feebda1c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c411f9931f7251dbc5b6ac9a883343f9') in 0.071013 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 5.129061 seconds.
+  path: Assets/ASSETS/SPRITES/puntaje estrellas.png
+  artifactKey: Guid(3ef4cd52317e4d84683c1b904c9008ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASSETS/SPRITES/puntaje estrellas.png using Guid(3ef4cd52317e4d84683c1b904c9008ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c288e0b60dae882e43368312e927144d') in 0.073933 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/ASSETS/SPRITES/ss prota caminar.png
+  artifactKey: Guid(75a615ba29d9e9e4bb3eea71d9d56acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASSETS/SPRITES/ss prota caminar.png using Guid(75a615ba29d9e9e4bb3eea71d9d56acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befc660db1d174c0c7ff4b91784e82aa') in 0.068183 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ASSETS/SPRITES/ss prota idle.png
+  artifactKey: Guid(aa16064a9c2b09247b765bb2a456e9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASSETS/SPRITES/ss prota idle.png using Guid(aa16064a9c2b09247b765bb2a456e9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb83f2abde1016572a5637766f3b2ee') in 0.071673 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
