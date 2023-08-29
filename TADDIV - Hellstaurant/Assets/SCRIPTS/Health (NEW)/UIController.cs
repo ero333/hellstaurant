@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIController : MonoBehaviour
 {
@@ -16,10 +17,18 @@ public class UIController : MonoBehaviour
 
     public int coinsCollected; // Referencia monedas recolectadas
 
+    public TextMeshProUGUI coinText; // Referencia Moneditas UI 
+
+
     // Start is called before the first frame update
     void Awake()
     {
         Instance = this; //Instancia el script
+    }
+
+    void Start()
+    {
+        UpdateCoinCount(); //Inicia conteo monedas
     }
 
     // Update is called once per frame
@@ -85,4 +94,10 @@ public class UIController : MonoBehaviour
                 break;
         }
     }
+
+    public void UpdateCoinCount()
+    {
+        coinText.text = UIController.Instance.coinsCollected.ToString();
+    }
+
 }
