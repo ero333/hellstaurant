@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public bool isCoin;
+
+    private bool isCollected; //destruir monedas una vez agarradas
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Player") && !isCollected)
+        {
+            if (isCoin)
+            {
+                UIController.Instance.coinsCollected++; //conteo de monedas
+
+                isCollected = true;
+                Destroy(gameObject); //destruir monedas una vez agarradas 
+            }
+        }
     }
 }

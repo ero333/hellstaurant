@@ -14,6 +14,8 @@ public class UIController : MonoBehaviour
 
     public Sprite heartFull, heartEmpty, heartMid;  //Referencias a los diferentes sprites que pueden tener
 
+    public int coinsCollected; // Referencia monedas recolectadas
+
     // Start is called before the first frame update
     void Awake()
     {
