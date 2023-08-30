@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,11 +10,21 @@ public class NewBehaviourScript : MonoBehaviour
     public bool flip;
     public float speed;
     public float distance;
+    public PlayerMovement playermovement;
+
+    public float KBPower = 100;
+    public float KBDuration = 2;
+
+    public PlayerHealthController playerhealthcontroller;
 
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        playermovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+
+        playerhealthcontroller = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<PlayerHealthController>();
+        
     }
 
     private void Update()
@@ -42,4 +53,16 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
 
-} 
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            StartCoroutine(playerhealthcontroller.knockback(KBDuration, KBPower, this.transform));
+        }
+    }
+
+}
+    
+
+
+

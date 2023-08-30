@@ -23,14 +23,23 @@ public class PlayerHealthController : MonoBehaviour
 
     public Animator anim;
 
-    public PlayerMovement playerMovement; // llamando al script en donde esta el knockback
-   
+    public PlayerMovement playerMovement;
+
+    public Rigidbody2D rb2d;
+
+  
 
     void Start()
     {
         currentHealth = maxHealth;
         theSR = GetComponent<SpriteRenderer>();
+
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+
         anim = gameObject.GetComponent<Animator>();
+
+        rb2d = gameObject.GetComponent<Rigidbody2D>();
+
     }
 
     private void Awake()
@@ -87,34 +96,18 @@ public class PlayerHealthController : MonoBehaviour
 
     }
 
-    public void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            playerMovement.KBCounter = playerMovement.KBTotalTime; // revisa el script y resetea el KB 
-            if(other.transform.position.x <= transform.position.x) // indicando direcciones para el KB
-            {
-                playerMovement.KnockFromRight = true;
-            }
-            if (other.transform.position.x > transform.position.x) 
-            {
-                playerMovement.KnockFromRight = false;
-            }
-            DealDamage();
-        }
-    }
-
     public void DealDamage()
     {
+
         if (invincibleCounter <= 0)
         {
             currentHealth--;
+
             
             if (puntaje.puntos >= 10)
             {
                 puntaje.puntos = puntaje.puntos - 10;
-            }
-            
+            }  
 
             if (currentHealth <= 0)
             {
@@ -131,6 +124,8 @@ public class PlayerHealthController : MonoBehaviour
             }
 
             UIController.Instance.UpdateHealthDisplay();
+
+            
         }
     }
 
@@ -142,6 +137,33 @@ public class PlayerHealthController : MonoBehaviour
             gameOverScreen.SetActive(true); // Activar el cartel de Game Over
            
         }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            DealDamage();
+
+        }
+    }
+
+
+    public IEnumerator knockback(float KBDuration, float KBPower, Transform obj)
+    {
+        float KBTimer = 0;
+
+        while (KBTimer < KBDuration) 
+        { 
+            KBTimer += Time.deltaTime;
+            Vector2 direction = (obj.transform.position - this.transform.position).normalized;
+
+            rb2d.AddForce(- direction* KBPower);
+
+        }
+
+        yield return 0;
+
     }
 }
 

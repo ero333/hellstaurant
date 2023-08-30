@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  KBForce: 5
 --- !u!95 &8100268075168473408
 Animator:
   serializedVersion: 5
@@ -188,6 +189,7 @@ MonoBehaviour:
   advanceTime: {fileID: 0}
   puntaje: {fileID: 0}
   anim: {fileID: 0}
+  playerMovement: {fileID: 7442340460101119668}
 --- !u!61 &4994318363790638360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -220,7 +222,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18507075, y: -0.52916133}
+  m_Offset: {x: -0.2577422, y: 1.7236522}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -231,7 +233,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5418549, y: 2.4636557}
+  m_Size: {x: 2.0941577, y: 3.015958}
   m_EdgeRadius: 0
 --- !u!1 &8418434811157982943
 GameObject:
