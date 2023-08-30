@@ -132,6 +132,10 @@ MonoBehaviour:
   flip: 1
   speed: 3
   distance: 0
+  playermovement: {fileID: 0}
+  KBPower: 15
+  KBDuration: 1
+  playerhealthcontroller: {fileID: 0}
 --- !u!114 &8822029174283637624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +154,7 @@ MonoBehaviour:
   puntaje: {fileID: 0}
   chanceToDrop: 100
   collectible: {fileID: 3423561466690333586, guid: ffc9a332ed6e0fa4b93c89ffc00c88cf, type: 3}
+  amountToDrop: 3
 --- !u!61 &1392002744303900536
 BoxCollider2D:
   m_ObjectHideFlags: 0
