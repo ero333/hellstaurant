@@ -107,7 +107,57 @@ public class TutorialController : MonoBehaviour
             cartel11.SetActive(true);
         }
 
+        if (contadorCarteles == 11)
+        {
+            cartel11.SetActive(false);
+            cartel12.SetActive(true);
+        }
 
+        if (contadorCarteles == 12)
+        {
+            cartel12.SetActive(false);
+            cartel13.SetActive(true);
+
+            botonSaltar.SetActive(false);
+
+             StartCoroutine(pruebaspawner());
+        }
+
+        if (contadorCarteles == 13)
+        {
+            cartel13.SetActive(false);
+            cartel14.SetActive(true);
+        }
+
+        if (contadorCarteles == 14)
+        {
+            cartel14.SetActive(false);
+            cartel15.SetActive(true);
+        }
+
+        if (contadorCarteles == 15)
+        {
+            cartel15.SetActive(false);
+            cartel16.SetActive(true);
+        }
+
+        if (contadorCarteles == 16)
+        {
+            cartel16.SetActive(false);
+            cartel17.SetActive(true);
+        }
+
+        if (contadorCarteles == 17)
+        {
+            cartel17.SetActive(false);
+            cartel18.SetActive(true);
+        }
+
+        if (contadorCarteles == 18)
+        {
+            cartel18.SetActive(false);
+            timer.SetActive(true);
+        }
     }
 
 
@@ -136,6 +186,7 @@ public class TutorialController : MonoBehaviour
         contadorCarteles++;
 
         //ACTIVAMOS EL CARTEL QUE SIGUE Y EL BOTON DE SIGUIENTE//
+        cartel10.SetActive(false);
         cartel11.SetActive(true) ;
         botonSaltar.SetActive(true);
         
@@ -154,6 +205,30 @@ public class TutorialController : MonoBehaviour
         
         cartel7.SetActive(false);
         cartel8.SetActive(true);
+
+        botonSaltar.SetActive(true);
+        Time.timeScale = 0f;
+
+    }
+
+    
+    IEnumerator pruebaspawner()
+    {
+        Time.timeScale = 1f;
+
+        yield return new WaitForSeconds(15f);
+
+        spawner.SetActive(true);
+        íconoMonedas.SetActive(true);
+        contadorMonedas.SetActive(true);
+      
+
+
+        contadorCarteles++;
+
+        
+        cartel13.SetActive(false);
+        cartel14.SetActive(true);
 
         botonSaltar.SetActive(true);
         Time.timeScale = 0f;
