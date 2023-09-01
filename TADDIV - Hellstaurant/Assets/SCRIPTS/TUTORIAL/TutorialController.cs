@@ -125,8 +125,8 @@ public class TutorialController : MonoBehaviour
 
         if (contadorCarteles == 13)
         {
-            cartel13.SetActive(false);
-            cartel14.SetActive(true);
+            cartel14.SetActive(false);
+            cartel15.SetActive(true);
         }
 
         if (contadorCarteles == 14)
@@ -157,6 +157,9 @@ public class TutorialController : MonoBehaviour
         {
             cartel18.SetActive(false);
             timer.SetActive(true);
+            Time.timeScale = 1.0f;
+            botonSaltar.SetActive(false);
+            
         }
     }
 
@@ -216,19 +219,20 @@ public class TutorialController : MonoBehaviour
     {
         Time.timeScale = 1f;
 
-        yield return new WaitForSeconds(15f);
-
         spawner.SetActive(true);
         íconoMonedas.SetActive(true);
         contadorMonedas.SetActive(true);
-      
+
+        cartel13.SetActive(false);
+        cartel14.SetActive(true);
+
+        yield return new WaitForSeconds(15f);
 
 
         contadorCarteles++;
 
-        
-        cartel13.SetActive(false);
-        cartel14.SetActive(true);
+        cartel14.SetActive(false);
+        cartel15.SetActive(true);
 
         botonSaltar.SetActive(true);
         Time.timeScale = 0f;

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4368505218093984832}
   - component: {fileID: 7511047130236058538}
   - component: {fileID: 7210797547170028100}
+  - component: {fileID: -4410107501321009009}
   m_Layer: 0
   m_Name: EnemyShoots
   m_TagString: Enemy
@@ -137,7 +138,6 @@ MonoBehaviour:
   KBPower: 35
   KBDuration: 2
   playerhealthcontroller: {fileID: 0}
-  ismoving: 0
 --- !u!114 &4368505218093984832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +223,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4410107501321009009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242012864319646141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015ace2521e25964594c1e57deaa07a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  shootingRange: 4
+  projectilePrefab: {fileID: 4286603730979776382, guid: ad5151e70134ba34e919dd3bc0a0dc5a, type: 3}
+  projectileSpeed: 5
+  shootingCooldown: 2
+  animator: {fileID: 0}
 --- !u!1 &8670214973718969323
 GameObject:
   m_ObjectHideFlags: 0
