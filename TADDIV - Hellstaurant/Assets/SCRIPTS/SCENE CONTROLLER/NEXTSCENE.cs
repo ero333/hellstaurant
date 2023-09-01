@@ -18,6 +18,7 @@ public class NEXTSCENE : MonoBehaviour
 
         public void NextScene()
     {
+        Time.timeScale = 1.0f;
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
