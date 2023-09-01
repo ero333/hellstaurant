@@ -22,4 +22,6 @@ public class WallLimits : MonoBehaviour
     {
         theTransform = GetComponent<Transform>();
     }
+
+    
 }

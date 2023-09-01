@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e1a21a1210910f41a10e662df5e3ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   isHealing: 0
 --- !u!95 &8100268075168473408
 Animator:
@@ -295,8 +295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9f20244492c1b44ad98ccbf7e54606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hrange: {x: -6.7, y: 1.5}
-  Vrange: {x: -8.5, y: 7}
+  Hrange: {x: -6.7, y: 2.61}
+  Vrange: {x: -8.5, y: 8}
 --- !u!1 &8418434811157982943
 GameObject:
   m_ObjectHideFlags: 0
