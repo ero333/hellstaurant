@@ -16,6 +16,8 @@ public class NewBehaviourScript : MonoBehaviour
     public float KBDuration = 2;
 
     public PlayerHealthController playerhealthcontroller;
+    public bool ismoving;
+
 
 
     private void Start()
@@ -29,27 +31,33 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        distance = Vector2.Distance(transform.position, player.transform.position); //calcula la cercania del jugador
-        Vector2 direction = player.transform.position - transform.position; //calcula hacia donde va a ir el enemigo
-        direction.Normalize(); 
-
-        if (distance >= 0) {
-            transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime); //desplaza al enemigo hacia el jugador
-        }
-
-        Vector3 scale = transform.localScale;  // toma la escala del sprite del enemigo
-
-        if (player.transform.position.x > transform.position.x)
+        if (ismoving)
         {
-            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);   // si la posicion x del jugador es mayor a la del enemigo, flipea la escala del enemigo 
+            distance = Vector2.Distance(transform.position, player.transform.position); //calcula la cercania del jugador
+            Vector2 direction = player.transform.position - transform.position; //calcula hacia donde va a ir el enemigo
+            direction.Normalize();
+
+            if (distance >= 0)
+            {
+                transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime); //desplaza al enemigo hacia el jugador
+            }
+
+            Vector3 scale = transform.localScale;  // toma la escala del sprite del enemigo
+
+            if (player.transform.position.x > transform.position.x)
+            {
+                scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);   // si la posicion x del jugador es mayor a la del enemigo, flipea la escala del enemigo 
+            }
+
+            else
+            {
+                scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);       // lo mismo pero pal otro lado 
+            }
+
+            transform.localScale = scale;
         }
 
-        else
-        {
-            scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);       // lo mismo pero pal otro lado 
-        }
-
-        transform.localScale = scale;
+        
     }
 
 

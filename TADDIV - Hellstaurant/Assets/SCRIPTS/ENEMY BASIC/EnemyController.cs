@@ -6,7 +6,7 @@ public class EnemyController : MonoBehaviour
     public float shootingDistance = 5f; // Distancia a la que el enemigo comenzará a disparar
 
     private Animator animator;
-
+    public EnemyShooting enemyshooting;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -20,8 +20,8 @@ public class EnemyController : MonoBehaviour
         // Si la distancia es menor o igual a la distancia de disparo, cambia al estado de disparar
         if (distanceToPlayer <= shootingDistance)
         {
-            // Activar la transición al estado de disparar
-            animator.SetTrigger("StartShooting");
+            enemyshooting = GetComponent<EnemyShooting>();
+            enemyshooting.shooting();
         }
     }
 }
