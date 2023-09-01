@@ -46,16 +46,7 @@ public class EnemyShooting : MonoBehaviour
     }
      public void shooting()
     {
-        StartCoroutine (shootroutine());
-    }
-    IEnumerator shootroutine()
-    {
-        enemyscript.ismoving = false;
-        yield return new WaitForSeconds(1f);
-        shoot();
-        yield return new WaitForSeconds(1f);
-        anim.SetBool("Shooting", false);
-        enemyscript.ismoving = true;
+        
     }
 
     void shoot()

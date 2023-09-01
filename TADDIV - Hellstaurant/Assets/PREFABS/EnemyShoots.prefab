@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 6137762491347662563}
   - component: {fileID: 2114962357565693088}
   - component: {fileID: 4368505218093984832}
-  - component: {fileID: 301016439828562542}
-  - component: {fileID: 168494544010278035}
   - component: {fileID: 7511047130236058538}
   - component: {fileID: 7210797547170028100}
   m_Layer: 0
@@ -159,41 +157,6 @@ MonoBehaviour:
   chanceToDrop: 100
   collectible: {fileID: 1117625985564562950, guid: c6c99be012b4c264da39014b40997d8d, type: 3}
   amountToDrop: 2
---- !u!114 &301016439828562542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242012864319646141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c36297a0e6e5d2459f72ef9c26394cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 4286603730979776382, guid: ad5151e70134ba34e919dd3bc0a0dc5a, type: 3}
-  bulletPos: {fileID: 6624450364588260139}
-  bulletspeed: 10
-  player: {fileID: 0}
-  playerposition: {x: 0, y: 0, z: 0}
-  anim: {fileID: 0}
-  enemyController: {fileID: 168494544010278035}
-  enemyscript: {fileID: 2114962357565693088}
---- !u!114 &168494544010278035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242012864319646141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b5932b5abe39994d880c3a8df2aa02d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 4306983515515980842, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-  shootingDistance: 5
-  enemyshooting: {fileID: 301016439828562542}
 --- !u!61 &7511047130236058538
 BoxCollider2D:
   m_ObjectHideFlags: 0

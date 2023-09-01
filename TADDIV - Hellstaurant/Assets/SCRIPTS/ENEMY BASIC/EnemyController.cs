@@ -15,8 +15,14 @@ public class EnemyController : MonoBehaviour
     private void Update()
     {
         // Calcula la distancia entre el enemigo y el jugador
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        
 
+
+    }
+
+    public void ifClose()
+    {
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
         // Si la distancia es menor o igual a la distancia de disparo, cambia al estado de disparar
         if (distanceToPlayer <= shootingDistance)
         {

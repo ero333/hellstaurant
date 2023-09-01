@@ -16,7 +16,7 @@ public class NewBehaviourScript : MonoBehaviour
     public float KBDuration = 2;
 
     public PlayerHealthController playerhealthcontroller;
-    public bool ismoving;
+    
 
 
 
@@ -31,8 +31,8 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        if (ismoving)
-        {
+        
+        
             distance = Vector2.Distance(transform.position, player.transform.position); //calcula la cercania del jugador
             Vector2 direction = player.transform.position - transform.position; //calcula hacia donde va a ir el enemigo
             direction.Normalize();
@@ -55,7 +55,7 @@ public class NewBehaviourScript : MonoBehaviour
             }
 
             transform.localScale = scale;
-        }
+        
 
         
     }

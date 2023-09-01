@@ -348,7 +348,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &138635127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,7 +376,7 @@ Transform:
   m_GameObject: {fileID: 138635126}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.82, y: -5.31, z: 1512.663}
+  m_LocalPosition: {x: -0.21, y: -3.91, z: 1512.663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -980,6 +980,28 @@ RectTransform:
   m_AnchoredPosition: {x: -276.5627, y: 21.205359}
   m_SizeDelta: {x: 293, y: 246}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &404787004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
+  m_PrefabInstance: {fileID: 1000338429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &404787014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404787004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015ace2521e25964594c1e57deaa07a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  shootingRange: 4
+  projectilePrefab: {fileID: 4286603730979776382, guid: ad5151e70134ba34e919dd3bc0a0dc5a, type: 3}
+  projectileSpeed: 5
+  shootingCooldown: 1
 --- !u!1 &770195743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,13 +1177,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 301016439828562542, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1037535833}
-    - target: {fileID: 301016439828562542, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
-      propertyPath: bulletspeed
-      value: 5
+    - target: {fileID: 2114962357565693088, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
+      propertyPath: speed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
       propertyPath: m_Name
@@ -1210,7 +1228,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 404787014}
   m_SourcePrefab: {fileID: 100100000, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
 --- !u!1 &1020421826
 GameObject:
@@ -1357,11 +1378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e1a21a1210910f41a10e662df5e3ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1037535833 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4306983515515980842, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-  m_PrefabInstance: {fileID: 1817709973}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1063545167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,7 +2338,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1591030099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2338,7 +2354,7 @@ MonoBehaviour:
   spawnRate: 2
   enemyPrefabs:
   - {fileID: 4242012864319646141, guid: 8907e45e58df4a24692f23fe3db29b5a, type: 3}
-  - {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
+  - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
   canSpawn: 1
   enemyClones: []
 --- !u!4 &1591030100
@@ -2350,7 +2366,7 @@ Transform:
   m_GameObject: {fileID: 1591030098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.74, y: 2.77, z: 1512.663}
+  m_LocalPosition: {x: -5.81, y: 5.79, z: 1512.663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
