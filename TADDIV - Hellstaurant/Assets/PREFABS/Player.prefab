@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  isHealing: 0
 --- !u!95 &8100268075168473408
 Animator:
   serializedVersion: 5
@@ -168,7 +169,7 @@ MonoBehaviour:
   pizzaPrefab: {fileID: 3709804286691382550, guid: 517eca063809def409083a2ad0c56861, type: 3}
   shootPoint: {fileID: 2142375769131420283}
   pizzaSpeed: 20
-  cooldown: 0.5
+  cooldown: 0.3
 --- !u!114 &8460081661388279870
 MonoBehaviour:
   m_ObjectHideFlags: 0

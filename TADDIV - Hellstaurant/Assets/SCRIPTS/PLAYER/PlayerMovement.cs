@@ -10,10 +10,20 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Animator playerAnimator;
 
+    public bool isHealing = false;
+
+    public static PlayerMovement instance;
+
+
+    public void Awake()
+    {
+        instance = this; 
+    }
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>(); //para el animator
+        isHealing = false;
     }
 
     void Update()
@@ -28,7 +38,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
 
+        if (!isHealing)
+        {
             playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
+        }    
+        
 
     }
 

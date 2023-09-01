@@ -61,6 +61,7 @@ public class PlayerHealthController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
+            
             Heal();
         }
 
@@ -80,12 +81,14 @@ public class PlayerHealthController : MonoBehaviour
     {
         if (currentHealth < maxHealth)
         {
+            playerMovement.isHealing = true;
             StartCoroutine(healingProcess());
         }
     }
 
     IEnumerator healingProcess()
     {
+        
         anim.SetBool("Curandose", true);
         yield return new WaitForSeconds(1f);
 
@@ -93,7 +96,7 @@ public class PlayerHealthController : MonoBehaviour
         UIController.Instance.UpdateHealthDisplay();
 
         anim.SetBool("Curandose", false);
-
+        playerMovement.isHealing = false;
     }
 
     public void DealDamage()
