@@ -12,6 +12,10 @@ public class PlayerShooting : MonoBehaviour
     public float cooldown = 0.5f; // Cooldown que queremos para el disparo
     private float lastShoot; // Última vez que disparaste 
 
+    public GameObject FugaPrefab;
+    public float FugazzettaSpeed = 5f;
+    public bool Fugazzetta;
+
 
     private void Update()
     {
@@ -26,6 +30,20 @@ public class PlayerShooting : MonoBehaviour
 
     public void pizzaShoot(Vector3 direction)
     {
+        if (Fugazzetta)
+        {
+            GameObject fugazzetta = Instantiate(FugaPrefab, shootPoint.position, Quaternion.identity); 
+
+            float angle2 = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
+
+            fugazzetta.transform.rotation = Quaternion.AngleAxis(angle2, Vector3.forward); 
+
+            fugazzetta.GetComponent<Rigidbody2D>().velocity = direction * FugazzettaSpeed; 
+
+            lastShoot = Time.time; 
+        }
+
+
         GameObject pizza = Instantiate(pizzaPrefab, shootPoint.position, Quaternion.identity); //Genera una pizza en el punto de disparo
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //El Atan2 sirve para calcular la tangente entre 2 números, en este caso X e Y del click del mouse. Y lo transforma en grados de un ángulo con el Rad2Deg
