@@ -822,9 +822,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c74c0e59adbcc4992bf5f7606163c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagEnemy: Enemy
   player: {fileID: 1817709974}
-  enemy: {fileID: 0}
   spawner: {fileID: 1591030099}
+  spawner2: {fileID: 138635127}
+  spawner3: {fileID: 138635127}
 --- !u!114 &360641910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3176,9 +3178,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c74c0e59adbcc4992bf5f7606163c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagEnemy: Enemy
   player: {fileID: 1817709974}
-  enemy: {fileID: 0}
   spawner: {fileID: 1591030099}
+  spawner2: {fileID: 138635127}
+  spawner3: {fileID: 0}
 --- !u!114 &1877279699
 MonoBehaviour:
   m_ObjectHideFlags: 0

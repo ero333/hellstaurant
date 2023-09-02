@@ -1025,7 +1025,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1446669955}
-  enemy: {fileID: 0}
+  enemy: {fileID: 4242012864319646141, guid: 8907e45e58df4a24692f23fe3db29b5a, type: 3}
+  enemy2: {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
+  enemy3: {fileID: 2438006770674342857, guid: 73edec7e8c575fb4fbc92d2aac961e27, type: 3}
+  enemy4: {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
   spawner: {fileID: 1387389918}
 --- !u!95 &151086494
 Animator:
@@ -7593,7 +7596,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1446669955}
-  enemy: {fileID: 0}
+  enemy: {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
+  enemy2: {fileID: 4242012864319646141, guid: 8907e45e58df4a24692f23fe3db29b5a, type: 3}
+  enemy3: {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
+  enemy4: {fileID: 2438006770674342857, guid: 73edec7e8c575fb4fbc92d2aac961e27, type: 3}
   spawner: {fileID: 1387389918}
 --- !u!114 &1933297753
 MonoBehaviour:

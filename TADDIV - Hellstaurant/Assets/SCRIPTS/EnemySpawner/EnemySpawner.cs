@@ -24,6 +24,7 @@ public IEnumerator Spawner () {
 	WaitForSeconds wait = new WaitForSeconds(spawnRate);
 
 	while (canSpawn) {
+
 		yield return wait;
 		int rand = Random.Range(0, enemyPrefabs.Length);
 		GameObject enemyToSpawn = enemyPrefabs[rand];
@@ -39,6 +40,7 @@ public IEnumerator Spawner () {
 
 	public void stopSpawn()
 	{
+		StopCoroutine(Spawner());
 		canSpawn = false;
 	}
 

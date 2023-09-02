@@ -1271,8 +1271,8 @@ GameObject:
   - component: {fileID: 814449700}
   - component: {fileID: 814449699}
   - component: {fileID: 814449698}
-  - component: {fileID: 814449697}
   - component: {fileID: 814449696}
+  - component: {fileID: 814449702}
   - component: {fileID: 814449695}
   m_Layer: 5
   m_Name: WIN
@@ -1318,21 +1318,6 @@ MonoBehaviour:
   star1: {fileID: 1745921402}
   star2: {fileID: 972018336}
   star3: {fileID: 581850600}
---- !u!114 &814449697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814449694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23c74c0e59adbcc4992bf5f7606163c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemy: {fileID: 0}
-  spawner: {fileID: 159498729}
 --- !u!114 &814449698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,6 +1392,23 @@ RectTransform:
   m_AnchoredPosition: {x: -290.99994, y: -25}
   m_SizeDelta: {x: -667.41, y: -375.42}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &814449702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814449694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c74c0e59adbcc4992bf5f7606163c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagEnemy: Enemy
+  player: {fileID: 1315016614}
+  spawner: {fileID: 159498729}
+  spawner2: {fileID: 0}
+  spawner3: {fileID: 0}
 --- !u!1 &966673416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,9 +3476,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c74c0e59adbcc4992bf5f7606163c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagEnemy: Enemy
   player: {fileID: 1315016614}
-  enemy: {fileID: 0}
   spawner: {fileID: 159498729}
+  spawner2: {fileID: 0}
+  spawner3: {fileID: 0}
 --- !u!114 &2121108979
 MonoBehaviour:
   m_ObjectHideFlags: 0
