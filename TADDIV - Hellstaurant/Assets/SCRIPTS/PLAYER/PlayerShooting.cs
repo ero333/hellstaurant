@@ -16,6 +16,8 @@ public class PlayerShooting : MonoBehaviour
     public float FugazzettaSpeed = 5f;
     public bool Fugazzetta;
 
+    public float powerUpTime = 10f;
+
 
     private void Update()
     {
@@ -26,7 +28,12 @@ public class PlayerShooting : MonoBehaviour
 
             pizzaShoot(direction);
         }
+
+
+      
     }
+
+
 
     public void pizzaShoot(Vector3 direction)
     {
@@ -43,15 +50,35 @@ public class PlayerShooting : MonoBehaviour
             lastShoot = Time.time; 
         }
 
+        else
+        {
+            GameObject pizza = Instantiate(pizzaPrefab, shootPoint.position, Quaternion.identity); //Genera una pizza en el punto de disparo
 
-        GameObject pizza = Instantiate(pizzaPrefab, shootPoint.position, Quaternion.identity); //Genera una pizza en el punto de disparo
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //El Atan2 sirve para calcular la tangente entre 2 números, en este caso X e Y del click del mouse. Y lo transforma en grados de un ángulo con el Rad2Deg
 
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //El Atan2 sirve para calcular la tangente entre 2 números, en este caso X e Y del click del mouse. Y lo transforma en grados de un ángulo con el Rad2Deg
+            pizza.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //El ángulo que tomó en la linea anterior lo usa para rotar el sprite 
 
-        pizza.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); //El ángulo que tomó en la linea anterior lo usa para rotar el sprite 
+            pizza.GetComponent<Rigidbody2D>().velocity = direction * pizzaSpeed; //Dispara esa pizza hacia el lugar del click que tomó anteriormente
 
-        pizza.GetComponent<Rigidbody2D>().velocity = direction * pizzaSpeed; //Dispara esa pizza hacia el lugar del click que tomó anteriormente
+            lastShoot = Time.time; //Guarda el momento en el que se dispara como último disparo para el cooldown
+        }
 
-        lastShoot = Time.time; //Guarda el momento en el que se dispara como último disparo para el cooldown
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("FugaPickup"))
+        {
+            StartCoroutine(fuggazzettaPowerUp());
+        }
+    }
+
+    IEnumerator fuggazzettaPowerUp()
+    {
+        Fugazzetta = true;
+
+        yield return new WaitForSeconds(powerUpTime);
+
+        Fugazzetta = false;
     }
 }
