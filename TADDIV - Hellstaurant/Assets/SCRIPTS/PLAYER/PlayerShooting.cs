@@ -13,7 +13,7 @@ public class PlayerShooting : MonoBehaviour
     private float lastShoot; // �ltima vez que disparaste 
 
     public GameObject FugaPrefab;
-    public float FugazzettaSpeed = 5f;
+    public float FugazzettaSpeed = 8f;
     public bool Fugazzetta;
 
     public GameObject FainaPrefab;
@@ -51,7 +51,9 @@ public class PlayerShooting : MonoBehaviour
 
             fugazzetta.GetComponent<Rigidbody2D>().velocity = direction * FugazzettaSpeed; 
 
-            lastShoot = Time.time; 
+            lastShoot = Time.time;
+
+            cooldown = 1f;
         }
 
         if (Faina)
@@ -65,6 +67,8 @@ public class PlayerShooting : MonoBehaviour
             faina.GetComponent<Rigidbody2D>().velocity = direction * FainaSpeed;
 
             lastShoot = Time.time;
+
+            cooldown = 0.2f;
         }
 
         if (Fugazzetta == false && Faina == false)
@@ -78,6 +82,8 @@ public class PlayerShooting : MonoBehaviour
             pizza.GetComponent<Rigidbody2D>().velocity = direction * pizzaSpeed; //Dispara esa pizza hacia el lugar del click que tom� anteriormente
 
             lastShoot = Time.time; //Guarda el momento en el que se dispara como �ltimo disparo para el cooldown
+
+            cooldown = 0.5f;
         }
 
     }
