@@ -67,7 +67,7 @@ public class PlayerShooting : MonoBehaviour
             lastShoot = Time.time;
         }
 
-        else
+        if (Fugazzetta == false && Faina == false)
         {
             GameObject pizza = Instantiate(pizzaPrefab, shootPoint.position, Quaternion.identity); //Genera una pizza en el punto de disparo
 
@@ -97,7 +97,9 @@ public class PlayerShooting : MonoBehaviour
 
     IEnumerator fuggazzettaPowerUp()
     {
+        Faina = false;
         Fugazzetta = true;
+        
 
         yield return new WaitForSeconds(powerUpTime);
 
@@ -106,7 +108,9 @@ public class PlayerShooting : MonoBehaviour
 
     IEnumerator fainaPowerUp()
     {
+        Fugazzetta = false;
         Faina = true;
+        
 
         yield return new WaitForSeconds(powerUpTime);
 

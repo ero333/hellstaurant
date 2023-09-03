@@ -6,15 +6,22 @@ using UnityEngine.UI;
 
 public class Puntaje : MonoBehaviour
 {
-   
 
-    public float puntos = 0;
+    public Puntaje Instance;
+    public int puntos = 0;
+
 
 
 
     private TextMeshProUGUI textMesh;
 
     public EnemyBasicDamage enemyScript;
+
+
+    public void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +39,7 @@ public class Puntaje : MonoBehaviour
     {
         puntos += amount;
         
+       
        
     }
 }
