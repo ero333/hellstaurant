@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyBasicDamage : MonoBehaviour
 {
-    public float enemyLife; // Variable de la vida del enemigo
+    public double enemyLife; // Variable de la vida del enemigo
     public int puntosEnemigo;
     public GameObject contadorPuntos;
     public Puntaje puntaje;
@@ -38,9 +38,20 @@ public class EnemyBasicDamage : MonoBehaviour
             }
         }
 
-        if (other.CompareTag("FugazzettaShoot")) // Si la pizza tiene el tag PizzaShoot
+        if (other.CompareTag("FugazzettaShoot")) // Si la pizza tiene el tag FugazzettaShoot
         {
             enemyLife = enemyLife -2; // Le baja 2 de vida al enemigo
+            Destroy(other.gameObject); // Destruye la pizza que le pegó
+
+            if (enemyLife <= 0)
+            {
+                onDeath();
+            }
+        }
+
+        if (other.CompareTag("FainaShoot")) // Si la pizza tiene el tag FainaShoot
+        {
+            enemyLife = enemyLife - 0.5; // Le baja 0.5 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le pegó
 
             if (enemyLife <= 0)

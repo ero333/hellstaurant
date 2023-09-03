@@ -16,6 +16,10 @@ public class PlayerShooting : MonoBehaviour
     public float FugazzettaSpeed = 5f;
     public bool Fugazzetta;
 
+    public GameObject FainaPrefab;
+    public float FainaSpeed = 20f;
+    public bool Faina;
+
     public float powerUpTime = 10f;
 
 
@@ -50,6 +54,19 @@ public class PlayerShooting : MonoBehaviour
             lastShoot = Time.time; 
         }
 
+        if (Faina)
+        {
+            GameObject faina = Instantiate(FainaPrefab, shootPoint.position, Quaternion.identity);
+
+            float angle3 = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            faina.transform.rotation = Quaternion.AngleAxis(angle3, Vector3.forward);
+
+            faina.GetComponent<Rigidbody2D>().velocity = direction * FainaSpeed;
+
+            lastShoot = Time.time;
+        }
+
         else
         {
             GameObject pizza = Instantiate(pizzaPrefab, shootPoint.position, Quaternion.identity); //Genera una pizza en el punto de disparo
@@ -71,6 +88,11 @@ public class PlayerShooting : MonoBehaviour
         {
             StartCoroutine(fuggazzettaPowerUp());
         }
+
+        if (collision.CompareTag("FainaPickup"))
+        {
+            StartCoroutine(fainaPowerUp());
+        }
     }
 
     IEnumerator fuggazzettaPowerUp()
@@ -80,5 +102,14 @@ public class PlayerShooting : MonoBehaviour
         yield return new WaitForSeconds(powerUpTime);
 
         Fugazzetta = false;
+    }
+
+    IEnumerator fainaPowerUp()
+    {
+        Faina = true;
+
+        yield return new WaitForSeconds(powerUpTime);
+
+        Faina = false;
     }
 }

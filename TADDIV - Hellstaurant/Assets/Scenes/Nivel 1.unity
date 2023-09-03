@@ -1493,6 +1493,54 @@ MonoBehaviour:
   spawner: {fileID: 159498729}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
+--- !u!1 &949009679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 949009681}
+  - component: {fileID: 949009680}
+  m_Layer: 0
+  m_Name: SpawnerPotenciadores (faina)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &949009680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949009679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0454c5f93bc213e44a932e3b001a59fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 7
+  PowerUp:
+  - {fileID: 1684036888740867582, guid: bf9f43af1d3374e4c84ae2fe6c03e0cd, type: 3}
+  canSpawn: 1
+--- !u!4 &949009681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949009679}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.27, y: 2.91, z: -0.10124707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &966673416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,7 +1949,7 @@ Transform:
   m_GameObject: {fileID: 1263032531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.57, y: 2.91, z: -0.10124707}
+  m_LocalPosition: {x: 1.67, y: 2.91, z: -0.10124707}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2151,6 +2199,10 @@ PrefabInstance:
       propertyPath: FugaPrefab
       value: 
       objectReference: {fileID: 2416461227014169799, guid: 491b7b5e2a03316478f5bb2dc0f6a4a5, type: 3}
+    - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: FainaPrefab
+      value: 
+      objectReference: {fileID: 6311599287756549866, guid: d0fb320f34cf6174683b05312c551066, type: 3}
     - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: FugazzettaSpeed
       value: 7
@@ -3587,3 +3639,4 @@ SceneRoots:
   - {fileID: 1494490938}
   - {fileID: 689903163}
   - {fileID: 1263032533}
+  - {fileID: 949009681}
