@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3767541022618794963}
   - component: {fileID: -1386036339774399067}
   - component: {fileID: 1914555678745517151}
+  - component: {fileID: 7791281378822783494}
   m_Layer: 0
   m_Name: FugaPickUp
   m_TagString: FugaPickup
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3419380598909174098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.15, y: 2.9, z: -0.10124707}
+  m_LocalPosition: {x: 1.806, y: 2.9, z: -0.1012471}
   m_LocalScale: {x: 0.23, y: 0.23, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -131,7 +132,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.087426, y: -0.09471625}
+  m_Offset: {x: -0.041054845, y: -0.09471631}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 1, y: 0.5}
@@ -142,5 +143,26 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.42909, y: 4.0500093}
+  m_Size: {x: 6.936949, y: 4.0500093}
   m_EdgeRadius: 0
+--- !u!95 &7791281378822783494
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3419380598909174098}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 03bb34892fc3015409c72f001ee149c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
