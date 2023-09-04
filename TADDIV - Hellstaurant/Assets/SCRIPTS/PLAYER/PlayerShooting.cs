@@ -21,8 +21,14 @@ public class PlayerShooting : MonoBehaviour
     public bool Faina;
 
     public float powerUpTime = 10f;
+    public PotenciadorUIController UIControl;
 
+    
 
+    public void Start()
+    {
+        
+    }
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown) //Al hacer click izquierdo y calculando que el tiempo que paso entre el �ltimo disparo y el tiempo actual sea mayor al del cooldown
@@ -104,14 +110,20 @@ public class PlayerShooting : MonoBehaviour
     }
 
     IEnumerator fuggazzettaPowerUp()
+
     {
+
         Faina = false;
         Fugazzetta = true;
-        
+        UIControl.icono.SetActive(true);
+        UIControl.porcionfuga.SetActive(true);
 
         yield return new WaitForSeconds(powerUpTime);
 
+        UIControl.Salida();
+
         Fugazzetta = false;
+ 
     }
 
     IEnumerator fainaPowerUp()

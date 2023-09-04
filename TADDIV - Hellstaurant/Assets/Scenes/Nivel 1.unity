@@ -443,6 +443,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBar: {fileID: 1412001915}
   totalTime: 60
+--- !u!1 &148273129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148273131}
+  - component: {fileID: 148273130}
+  m_Layer: 0
+  m_Name: PotenciadorUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &148273130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148273129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694af5d9a7b1402418db5c680e9f0b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icono: {fileID: 1416236342}
+  porcionfuga: {fileID: 2092288695}
+  anim: {fileID: 1416236344}
+  Instance: {fileID: 0}
+--- !u!4 &148273131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148273129}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.059334695, y: -0.655016, z: -0.057317536}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1416236343}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &159498728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2413,6 +2462,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1416236344}
+    - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: pala
+      value: 
+      objectReference: {fileID: 1416236342}
+    - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: UIControl
+      value: 
+      objectReference: {fileID: 148273130}
+    - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: iconofuga
+      value: 
+      objectReference: {fileID: 2092288695}
     - target: {fileID: 4306983515515980842, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.009
@@ -2743,14 +2808,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416236342}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.74, y: 1.352319, z: 480.7011}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.7993348, y: 2.007335, z: 480.75842}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1399947301}
   - {fileID: 2092288697}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 148273131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1416236344
 Animator:
@@ -3908,7 +3973,7 @@ GameObject:
   - component: {fileID: 2092288697}
   - component: {fileID: 2092288696}
   m_Layer: 0
-  m_Name: Spritess-potenciador-Fugazzeta_0
+  m_Name: fugazzetabrilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4111,4 +4176,4 @@ SceneRoots:
   - {fileID: 1263032533}
   - {fileID: 949009681}
   - {fileID: 1193437371}
-  - {fileID: 1416236343}
+  - {fileID: 148273131}
