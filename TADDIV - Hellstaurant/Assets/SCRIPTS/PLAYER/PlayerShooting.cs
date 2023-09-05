@@ -130,9 +130,12 @@ public class PlayerShooting : MonoBehaviour
     {
         Fugazzetta = false;
         Faina = true;
-        
+        UIControl.icono.SetActive(true);
+        UIControl.porcionfaina.SetActive(true);
 
         yield return new WaitForSeconds(powerUpTime);
+
+        UIControl.Salida();
 
         Faina = false;
     }
