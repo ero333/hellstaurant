@@ -21,4 +21,5 @@ public class MenuPausa : MonoBehaviour
 	   menuPausa.SetActive(false);
 
    }
+
 }
