@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -243,14 +243,14 @@ MonoBehaviour:
     y: 648
     width: 1469
     height: 299
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -314,9 +314,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b0640000
-      m_LastClickedID: 25776
-      m_ExpandedIDs: f8faffffa4640000
+      m_SelectedIDs: 067e0000
+      m_LastClickedID: 32262
+      m_ExpandedIDs: aa64ffffcc6dffff7479ffff9282ffff4eccffff32d2ffff4cd4ffff7cd5ffff7ed5ffffa6e9fffff8faffff74630000fa630000906400009464000098640000a4640000b0640000606500009e650000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -722,9 +722,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.6843884, y: 1.012734, z: 6.6180124}
+    m_Target: {x: 1.7441392, y: -0.29274786, z: 630.23584}
     speed: 2
-    m_Value: {x: 2.362716, y: 0.98825276, z: 6.621434}
+    m_Value: {x: 1.6226493, y: -0.2865704, z: 599.5794}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -774,9 +774,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.945911
+    m_Target: 9.579562
     speed: 2
-    m_Value: 7.6037426
+    m_Value: 9.167046
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -947,10 +947,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 46}
-    m_SelectedIDs: 44670000
-    m_LastClickedID: 26436
-    m_ExpandedIDs: 00000000d2660000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: e2720000
+    m_LastClickedID: 29410
+    m_ExpandedIDs: 00000000d266000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
