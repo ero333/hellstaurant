@@ -3537,6 +3537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a298c90cbb8225941a1714e113db5f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelUnlock: {fileID: 0}
 --- !u!1 &806832921
 GameObject:
   m_ObjectHideFlags: 0
@@ -5681,6 +5683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a298c90cbb8225941a1714e113db5f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelUnlock: {fileID: 2080463359}
 --- !u!114 &1498803176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7574,6 +7578,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a298c90cbb8225941a1714e113db5f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelUnlock: {fileID: 2080463359}
 --- !u!95 &1933297754
 Animator:
   serializedVersion: 5
@@ -7927,6 +7933,51 @@ RectTransform:
   m_AnchoredPosition: {x: -14, y: -560}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2080463358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080463360}
+  - component: {fileID: 2080463359}
+  m_Layer: 0
+  m_Name: LEVELUNLOCKCONTROLLER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2080463359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080463358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7984c2e99655e74885f97954ad97ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nivelesDesbloqueados: 0
+--- !u!4 &2080463360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080463358}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.482323, y: -0.8049487, z: 1367.4397}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2105733384
 GameObject:
   m_ObjectHideFlags: 0
@@ -8165,3 +8216,4 @@ SceneRoots:
   - {fileID: 1387389919}
   - {fileID: 1665048407}
   - {fileID: 7464852032880874425}
+  - {fileID: 2080463360}
