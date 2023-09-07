@@ -1303,6 +1303,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244553676}
   m_CullTransparentMesh: 1
+--- !u!1 &1275410466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1275410468}
+  - component: {fileID: 1275410467}
+  m_Layer: 0
+  m_Name: LEVELUNLOCKCONTROLLER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1275410467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275410466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7984c2e99655e74885f97954ad97ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nivelesDesbloqueados: 0
+--- !u!4 &1275410468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275410466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.482323, y: -0.8049487, z: 1367.4397}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1316609646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,6 +2130,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935481646}
   m_CullTransparentMesh: 1
+--- !u!1 &1964413492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1964413494}
+  - component: {fileID: 1964413493}
+  m_Layer: 0
+  m_Name: UNLOCKEDCONTROLLER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1964413493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964413492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd91fdcec4f51045ab9d0b04566d7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocklevel1: {fileID: 1967978973}
+  level1Button: {fileID: 851001478}
+  levelUnlockCheck: {fileID: 1275410467}
+--- !u!4 &1964413494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964413492}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6797653, y: -1.4376433, z: 5.1973987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1967978973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,7 +2189,7 @@ GameObject:
   - component: {fileID: 1967978975}
   m_Layer: 0
   m_Name: Bloqueo Niv 1
-  m_TagString: nivel1block
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2111,8 +2203,8 @@ Transform:
   m_GameObject: {fileID: 1967978973}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -445.13278, y: 0.19439998, z: -9719.999}
-  m_LocalScale: {x: 137.8944, y: 235.04039, z: 108}
+  m_LocalPosition: {x: -449.45, y: -4.5, z: -9719.999}
+  m_LocalScale: {x: 206.91718, y: 271.9899, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 104187070}
@@ -2157,7 +2249,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.0037735105, b: 0.0037735105, a: 1}
   m_FlipX: 0
@@ -2366,3 +2458,5 @@ SceneRoots:
   - {fileID: 1473806568}
   - {fileID: 1565578670}
   - {fileID: 104187070}
+  - {fileID: 1964413494}
+  - {fileID: 1275410468}
