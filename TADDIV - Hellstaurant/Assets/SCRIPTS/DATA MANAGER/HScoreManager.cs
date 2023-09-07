@@ -34,13 +34,13 @@ public class HScoreManager : MonoBehaviour
             star2Level1.SetActive(true);
             star3Level1.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 3) > 300 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 2) <= 499 )
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 3) > 300 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 3) <= 499 )
         {
             star1Level1.SetActive(true);
             star2Level1.SetActive(true);
             star3Level1.SetActive(false);
         }
-        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 3) > 0 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 2) <= 299)
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 3) > 0 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 3) <= 299)
         {
             star1Level1.SetActive(true);
             star2Level1.SetActive(false);

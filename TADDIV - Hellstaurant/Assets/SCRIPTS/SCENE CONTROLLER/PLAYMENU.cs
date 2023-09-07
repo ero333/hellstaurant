@@ -22,6 +22,11 @@ public class PLAYMENU : MonoBehaviour
         SceneManager.LoadScene("Selector de Niv");
     }
 
-        
-                          
+    public void Reset()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
+
+
 }

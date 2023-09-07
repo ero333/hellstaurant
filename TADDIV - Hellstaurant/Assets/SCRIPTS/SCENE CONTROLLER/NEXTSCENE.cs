@@ -22,6 +22,8 @@ public class NEXTSCENE : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        levelUnlock = GameObject.FindGameObjectWithTag("unlocker").GetComponent<unlockNextLevel>();
         currentLevel = SceneManager.GetActiveScene().buildIndex;
 
     }
