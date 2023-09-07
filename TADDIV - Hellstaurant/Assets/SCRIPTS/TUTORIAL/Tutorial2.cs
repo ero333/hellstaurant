@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class Tutorial2 : MonoBehaviour
 {
     //VARIABLES DE CADA CARTEL DEL TUTORIAL//
-    public GameObject cartel1, cartel2, cartel3, cartel4, cartel5, cartel6, cartel7, cartel8;
+    public GameObject cartel1, cartel2, cartel3, cartel4, cartel5, cartel6, cartel7, cartel8, cartel9, cartel10;
 
     //VARIABLE DEL BOTÓN SIGUIENTE//
     public GameObject botonSaltar;
@@ -14,16 +15,18 @@ public class Tutorial2 : MonoBehaviour
 
     public float contadorCarteles;
 
-
+    
 
     public GameObject contadorMonedas;
     public GameObject íconoMonedas;
     public GameObject timer;
     public GameObject spawner;
 
-    public float spawnRate = 1f; //potenciadores
+    public GameObject fugaspawn;
+    public GameObject fainaspawn;
 
-    public GameObject[] PowerUp;
+    public GameObject fainaspawner;
+    public GameObject fugaspawner;
 
     public bool canSpawn = true;
 
@@ -33,6 +36,7 @@ public class Tutorial2 : MonoBehaviour
         contadorCarteles = 0;
         Time.timeScale = 0f;
         cartel1.SetActive(true);
+        fainaspawn.SetActive(false);
     }
 
 
@@ -40,177 +44,182 @@ public class Tutorial2 : MonoBehaviour
     {
         contadorCarteles++;
 
-        //CADA VEZ QUE EL CONTADOR SUMA 1, SE DESACTIVA EL CARTEL ACTUAL Y SE ACTIVA EL SIGUIENTE//
-
-        //LOS CARTELES QUE TE DEJAN JUGAR UN RATO, TIENEN CORRUTINAS ESPECIALES MÁS ABAJO//
-
         if (contadorCarteles == 1)
         {
-            cartel1.SetActive(false);
-            cartel2.SetActive(true);
-            
+            cartel1.SetActive (false);
+            cartel2.SetActive (true);
         }
+
         if (contadorCarteles == 2)
         {
             cartel2.SetActive(false);
             cartel3.SetActive(true);
-           
         }
+
         if (contadorCarteles == 3)
+        {
+            StartCoroutine(pruebaFuga());
+        }
+
+        if (contadorCarteles == 4)
         {
             cartel3.SetActive(false);
             cartel4.SetActive(true);
-
-            botonSaltar.SetActive(false);
-
-            StartCoroutine(pruebaspawner());
         }
-        if (contadorCarteles == 4)
+
+        if (contadorCarteles == 5)
         {
             cartel4.SetActive(false);
             cartel5.SetActive(true);
-
-            botonSaltar.SetActive(false);
-
-           
         }
-        if (contadorCarteles == 5)
-        {
-            cartel5.SetActive(false);
-            cartel6.SetActive(true);
-        }
-
-        //ESTE POR EJEMPLO TIENE UNA CORRUTINA, ENTONCES DESACTIVAMOS EL BOTÓN DE SIGUIENTE PARA PODER JUGAR TAMBIÉN, Y ACTIVAMOS LA CORRUTINA//
 
         if (contadorCarteles == 6)
         {
-            cartel6.SetActive(false);
-            cartel7.SetActive(true);
-
-            botonSaltar.SetActive(false);
-
-            StartCoroutine(pruebamovimiento());
+            StartCoroutine(pruebaFaina());
         }
 
+
         if (contadorCarteles == 7)
+        {
+            cartel6.SetActive(false);
+            cartel7.SetActive(true);
+        }
+
+        if (contadorCarteles == 8)
         {
             cartel7.SetActive(false);
             cartel8.SetActive(true);
         }
 
-      
-    }
 
-
-    //LOS CARTELES QUE LLEVAN CORRUTINA SON EL 7, EL 10, EL 13//
-
-    //PARA AGOS//
-    //EN EL CARTEL 13, SE TIENEN QUE ACTIVAR DE LA JERARQUIA EL SPAWNER (LO HACES CON UN SET ACTIVE) Y DEL OBJETO "CANVAS", EL COINS Y EL CONTADOR DE MONEDAS//
-    //A ESA CORRUTINA DEL CARTEL 13, LE PONES QUE ESPERE 15 SEGUNDOS EN VEZ DE 8//
-
-    //EN EL ÚLTIMO CARTEL, ADEMÁS DE DESAPARECERLO, HACES QUE SE ACTIVE DE LA JERARQUÍA EL OBJETO DE ADVANCETIMER, ASÍ SE PUEDE JUGAR//
-
-
-    IEnumerator pruebadisparo()
-    {
-
-        //CON ESTO RENAUDAMOS EL TIEMPO//
-        Time.timeScale = 1f;
-
-        //CON ESTO ESPERAMOS 8 SEGUNDOS PARA QUE EL JUGADOR PRUEBE//
-        yield return new WaitForSeconds(8f);
-
-        //PARAMOS EL TIEMPO DE NUEVO//
-        Time.timeScale = 0f;
-
-        //SUMAMOS 1 AL CONTADOR DE CARTELES//
-        contadorCarteles++;
-
-        //ACTIVAMOS EL CARTEL QUE SIGUE Y EL BOTON DE SIGUIENTE//
-        
-        botonSaltar.SetActive(true);
-
-
-    }
-
-
-    IEnumerator pruebamovimiento()
-    {
-        Time.timeScale = 1f;
-
-        yield return new WaitForSeconds(8f);
-
-        contadorCarteles++;
-
-
-        cartel7.SetActive(false);
-        cartel8.SetActive(true);
-
-        botonSaltar.SetActive(true);
-        Time.timeScale = 0f;
-
-    }
-
-
-    IEnumerator pruebaspawner()
-    {
-        Time.timeScale = 1f;
-
-        spawner.SetActive(true);
-        íconoMonedas.SetActive(true);
-        contadorMonedas.SetActive(true);
-
-        
-
-        yield return new WaitForSeconds(15f);
-
-
-        contadorCarteles++;
-
-        
-
-        botonSaltar.SetActive(true);
-        Time.timeScale = 0f;
-
-    }
-
-    IEnumerator pruebafaina()
-    {
-        Time.timeScale = 1f;
-
-        spawner.SetActive(true);
-        íconoMonedas.SetActive(true);
-        contadorMonedas.SetActive(true);
-
-        yield return new WaitForSeconds(15f);
-
-
-        while (canSpawn)
+        if (contadorCarteles == 9)
         {
-            WaitForSeconds wait = new WaitForSeconds(spawnRate);
-
-            yield return wait;
-            int rand = Random.Range(0, PowerUp.Length);
-            GameObject PowerUpSp = PowerUp[rand];
-
-
-            Instantiate(PowerUpSp, transform.position, Quaternion.identity);
+            StartCoroutine(pruebaHeal());
         }
 
+
+        if (contadorCarteles >= 10)
+        {
+            Time.timeScale = 1f;
+
+
+            cartel9.SetActive(false);
+            botonSaltar.SetActive(false);
+            //spawner.SetActive(true);
+
+            timer.SetActive(true);
+            fainaspawner.SetActive(true);
+            fugaspawner.SetActive(true);
+            contadorMonedas.SetActive(true);
+            íconoMonedas.SetActive(true);
+        }
+
+
+    }
+
+
+    IEnumerator pruebaFuga()
+    {
+        Time.timeScale = 1f;
+        cartel3.SetActive(false);
+        botonSaltar.SetActive(false);
+        spawner.SetActive(true);
+        fugaspawn.SetActive(true);
+        contadorMonedas.SetActive(true);
+        íconoMonedas.SetActive(true);
+
+        yield return new WaitForSeconds(10f);
+
+        //spawner.SetActive(false);
         contadorCarteles++;
+        Time.timeScale = 0f;
+
+        contadorMonedas.SetActive(false);
+        íconoMonedas.SetActive(false);
+        botonSaltar.SetActive (true);
+        cartel4.SetActive (true);
+        
+
+        
+    }
+
+    IEnumerator pruebaFaina()
+    {
+
+            Time.timeScale = 1f;
+
+            
+            cartel5.SetActive(false);
+            botonSaltar.SetActive(false);
+            //spawner.SetActive(true);
+
+            fainaspawn.SetActive(true);
+            contadorMonedas.SetActive(true);
+            íconoMonedas.SetActive(true);
+
+            yield return new WaitForSeconds(10f);
+
+            
+            
+            //spawner.SetActive(false);
+            contadorCarteles++;
+            Time.timeScale = 0f;
+            
+
+            
+            botonSaltar.SetActive(true);
+            cartel7.SetActive(true);
+
+
+
+        
+    }
+
+    IEnumerator pruebaHeal()
+    {
+        Time.timeScale = 1f;
+
+
+        cartel8.SetActive(false);
+        botonSaltar.SetActive(false);
+        //spawner.SetActive(true);
+
+        //fainaspawner.SetActive(true);
+        //fugaspawner.SetActive(true);    
+        contadorMonedas.SetActive(true);
+        íconoMonedas.SetActive(true);
+
+        yield return new WaitForSeconds(15f);
+
+
+
+        //spawner.SetActive(false);
+        contadorCarteles++;
+        Time.timeScale = 0f;
 
 
 
         botonSaltar.SetActive(true);
-        Time.timeScale = 0f;
+        cartel9.SetActive(true);
 
     }
 
-
-
-    // Update is called once per frame
-    void Update()
+    IEnumerator finalTest()
     {
+        Time.timeScale = 1f;
 
+
+        cartel9.SetActive(false);
+        botonSaltar.SetActive(false);
+        //spawner.SetActive(true);
+
+        timer.SetActive(true);
+        fainaspawner.SetActive(true);
+        fugaspawner.SetActive(true);    
+        contadorMonedas.SetActive(true);
+        íconoMonedas.SetActive(true);
+
+        yield return null;
     }
+
 }
