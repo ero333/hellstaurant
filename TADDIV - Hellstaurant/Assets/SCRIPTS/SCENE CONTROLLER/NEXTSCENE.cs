@@ -21,4 +21,13 @@ public class NEXTSCENE : MonoBehaviour
         Time.timeScale = 1.0f;
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void OnTriggerEnter()
+    {
+    if (buildIndex > 1)
+    {
+        Destroy.gameObject.tag("nivel1block");
+    }
+    }
+
 }
