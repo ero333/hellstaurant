@@ -81,7 +81,7 @@ public class PlayerShooting : MonoBehaviour
             cooldown = 0.2f;
         }
 
-        if (Fugazzetta == false && Faina == false)
+        if (Fugazzetta == false && Faina == false && Picante == false)
         {
             GameObject pizza = Instantiate(pizzaPrefab, shootPoint.position, Quaternion.identity); //Genera una pizza en el punto de disparo
 
