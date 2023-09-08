@@ -20,6 +20,10 @@ public class PlayerShooting : MonoBehaviour
     public float FainaSpeed = 20f;
     public bool Faina;
 
+    public GameObject PicantePrefab;
+    public float PicanteSpeed = 30f;
+    public bool Picante;
+
     public float powerUpTime = 10f;
     public PotenciadorUIController UIControl;
 
@@ -90,6 +94,21 @@ public class PlayerShooting : MonoBehaviour
             lastShoot = Time.time; //Guarda el momento en el que se dispara como �ltimo disparo para el cooldown
 
             cooldown = 0.5f;
+        }
+
+        if (Picante)
+        {
+            GameObject picante = Instantiate(PicantePrefab, shootPoint.position, Quaternion.identity);
+
+            float angle4 = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            picante.transform.rotation = Quaternion.AngleAxis(angle4, Vector3.forward);
+
+            picante.GetComponent<Rigidbody2D>().velocity = direction * PicanteSpeed;
+
+            lastShoot = Time.time;
+
+            cooldown = 0.3f;
         }
 
     }

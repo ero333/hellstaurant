@@ -1,0 +1,292 @@
+fileFormatVersion: 2
+guid: 46af34ba89eeaa3418c5fde3403631ab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Animacion-Proyectil-Picante_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 102
+        width: 432
+        height: 173
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d734136fc35ac4eae6bc9de2d81bc6
+      internalID: 1056466674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion-Proyectil-Picante_1
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 102
+        width: 463
+        height: 173
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92660da778b9d14eb703f5ea05ad368
+      internalID: -1135714727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion-Proyectil-Picante_3
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 91
+        width: 471
+        height: 184
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12488fee90af6314492b85b301378c1f
+      internalID: -1211855280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion-Proyectil-Picante_5
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 102
+        width: 482
+        height: 173
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665b439a3e05d5347b37ac522891ef59
+      internalID: 1202438468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion-Proyectil-Picante_7
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 102
+        width: 483
+        height: 173
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1620beb2ce1b23c4896bc322354aaedc
+      internalID: -1926477246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animacion-Proyectil-Picante_8
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 102
+        width: 403
+        height: 173
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdd45ceb9bd5214da6ae3c1559d314c
+      internalID: 1421071784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Animacion-Proyectil-Picante_0: 1056466674
+      Animacion-Proyectil-Picante_1: -1135714727
+      Animacion-Proyectil-Picante_10: -2042937352
+      Animacion-Proyectil-Picante_11: 1498398472
+      Animacion-Proyectil-Picante_12: 848500406
+      Animacion-Proyectil-Picante_13: -74273735
+      Animacion-Proyectil-Picante_14: -1432621081
+      Animacion-Proyectil-Picante_15: -1206807692
+      Animacion-Proyectil-Picante_16: 2111461998
+      Animacion-Proyectil-Picante_17: 1399031434
+      Animacion-Proyectil-Picante_18: -817458467
+      Animacion-Proyectil-Picante_19: 2144606342
+      Animacion-Proyectil-Picante_2: -530685439
+      Animacion-Proyectil-Picante_20: 787052947
+      Animacion-Proyectil-Picante_21: -1584480437
+      Animacion-Proyectil-Picante_22: 2058188038
+      Animacion-Proyectil-Picante_23: 426357753
+      Animacion-Proyectil-Picante_24: 1051068030
+      Animacion-Proyectil-Picante_25: 261842870
+      Animacion-Proyectil-Picante_3: -1211855280
+      Animacion-Proyectil-Picante_4: 1519422894
+      Animacion-Proyectil-Picante_5: 1202438468
+      Animacion-Proyectil-Picante_6: -1685421264
+      Animacion-Proyectil-Picante_7: -1926477246
+      Animacion-Proyectil-Picante_8: 1421071784
+      Animacion-Proyectil-Picante_9: -877269460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
