@@ -29,13 +29,13 @@ public class StarAmount : MonoBehaviour
 
     IEnumerator sumarEstrellas()
     {
-        if (puntaje.puntos >= 20 && puntaje.puntos <= 39)
+        if (puntaje.puntos >= 20 && puntaje.puntos <= 100)
         {
             yield return new WaitForSeconds(1f);
             star1.SetActive (true);
         }
 
-        if (puntaje.puntos >= 40 && puntaje.puntos <= 59)
+        if (puntaje.puntos >= 40 && puntaje.puntos <= 300)
         {
             yield return new WaitForSeconds(1f);
             star1.SetActive(true);
@@ -43,7 +43,7 @@ public class StarAmount : MonoBehaviour
             star2.SetActive(true);
         }
 
-        if (puntaje.puntos >= 60)
+        if (puntaje.puntos >= 500)
         {
             yield return new WaitForSeconds(1f);
             star1.SetActive(true);
