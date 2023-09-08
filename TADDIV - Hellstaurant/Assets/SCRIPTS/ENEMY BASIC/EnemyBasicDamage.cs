@@ -30,7 +30,7 @@ public class EnemyBasicDamage : MonoBehaviour
         if (other.CompareTag("PizzaShoot")) // Si la pizza tiene el tag PizzaShoot
         {
             enemyLife--; // Le baja 1 de vida al enemigo
-            Destroy(other.gameObject); // Destruye la pizza que le pegó
+            Destroy(other.gameObject); // Destruye la pizza que le pegï¿½
 
             if (enemyLife <= 0)
             {
@@ -41,7 +41,7 @@ public class EnemyBasicDamage : MonoBehaviour
         if (other.CompareTag("FugazzettaShoot")) // Si la pizza tiene el tag FugazzettaShoot
         {
             enemyLife = enemyLife -2; // Le baja 2 de vida al enemigo
-            Destroy(other.gameObject); // Destruye la pizza que le pegó
+            Destroy(other.gameObject); // Destruye la pizza que le pegï¿½
 
             if (enemyLife <= 0)
             {
@@ -52,7 +52,7 @@ public class EnemyBasicDamage : MonoBehaviour
         if (other.CompareTag("FainaShoot")) // Si la pizza tiene el tag FainaShoot
         {
             enemyLife = enemyLife - 0.5; // Le baja 0.5 de vida al enemigo
-            Destroy(other.gameObject); // Destruye la pizza que le pegó
+            Destroy(other.gameObject); // Destruye la pizza que le pegï¿½
 
             if (enemyLife <= 0)
             {

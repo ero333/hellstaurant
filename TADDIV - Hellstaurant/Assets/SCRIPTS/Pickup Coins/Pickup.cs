@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-
     public bool isCoin;
 
     private bool isCollected; //destruir monedas una vez agarradas
+    public float timeToDisappear = 5f; // Tiempo en que las monedas se destruyen si el jugador no las agarra
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -16,14 +16,25 @@ public class Pickup : MonoBehaviour
             if (isCoin)
             {
                 UIController.Instance.coinsCollected++; //conteo de monedas
-
-
                 UIController.Instance.UpdateCoinCount(); //Iniciar conteo monedas
-
-
                 isCollected = true;
                 Destroy(gameObject); //destruir monedas una vez agarradas 
             }
         }
+    }
+
+    // Si el jugador no agarra las monedas
+    public void DestroyIfNotCollected()
+    {
+        if (!isCollected)
+        {
+            Destroy(gameObject); // Destruir el objeto si no se recoge a tiempo
+        }
+    }
+
+    // Invoca la función para destruir el objeto si no se recoge a tiempo
+    private void Start()
+    {
+        Invoke("DestroyIfNotCollected", timeToDisappear);
     }
 }
