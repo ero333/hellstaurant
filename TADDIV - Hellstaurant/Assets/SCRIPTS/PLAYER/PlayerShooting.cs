@@ -126,6 +126,12 @@ public class PlayerShooting : MonoBehaviour
             StartCoroutine(fainaPowerUp());
             Destroy(collision.gameObject);
         }
+
+        if (collision.CompareTag("PicantePickup"))
+        {
+            StartCoroutine(picantePowerUp());
+            Destroy(collision.gameObject);
+        }
     }
 
     IEnumerator fuggazzettaPowerUp()
@@ -133,6 +139,7 @@ public class PlayerShooting : MonoBehaviour
     {
 
         Faina = false;
+        Picante = false;
         Fugazzetta = true;
         UIControl.icono.SetActive(true);
         UIControl.porcionfuga.SetActive(true);
@@ -148,6 +155,7 @@ public class PlayerShooting : MonoBehaviour
     IEnumerator fainaPowerUp()
     {
         Fugazzetta = false;
+        Picante = false;
         Faina = true;
         UIControl.icono.SetActive(true);
         UIControl.porcionfaina.SetActive(true);
@@ -158,5 +166,23 @@ public class PlayerShooting : MonoBehaviour
         
 
         Faina = false;
+    }
+
+    IEnumerator picantePowerUp()
+
+    {
+
+        Faina = false;
+        Fugazzetta = false;
+        Picante = true;
+        UIControl.icono.SetActive(true);
+        UIControl.porcionpicante.SetActive(true);
+        UIControl.Salida();
+        yield return new WaitForSeconds(powerUpTime);
+
+
+
+        Picante = false;
+
     }
 }
