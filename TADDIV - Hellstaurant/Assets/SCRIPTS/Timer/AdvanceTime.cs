@@ -72,7 +72,7 @@ public class AdvanceTime : MonoBehaviour
         if (!playerAlive)
         {   
             StopAllCoroutines();
-            timeHours = 0;
+             timeText.text = timeHours + ":00 PM";
         }
     }
 
