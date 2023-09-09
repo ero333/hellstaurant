@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4994318363790638360}
   - component: {fileID: 74036338672132706}
   - component: {fileID: 2088622074340852892}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1600635319, guid: 75a615ba29d9e9e4bb3eea71d9d56acd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -177,6 +177,9 @@ MonoBehaviour:
   FainaPrefab: {fileID: 6311599287756549866, guid: d0fb320f34cf6174683b05312c551066, type: 3}
   FainaSpeed: 20
   Faina: 0
+  PicantePrefab: {fileID: 5759594733594902745, guid: d5cde8bc8cd3da84c925aa1475e92068, type: 3}
+  PicanteSpeed: 30
+  Picante: 0
   powerUpTime: 10
   UIControl: {fileID: 0}
 --- !u!114 &8460081661388279870
@@ -193,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 6
-  invincibleLength: 1
+  invincibleLength: 2
   controlUI: {fileID: 0}
   gameOverScreen: {fileID: 0}
   advanceTime: {fileID: 0}
@@ -314,7 +317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2142375769131420283}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

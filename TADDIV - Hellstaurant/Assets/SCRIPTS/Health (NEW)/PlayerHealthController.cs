@@ -55,7 +55,11 @@ public class PlayerHealthController : MonoBehaviour
 
             if (invincibleCounter <= 0) // Corrección aquí
             {
+
+                StopCoroutine(colorchange());
+                Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, 1f);
+                
             }
         }
 
@@ -107,6 +111,8 @@ public class PlayerHealthController : MonoBehaviour
             currentHealth--;
 
             
+
+
             if (puntaje.puntos >= 10)
             {
                 puntaje.puntos = puntaje.puntos - 10;
@@ -122,8 +128,12 @@ public class PlayerHealthController : MonoBehaviour
             }
             else
             {
+                
+
                 invincibleCounter = invincibleLength;
-                theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, 0.5f); // Cambio de alfa corregido
+                Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+                StartCoroutine(colorchange());
+
             }
 
             UIController.Instance.UpdateHealthDisplay();
@@ -161,11 +171,35 @@ public class PlayerHealthController : MonoBehaviour
             KBTimer += Time.deltaTime;
             Vector2 direction = (obj.transform.position - this.transform.position).normalized;
 
+            
+            
+
             rb2d.AddForce(- direction* KBPower);
 
         }
-
+        
         yield return 0;
+
+    }
+
+    public IEnumerator colorchange()
+    {
+        theSR.color = Color.gray;
+        yield return new WaitForSeconds(0.2f);
+        theSR.color = Color.white;
+        yield return new WaitForSeconds(0.2f);
+        theSR.color = Color.gray;
+        yield return new WaitForSeconds(0.2f);
+        theSR.color = Color.white;
+        yield return new WaitForSeconds(0.2f);
+        theSR.color = Color.gray;
+        yield return new WaitForSeconds(0.2f);
+        theSR.color = Color.white;
+        yield return new WaitForSeconds(0.2f);
+        theSR.color = Color.gray;
+        yield return new WaitForSeconds(0.2f);
+        theSR.color = Color.white;
+        yield return new WaitForSeconds(0.2f);
 
     }
 }

@@ -37,7 +37,7 @@ public class stopGame : MonoBehaviour
         foreach (GameObject obj in taggedEnemies)
         {
 
-            DestroyImmediate(obj);
+            Destroy(obj);
 
 
         }
