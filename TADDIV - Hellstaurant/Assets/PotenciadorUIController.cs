@@ -35,6 +35,7 @@ public class PotenciadorUIController : MonoBehaviour
     }
     IEnumerator Animsalida()
     {
+        yield return new WaitForSeconds(1f);
         anim.SetBool("potensalida", true);
         yield return new WaitForSeconds(10f);
         anim.SetBool("potensalida", false);
