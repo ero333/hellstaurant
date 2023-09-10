@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 3f;  // Velocidad del personaje
+    [SerializeField] public float speed = 3f;  // Velocidad del personaje
+    [SerializeField] public float speedWithPowerUp = 7f;  // Velocidad del personaje con el power-up de la pizza picante
 
     private Rigidbody2D playerRb;
     private Vector2 moveInput;

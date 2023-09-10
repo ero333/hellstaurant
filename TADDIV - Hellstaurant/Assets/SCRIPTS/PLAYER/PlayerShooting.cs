@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
+    public PlayerMovement playerMovement; //Referecia al player movement
+
+    public float speedWithPowerUp = 7f; //Velocidad pizza picante
+
     public GameObject pizzaPrefab;
     public Transform shootPoint;
     public float pizzaSpeed = 10f;
@@ -28,14 +32,13 @@ public class PlayerShooting : MonoBehaviour
 
     public float powerUpTime = 10f;
     public PotenciadorUIController UIControl;
-
     
     private float invincibleCounter = 0f;
     private bool isInvincible = false;
 
     public void Start()
     {
-        invincibleCounter = 5f;
+        invincibleCounter = 5f; // 5 segundos de invencibilidad pizza picante 
     }
 
     private void Update()
@@ -148,7 +151,6 @@ public class PlayerShooting : MonoBehaviour
         UIControl.porcionfuga.SetActive(true);
         UIControl.Salida();
         yield return new WaitForSeconds(powerUpTime);
-
         Fugazzetta = false;
     }
 
@@ -184,25 +186,29 @@ public class PlayerShooting : MonoBehaviour
 
     IEnumerator picantePowerUp()
     {
-        Faina = false;
-        Fugazzetta = false;
-        Caja = false; 
-        Picante = true;
-        UIControl.icono.SetActive(true);
-        UIControl.porcionpicante.SetActive(true);
-        UIControl.Salida();
+       Faina = false;
+       Fugazzetta = false;
+       Caja = false; 
+       Picante = true;
+       UIControl.icono.SetActive(true);
+       UIControl.porcionpicante.SetActive(true);
+       UIControl.Salida();
 
-        // Ignorar colisiones con enemigos 
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
-        isInvincible = true;
+       // Aumentar la velocidad del jugador con el power-up
+       playerMovement.speed = speedWithPowerUp;
 
-        yield return new WaitForSeconds(powerUpTime); // 5 segundos de invencibilidad 
+       // Ignorar colisiones con enemigos 
+       Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+       isInvincible = true;
 
-        // Restaurar colisiones con enemigos 
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
-        isInvincible = false;
+       // Restaurar colisiones con enemigos y restablecer isInvincible después de un tiempo
+       yield return new WaitForSeconds(powerUpTime);
 
-        Picante = false;
+       Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+       isInvincible = false;
+
+       // Restaurar velocidad normal del jugador inmediatamente
+       playerMovement.speed = 4f; // Cambia velocidad
+       Picante = false;
     }
 }
-
