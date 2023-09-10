@@ -24,7 +24,7 @@ TagManager:
   - Water
   - UI
   - Enemy
-  - 
+  - Invulnerable
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Invulnerable
+    uniqueID: 201756561
     locked: 0

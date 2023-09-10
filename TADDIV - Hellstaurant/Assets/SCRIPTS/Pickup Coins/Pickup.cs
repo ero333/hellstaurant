@@ -28,11 +28,11 @@ public class Pickup : MonoBehaviour
     {
         if (!isCollected)
         {
-            Destroy(gameObject); // Destruir el objeto si no se recoge a tiempo
+            Destroy(gameObject); // Destruye las monedas despues de 5 segundos 
         }
     }
 
-    // Invoca la función para destruir el objeto si no se recoge a tiempo
+    // Start a la funcion de destuir las monedas si el jugador no las agarrar
     private void Start()
     {
         Invoke("DestroyIfNotCollected", timeToDisappear);
