@@ -19,9 +19,6 @@ public class DataManager : MonoBehaviour
 
     public UIController uicontroller;
 
-    public int coinCount;
-
-    public Text coinsText;
 
 
 
@@ -37,13 +34,10 @@ public class DataManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        coinCount = uicontroller.coinsCollected;
         scoreRecord = puntajeScript.scoreRecord;
         levelNumber = SceneManager.GetActiveScene().buildIndex;
         puntos = puntajeScript.puntos;
-        scoreRecord.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + levelNumber, puntajeScript.puntos).ToString();
-
-        UIController.Instance.coinText.text= PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
+        scoreRecord.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + levelNumber, puntajeScript.puntos).ToString();;
 
 
     }
@@ -62,10 +56,5 @@ public class DataManager : MonoBehaviour
             PlayerPrefs.SetInt("PuntajeRecordLevel" + levelNumber, puntajeScript.puntos);
             puntajeScript.scoreRecord.text = puntajeScript.puntos.ToString();
         }
-    }
-
-    public void updateCoinCollect()
-    {
-        PlayerPrefs.SetInt("MonedasRecolectadas:", UIController.Instance.coinsCollected);
     }
 }

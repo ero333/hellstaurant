@@ -25,15 +25,18 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+
+        coinsCollected = PlayerPrefs.GetInt("MonedasRecolectadas:", coinsCollected);
+
         Instance = this; //Instancia el script
 
-        coinText.text =  PlayerPrefs.GetInt("MonedasRecolectadas:", dataManager.coinCount).ToString();
+        coinText.text =  PlayerPrefs.GetInt("MonedasRecolectadas:", coinsCollected).ToString();
     }
 
 
     void Start()
     {
-        UpdateCoinCount(); //Inicia conteo monedas
+        //UpdateCoinCount(); //Inicia conteo monedas
     }
 
     // Update is called once per frame
@@ -103,8 +106,10 @@ public class UIController : MonoBehaviour
     public void UpdateCoinCount()
     {
 
-        dataManager.updateCoinCollect();
+        
         coinText.text = UIController.Instance.coinsCollected.ToString();
+
+        PlayerPrefs.SetInt("MonedasRecolectadas:", coinsCollected);
     }
 
 }
