@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuPausa : MonoBehaviour
 {
    [SerializeField] private GameObject botonPausa;
    [SerializeField] private GameObject menuPausa;
-
+	public Image pausa;
+	public Sprite play;
+	public Sprite pausasprite;
    public void Pausa(){
 	   Time.timeScale = 0f;
-	   botonPausa.SetActive(false);
 	   menuPausa.SetActive(true);
-
+	   pausa.sprite = play;
    }   
 
 	public void MenuInicial()
@@ -25,9 +27,8 @@ public class MenuPausa : MonoBehaviour
 
    public void Reanudar(){
 	   Time.timeScale = 1f;
-	   botonPausa.SetActive(true);
 	   menuPausa.SetActive(false);
-
-   }
+	   pausa.sprite = pausasprite;
+    }
 
 }
