@@ -29,7 +29,7 @@ public class PlayerShooting : MonoBehaviour
     public float powerUpTime = 10f;
     public PotenciadorUIController UIControl;
 
-    private bool tienePizzaPicante = false;
+    
     private float invincibleCounter = 0f;
     private bool isInvincible = false;
 
@@ -108,7 +108,7 @@ public class PlayerShooting : MonoBehaviour
             caja.transform.rotation = Quaternion.AngleAxis(angle5, Vector3.forward);
             caja.GetComponent<Rigidbody2D>().velocity = direction * CajaSpeed;
             lastShoot = Time.time;
-            cooldown = 1f;
+            cooldown = 1.5f;
         }
     }
 
@@ -129,6 +129,11 @@ public class PlayerShooting : MonoBehaviour
         if (collision.CompareTag("PicantePickup"))
         {
             StartCoroutine(picantePowerUp());
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("CajaPickup"))
+        {
+            StartCoroutine(cajaPowerUp());
             Destroy(collision.gameObject);
         }
     }
