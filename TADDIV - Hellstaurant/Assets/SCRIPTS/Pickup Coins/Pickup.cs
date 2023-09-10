@@ -9,14 +9,24 @@ public class Pickup : MonoBehaviour
     private bool isCollected; //destruir monedas una vez agarradas
     public float timeToDisappear = 5f; // Tiempo en que las monedas se destruyen si el jugador no las agarra
 
+    public DataManager dataManager;
+
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !isCollected)
         {
             if (isCoin)
             {
+
                 UIController.Instance.coinsCollected++; //conteo de monedas
                 UIController.Instance.UpdateCoinCount(); //Iniciar conteo monedas
+
+                dataManager.updateCoinCollect();
+
+                
+
                 isCollected = true;
                 Destroy(gameObject); //destruir monedas una vez agarradas 
             }

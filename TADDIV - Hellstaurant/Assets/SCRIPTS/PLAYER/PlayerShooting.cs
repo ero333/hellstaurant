@@ -159,7 +159,7 @@ public class PlayerShooting : MonoBehaviour
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
         isInvincible = true;
 
-        yield return new WaitForSeconds(5f); // 5 segundos de invencibilidad 
+        yield return new WaitForSeconds(powerUpTime); // 5 segundos de invencibilidad 
 
         // Restaurar colisiones con enemigos 
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);

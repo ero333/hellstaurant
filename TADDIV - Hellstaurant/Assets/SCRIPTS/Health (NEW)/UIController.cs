@@ -17,14 +17,19 @@ public class UIController : MonoBehaviour
 
     public int coinsCollected; // Referencia monedas recolectadas
 
-    public TextMeshProUGUI coinText; // Referencia Moneditas UI 
+    public Text coinText; // Referencia Moneditas UI 
+
+    public DataManager dataManager;
 
 
     // Start is called before the first frame update
     void Awake()
     {
         Instance = this; //Instancia el script
+
+        coinText.text =  PlayerPrefs.GetInt("MonedasRecolectadas:", dataManager.coinCount).ToString();
     }
+
 
     void Start()
     {
@@ -97,6 +102,8 @@ public class UIController : MonoBehaviour
 
     public void UpdateCoinCount()
     {
+
+        dataManager.updateCoinCollect();
         coinText.text = UIController.Instance.coinsCollected.ToString();
     }
 

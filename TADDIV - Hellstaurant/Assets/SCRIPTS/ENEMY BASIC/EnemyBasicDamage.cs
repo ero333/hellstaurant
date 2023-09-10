@@ -59,6 +59,17 @@ public class EnemyBasicDamage : MonoBehaviour
                 onDeath();
             }
         }
+
+        if (other.CompareTag("PicanteShoot")) // Si la pizza tiene el tag FainaShoot
+        {
+            enemyLife = enemyLife - 3; // Le baja 0.5 de vida al enemigo
+            Destroy(other.gameObject); // Destruye la pizza que le peg�
+
+            if (enemyLife <= 0)
+            {
+                onDeath();
+            }
+        }
     }
 
     public void onDeath()
