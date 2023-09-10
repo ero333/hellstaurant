@@ -8,6 +8,7 @@ public class PotenciadorUIController : MonoBehaviour
     public GameObject porcionfuga;
     public GameObject porcionfaina;
     public GameObject porcionpicante;
+    public GameObject tirarcaja;
     public Animator anim;
     public PotenciadorUIController Instance;
     // Start is called before the first frame update
