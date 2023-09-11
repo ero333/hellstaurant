@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  speedWithPowerUp: 7
   isHealing: 0
 --- !u!95 &8100268075168473408
 Animator:
@@ -167,6 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd4e5af14adfa34db9ffc2e32579850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 7442340460101119668}
+  speedWithPowerUp: 7
   pizzaPrefab: {fileID: 3709804286691382550, guid: 517eca063809def409083a2ad0c56861, type: 3}
   shootPoint: {fileID: 2142375769131420283}
   pizzaSpeed: 20
@@ -180,6 +183,9 @@ MonoBehaviour:
   PicantePrefab: {fileID: 5759594733594902745, guid: d5cde8bc8cd3da84c925aa1475e92068, type: 3}
   PicanteSpeed: 30
   Picante: 0
+  CajaPrefab: {fileID: 1017990824169779263, guid: 3f569827cfb949f4085b4371d81a7da9, type: 3}
+  CajaSpeed: 6
+  Caja: 0
   powerUpTime: 10
   UIControl: {fileID: 0}
 --- !u!114 &8460081661388279870
@@ -216,7 +222,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

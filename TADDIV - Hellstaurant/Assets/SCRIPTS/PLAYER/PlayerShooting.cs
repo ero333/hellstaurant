@@ -50,7 +50,7 @@ public class PlayerShooting : MonoBehaviour
             if (invincibleCounter <= 0)
             {
                 isInvincible = false;
-                Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+                //Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
             }
         }
 
@@ -195,7 +195,7 @@ public class PlayerShooting : MonoBehaviour
        UIControl.Salida();
 
        // Aumentar la velocidad del jugador con el power-up
-       playerMovement.speed = speedWithPowerUp;
+       playerMovement.speed = 7f;
 
        // Ignorar colisiones con enemigos 
        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
