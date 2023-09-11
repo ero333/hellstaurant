@@ -8,10 +8,12 @@ public class MenuPausa : MonoBehaviour
 {
    [SerializeField] private GameObject botonPausa;
    [SerializeField] private GameObject menuPausa;
+
 	public Image pausa;
 	public Sprite play;
 	public Sprite pausasprite;
-   public void Pausa(){
+  
+	public void Pausa(){
 	   Time.timeScale = 0f;
 	   menuPausa.SetActive(true);
 	   pausa.sprite = play;
@@ -31,4 +33,11 @@ public class MenuPausa : MonoBehaviour
 	   pausa.sprite = pausasprite;
     }
 
+	public void Tienda()
+	{
+        Time.timeScale = 1f;
+		botonPausa.SetActive(false);
+		menuPausa.SetActive(false);
+		SceneManager.LoadScene("Tienda");
+    }
 }
