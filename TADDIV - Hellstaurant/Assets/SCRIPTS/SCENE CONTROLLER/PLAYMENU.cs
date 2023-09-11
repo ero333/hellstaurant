@@ -27,6 +27,10 @@ public class PLAYMENU : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
+    public void Tienda()
+    {
+        SceneManager.LoadScene("Tienda");
+    }
 
 
 }
