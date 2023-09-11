@@ -1360,6 +1360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7165eea9f42922941883eebe05741599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: Tienda
+  SceneName2: 
 --- !u!1 &948286497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,9 +2189,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 165892413}
-        m_TargetAssemblyTypeName: PLAYMENU, Assembly-CSharp
-        m_MethodName: Tienda
+      - m_Target: {fileID: 861860273}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
