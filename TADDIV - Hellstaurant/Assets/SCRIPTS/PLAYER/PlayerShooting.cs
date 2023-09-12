@@ -36,9 +36,15 @@ public class PlayerShooting : MonoBehaviour
     private float invincibleCounter = 0f;
     private bool isInvincible = false;
 
+    public AnimatorOverrideController frenzymode;
+    public RuntimeAnimatorController normal;
+    public Animator anim;
+
     public void Start()
     {
         invincibleCounter = 5f; // 5 segundos de invencibilidad pizza picante 
+        anim = GetComponent<Animator>();
+        normal = anim.runtimeAnimatorController;
     }
 
     private void Update()
@@ -194,6 +200,8 @@ public class PlayerShooting : MonoBehaviour
        UIControl.porcionpicante.SetActive(true);
        UIControl.Salida();
 
+        anim.runtimeAnimatorController = frenzymode as RuntimeAnimatorController;
+
        // Aumentar la velocidad del jugador con el power-up
        playerMovement.speed = 7f;
 
@@ -204,7 +212,9 @@ public class PlayerShooting : MonoBehaviour
        // Restaurar colisiones con enemigos y restablecer isInvincible después de un tiempo
        yield return new WaitForSeconds(powerUpTime);
 
-       Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+        anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
+
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
        isInvincible = false;
 
        // Restaurar velocidad normal del jugador inmediatamente
