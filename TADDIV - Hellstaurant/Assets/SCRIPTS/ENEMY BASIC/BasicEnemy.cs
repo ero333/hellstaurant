@@ -61,9 +61,9 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other) //que no hay knockback mientras el jugador se cura 
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && !playerhealthcontroller.isHealing) 
         {
             StartCoroutine(playerhealthcontroller.knockback(KBDuration, KBPower, this.transform));
         }

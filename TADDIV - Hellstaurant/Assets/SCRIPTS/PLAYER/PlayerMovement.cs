@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public static PlayerMovement instance;
 
 
+
+
     public void Awake()
     {
         instance = this; 
@@ -38,13 +40,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-
         if (!isHealing)
         {
             playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
-        }    
-        
-
+        }
+        else
+        {
+            playerRb.velocity = Vector2.zero; // Que no se mueva el player mientras se cura
+        }
     }
 
 

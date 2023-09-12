@@ -27,7 +27,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public Rigidbody2D rb2d;
 
-  
+    public bool isHealing = false; //verficiar si el enemigo se esta curando o no
 
     void Start()
     {
@@ -53,22 +53,20 @@ public class PlayerHealthController : MonoBehaviour
         {
             invincibleCounter -= Time.deltaTime;
 
-            if (invincibleCounter <= 0) // Corrección aquí
+            if (invincibleCounter <= 0)
             {
-
+                // invulnerable 
+                isHealing = false;
                 StopCoroutine(colorchange());
                 Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, 1f);
-                
             }
         }
 
         if (Input.GetMouseButtonDown(1))
         {
-            
             Heal();
         }
-
     }
     public void Heal(int amount)
     {
@@ -83,9 +81,9 @@ public class PlayerHealthController : MonoBehaviour
 
     void Heal()
     {
-        if (currentHealth < maxHealth)
+        if (currentHealth < maxHealth && !isHealing) // agrego el is healing cuando se cura
         {
-            playerMovement.isHealing = true;
+            isHealing = true; // el player se cura 
             StartCoroutine(healingProcess());
         }
     }
