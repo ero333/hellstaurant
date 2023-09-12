@@ -8,7 +8,7 @@ public class PotenciadorUIController : MonoBehaviour
     public GameObject porcionfuga;
     public GameObject porcionfaina;
     public GameObject porcionpicante;
-    public GameObject tirarcaja;
+    public GameObject cajapizza;
     public Animator anim;
     public PotenciadorUIController Instance;
     // Start is called before the first frame update
@@ -19,6 +19,7 @@ public class PotenciadorUIController : MonoBehaviour
         porcionfuga.SetActive(false);
         porcionfaina.SetActive(false);
         porcionpicante.SetActive(false);
+        cajapizza.SetActive(false);
     }
 
     public void Salida ()
@@ -44,5 +45,7 @@ public class PotenciadorUIController : MonoBehaviour
         porcionfuga.SetActive(false);
         porcionfaina.SetActive(false);
         porcionpicante.SetActive (false);
+        cajapizza.SetActive(false);
+
     }
 }

@@ -182,7 +182,7 @@ public class PlayerShooting : MonoBehaviour
         Faina = false;
         Caja = true;
         UIControl.icono.SetActive(true);
-        UIControl.tirarcaja.SetActive(true);
+        UIControl.cajapizza.SetActive(true);
         UIControl.Salida();
 
         yield return new WaitForSeconds(powerUpTime);
