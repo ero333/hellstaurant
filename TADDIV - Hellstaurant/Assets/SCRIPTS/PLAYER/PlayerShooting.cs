@@ -33,12 +33,17 @@ public class PlayerShooting : MonoBehaviour
     public float powerUpTime = 10f;
     public PotenciadorUIController UIControl;
     
-    private float invincibleCounter = 0f;
-    private bool isInvincible = false;
+    public float invincibleCounter = 0f;
+    public bool isInvincible = false;
 
     public AnimatorOverrideController frenzymode;
     public RuntimeAnimatorController normal;
     public Animator anim;
+
+    public GameObject timeBarScript;
+    public PowerUpTime PUTime;
+
+    public GameObject potenciadorActivo;
 
     public void Start()
     {
@@ -66,6 +71,9 @@ public class PlayerShooting : MonoBehaviour
             Vector3 direction = (mousePosition - shootPoint.position).normalized;
             pizzaShoot(direction);
         }
+
+
+
     }
 
     public void pizzaShoot(Vector3 direction)
@@ -125,6 +133,8 @@ public class PlayerShooting : MonoBehaviour
     {
         if (collision.CompareTag("FugaPickup"))
         {
+
+            StopCoroutine(fuggazzettaPowerUp());
             StartCoroutine(fuggazzettaPowerUp());
             Destroy(collision.gameObject);
         }
@@ -149,76 +159,130 @@ public class PlayerShooting : MonoBehaviour
 
     IEnumerator fuggazzettaPowerUp()
     {
+        powerUpTime = 10f;
+
+        if (potenciadorActivo != null)
+        {
+            powerUpTime = 10f;
+            PUTime.resetClock();
+        }
+
+
+        potenciadorActivo = FugaPrefab;
+
+
         Faina = false;
         Picante = false;
         Caja = false;
         Fugazzetta = true;
         UIControl.icono.SetActive(true);
         UIControl.porcionfuga.SetActive(true);
-        UIControl.Salida();
-        yield return new WaitForSeconds(powerUpTime);
-        Fugazzetta = false;
+
+        timeBarScript.SetActive(true);
+
+        PUTime.tiempoEnMarcha = true;
+
+        yield return null;
+
     }
 
     IEnumerator fainaPowerUp()
     {
+
+        powerUpTime = 10f;
+
+        if (potenciadorActivo != null)
+        {
+            powerUpTime = 10f;
+            PUTime.resetClock();
+        }
+
+
+        potenciadorActivo = FainaPrefab;
+
         Fugazzetta = false;
         Picante = false;
         Caja = false;
         Faina = true;
         UIControl.icono.SetActive(true);
         UIControl.porcionfaina.SetActive(true);
-        UIControl.Salida();
 
-        yield return new WaitForSeconds(powerUpTime);
+        timeBarScript.SetActive(true);
 
-        Faina = false;
+        PUTime.tiempoEnMarcha = true;
+
+        yield return null;
     }
 
     IEnumerator cajaPowerUp()
     {
+        powerUpTime = 10f;
+
+        if (potenciadorActivo != null)
+        {
+            powerUpTime = 10f;
+            PUTime.resetClock();
+        }
+
+
+        potenciadorActivo = CajaPrefab;
+
         Fugazzetta = false;
         Picante = false;
         Faina = false;
         Caja = true;
         UIControl.icono.SetActive(true);
         UIControl.cajapizza.SetActive(true);
-        UIControl.Salida();
 
-        yield return new WaitForSeconds(powerUpTime);
+        timeBarScript.SetActive(true);
 
-        Caja = false;
+        PUTime.tiempoEnMarcha = true;
+
+        yield return null;
     }
 
     IEnumerator picantePowerUp()
     {
+
+        if (potenciadorActivo != null)
+        {
+            powerUpTime = 10f;
+            PUTime.resetClock();
+        }
+
+
+        potenciadorActivo = PicantePrefab;
+
        Faina = false;
        Fugazzetta = false;
        Caja = false; 
        Picante = true;
        UIControl.icono.SetActive(true);
        UIControl.porcionpicante.SetActive(true);
-       UIControl.Salida();
+
+        timeBarScript.SetActive(true);
 
         anim.runtimeAnimatorController = frenzymode as RuntimeAnimatorController;
 
-       // Aumentar la velocidad del jugador con el power-up
-       playerMovement.speed = 7f;
+        PUTime.tiempoEnMarcha = true;
+
+        // Aumentar la velocidad del jugador con el power-up
+        playerMovement.speed = 7f;
 
        // Ignorar colisiones con enemigos 
        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
        isInvincible = true;
 
-       // Restaurar colisiones con enemigos y restablecer isInvincible después de un tiempo
-       yield return new WaitForSeconds(powerUpTime);
 
-        anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
+        //anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
 
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
-       isInvincible = false;
+        //Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+        //isInvincible = false;
 
-       // Restaurar velocidad normal del jugador inmediatamente
-       playerMovement.speed = 4f; // Cambia velocidad
-       Picante = false;
+        //// Restaurar velocidad normal del jugador inmediatamente
+        //playerMovement.speed = 4f; // Cambia velocidad
+
+
+        yield return null;
     }
 }

@@ -11,6 +11,9 @@ public class PotenciadorUIController : MonoBehaviour
     public GameObject cajapizza;
     public Animator anim;
     public PotenciadorUIController Instance;
+
+    public GameObject poweruptime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,19 +36,21 @@ public class PotenciadorUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
     IEnumerator Animsalida()
     {
         yield return new WaitForSeconds(1f);
         anim.SetBool("potensalida", true);
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(1f);
         anim.SetBool("potensalida", false);
         icono.SetActive(false);
         porcionfuga.SetActive(false);
         porcionfaina.SetActive(false);
         porcionpicante.SetActive (false);
         cajapizza.SetActive(false);
+
+        poweruptime.SetActive(false);
 
     }
 }
