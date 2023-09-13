@@ -72,7 +72,16 @@ public class PlayerShooting : MonoBehaviour
             pizzaShoot(direction);
         }
 
+        if (Fugazzetta || Caja || Faina)
+        {
+            anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
 
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+            isInvincible = false;
+
+            // Restaurar velocidad normal del jugador inmediatamente
+            playerMovement.speed = 4f; // Cambia velocidad
+        }
 
     }
 
@@ -176,6 +185,9 @@ public class PlayerShooting : MonoBehaviour
         Caja = false;
         Fugazzetta = true;
         UIControl.icono.SetActive(true);
+        UIControl.porcionpicante.SetActive(false);
+        UIControl.cajapizza.SetActive(false);
+        UIControl.porcionfaina.SetActive(false);
         UIControl.porcionfuga.SetActive(true);
 
         timeBarScript.SetActive(true);
@@ -205,7 +217,10 @@ public class PlayerShooting : MonoBehaviour
         Caja = false;
         Faina = true;
         UIControl.icono.SetActive(true);
+        UIControl.porcionpicante.SetActive(false);
+        UIControl.cajapizza.SetActive(false);
         UIControl.porcionfaina.SetActive(true);
+        UIControl.porcionfuga.SetActive(false);
 
         timeBarScript.SetActive(true);
 
@@ -232,7 +247,10 @@ public class PlayerShooting : MonoBehaviour
         Faina = false;
         Caja = true;
         UIControl.icono.SetActive(true);
+        UIControl.porcionpicante.SetActive(false);
         UIControl.cajapizza.SetActive(true);
+        UIControl.porcionfaina.SetActive(false);
+        UIControl.porcionfuga.SetActive(false);
 
         timeBarScript.SetActive(true);
 
@@ -259,6 +277,9 @@ public class PlayerShooting : MonoBehaviour
        Picante = true;
        UIControl.icono.SetActive(true);
        UIControl.porcionpicante.SetActive(true);
+        UIControl.cajapizza.SetActive(false);
+        UIControl.porcionfaina.SetActive(false);
+        UIControl.porcionfuga.SetActive(false);
 
         timeBarScript.SetActive(true);
 
@@ -272,16 +293,6 @@ public class PlayerShooting : MonoBehaviour
        // Ignorar colisiones con enemigos 
        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
        isInvincible = true;
-
-
-        //anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
-
-        //Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
-        //isInvincible = false;
-
-        //// Restaurar velocidad normal del jugador inmediatamente
-        //playerMovement.speed = 4f; // Cambia velocidad
-
 
         yield return null;
     }
