@@ -36,4 +36,19 @@ public class LEVELSELECTOR : MonoBehaviour
     {
         SceneManager.LoadScene("Nivel 3");
     }
+
+    public void lvl4()
+    {
+        SceneManager.LoadScene("Nivel 4");
+    }
+
+    public void lvl5()
+    {
+        SceneManager.LoadScene("Nivel 5");
+    }
+
+    public void lvl6()
+    {
+        SceneManager.LoadScene("Nivel 6");
+    }
 }

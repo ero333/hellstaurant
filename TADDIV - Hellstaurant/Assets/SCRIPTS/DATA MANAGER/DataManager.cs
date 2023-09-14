@@ -32,13 +32,13 @@ public class DataManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
+
     void Start()
     {
         scoreRecord = puntajeScript.scoreRecord;
         levelNumber = SceneManager.GetActiveScene().buildIndex;
         puntos = puntajeScript.puntos;
-        scoreRecord.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + levelNumber, puntajeScript.puntos).ToString();;
-
+        scoreRecord.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + levelNumber, puntajeScript.puntos).ToString();
 
     }
 

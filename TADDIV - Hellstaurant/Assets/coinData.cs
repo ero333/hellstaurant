@@ -8,7 +8,15 @@ public class coinData : MonoBehaviour
 
     public Text currentCoinCount;
 
+    public coinData Instance;
+
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        Instance = this; 
+    }
+
     void Start()
     {
         currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();

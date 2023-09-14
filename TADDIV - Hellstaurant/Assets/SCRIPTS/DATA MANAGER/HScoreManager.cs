@@ -12,10 +12,18 @@ public class HScoreManager : MonoBehaviour
 
     public Text highscoreLevel4;
 
+    public Text highscoreLevel5;
+
+    public Text highscoreLevel6;
+
+    public Text highscoreLevel7;
+
     public GameObject star1Level1, star2Level1, star3Level1;
     public GameObject star1Level2, star2Level2, star3Level2;
     public GameObject star1Level3, star2Level3, star3Level3;
-
+    public GameObject star1Level4, star2Level4, star3Level4;
+    public GameObject star1Level5, star2Level5, star3Level5;
+    public GameObject star1Level6, star2Level6, star3Level6;
 
 
 
@@ -25,6 +33,9 @@ public class HScoreManager : MonoBehaviour
         highscoreLevel2.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 3, 0).ToString();
         highscoreLevel3.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 4, 0).ToString();
         highscoreLevel4.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 5, 0).ToString();
+        highscoreLevel5.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 7, 0).ToString();
+        highscoreLevel6.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 8, 0).ToString();
+        highscoreLevel7.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 9, 0).ToString();
 
 
         //LEVEL 1//

@@ -37,11 +37,28 @@ public class NEXTSCENE : MonoBehaviour
         public void NextScene()
     {
 
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 1);
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 2);
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 3);
+        }
+
         levelUnlock.unlocklevel();
 
         Time.timeScale = 1.0f;
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 
 

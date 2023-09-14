@@ -54,5 +54,7 @@ public class unlockNextLevel : MonoBehaviour
         nivelesDesbloqueados = nivelesDesbloqueados + 1;
 
         PlayerPrefs.SetInt("Niveles desbloqueados:", nivelesDesbloqueados);
+
+
     }
 }
