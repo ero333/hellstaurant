@@ -13,6 +13,16 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     public GameObject blocklevel3;
     public GameObject level3Button;
 
+    public GameObject blocklevel4;
+    public GameObject level4Button;
+
+    public GameObject blocklevel5;
+    public GameObject level5Button;
+
+    public GameObject blocklevel6;
+    public GameObject level6Button;
+
+
     public unlockNextLevel levelUnlockCheck;
 
     // Start is called before the first frame update
@@ -28,6 +38,15 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
 
         blocklevel3.SetActive(true);
         level3Button.SetActive(false);
+
+        blocklevel4.SetActive(true);
+        level4Button.SetActive(false);
+
+        blocklevel5.SetActive(true);
+        level5Button.SetActive(false);
+
+        blocklevel6.SetActive(true);
+        level6Button.SetActive(false);
 
 
         if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 1)
@@ -46,6 +65,24 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
         {
             blocklevel3.SetActive(false);
             level3Button.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 4)
+        {
+            blocklevel4.SetActive(false);
+            level4Button.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 5)
+        {
+            blocklevel5.SetActive(false);
+            level5Button.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 6)
+        {
+            blocklevel6.SetActive(false);
+            level6Button.SetActive(true);
         }
     }
 

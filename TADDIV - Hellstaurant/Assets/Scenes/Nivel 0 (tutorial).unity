@@ -475,6 +475,7 @@ MonoBehaviour:
   puntos: 0
   levelNumber: 0
   scoreRecord: {fileID: 1013147186}
+  uicontroller: {fileID: 0}
 --- !u!4 &42252726
 Transform:
   m_ObjectHideFlags: 0
@@ -2605,6 +2606,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+--- !u!20 &490233066 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7724749161356855606, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+  m_PrefabInstance: {fileID: 490233065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &518120946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,7 +2718,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 490233066}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -5515,7 +5521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8070f56c78d6fa04a8788f98949b9dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 4
+  spawnRate: 5
   enemyPrefabs:
   - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
   - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
@@ -6992,7 +6998,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 490233066}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -7024,7 +7030,8 @@ MonoBehaviour:
   heartEmpty: {fileID: 21300000, guid: 01e2847bcef5aa5419bfd5b0cbe85646, type: 3}
   heartMid: {fileID: 21300000, guid: 3b664fa222a340a42a47de5319ab439f, type: 3}
   coinsCollected: 0
-  coinText: {fileID: 454416364}
+  coinText: {fileID: 0}
+  dataManager: {fileID: 0}
 --- !u!114 &1700517276
 MonoBehaviour:
   m_ObjectHideFlags: 0

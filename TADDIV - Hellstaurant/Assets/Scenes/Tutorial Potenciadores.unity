@@ -222,7 +222,8 @@ MonoBehaviour:
   heartEmpty: {fileID: 21300000, guid: 01e2847bcef5aa5419bfd5b0cbe85646, type: 3}
   heartMid: {fileID: 21300000, guid: 3b664fa222a340a42a47de5319ab439f, type: 3}
   coinsCollected: 0
-  coinText: {fileID: 498535016}
+  coinText: {fileID: 0}
+  dataManager: {fileID: 0}
 --- !u!114 &38806894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2252,7 +2253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 718889438}
-  puntaje: {fileID: 0}
+  puntaje: {fileID: 1598482802}
 --- !u!114 &718889438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4177,6 +4178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a298c90cbb8225941a1714e113db5f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelUnlock: {fileID: 0}
 --- !u!114 &1455167071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4889,11 +4892,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8070f56c78d6fa04a8788f98949b9dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 2
+  spawnRate: 4
   enemyPrefabs:
+  - {fileID: 4242012864319646141, guid: 8907e45e58df4a24692f23fe3db29b5a, type: 3}
   - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
-  - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
-  - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
+  - {fileID: 2438006770674342857, guid: 73edec7e8c575fb4fbc92d2aac961e27, type: 3}
   canSpawn: 1
   enemyClones: []
 --- !u!4 &1665692826
@@ -5161,6 +5164,7 @@ MonoBehaviour:
   puntos: 0
   levelNumber: 0
   scoreRecord: {fileID: 365178122}
+  uicontroller: {fileID: 0}
 --- !u!4 &1743239981
 Transform:
   m_ObjectHideFlags: 0
@@ -5228,6 +5232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a298c90cbb8225941a1714e113db5f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelUnlock: {fileID: 0}
 --- !u!114 &1748801470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5583,8 +5589,11 @@ MonoBehaviour:
   icono: {fileID: 344377177}
   porcionfuga: {fileID: 63907164}
   porcionfaina: {fileID: 1693871042}
+  porcionpicante: {fileID: 0}
+  cajapizza: {fileID: 0}
   anim: {fileID: 344377178}
   Instance: {fileID: 0}
+  poweruptime: {fileID: 0}
 --- !u!4 &1924967506
 Transform:
   m_ObjectHideFlags: 0
@@ -6286,6 +6295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a298c90cbb8225941a1714e113db5f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelUnlock: {fileID: 0}
 --- !u!114 &2112515779
 MonoBehaviour:
   m_ObjectHideFlags: 0

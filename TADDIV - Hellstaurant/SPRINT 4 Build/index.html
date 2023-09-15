@@ -41,7 +41,7 @@
 </head>
 
 <body>
-	<div id="gameContainer">
+	<div id="gameContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px"></div>
 		<canvas id="unity-canvas" data-pixel-art="true"></canvas>
 		<script src="Build/SPRINT 4 Build.loader.js"></script>
 		<script>
@@ -75,15 +75,15 @@
 					w = window.innerWidth;
 					h = window.innerHeight;
 
-					var r = 480 / 864;
+					var r = 540 / 960;
 
 					if (w * r > window.innerHeight) {
 						w = Math.min(w, Math.ceil(h / r));
 					}
 					h = Math.floor(w * r);
 				} else {
-					w = 864;
-					h = 480;
+					w = 960;
+					h = 540;
 				}
 
 				container.style.width = canvas.style.width = w + "px";

@@ -23,6 +23,12 @@ public class UnlockItemHandler : MonoBehaviour
 
 
 
+    public GameObject blockFuga;
+    public GameObject blockFaina;
+    public GameObject blockFrenzy;
+    public GameObject blockCaja;
+
+
 
     private void Start()
     {
@@ -36,6 +42,15 @@ public class UnlockItemHandler : MonoBehaviour
         UnlockedItemsNumber = PlayerPrefs.GetInt("itemsUnlocked");
 
 
+        if (UnlockedItemsNumber <= 0)
+        {
+            blockCaja.SetActive(true);
+            blockFaina.SetActive(true);
+            blockFrenzy.SetActive(true);
+            blockFuga.SetActive(true);
+        }
+
+
         //for (int i=0; i<buttons.Length; i++) {
         //buttons[i].interactable = false;
         //}
@@ -44,6 +59,25 @@ public class UnlockItemHandler : MonoBehaviour
     private void Update()
     {
         UnlockedItemsNumber = PlayerPrefs.GetInt("itemsUnlocked");
+
+
+        if ( UnlockedItemsNumber >= 1)
+        {
+            blockFuga.SetActive(false);
+        }
+        if (UnlockedItemsNumber >= 2)
+        {
+            blockFaina.SetActive(false);
+        }
+        if (UnlockedItemsNumber >= 3)
+        {
+            blockCaja.SetActive(false);
+        }
+        if (UnlockedItemsNumber >= 4)
+        {
+            blockFrenzy.SetActive(false);
+        }
+
 
         //for (int i=0; i<buttons.Length; i++) {
         //    buttons[i].interactable = true;
