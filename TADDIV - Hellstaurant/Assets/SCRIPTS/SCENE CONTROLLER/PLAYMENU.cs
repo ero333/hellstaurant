@@ -32,5 +32,9 @@ public class PLAYMENU : MonoBehaviour
         SceneManager.LoadScene("Tienda");
     }
 
+    public void creditos()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
 
 }
