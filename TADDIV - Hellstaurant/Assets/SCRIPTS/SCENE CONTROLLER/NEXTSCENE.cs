@@ -37,23 +37,23 @@ public class NEXTSCENE : MonoBehaviour
         public void NextScene()
     {
 
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 7)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 1);
         }
-        if (SceneManager.GetActiveScene().buildIndex == 4)
+        if (SceneManager.GetActiveScene().buildIndex == 8)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 2);
         }
-        if (SceneManager.GetActiveScene().buildIndex == 5)
+        if (SceneManager.GetActiveScene().buildIndex == 9)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 3);
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 6)
+        if (SceneManager.GetActiveScene().buildIndex == 10)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 4);
