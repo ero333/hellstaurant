@@ -53,6 +53,12 @@ public class NEXTSCENE : MonoBehaviour
             PlayerPrefs.SetInt("itemsUnlocked", 3);
         }
 
+        if (SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 4);
+        }
+
         levelUnlock.unlocklevel();
 
         Time.timeScale = 1.0f;

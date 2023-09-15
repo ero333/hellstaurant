@@ -15,13 +15,18 @@ public class SpawnPotenciadores : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine (PowerUpSpawn());
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void startSpawning()
+    {
+        StartCoroutine(PowerUpSpawn());
     }
 
     IEnumerator PowerUpSpawn ()

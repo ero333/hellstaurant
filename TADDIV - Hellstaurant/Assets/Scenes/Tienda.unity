@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 65208195}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1131430001}
+        m_TargetAssemblyTypeName: UnlockItemHandler, Assembly-CSharp
+        m_MethodName: BuyCaja
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &65208195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,7 +404,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 138699812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1131430001}
+        m_TargetAssemblyTypeName: UnlockItemHandler, Assembly-CSharp
+        m_MethodName: BuyFrenzy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &138699812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,6 +1139,9 @@ MonoBehaviour:
   coindata: {fileID: 638251460}
   monedasactuales: 0
   fugabutton: {fileID: 1708323454}
+  fainabutton: {fileID: 1667082831}
+  cajabutton: {fileID: 65208192}
+  frenzybutton: {fileID: 138699809}
 --- !u!1 &1456251272
 GameObject:
   m_ObjectHideFlags: 0

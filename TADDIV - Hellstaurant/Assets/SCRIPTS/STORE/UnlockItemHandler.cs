@@ -15,7 +15,14 @@ public class UnlockItemHandler : MonoBehaviour
 
     public GameObject fugabutton;
 
-    
+    public GameObject fainabutton;
+
+    public GameObject cajabutton;
+
+    public GameObject frenzybutton;
+
+
+
 
     private void Start()
     {
@@ -48,6 +55,28 @@ public class UnlockItemHandler : MonoBehaviour
             fugabutton.SetActive(false);
 
         }
+
+        if (PlayerPrefs.GetInt("FainaUnlocked") == 1)
+        {
+
+            fainabutton.SetActive(false);
+
+        }
+
+        if (PlayerPrefs.GetInt("CajaUnlocked") == 1)
+        {
+
+            cajabutton.SetActive(false);
+
+        }
+
+        if (PlayerPrefs.GetInt("FrenzyUnlocked") == 1)
+        {
+
+            frenzybutton.SetActive(false);
+
+        }
+
     }
 
 
@@ -58,7 +87,7 @@ public class UnlockItemHandler : MonoBehaviour
         if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 1 && UnlockedItemsNumber >=1)
         {
 
-            monedasactuales = monedasactuales - 20;
+            monedasactuales = monedasactuales - 5;
 
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
@@ -76,7 +105,7 @@ public class UnlockItemHandler : MonoBehaviour
     {
 
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 2 && PlayerPrefs.GetInt ("ItemsUnlocked") >=2)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 2 && UnlockedItemsNumber >= 2)
         {
 
             monedasactuales = monedasactuales - 5;
@@ -88,5 +117,39 @@ public class UnlockItemHandler : MonoBehaviour
         }
 
     }
+    public void BuyCaja()
+    {
+
+
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 3 && UnlockedItemsNumber >= 3)
+        {
+
+            monedasactuales = monedasactuales - 5;
+
+
+            PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
+            coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
+            PlayerPrefs.SetInt("CajaUnlocked", 1);
+        }
+
+    }
+
+    public void BuyFrenzy()
+    {
+
+
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 3 && UnlockedItemsNumber >= 4)
+        {
+
+            monedasactuales = monedasactuales - 5;
+
+
+            PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
+            coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
+            PlayerPrefs.SetInt("FrenzyUnlocked", 1);
+        }
+
+    }
+
 
 }

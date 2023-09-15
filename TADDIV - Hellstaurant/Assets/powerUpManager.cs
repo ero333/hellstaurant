@@ -11,12 +11,22 @@ public class powerUpManager : MonoBehaviour
     public GameObject spawnerCaja;
     public GameObject spawnerFrenzy;
 
+
+    public int FugaUnlock;
+    public int FainaUnlock;
+    public int FrenzyUnlock;
+    public int CajaUnlock;
+
     
 
     // Start is called before the first frame update
     void Start()
 
     {
+
+        FugaUnlock = PlayerPrefs.GetInt("FugazzettaUnlocked");
+        FainaUnlock = PlayerPrefs.GetInt("FainaUnlocked");
+
 
         spawnerCaja.SetActive(false);
         spawnerFrenzy.SetActive(false);
@@ -30,15 +40,31 @@ public class powerUpManager : MonoBehaviour
         {
         
             spawnerFuga.SetActive(true);
-
+            spawnerFuga.GetComponent<SpawnPotenciadores>().startSpawning();
         }
-        if (PlayerPrefs.GetInt("FainaUnlocked") >= 1)
+        if (PlayerPrefs.GetInt ("FainaUnlocked") >= 1)
         {
 
-            
             spawnerFaina.SetActive(true);
+            spawnerFaina.GetComponent<SpawnPotenciadores>().startSpawning();
 
         }
+        if (PlayerPrefs.GetInt("CajaUnlocked") >= 1)
+        {
+
+            spawnerCaja.SetActive(true);
+            spawnerCaja.GetComponent<SpawnPotenciadores>().startSpawning();
+
+        }
+        if (PlayerPrefs.GetInt("FrenzyUnlocked") >= 1)
+        {
+
+            spawnerFrenzy.SetActive(true);
+            spawnerFrenzy.GetComponent<SpawnPotenciadores>().startSpawning();
+
+        }
+
+
         //if (currentPowerups <= 3)
         //{
 
