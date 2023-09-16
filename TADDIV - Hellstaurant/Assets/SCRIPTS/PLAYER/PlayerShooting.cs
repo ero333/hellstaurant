@@ -45,6 +45,9 @@ public class PlayerShooting : MonoBehaviour
 
     public GameObject potenciadorActivo;
 
+    public bool isHealing = false; //Variable para cuando el jugador se esta curando 
+
+
     public void Start()
     {
         invincibleCounter = 5f; // 5 segundos de invencibilidad pizza picante 
@@ -65,7 +68,7 @@ public class PlayerShooting : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown)
+        if (!isHealing && Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown) //comprobar si se esta curando 
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector3 direction = (mousePosition - shootPoint.position).normalized;
@@ -82,8 +85,8 @@ public class PlayerShooting : MonoBehaviour
             // Restaurar velocidad normal del jugador inmediatamente
             playerMovement.speed = 4f; // Cambia velocidad
         }
-
     }
+
 
     public void pizzaShoot(Vector3 direction)
     {

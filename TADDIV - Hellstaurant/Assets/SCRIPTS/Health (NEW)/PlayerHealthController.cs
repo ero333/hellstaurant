@@ -27,7 +27,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public Rigidbody2D rb2d;
 
-    public bool isHealing = false; //verficiar si el enemigo se esta curando o no
+    public bool isHealing = true; //verificar si el enemigo se esta curando o no
 
     void Start()
     {
@@ -90,7 +90,6 @@ public class PlayerHealthController : MonoBehaviour
 
     IEnumerator healingProcess()
     {
-        
         anim.SetBool("Curandose", true);
         yield return new WaitForSeconds(1f);
 
@@ -98,7 +97,7 @@ public class PlayerHealthController : MonoBehaviour
         UIController.Instance.UpdateHealthDisplay();
 
         anim.SetBool("Curandose", false);
-        playerMovement.isHealing = false;
+        isHealing = false; // establecer isHealing en false cuando ha terminado la curación
     }
 
     public void DealDamage()
