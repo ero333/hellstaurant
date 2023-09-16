@@ -1920,11 +1920,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 933103642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7165eea9f42922941883eebe05741599, type: 3}
+  m_Script: {fileID: 11500000, guid: a540942af5c638f4a88227894063ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Menu
-  SceneName2: 
 --- !u!4 &933103644
 Transform:
   m_ObjectHideFlags: 0
@@ -3795,8 +3793,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 933103643}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_TargetAssemblyTypeName: BACKTOMENU, Assembly-CSharp
+        m_MethodName: backToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
