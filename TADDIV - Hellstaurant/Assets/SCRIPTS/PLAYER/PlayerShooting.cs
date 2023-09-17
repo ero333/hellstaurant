@@ -47,12 +47,18 @@ public class PlayerShooting : MonoBehaviour
 
     public bool isHealing = false; //Variable para cuando el jugador se esta curando 
 
+    private bool canShoot = true;
+
+    public PlayerHealthController playerHealthController; 
+
 
     public void Start()
     {
         invincibleCounter = 5f; // 5 segundos de invencibilidad pizza picante 
         anim = GetComponent<Animator>();
         normal = anim.runtimeAnimatorController;
+
+        playerHealthController = GetComponent<PlayerHealthController>();
     }
 
     private void Update()
@@ -64,15 +70,22 @@ public class PlayerShooting : MonoBehaviour
             if (invincibleCounter <= 0)
             {
                 isInvincible = false;
-                //Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
             }
         }
 
-        if (!isHealing && Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown) //comprobar si se esta curando 
+        //DEBUG
+        Debug.Log("isHealing: " + isHealing);
+
+        // Evita que el jugador dispare mientras se está curando
+        if (!isHealing)
         {
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 direction = (mousePosition - shootPoint.position).normalized;
-            pizzaShoot(direction);
+            if (canShoot && Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown)
+            {
+                Debug.Log("Shooting");
+                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector3 direction = (mousePosition - shootPoint.position).normalized;
+                pizzaShoot(direction);
+            }
         }
 
         if (Fugazzetta || Caja || Faina)
