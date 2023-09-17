@@ -65,30 +65,11 @@ public class PlayerHealthController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            if (currentHealth < maxHealth && !isHealing)
+            if (currentHealth < maxHealth)
             {
                 isHealing = true; // Comienza la curación
                 StartCoroutine(healingProcess());
             }
-        }
-    }
-    public void Heal(int amount)
-    {
-        currentHealth += amount;
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-
-        UIController.Instance.UpdateHealthDisplay();
-    }
-
-    void Heal()
-    {
-        if (currentHealth < maxHealth && !isHealing) // agrego el is healing cuando se cura
-        {
-            isHealing = true; // el player se cura 
-            StartCoroutine(healingProcess());
         }
     }
 
@@ -96,7 +77,7 @@ public class PlayerHealthController : MonoBehaviour
     {
         anim.SetBool("Curandose", true);
         isHealing = true; // establece isHealing en true al comenzar la curación
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         currentHealth++;
         UIController.Instance.UpdateHealthDisplay();

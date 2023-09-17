@@ -45,7 +45,7 @@ public class PlayerShooting : MonoBehaviour
 
     public GameObject potenciadorActivo;
 
-    public bool isHealing = false; //Variable para cuando el jugador se esta curando 
+    
 
     private bool canShoot = true;
 
@@ -74,10 +74,10 @@ public class PlayerShooting : MonoBehaviour
         }
 
         //DEBUG
-        Debug.Log("isHealing: " + isHealing);
+        //Debug.Log("isHealing: " + isHealing);
 
         // Evita que el jugador dispare mientras se está curando
-        if (!isHealing)
+        if (playerHealthController.isHealing == false)
         {
             if (canShoot && Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown)
             {
