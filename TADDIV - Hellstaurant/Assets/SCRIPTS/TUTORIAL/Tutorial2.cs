@@ -29,6 +29,8 @@ public class Tutorial2 : MonoBehaviour
 
     public bool canSpawn = true;
 
+    public SpawnPotenciadores spawners;
+
 
     void Start()
     {
@@ -127,7 +129,7 @@ public class Tutorial2 : MonoBehaviour
         contadorMonedas.SetActive(true);
         íconoMonedas.SetActive(true);
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(12f);
 
         //spawner.SetActive(false);
         contadorCarteles++;
@@ -156,18 +158,18 @@ public class Tutorial2 : MonoBehaviour
             contadorMonedas.SetActive(true);
             íconoMonedas.SetActive(true);
 
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(12f);
 
             
             
             //spawner.SetActive(false);
-            contadorCarteles++;
+            //contadorCarteles++;
             Time.timeScale = 0f;
             
 
             
             botonSaltar.SetActive(true);
-            cartel7.SetActive(true);
+            cartel6.SetActive(true);
 
 
 
@@ -207,10 +209,14 @@ public class Tutorial2 : MonoBehaviour
     {
         Time.timeScale = 1f;
 
+        spawners.startSpawning();
+
 
         cartel9.SetActive(false);
         botonSaltar.SetActive(false);
         //spawner.SetActive(true);
+
+        
 
         timer.SetActive(true);
         fainaspawner.SetActive(true);
