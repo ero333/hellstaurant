@@ -10,36 +10,43 @@ public class PLAYMENU : MonoBehaviour
 
     public GameObject botonContinuar;
 
+    public int ultimoNivel;
+
+    public int nohaypartida = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         hayPartida = PlayerPrefs.GetInt("PartidaGuardada");
         
-
+        ultimoNivel = PlayerPrefs.GetInt("NivelActual:" + 1);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (hayPartida == 1)
+        {
+            botonContinuar.SetActive(true);
+        }
     }
 
     public void jugar()
     {
         SceneManager.LoadScene("Selector de Niv");
 
-        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        PlayerPrefs.SetInt("PartidaGuardada", 1 );
 
-        botonContinuar.SetActive(true);
+        
     }
 
     public void Reset()
     {
         PlayerPrefs.DeleteAll();
 
-        PlayerPrefs.SetInt("PartidaGuardada", 0);
+        PlayerPrefs.SetInt("PartidaGuardada", nohaypartida);
 
-        botonContinuar.SetActive(false);
+        
     }
 
     public void Tienda()
@@ -50,6 +57,11 @@ public class PLAYMENU : MonoBehaviour
     public void creditos()
     {
         SceneManager.LoadScene("Creditos");
+    }
+
+    public void continuar()
+    {
+        SceneManager.LoadScene(ultimoNivel);
     }
 
 }
