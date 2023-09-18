@@ -2387,6 +2387,7 @@ MonoBehaviour:
   spawner: {fileID: 159498729}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
+  ultimoNivelDesbloqueado: 0
 --- !u!1 &936868164
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,6 +3649,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 148273130}
     - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: pizzaSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: timeBarScript
       value: 
       objectReference: {fileID: 1621184847}
@@ -4488,6 +4493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44bdb485e3b310e4382aca6c6f1fc779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hayPartida: 0
+  botonContinuar: {fileID: 0}
+  ultimoNivel: 0
+  nohaypartida: 0
 --- !u!1 &1736898669
 GameObject:
   m_ObjectHideFlags: 0
@@ -5377,6 +5386,7 @@ MonoBehaviour:
   spawner: {fileID: 159498729}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
+  ultimoNivelDesbloqueado: 0
 --- !u!114 &2121108979
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -82,8 +85,19 @@ public class PlayerShooting : MonoBehaviour
             if (canShoot && Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown)
             {
                 Debug.Log("Shooting");
-                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Vector3 direction = (mousePosition - shootPoint.position).normalized;
+
+                // Obtenemos las coordenadas del ratón en la pantalla
+                Vector3 mousePositionScreen = Mouse.current.position.ReadValue();
+
+                // Establecemos la distancia de la cámara al plano del mundo del juego
+                float distanceToCamera = 10f; // Ajusta esto según tu configuración
+
+                // Convertimos las coordenadas del ratón en el mundo del juego
+                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePositionScreen.x, mousePositionScreen.y, distanceToCamera));
+
+                // Calculamos la dirección hacia la que debe disparar
+                Vector3 direction = (mousePosition - shootPoint.transform.position).normalized;
+
                 pizzaShoot(direction);
             }
         }
@@ -107,8 +121,8 @@ public class PlayerShooting : MonoBehaviour
         {
             GameObject fugazzetta = Instantiate(FugaPrefab, shootPoint.position, Quaternion.identity);
             float angle2 = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            fugazzetta.transform.rotation = Quaternion.AngleAxis(angle2, Vector3.forward);
-            fugazzetta.GetComponent<Rigidbody2D>().velocity = direction * FugazzettaSpeed;
+            fugazzetta.transform.rotation = Quaternion.AngleAxis(angle2, Vector3.forward.normalized);
+            fugazzetta.GetComponent<Rigidbody2D>().velocity = direction.normalized * FugazzettaSpeed;
             lastShoot = Time.time;
             cooldown = 1f;
         }
@@ -127,8 +141,8 @@ public class PlayerShooting : MonoBehaviour
         {
             GameObject pizza = Instantiate(pizzaPrefab, shootPoint.position, Quaternion.identity);
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            pizza.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            pizza.GetComponent<Rigidbody2D>().velocity = direction * pizzaSpeed;
+            pizza.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward.normalized);
+            pizza.GetComponent<Rigidbody2D>().velocity = direction.normalized * pizzaSpeed;
             lastShoot = Time.time;
             cooldown = 0.5f;
         }
