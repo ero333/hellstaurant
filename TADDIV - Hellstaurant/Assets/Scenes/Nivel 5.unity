@@ -3199,12 +3199,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8070f56c78d6fa04a8788f98949b9dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 6
+  spawnRate: 8
   enemyPrefabs:
   - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
   - {fileID: 4242012864319646141, guid: 8907e45e58df4a24692f23fe3db29b5a, type: 3}
   - {fileID: 2438006770674342857, guid: 73edec7e8c575fb4fbc92d2aac961e27, type: 3}
-  - {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
   canSpawn: 1
   enemyClones: []
 --- !u!4 &1224119164
@@ -5825,12 +5824,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8070f56c78d6fa04a8788f98949b9dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 6
+  spawnRate: 8
   enemyPrefabs:
   - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
   - {fileID: 4242012864319646141, guid: 8907e45e58df4a24692f23fe3db29b5a, type: 3}
   - {fileID: 2438006770674342857, guid: 73edec7e8c575fb4fbc92d2aac961e27, type: 3}
-  - {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
   canSpawn: 1
   enemyClones: []
 --- !u!4 &1875423656
@@ -6322,58 +6320,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130934467}
   m_CullTransparentMesh: 1
---- !u!1 &2140038267
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2140038269}
-  - component: {fileID: 2140038268}
-  m_Layer: 0
-  m_Name: 'Spawner '
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2140038268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140038267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8070f56c78d6fa04a8788f98949b9dba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnRate: 6
-  enemyPrefabs:
-  - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
-  - {fileID: 4242012864319646141, guid: 8907e45e58df4a24692f23fe3db29b5a, type: 3}
-  - {fileID: 2438006770674342857, guid: 73edec7e8c575fb4fbc92d2aac961e27, type: 3}
-  - {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
-  canSpawn: 1
-  enemyClones: []
---- !u!4 &2140038269
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140038267}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.82, y: 2.97, z: 1512.663}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -6384,7 +6330,6 @@ SceneRoots:
   - {fileID: 747796550}
   - {fileID: 1224119164}
   - {fileID: 1875423656}
-  - {fileID: 2140038269}
   - {fileID: 1494490938}
   - {fileID: 689903163}
   - {fileID: 1782287702}
