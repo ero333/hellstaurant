@@ -1183,6 +1183,8 @@ MonoBehaviour:
   spawner: {fileID: 1387389918}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
+  ultimoNivelDesbloqueado: 0
+  nivelActual: 0
 --- !u!95 &151086494
 Animator:
   serializedVersion: 5
@@ -6026,7 +6028,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1498803175}
         m_TargetAssemblyTypeName: NEXTSCENE, Assembly-CSharp
-        m_MethodName: NextScene
+        m_MethodName: skipTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7804,7 +7806,7 @@ GameObject:
   - component: {fileID: 1933297754}
   m_Layer: 5
   m_Name: WIN
-  m_TagString: Untagged
+  m_TagString: winscreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7888,6 +7890,8 @@ MonoBehaviour:
   spawner: {fileID: 1387389918}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
+  ultimoNivelDesbloqueado: 0
+  nivelActual: 0
 --- !u!114 &1933297753
 MonoBehaviour:
   m_ObjectHideFlags: 0

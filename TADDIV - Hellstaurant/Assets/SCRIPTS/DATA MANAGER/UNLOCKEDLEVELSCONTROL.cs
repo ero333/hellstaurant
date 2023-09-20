@@ -28,7 +28,7 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.GetInt("Niveles desbloqueados:", levelUnlockCheck.nivelesDesbloqueados);
+        PlayerPrefs.GetInt("UltimoNivelAlcanzado"); ;
 
         blocklevel1.SetActive(true);
         level1Button.SetActive(false);
@@ -49,37 +49,37 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
         level6Button.SetActive(false);
 
 
-        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 1)
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 4)
         {
             blocklevel1.SetActive(false);
             level1Button.SetActive(true);
         }
 
-        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 2)
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 5)
         {
             blocklevel2.SetActive(false);
             level2Button.SetActive(true);
         }
 
-        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 3)
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 6)
         {
             blocklevel3.SetActive(false);
             level3Button.SetActive(true);
         }
 
-        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 4)
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 7)
         {
             blocklevel4.SetActive(false);
             level4Button.SetActive(true);
         }
 
-        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 5)
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 9)
         {
             blocklevel5.SetActive(false);
             level5Button.SetActive(true);
         }
 
-        if (PlayerPrefs.GetInt("Niveles desbloqueados:") >= 6)
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 10)
         {
             blocklevel6.SetActive(false);
             level6Button.SetActive(true);

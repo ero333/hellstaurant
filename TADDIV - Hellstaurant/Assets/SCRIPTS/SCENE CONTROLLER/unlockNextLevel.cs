@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,12 @@ public class unlockNextLevel : MonoBehaviour
 
 
     private static bool existing = false;
+
+    public stopGame winscreen;
+
+    public int nivelactual;
+
+    public int lastlevel;
 
 
     private void Awake()
@@ -30,14 +37,18 @@ public class unlockNextLevel : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+       
 
     }
     // Start is called before the first frame update
     void Start()
     {
-        
-        PlayerPrefs.GetInt("Niveles desbloqueados:", nivelesDesbloqueados);
 
+        winscreen = GameObject.FindGameObjectWithTag("winscreen").GetComponent<stopGame>();
+
+
+        
+        
 
 
     }
@@ -45,16 +56,44 @@ public class unlockNextLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        PlayerPrefs.SetInt("NivelActual", SceneManager.GetActiveScene().buildIndex);
+
+        nivelactual = PlayerPrefs.GetInt("NivelActual");
+
+        lastlevel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
+
     }
 
     public void unlocklevel()
     { 
 
-        nivelesDesbloqueados = nivelesDesbloqueados + 1;
+       if (nivelactual > lastlevel)
+        {
 
-        PlayerPrefs.SetInt("Niveles desbloqueados:", nivelesDesbloqueados);
 
+            PlayerPrefs.SetInt("UltimoNivelAlcanzado", nivelactual);
+
+            nivelesDesbloqueados = nivelesDesbloqueados + 1;
+
+            PlayerPrefs.SetInt("Niveles desbloqueados:", nivelesDesbloqueados);
+
+            Debug.Log("DESBLOQUEASTE WACHIN");
+        }
+
+        else
+        {
+            Debug.Log("Sos Re Wachin");
+        }
+
+    }
+
+
+    public void skipTutorial()
+    {
+
+        //PlayerPrefs.SetInt("UltimoNivelAlcanzado", SceneManager.GetActiveScene().buildIndex);
+
+        SceneManager.LoadScene("Nivel 1");
 
     }
 }

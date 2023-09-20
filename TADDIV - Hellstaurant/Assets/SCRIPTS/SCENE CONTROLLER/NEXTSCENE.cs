@@ -59,12 +59,18 @@ public class NEXTSCENE : MonoBehaviour
             PlayerPrefs.SetInt("itemsUnlocked", 4);
         }
 
-        levelUnlock.unlocklevel();
+        //levelUnlock.unlocklevel();
 
         Time.timeScale = 1.0f;
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
 
+    }
+
+    public void skipTutorial()
+    {
+        Time.timeScale = 1.0f;
+        levelUnlock.skipTutorial();
     }
 
 
