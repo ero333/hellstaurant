@@ -45,6 +45,7 @@ public class PlayerHealthController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        puntaje = GetComponent<Puntaje>(); // Asigna el componente Puntaje
     }
 
     void Update()
@@ -67,7 +68,7 @@ public class PlayerHealthController : MonoBehaviour
         {
             if (currentHealth < maxHealth)
             {
-                isHealing = true; // Comienza la curación
+                isHealing = true; // Comienza la curaciï¿½n
                 StartCoroutine(healingProcess());
             }
         }
@@ -76,14 +77,14 @@ public class PlayerHealthController : MonoBehaviour
     IEnumerator healingProcess()
     {
         anim.SetBool("Curandose", true);
-        isHealing = true; // establece isHealing en true al comenzar la curación
+        isHealing = true; // establece isHealing en true al comenzar la curaciï¿½n
         yield return new WaitForSeconds(2f);
 
         currentHealth++;
         UIController.Instance.UpdateHealthDisplay();
 
         anim.SetBool("Curandose", false);
-        isHealing = false; // establece isHealing en false al terminar la curación
+        isHealing = false; // establece isHealing en false al terminar la curaciï¿½n
     }
 
     public void DealDamage()
@@ -141,6 +142,30 @@ public class PlayerHealthController : MonoBehaviour
         {
             DealDamage();
 
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (invincibleCounter <= 0)
+        {
+            currentHealth -= damage;
+
+            if (currentHealth <= 0)
+            {
+                advanceTime.playerAlive = false;
+                currentHealth = 0;
+                gameObject.SetActive(false);
+                ShowGameOver(); // Mostrar el cartel de Game Over
+            }
+            else
+            {
+                invincibleCounter = invincibleLength;
+                Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+                StartCoroutine(colorchange());
+            }
+
+            UIController.Instance.UpdateHealthDisplay();
         }
     }
 

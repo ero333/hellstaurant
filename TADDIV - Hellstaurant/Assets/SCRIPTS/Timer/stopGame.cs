@@ -16,13 +16,31 @@ public class stopGame : MonoBehaviour
 
     public int ultimoNivelDesbloqueado;
 
+    public int nivelActual;
 
+
+    public unlockNextLevel levelunlocking;
+
+
+    public static stopGame instance;
+
+
+    private void Awake()
+    {
+        instance = this; 
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        nivelActual = SceneManager.GetActiveScene().buildIndex;
 
-        ultimoNivelDesbloqueado = PlayerPrefs.GetInt("NivelActual:", SceneManager.GetActiveScene().buildIndex);
+        ultimoNivelDesbloqueado = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
+
+        levelunlocking = GameObject.FindGameObjectWithTag("unlocker").GetComponent<unlockNextLevel>();
+
+
+        levelunlocking.unlocklevel();
     }
 
     // Update is called once per frame
@@ -34,8 +52,6 @@ public class stopGame : MonoBehaviour
     public void OnEnable()
     {
 
-        PlayerPrefs.SetInt("NivelActual:", SceneManager.GetActiveScene().buildIndex);
-
         GameObject[] taggedEnemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         foreach (GameObject obj in taggedEnemies)
@@ -46,8 +62,10 @@ public class stopGame : MonoBehaviour
 
         }
         player.SetActive(false);
-        spawner.stopSpawn();
+        spawner.StopAllCoroutines();
         spawner.deleteClones();
+
         
+
     }
 }
