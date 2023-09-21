@@ -30,12 +30,12 @@ public class HScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        highscoreLevel2.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 3, 0).ToString();
-        highscoreLevel3.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 4, 0).ToString();
-        highscoreLevel4.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 5, 0).ToString();
-        highscoreLevel5.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 7, 0).ToString();
-        highscoreLevel6.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 8, 0).ToString();
-        highscoreLevel7.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 9, 0).ToString();
+        highscoreLevel2.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 5, 0).ToString();
+        highscoreLevel3.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 6, 0).ToString();
+        highscoreLevel4.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 7, 0).ToString();
+        highscoreLevel5.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 9, 0).ToString();
+        highscoreLevel6.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 10, 0).ToString();
+        highscoreLevel7.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 11, 0).ToString();
 
 
         //LEVEL 1//
