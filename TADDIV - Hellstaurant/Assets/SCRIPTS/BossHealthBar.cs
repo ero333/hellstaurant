@@ -14,4 +14,9 @@ public class BossHealthBar : MonoBehaviour
         Slider.maxValue = MaxHealth;
     }
 
+    public void reducelife(float Health)
+    {
+        Slider.value = Health;
+    }
+
 }
