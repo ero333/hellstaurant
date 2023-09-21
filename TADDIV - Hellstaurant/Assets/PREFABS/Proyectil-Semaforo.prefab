@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7665731887315301989}
   - component: {fileID: 1236757310657897118}
   - component: {fileID: 3971610518444281300}
-  - component: {fileID: -8586566878622099618}
+  - component: {fileID: -319352890046003752}
   m_Layer: 0
   m_Name: Proyectil-Semaforo
   m_TagString: Untagged
@@ -115,7 +115,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.95, y: 7.95}
   m_EdgeRadius: 0
---- !u!114 &-8586566878622099618
+--- !u!114 &-319352890046003752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7c75290fd1ec846870332071c13f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletLife: 5
+  bulletLife: 1
   rotation: 0
-  speed: 0.8
+  speed: 1
+  damageAmount: 1

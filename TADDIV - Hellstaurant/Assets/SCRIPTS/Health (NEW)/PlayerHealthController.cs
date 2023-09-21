@@ -45,6 +45,7 @@ public class PlayerHealthController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        puntaje = GetComponent<Puntaje>(); // Asigna el componente Puntaje
     }
 
     void Update()
@@ -141,6 +142,30 @@ public class PlayerHealthController : MonoBehaviour
         {
             DealDamage();
 
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (invincibleCounter <= 0)
+        {
+            currentHealth -= damage;
+
+            if (currentHealth <= 0)
+            {
+                advanceTime.playerAlive = false;
+                currentHealth = 0;
+                gameObject.SetActive(false);
+                ShowGameOver(); // Mostrar el cartel de Game Over
+            }
+            else
+            {
+                invincibleCounter = invincibleLength;
+                Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+                StartCoroutine(colorchange());
+            }
+
+            UIController.Instance.UpdateHealthDisplay();
         }
     }
 
