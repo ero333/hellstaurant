@@ -7,15 +7,26 @@ public class BossBehavior : MonoBehaviour
     public float Hitpoints;
     public float MaxHitpoints = 150;
     public BossHealthBar BossHealth;
+    public Puntaje puntajescript;
+
+    public fireBullets fireBullets;
+
+    public BulletSpawner spawner;
+
+    public GameObject spiralShoot;
 
 
+    public float tiempoEntreAcciones = 5f;
 
+  
 
     void Start()
     {
         Hitpoints = MaxHitpoints;
         BossHealth.BossSetHealth(Hitpoints, MaxHitpoints);
-        
+
+        StartCoroutine(randomAttack());
+
     }
 
     // Update is called once per frame
@@ -31,6 +42,8 @@ public class BossBehavior : MonoBehaviour
             Hitpoints--; // Le baja 1 de vida al enemigo
 
             BossHealth.reducelife(Hitpoints);
+
+            puntajescript.obtenerPuntaje(20);
 
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
@@ -90,4 +103,30 @@ public class BossBehavior : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+
+    IEnumerator randomAttack()
+    {
+        while (true) 
+        {
+            
+            int opcion = Random.Range(0, 2); 
+
+            // Ejecuta la acción elegida
+            if (opcion == 0)
+            {
+               fireBullets.Fire();
+            }
+            else
+            {
+                spiralShoot.SetActive(true);
+                yield return new WaitForSeconds(1f);
+                spiralShoot.SetActive(false);
+            }
+
+            
+            yield return new WaitForSeconds(tiempoEntreAcciones);
+        }
+    }
+
 }

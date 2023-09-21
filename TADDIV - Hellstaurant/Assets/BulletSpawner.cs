@@ -31,7 +31,7 @@ public class BulletSpawner : MonoBehaviour
         }
     }
 
-    private void Fire()
+    public void Fire()
     {
         // Verifica que haya al menos un prefab de bala en la lista
         if (bulletPrefabs.Count > 0)
