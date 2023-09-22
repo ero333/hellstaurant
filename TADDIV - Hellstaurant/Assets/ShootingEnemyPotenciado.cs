@@ -65,6 +65,7 @@ public class ShootingEnemyPotenciado : MonoBehaviour
             }
             lastShotTime = Time.time;
         }
+        animator.SetBool("PotenciadoShooting", false);
     }
 
     private void OnDrawGizmosSelected()

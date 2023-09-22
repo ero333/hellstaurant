@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingTime: 12
-  TimeUntilHourChange: 7.5
+  TimeUntilHourChange: 11.25
   timeText: {fileID: 1276537253}
   timeLimit: 8
   playerAlive: 1
@@ -2099,6 +2099,8 @@ MonoBehaviour:
   spawner3: {fileID: 0}
   ultimoNivelDesbloqueado: 0
   nivelActual: 0
+  levelunlocking: {fileID: 0}
+  bulletSpawner: {fileID: 0}
 --- !u!114 &814449698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3244,6 +3246,10 @@ MonoBehaviour:
   - {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
   - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
   - {fileID: 2438006770674342857, guid: 73edec7e8c575fb4fbc92d2aac961e27, type: 3}
+  - {fileID: 6734641560351810643, guid: 78017343998f71a4d8fa6f03ac34aa46, type: 3}
+  - {fileID: 5502448534778535455, guid: 49c7cdc86f9967d47b4d473f7c7123e3, type: 3}
+  - {fileID: 5497710162975505664, guid: 7aa6ec07da8c7b748bfea79f3540704d, type: 3}
+  - {fileID: 4804792745695270027, guid: a5b87a97cdf5d884cb18cdb02e46963d, type: 3}
   canSpawn: 1
   enemyClones: []
 --- !u!4 &1215700431
@@ -3612,6 +3618,10 @@ MonoBehaviour:
   - {fileID: 4242012864319646141, guid: cc72622b19db09148a89710bc04e83d1, type: 3}
   - {fileID: 3882073572350288966, guid: e4cb172cbbd12ef42be889feebda1c0c, type: 3}
   - {fileID: 2438006770674342857, guid: 73edec7e8c575fb4fbc92d2aac961e27, type: 3}
+  - {fileID: 5497710162975505664, guid: 7aa6ec07da8c7b748bfea79f3540704d, type: 3}
+  - {fileID: 6734641560351810643, guid: 78017343998f71a4d8fa6f03ac34aa46, type: 3}
+  - {fileID: 5502448534778535455, guid: 49c7cdc86f9967d47b4d473f7c7123e3, type: 3}
+  - {fileID: 4804792745695270027, guid: a5b87a97cdf5d884cb18cdb02e46963d, type: 3}
   canSpawn: 1
   enemyClones: []
 --- !u!4 &1304298051
@@ -6101,8 +6111,8 @@ GameObject:
   - component: {fileID: 2121108976}
   - component: {fileID: 2121108980}
   - component: {fileID: 2121108979}
-  - component: {fileID: 2121108978}
   - component: {fileID: 2121108977}
+  - component: {fileID: 2121108981}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -6152,25 +6162,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2121108978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121108975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23c74c0e59adbcc4992bf5f7606163c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagEnemy: Enemy
-  player: {fileID: 1315016614}
-  spawner: {fileID: 0}
-  spawner2: {fileID: 0}
-  spawner3: {fileID: 0}
-  ultimoNivelDesbloqueado: 0
-  nivelActual: 0
 --- !u!114 &2121108979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6209,6 +6200,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121108975}
   m_CullTransparentMesh: 1
+--- !u!114 &2121108981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121108975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd5a1bf41342f2458261262cd86db02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagEnemy: Enemy
+  player: {fileID: 1315016614}
+  spawner: {fileID: 1215700430}
+  spawner2: {fileID: 1304298050}
+  spawner3: {fileID: 0}
+  bulletSpawner: {fileID: 0}
 --- !u!1 &2130934467
 GameObject:
   m_ObjectHideFlags: 0

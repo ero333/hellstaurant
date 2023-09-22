@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   flip: 1
-  speed: 6
+  speed: 4
   distance: 0
   playermovement: {fileID: 0}
   KBPower: 0
@@ -149,12 +149,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyLife: 2
-  puntosEnemigo: 30
+  puntosEnemigo: 60
   contadorPuntos: {fileID: 0}
   puntaje: {fileID: 0}
   chanceToDrop: 100
   collectible: {fileID: 1117625985564562950, guid: c6c99be012b4c264da39014b40997d8d, type: 3}
-  amountToDrop: 3
+  amountToDrop: 6
 --- !u!61 &7616759513920164085
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -150,13 +150,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb62cb1f971c3a49876e1d375fd642c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 8
-  puntosEnemigo: 40
+  enemyLife: 5
+  puntosEnemigo: 80
   contadorPuntos: {fileID: 0}
   puntaje: {fileID: 0}
   chanceToDrop: 100
   collectible: {fileID: 1117625985564562950, guid: c6c99be012b4c264da39014b40997d8d, type: 3}
-  amountToDrop: 2
+  amountToDrop: 4
 --- !u!95 &9185615912341501075
 Animator:
   serializedVersion: 5

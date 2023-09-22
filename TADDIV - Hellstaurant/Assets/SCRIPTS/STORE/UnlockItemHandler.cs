@@ -79,6 +79,17 @@ public class UnlockItemHandler : MonoBehaviour
         }
 
 
+        if (Input.GetKeyDown(KeyCode.P)) {
+
+            monedasactuales = monedasactuales + 150;
+
+
+            PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
+            coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
+
+        }
+
+
         //for (int i=0; i<buttons.Length; i++) {
         //    buttons[i].interactable = true;
         //}

@@ -15,6 +15,10 @@ public class BossBehavior : MonoBehaviour
 
     public GameObject spiralShoot;
 
+    public GameObject winscreen;
+
+    public Animator animator;
+
 
     public float tiempoEntreAcciones = 5f;
 
@@ -22,6 +26,7 @@ public class BossBehavior : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         Hitpoints = MaxHitpoints;
         BossHealth.BossSetHealth(Hitpoints, MaxHitpoints);
 
@@ -58,6 +63,10 @@ public class BossBehavior : MonoBehaviour
             Hitpoints = Hitpoints - 2; // Le baja 2 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
+            BossHealth.reducelife(Hitpoints);
+
+            puntajescript.obtenerPuntaje(20);
+
             if (Hitpoints <= 0)
             {
                 onDeath();
@@ -68,6 +77,10 @@ public class BossBehavior : MonoBehaviour
         {
             Hitpoints = Hitpoints - 1; // Le baja 0.5 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
+
+            BossHealth.reducelife(Hitpoints);
+
+            puntajescript.obtenerPuntaje(20);
 
             if (Hitpoints <= 0)
             {
@@ -80,6 +93,10 @@ public class BossBehavior : MonoBehaviour
             Hitpoints = Hitpoints - 3; // Le baja 0.5 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
+            BossHealth.reducelife(Hitpoints);
+
+            puntajescript.obtenerPuntaje(20);
+
             if (Hitpoints <= 0)
             {
                 onDeath();
@@ -90,6 +107,10 @@ public class BossBehavior : MonoBehaviour
         {
             Hitpoints = Hitpoints - 5; // Le baja 0.5 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
+
+            BossHealth.reducelife(Hitpoints);
+
+            puntajescript.obtenerPuntaje(20);
 
             if (Hitpoints <= 0)
             {
@@ -102,6 +123,8 @@ public class BossBehavior : MonoBehaviour
     public void onDeath()
     {
         Destroy(gameObject);
+        winscreen.SetActive(true);
+
     }
 
 
@@ -115,13 +138,18 @@ public class BossBehavior : MonoBehaviour
             // Ejecuta la acción elegida
             if (opcion == 0)
             {
+                animator.SetBool("attacking", true);
                fireBullets.Fire();
+                yield return new WaitForSeconds(1f);
+                    animator.SetBool("attacking", false); 
             }
             else
             {
+                animator.SetBool("attacking", true);
                 spiralShoot.SetActive(true);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(2f);
                 spiralShoot.SetActive(false);
+                animator.SetBool("attacking", false);
             }
 
             

@@ -91,7 +91,7 @@ public class unlockNextLevel : MonoBehaviour
     public void skipTutorial()
     {
 
-        //PlayerPrefs.SetInt("UltimoNivelAlcanzado", SceneManager.GetActiveScene().buildIndex);
+        PlayerPrefs.SetInt("UltimoNivelAlcanzado", SceneManager.GetActiveScene().buildIndex);
 
         SceneManager.LoadScene("Nivel 1");
 

@@ -172,7 +172,7 @@ MonoBehaviour:
   speedWithPowerUp: 7
   pizzaPrefab: {fileID: 3709804286691382550, guid: 517eca063809def409083a2ad0c56861, type: 3}
   shootPoint: {fileID: 2142375769131420283}
-  pizzaSpeed: 20
+  pizzaSpeed: 10
   cooldown: 0.3
   FugaPrefab: {fileID: 2416461227014169799, guid: 491b7b5e2a03316478f5bb2dc0f6a4a5, type: 3}
   FugazzettaSpeed: 7
@@ -196,6 +196,7 @@ MonoBehaviour:
   timeBarScript: {fileID: 0}
   PUTime: {fileID: 0}
   potenciadorActivo: {fileID: 0}
+  playerHealthController: {fileID: 0}
 --- !u!114 &8460081661388279870
 MonoBehaviour:
   m_ObjectHideFlags: 0

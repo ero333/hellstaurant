@@ -12,8 +12,11 @@ public class Bullet : MonoBehaviour
     private Vector2 spawnPoint;
     private float timer = 0f;
 
+    public Puntaje puntaje;
+
     void Start()
     {
+        puntaje = GameObject.FindGameObjectWithTag("Score").GetComponent<Puntaje>();
         spawnPoint = new Vector2(transform.position.x, transform.position.y);
     }
 
@@ -40,7 +43,12 @@ public class Bullet : MonoBehaviour
         if (playerHealthController != null)
         {
             playerHealthController.TakeDamage(damageAmount);
-        }
+
+                if (puntaje.puntos >= 10)
+                {
+                    puntaje.puntos = puntaje.puntos - 10;
+                }
+            }
 
         Destroy(this.gameObject); // destruye la bala al colisionar con el jugador
     }

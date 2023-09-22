@@ -1099,8 +1099,8 @@ GameObject:
   - component: {fileID: 151086490}
   - component: {fileID: 151086492}
   - component: {fileID: 151086491}
-  - component: {fileID: 151086493}
   - component: {fileID: 151086494}
+  - component: {fileID: 151086495}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -1166,25 +1166,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151086489}
   m_CullTransparentMesh: 1
---- !u!114 &151086493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151086489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23c74c0e59adbcc4992bf5f7606163c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagEnemy: Enemy
-  player: {fileID: 1446669955}
-  spawner: {fileID: 1387389918}
-  spawner2: {fileID: 0}
-  spawner3: {fileID: 0}
-  ultimoNivelDesbloqueado: 0
-  nivelActual: 0
 --- !u!95 &151086494
 Animator:
   serializedVersion: 5
@@ -1206,6 +1187,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &151086495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151086489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd5a1bf41342f2458261262cd86db02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagEnemy: Enemy
+  player: {fileID: 1446669955}
+  spawner: {fileID: 1387389918}
+  spawner2: {fileID: 0}
+  spawner3: {fileID: 0}
+  bulletSpawner: {fileID: 0}
 --- !u!1 &175247425
 GameObject:
   m_ObjectHideFlags: 0
@@ -7892,6 +7891,8 @@ MonoBehaviour:
   spawner3: {fileID: 0}
   ultimoNivelDesbloqueado: 0
   nivelActual: 0
+  levelunlocking: {fileID: 0}
+  bulletSpawner: {fileID: 0}
 --- !u!114 &1933297753
 MonoBehaviour:
   m_ObjectHideFlags: 0

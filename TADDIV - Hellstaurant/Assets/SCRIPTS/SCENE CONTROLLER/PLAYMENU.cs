@@ -19,7 +19,7 @@ public class PLAYMENU : MonoBehaviour
     {
         hayPartida = PlayerPrefs.GetInt("PartidaGuardada");
         
-        ultimoNivel = PlayerPrefs.GetInt("NivelActual:" + 1);
+        ultimoNivel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
     }
 
     // Update is called once per frame
@@ -28,6 +28,10 @@ public class PLAYMENU : MonoBehaviour
         if (hayPartida == 1)
         {
             botonContinuar.SetActive(true);
+        }
+        if (hayPartida == 0)
+        {
+            botonContinuar.SetActive(false);
         }
     }
 
@@ -44,9 +48,15 @@ public class PLAYMENU : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
 
+        botonContinuar.SetActive(false);
+
         PlayerPrefs.SetInt("PartidaGuardada", nohaypartida);
 
+        SceneManager.LoadScene("Selector de Niv");
+
         
+
+
     }
 
     public void Tienda()
@@ -61,7 +71,7 @@ public class PLAYMENU : MonoBehaviour
 
     public void continuar()
     {
-        SceneManager.LoadScene(ultimoNivel);
+        SceneManager.LoadScene(ultimoNivel +1);
     }
 
 }

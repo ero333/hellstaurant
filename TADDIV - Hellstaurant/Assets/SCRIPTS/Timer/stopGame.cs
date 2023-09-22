@@ -24,6 +24,8 @@ public class stopGame : MonoBehaviour
 
     public static stopGame instance;
 
+    public GameObject bulletSpawner;
+
 
     private void Awake()
     {
@@ -41,6 +43,29 @@ public class stopGame : MonoBehaviour
 
 
         levelunlocking.unlocklevel();
+
+
+        if (SceneManager.GetActiveScene().buildIndex >= 7)
+        {
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 1);
+        }
+        if (SceneManager.GetActiveScene().buildIndex >= 8)
+        {
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 2);
+        }
+        if (SceneManager.GetActiveScene().buildIndex >= 9)
+        {
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 3);
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex >= 10)
+        {
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 4);
+        }
     }
 
     // Update is called once per frame
@@ -64,6 +89,8 @@ public class stopGame : MonoBehaviour
         player.SetActive(false);
         spawner.StopAllCoroutines();
         spawner.deleteClones();
+        bulletSpawner.SetActive(false);
+        
 
         
 

@@ -40,12 +40,14 @@ public class PlayerHealthController : MonoBehaviour
 
         rb2d = gameObject.GetComponent<Rigidbody2D>();
 
+
+        puntaje = GameObject.FindGameObjectWithTag("Score").GetComponent<Puntaje>(); // Asigna el componente Puntaje
     }
 
     private void Awake()
     {
         instance = this;
-        puntaje = GetComponent<Puntaje>(); // Asigna el componente Puntaje
+        
     }
 
     void Update()
@@ -64,7 +66,7 @@ public class PlayerHealthController : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !isHealing)
         {
             if (currentHealth < maxHealth)
             {
@@ -94,13 +96,6 @@ public class PlayerHealthController : MonoBehaviour
         {
             currentHealth--;
 
-            
-
-
-            if (puntaje.puntos >= 10)
-            {
-                puntaje.puntos = puntaje.puntos - 10;
-            }  
 
             if (currentHealth <= 0)
             {
@@ -122,7 +117,15 @@ public class PlayerHealthController : MonoBehaviour
 
             UIController.Instance.UpdateHealthDisplay();
 
-            
+
+
+
+            if (puntaje.puntos >= 10)
+            {
+                puntaje.puntos = puntaje.puntos - 10;
+            }
+
+
         }
     }
 
