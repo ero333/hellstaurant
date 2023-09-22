@@ -518,6 +518,7 @@ MonoBehaviour:
   hayPartida: 0
   botonContinuar: {fileID: 1661651536}
   ultimoNivel: 0
+  nohaypartida: 0
 --- !u!1 &191126443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1059,7 @@ MonoBehaviour:
   hayPartida: 0
   botonContinuar: {fileID: 1661651536}
   ultimoNivel: 0
+  nohaypartida: 0
 --- !u!114 &480388508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3093,6 +3095,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivelesDesbloqueados: 0
+  winscreen: {fileID: 0}
+  nivelactual: 0
+  lastlevel: 0
 --- !u!4 &1732551350
 Transform:
   m_ObjectHideFlags: 0
