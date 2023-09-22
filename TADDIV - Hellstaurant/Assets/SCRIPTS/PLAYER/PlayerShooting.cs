@@ -78,23 +78,23 @@ public class PlayerShooting : MonoBehaviour
         //DEBUG
         //Debug.Log("isHealing: " + isHealing);
 
-        // Evita que el jugador dispare mientras se está curando
+        // Evita que el jugador dispare mientras se estï¿½ curando
         if (playerHealthController.isHealing == false)
         {
             if (canShoot && Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown)
             {
                 Debug.Log("Shooting");
 
-                // Obtenemos las coordenadas del ratón en la pantalla
+                // Obtenemos las coordenadas del ratï¿½n en la pantalla
                 Vector3 mousePositionScreen = Mouse.current.position.ReadValue();
 
-                // Establecemos la distancia de la cámara al plano del mundo del juego
-                float distanceToCamera = 10f; // Ajusta esto según tu configuración
+                // Establecemos la distancia de la cï¿½mara al plano del mundo del juego
+                float distanceToCamera = 10f; // Ajusta esto segï¿½n tu configuraciï¿½n
 
-                // Convertimos las coordenadas del ratón en el mundo del juego
+                // Convertimos las coordenadas del ratï¿½n en el mundo del juego
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePositionScreen.x, mousePositionScreen.y, distanceToCamera));
 
-                // Calculamos la dirección hacia la que debe disparar
+                // Calculamos la direcciï¿½n hacia la que debe disparar
                 Vector3 direction = (mousePosition - shootPoint.transform.position).normalized;
 
                 pizzaShoot(direction);
