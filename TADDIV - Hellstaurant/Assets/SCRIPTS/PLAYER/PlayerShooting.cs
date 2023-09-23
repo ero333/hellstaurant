@@ -90,7 +90,7 @@ public class PlayerShooting : MonoBehaviour
         // Evita que el jugador dispare mientras se est� curando
         if (playerHealthController.isHealing == false)
         {
-            if (canShoot && (Input.GetMouseButtonDown(0) || Input.GetKey("i") || Input.GetKey("k") || Input.GetKey("l")|| Input.GetKey("j") || Input.GetKey("joystick button 0") || Input.GetKey("joystick button 1") || Input.GetKey("joystick button 2") || Input.GetKey("joystick button 3")) && Time.time - lastShoot >= cooldown)
+            if (canShoot && (Input.GetMouseButtonDown(0) || Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("right")|| Input.GetKey("left") || Input.GetKey("joystick button 0") || Input.GetKey("joystick button 1") || Input.GetKey("joystick button 2") || Input.GetKey("joystick button 3")) && Time.time - lastShoot >= cooldown)
             {
                 Debug.Log("Shooting");
 
@@ -114,17 +114,17 @@ public class PlayerShooting : MonoBehaviour
 
                 else
                 {
-                    if (Input.GetKey("i") || Input.GetKey("joystick button 3")){
+                    if (Input.GetKey("up") || Input.GetKey("joystick button 3")){
                         direction += new Vector3(0,1,0);
                     }
-                    else if (Input.GetKey("k") || Input.GetKey("joystick button 0")){
+                    else if (Input.GetKey("down") || Input.GetKey("joystick button 0")){
                         direction += new Vector3(0,-1,0);
                     }
 
-                    if (Input.GetKey("j") || Input.GetKey("joystick button 2")){
+                    if (Input.GetKey("left") || Input.GetKey("joystick button 2")){
                         direction += new Vector3(-1,0,0);
                     }
-                    else if (Input.GetKey("l") || Input.GetKey("joystick button 1")){
+                    else if (Input.GetKey("right") || Input.GetKey("joystick button 1")){
                         direction += new Vector3(1,0,0);
                     }
                 }
