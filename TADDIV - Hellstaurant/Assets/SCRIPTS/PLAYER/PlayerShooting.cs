@@ -47,6 +47,8 @@ public class PlayerShooting : MonoBehaviour
 
     public GameObject potenciadorActivo;
 
+    public bool is_using_mouse;
+
     
 
     private bool canShoot = true;
@@ -74,6 +76,13 @@ public class PlayerShooting : MonoBehaviour
                 isInvincible = false;
             }
         }
+        
+        if (Input.GetMouseButtonDown(0)) {
+            is_using_mouse = true;
+        }
+        else if (Input.GetKey("up")) {
+            is_using_mouse = false;
+        }
 
         //DEBUG
         //Debug.Log("isHealing: " + isHealing);
@@ -81,9 +90,12 @@ public class PlayerShooting : MonoBehaviour
         // Evita que el jugador dispare mientras se est� curando
         if (playerHealthController.isHealing == false)
         {
-            if (canShoot && Input.GetMouseButtonDown(0) && Time.time - lastShoot >= cooldown)
+            if (canShoot && (Input.GetMouseButtonDown(0) || Input.GetKey("i") || Input.GetKey("k") || Input.GetKey("l")|| Input.GetKey("j") || Input.GetKey("joystick button 0") || Input.GetKey("joystick button 1") || Input.GetKey("joystick button 2") || Input.GetKey("joystick button 3")) && Time.time - lastShoot >= cooldown)
             {
                 Debug.Log("Shooting");
+
+                // Establecemos la direccion de disparo
+                Vector3 direction = new Vector3(0,0,0);
 
                 // Obtenemos las coordenadas del rat�n en la pantalla
                 Vector3 mousePositionScreen = Mouse.current.position.ReadValue();
@@ -95,7 +107,29 @@ public class PlayerShooting : MonoBehaviour
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePositionScreen.x, mousePositionScreen.y, distanceToCamera));
 
                 // Calculamos la direcci�n hacia la que debe disparar
-                Vector3 direction = (mousePosition - shootPoint.transform.position).normalized;
+                if (is_using_mouse)
+                {
+                    direction = (mousePosition - shootPoint.transform.position).normalized;
+                }
+
+                else
+                {
+                    if (Input.GetKey("i") || Input.GetKey("joystick button 3")){
+                        direction += new Vector3(0,1,0);
+                    }
+                    else if (Input.GetKey("k") || Input.GetKey("joystick button 0")){
+                        direction += new Vector3(0,-1,0);
+                    }
+
+                    if (Input.GetKey("j") || Input.GetKey("joystick button 2")){
+                        direction += new Vector3(-1,0,0);
+                    }
+                    else if (Input.GetKey("l") || Input.GetKey("joystick button 1")){
+                        direction += new Vector3(1,0,0);
+                    }
+                }
+
+                
 
                 pizzaShoot(direction);
             }
