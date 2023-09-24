@@ -31,8 +31,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal") + Input.GetAxisRaw("joystick axis 4"); // Teclas A y D
-        float moveY = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("joystick axis 4");   // Teclas W y S
+        float moveX = Input.GetAxisRaw("Horizontal") + Input.GetAxisRaw("DpadHorizontal"); // Teclas A y D
+        float moveY = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("DpadVertical");   // Teclas W y S
         moveInput = new Vector2(moveX, moveY).normalized; // que no se mueva mas rapido al ir en diagonal
 
         RotarSprite();
@@ -56,11 +56,11 @@ public class PlayerMovement : MonoBehaviour
         SpriteRenderer playerSprite;
         playerSprite = GetComponent<SpriteRenderer>();  // para el Sprite Renderer
 
-        if (Input.GetAxisRaw("Horizontal") > 0)         // Si es positivo
+        if (Input.GetAxisRaw("Horizontal") + Input.GetAxisRaw("DpadHorizontal") > 0)         // Si es positivo
         {
             playerSprite.flipX = false;                 // Dejo de voltear sprite
         }
-        else if (Input.GetAxisRaw("Horizontal") < 0)    //  Si es negativo
+        else if (Input.GetAxisRaw("Horizontal") + Input.GetAxisRaw("DpadVertical") < 0)    //  Si es negativo
         {
             playerSprite.flipX = true;                  // Volteo Sprite
         }
