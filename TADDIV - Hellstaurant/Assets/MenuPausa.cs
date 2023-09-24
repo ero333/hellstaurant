@@ -40,4 +40,21 @@ public class MenuPausa : MonoBehaviour
 		menuPausa.SetActive(false);
 		SceneManager.LoadScene("Tienda");
     }
+
+	private void Update(){
+		if (Input.GetKey("joystick button 7")){
+		Time.timeScale = 0f;
+		menuPausa.SetActive(true);
+		pausa.sprite = play;
+	}
+	else if (Input.GetKey("joystick button 6")){
+		menuPausa.SetActive(false);
+		Time.timeScale = 1f;
+		pausa.sprite = pausasprite;
+	}
+
+	}
+
+
+
 }

@@ -31,8 +31,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal"); // Teclas A y D
-        float moveY = Input.GetAxisRaw("Vertical");   // Teclas W y S
+        float moveX = Input.GetAxisRaw("Horizontal") + Input.GetAxisRaw("joystick axis 4"); // Teclas A y D
+        float moveY = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("joystick axis 4");   // Teclas W y S
         moveInput = new Vector2(moveX, moveY).normalized; // que no se mueva mas rapido al ir en diagonal
 
         RotarSprite();
