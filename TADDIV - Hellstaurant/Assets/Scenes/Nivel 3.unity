@@ -236,6 +236,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83588713
+      objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
       value: 
@@ -1037,7 +1041,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1734858722}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PLAYMENU, Assembly-CSharp
         m_MethodName: Tienda
         m_Mode: 1
@@ -3115,7 +3119,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1734858722}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PLAYMENU, Assembly-CSharp
         m_MethodName: Tienda
         m_Mode: 1
@@ -5165,7 +5169,6 @@ GameObject:
   - component: {fileID: 1734858717}
   - component: {fileID: 1734858716}
   - component: {fileID: 1734858721}
-  - component: {fileID: 1734858722}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5316,22 +5319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9703a6dff399341a99e44f5e6485df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1734858722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734858714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44bdb485e3b310e4382aca6c6f1fc779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hayPartida: 0
-  botonContinuar: {fileID: 0}
-  ultimoNivel: 0
-  nohaypartida: 0
 --- !u!1 &1736898669
 GameObject:
   m_ObjectHideFlags: 0
