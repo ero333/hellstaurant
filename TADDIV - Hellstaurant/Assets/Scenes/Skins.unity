@@ -333,11 +333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4805362998153556002, guid: 69cf05e92cc2f6c4eb6cbfbff21e4dff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -567
+      value: -201.97081
       objectReference: {fileID: 0}
     - target: {fileID: 4805362998153556002, guid: 69cf05e92cc2f6c4eb6cbfbff21e4dff, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 450
+      value: 253.98433
       objectReference: {fileID: 0}
     - target: {fileID: 4805362998153556002, guid: 69cf05e92cc2f6c4eb6cbfbff21e4dff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -541,11 +541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1009854285054565817, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -872
+      value: -505
       objectReference: {fileID: 0}
     - target: {fileID: 1009854285054565817, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 450
+      value: 253.98
       objectReference: {fileID: 0}
     - target: {fileID: 1009854285054565817, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -563,21 +563,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: BotonVolverMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5460244873690425492, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 365
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460244873690425492, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -196
+      objectReference: {fileID: 0}
     - target: {fileID: 6265162973398768928, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1779340394}
+      objectReference: {fileID: 0}
     - target: {fileID: 6265162973398768928, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: backToMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2051451800337876228, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2051451800337876228, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1779340394}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
 --- !u!1 &1097236403
 GameObject:
@@ -657,23 +663,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4805362998153556002, guid: 69cf05e92cc2f6c4eb6cbfbff21e4dff, type: 3}
   m_PrefabInstance: {fileID: 676114748}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1779340389 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2051451800337876228, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
-  m_PrefabInstance: {fileID: 995043645}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1779340394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779340389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a540942af5c638f4a88227894063ed08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
