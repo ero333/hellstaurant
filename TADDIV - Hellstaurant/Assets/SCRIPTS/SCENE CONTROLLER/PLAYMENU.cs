@@ -74,4 +74,9 @@ public class PLAYMENU : MonoBehaviour
         SceneManager.LoadScene(ultimoNivel +1);
     }
 
+    public void menuprincipal()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
 }
