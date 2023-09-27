@@ -59,6 +59,42 @@ public class LEVELSELECTOR : MonoBehaviour
         SceneManager.LoadScene("Nivel 6");
     }
 
+    public void lvl7()
+    {
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Nivel 7");
+    }
+
+    public void lvl8()
+    {
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Nivel 8");
+    }
+
+    public void lvl9()
+    {
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Nivel 9");
+    }
+
+    public void lvl10()
+    {
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Nivel 10");
+    }
+
+    public void lvl11()
+    {
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Nivel 11");
+    }
+
+    public void lvl12()
+    {
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Nivel 12");
+    }
+
     public void lvl14()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
