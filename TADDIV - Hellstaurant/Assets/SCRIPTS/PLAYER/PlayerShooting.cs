@@ -150,6 +150,8 @@ public class PlayerShooting : MonoBehaviour
 
     public void pizzaShoot(Vector3 direction)
     {
+        anim.SetBool("shooting", true);
+
         if (Fugazzetta)
         {
             GameObject fugazzetta = Instantiate(FugaPrefab, shootPoint.position, Quaternion.identity);
@@ -359,4 +361,17 @@ public class PlayerShooting : MonoBehaviour
 
         yield return null;
     }
+
+
+
+
+    public void stopShooting()
+    {
+        anim.SetBool("shooting", false);
+    }
+    public void stopShooting2()
+    {
+        anim.SetBool("shooting", false);
+    }
+
 }

@@ -30,6 +30,8 @@ public class Tutorial2 : MonoBehaviour
     public bool canSpawn = true;
 
     public SpawnPotenciadores spawners;
+    public SpawnPotenciadores spawners2;
+
 
 
     void Start()
