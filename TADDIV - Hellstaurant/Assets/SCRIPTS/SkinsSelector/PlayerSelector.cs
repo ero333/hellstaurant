@@ -34,4 +34,16 @@ public class PlayerSelector : MonoBehaviour
         this.selectionBoxes[index].gameObject.SetActive(true);
         PlayerStorage.playerPrefab = this.prefabs[index];
     }
+
+
+    public void SelectGirl()
+    {
+        PlayerPrefs.SetString("skin seleccionada", "girlSkin");
+    }
+
+    public void SelectMan()
+    {
+        PlayerPrefs.SetString("skin seleccionada", "manSkin");
+    }
+    
 }
