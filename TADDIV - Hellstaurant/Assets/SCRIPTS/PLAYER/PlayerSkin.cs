@@ -37,6 +37,10 @@ public class PlayerSkin : MonoBehaviour
     void Update()
     {
 
+        if (skinName == "girlSkin")
+        {
+            girlSkinchange();
+        }
 
     }
 
