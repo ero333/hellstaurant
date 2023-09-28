@@ -626,7 +626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.621569
+      value: -0.62157017
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -1890,7 +1890,7 @@ RectTransform:
   m_GameObject: {fileID: 702143533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.73, y: 0.73, z: 0.73}
+  m_LocalScale: {x: 1.19, y: 1.19, z: 1.19}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 60557647}
@@ -1899,7 +1899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292, y: -1}
+  m_AnchoredPosition: {x: 461, y: 121}
   m_SizeDelta: {x: 770.35, y: 96.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702143535
@@ -4239,10 +4239,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4879,7 +4879,10 @@ MonoBehaviour:
   spiralShoot: {fileID: 7890148778095338128}
   winscreen: {fileID: 1605475942}
   animator: {fileID: 0}
+  player: {fileID: 1315016613}
   tiempoEntreAcciones: 2
+  singleBullet: {fileID: 3268287813732356081, guid: 003e4caf3a2c10f46b20e9128f6f64e5, type: 3}
+  singleBulletSpeed: 5
 --- !u!61 &1564408382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6989,7 +6992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6975055564504526206, guid: 6092d25d36c05ed4ca18e83b1146a432, type: 3}
       propertyPath: bulletPrefabs.Array.size
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6975055564504526206, guid: 6092d25d36c05ed4ca18e83b1146a432, type: 3}
       propertyPath: bulletPrefabs.Array.data[0]
@@ -7018,11 +7021,11 @@ PrefabInstance:
     - target: {fileID: 6975055564504526206, guid: 6092d25d36c05ed4ca18e83b1146a432, type: 3}
       propertyPath: bulletPrefabs.Array.data[6]
       value: 
-      objectReference: {fileID: 1922390988609861341, guid: 96f9865822c175f4ba88b47e90740c45, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6975055564504526206, guid: 6092d25d36c05ed4ca18e83b1146a432, type: 3}
       propertyPath: bulletPrefabs.Array.data[7]
       value: 
-      objectReference: {fileID: 1922390988609861341, guid: 96f9865822c175f4ba88b47e90740c45, type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
