@@ -30,6 +30,8 @@ public class Tutorial2 : MonoBehaviour
     public bool canSpawn = true;
 
     public SpawnPotenciadores spawners;
+    public SpawnPotenciadores spawners2;
+
 
 
     void Start()
@@ -103,7 +105,7 @@ public class Tutorial2 : MonoBehaviour
         {
             Time.timeScale = 1f;
 
-
+           
             cartel9.SetActive(false);
             botonSaltar.SetActive(false);
             //spawner.SetActive(true);
@@ -113,6 +115,10 @@ public class Tutorial2 : MonoBehaviour
             fugaspawner.SetActive(true);
             contadorMonedas.SetActive(true);
             íconoMonedas.SetActive(true);
+
+            spawners.startSpawning();
+            spawners2.startSpawning();
+
         }
 
 

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8100268075168473408}
   - component: {fileID: 1601258319958896136}
   - component: {fileID: 8460081661388279870}
+  - component: {fileID: 6870924815842460318}
   - component: {fileID: 4994318363790638360}
   - component: {fileID: 74036338672132706}
   - component: {fileID: 2088622074340852892}
@@ -196,6 +197,7 @@ MonoBehaviour:
   timeBarScript: {fileID: 0}
   PUTime: {fileID: 0}
   potenciadorActivo: {fileID: 0}
+  is_using_mouse: 0
   playerHealthController: {fileID: 0}
 --- !u!114 &8460081661388279870
 MonoBehaviour:
@@ -220,6 +222,22 @@ MonoBehaviour:
   playerMovement: {fileID: 7442340460101119668}
   rb2d: {fileID: 0}
   isHealing: 0
+--- !u!114 &6870924815842460318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170127940833486984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303298aa35103c649936a407e9cccfe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  girlSkin: {fileID: 22100000, guid: 15ac829bb6230e54a86b89d572b8afab, type: 2}
+  defaultSkin: {fileID: 9100000, guid: faee9c451b0cc634e9305b87ce4ced4b, type: 2}
+  anim: {fileID: 0}
+  skinName: 
 --- !u!61 &4994318363790638360
 BoxCollider2D:
   m_ObjectHideFlags: 0

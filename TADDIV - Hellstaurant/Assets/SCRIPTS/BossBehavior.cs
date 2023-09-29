@@ -20,9 +20,15 @@ public class BossBehavior : MonoBehaviour
     public Animator animator;
 
 
+    public Transform player;
+
     public float tiempoEntreAcciones = 5f;
 
-  
+    public GameObject singleBullet;
+
+    public float singleBulletSpeed = 5f;
+
+
 
     void Start()
     {
@@ -133,7 +139,7 @@ public class BossBehavior : MonoBehaviour
         while (true) 
         {
             
-            int opcion = Random.Range(0, 2); 
+            int opcion = Random.Range(0, 3); 
 
             // Ejecuta la acción elegida
             if (opcion == 0)
@@ -142,6 +148,20 @@ public class BossBehavior : MonoBehaviour
                fireBullets.Fire();
                 yield return new WaitForSeconds(1f);
                     animator.SetBool("attacking", false); 
+            }
+
+            if(opcion == 1)
+            {
+                // Código para la segunda acción
+                Debug.Log("Ejecutando Acción 2");
+
+                // Obtener la dirección hacia el jugador
+                Vector3 direccion = (player.position - transform.position).normalized;
+
+                // Instanciar la bala y configurar su dirección
+                GameObject bala = Instantiate(singleBullet, transform.position, Quaternion.identity);
+                Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
+                rb.velocity = direccion * singleBulletSpeed;
             }
             else
             {

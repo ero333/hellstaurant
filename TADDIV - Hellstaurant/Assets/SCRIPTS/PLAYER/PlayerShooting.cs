@@ -49,7 +49,9 @@ public class PlayerShooting : MonoBehaviour
 
     public bool is_using_mouse;
 
-    
+    public GameObject enemyPrefab; // El prefab del enemigo que quieres instanciar
+    public Transform spawnPoint;
+
 
     private bool canShoot = true;
 
@@ -63,6 +65,25 @@ public class PlayerShooting : MonoBehaviour
         normal = anim.runtimeAnimatorController;
 
         playerHealthController = GetComponent<PlayerHealthController>();
+
+        SpawnEnemy();
+    }
+
+    private Vector3 PlayerPosition()
+    {
+        // Puedes ajustar esta función para obtener la posición actual del jugador.
+        // Por ejemplo, si el jugador tiene un script "PlayerController", podrías acceder a su posición desde allí.
+        // Asumiendo que el jugador tiene el tag "Player", podrías hacer lo siguiente:
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            return player.transform.position;
+        }
+        else
+        {
+            // Si no se encuentra al jugador, simplemente regresa el origen.
+            return Vector3.zero;
+        }
     }
 
     private void Update()
@@ -150,6 +171,8 @@ public class PlayerShooting : MonoBehaviour
 
     public void pizzaShoot(Vector3 direction)
     {
+        anim.SetBool("shooting", true);
+
         if (Fugazzetta)
         {
             GameObject fugazzetta = Instantiate(FugaPrefab, shootPoint.position, Quaternion.identity);
@@ -359,4 +382,32 @@ public class PlayerShooting : MonoBehaviour
 
         yield return null;
     }
+
+    private void SpawnEnemy()
+    {
+        // Instanciar un enemigo en el punto de spawn
+        GameObject newEnemy = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
+
+        // Obtener la dirección hacia el jugador
+        Vector3 directionToPlayer = (PlayerPosition() - newEnemy.transform.position).normalized;
+
+        // Calcular la rotación para mirar hacia el jugador
+        Quaternion lookRotation = Quaternion.LookRotation(Vector3.forward, directionToPlayer);
+
+        // Aplicar la rotación al enemigo
+        newEnemy.transform.rotation = lookRotation;
+    }
+
+
+
+
+    public void stopShooting()
+    {
+        anim.SetBool("shooting", false);
+    }
+    public void stopShooting2()
+    {
+        anim.SetBool("shooting", false);
+    }
+
 }

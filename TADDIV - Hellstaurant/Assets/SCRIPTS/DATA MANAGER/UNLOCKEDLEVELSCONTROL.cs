@@ -23,6 +23,19 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     public GameObject level6Button;
 
 
+    public GameObject blocklevel7;
+    public GameObject level7Button;
+
+
+    public GameObject blocklevel8;
+    public GameObject level8Button;
+
+
+    public GameObject blocklevel9;
+    public GameObject level9Button;
+
+
+
     public unlockNextLevel levelUnlockCheck;
 
     // Start is called before the first frame update
@@ -47,6 +60,16 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
 
         blocklevel6.SetActive(true);
         level6Button.SetActive(false);
+
+        blocklevel7.SetActive(true);
+        level7Button.SetActive(false);
+
+        blocklevel8.SetActive(true);
+        level8Button.SetActive(false);
+
+        blocklevel9.SetActive(true);
+        level9Button.SetActive(false);
+        
 
 
         if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 4)
@@ -84,7 +107,25 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
             blocklevel6.SetActive(false);
             level6Button.SetActive(true);
         }
-    }
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 11)
+        {
+            blocklevel7.SetActive(false);
+            level7Button.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 12)
+        {
+            blocklevel8.SetActive(false);
+            level8Button.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 13)
+        {
+            blocklevel9.SetActive(false);
+            level9Button.SetActive(true);
+        }
+        }
 
     // Update is called once per frame
     void Update()
