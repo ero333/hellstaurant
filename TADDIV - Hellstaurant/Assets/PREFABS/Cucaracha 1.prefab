@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 6795724045319947567}
   - component: {fileID: 7097798449280581423}
   - component: {fileID: 6655471848492831739}
+  - component: {fileID: 9059249419456100603}
+  - component: {fileID: 554639666217939649}
   m_Layer: 0
   m_Name: Cucaracha 1
-  m_TagString: Cucaracha
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.21, y: -2.7, z: 0}
-  m_LocalScale: {x: 0.24052662, y: 0.24052662, z: 0.24052662}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.16, y: 0.16, z: 0.16}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -78,7 +80,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9e5372fc4e65ad9418103fdd3ce93d02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.03, y: 5.5}
@@ -164,10 +166,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb62cb1f971c3a49876e1d375fd642c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 2
+  enemyLife: 1
   puntosEnemigo: 40
   contadorPuntos: {fileID: 0}
   puntaje: {fileID: 0}
-  chanceToDrop: 100
+  chanceToDrop: 0
   collectible: {fileID: 1117625985564562950, guid: c6c99be012b4c264da39014b40997d8d, type: 3}
   amountToDrop: 2
+--- !u!95 &9059249419456100603
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192900472077790647}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9c3ee4667ae60141b35a4417edddf08, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &554639666217939649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192900472077790647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea86facf7059bf4fb6e627e06d476c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 0}

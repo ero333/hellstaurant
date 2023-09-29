@@ -79,4 +79,8 @@ public class PLAYMENU : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void tiendaskins()
+    {
+        SceneManager.LoadScene("Skins");
+    }
 }

@@ -19,6 +19,10 @@ public class PlayerSelector : MonoBehaviour
 
     public int monedasactuales;
 
+
+    public GameObject precioMujer;
+
+
     public coinData coindata;
 
 
@@ -61,11 +65,13 @@ public class PlayerSelector : MonoBehaviour
         {
             selectWomanButton.SetActive(true);
             buyWomanButton.SetActive(false);
+            precioMujer.SetActive(false);
         }
         else
         {
             selectWomanButton.SetActive(false);
             buyWomanButton.SetActive(true);
+            precioMujer.SetActive(true);
         }
     }
 
@@ -112,6 +118,7 @@ public class PlayerSelector : MonoBehaviour
 
             selectWomanButton.SetActive(true);
             buyWomanButton.SetActive(false) ;
+            precioMujer.SetActive(false);
         }
 
 

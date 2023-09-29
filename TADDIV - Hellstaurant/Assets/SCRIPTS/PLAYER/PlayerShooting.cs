@@ -55,7 +55,11 @@ public class PlayerShooting : MonoBehaviour
 
     private bool canShoot = true;
 
-    public PlayerHealthController playerHealthController; 
+    public PlayerHealthController playerHealthController;
+
+    public AnimatorOverrideController girlfrenzymode;
+
+    public string skinName;
 
 
     public void Start()
@@ -66,7 +70,9 @@ public class PlayerShooting : MonoBehaviour
 
         playerHealthController = GetComponent<PlayerHealthController>();
 
-        SpawnEnemy();
+        skinName = PlayerPrefs.GetString("skin seleccionada");
+
+
     }
 
     private Vector3 PlayerPosition()
@@ -369,6 +375,12 @@ public class PlayerShooting : MonoBehaviour
 
         timeBarScript.SetActive(true);
 
+
+        if (skinName == "girlSkin")
+        {
+            anim.runtimeAnimatorController = girlfrenzymode as RuntimeAnimatorController;
+        }
+
         anim.runtimeAnimatorController = frenzymode as RuntimeAnimatorController;
 
         PUTime.tiempoEnMarcha = true;
@@ -381,21 +393,6 @@ public class PlayerShooting : MonoBehaviour
        isInvincible = true;
 
         yield return null;
-    }
-
-    private void SpawnEnemy()
-    {
-        // Instanciar un enemigo en el punto de spawn
-        GameObject newEnemy = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
-
-        // Obtener la dirección hacia el jugador
-        Vector3 directionToPlayer = (PlayerPosition() - newEnemy.transform.position).normalized;
-
-        // Calcular la rotación para mirar hacia el jugador
-        Quaternion lookRotation = Quaternion.LookRotation(Vector3.forward, directionToPlayer);
-
-        // Aplicar la rotación al enemigo
-        newEnemy.transform.rotation = lookRotation;
     }
 
 

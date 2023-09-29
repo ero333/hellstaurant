@@ -6,6 +6,9 @@ public class PlayerSkin : MonoBehaviour
 {
 
     public AnimatorOverrideController girlSkin;
+    public AnimatorOverrideController girlSkinFrenzy;
+
+
     public RuntimeAnimatorController defaultSkin;
     public Animator anim;
 
@@ -54,5 +57,26 @@ public class PlayerSkin : MonoBehaviour
         anim.runtimeAnimatorController = defaultSkin as RuntimeAnimatorController;
     }
 
+
+
+    //CAMBIOS A FRENZY//
+
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PicantePickup") && skinName == "girlSkin" )
+        {
+            StartCoroutine(GirlpicantePowerUp());
+            
+        }
+
+    }
+
+    IEnumerator GirlpicantePowerUp()
+    {
+        anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
+        yield return new WaitForSeconds(10f);
+        anim.runtimeAnimatorController = girlSkin as RuntimeAnimatorController;
+    }
 
 }

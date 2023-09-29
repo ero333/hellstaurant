@@ -8,7 +8,7 @@ public class BulletSpawner : MonoBehaviour
 
     [Header("Bullet Attributes")]
     public float bulletLife = 1f;
-    public float speed = 1f; // velocidad
+    public float speed = 1.5f; // velocidad
 
     public List<GameObject> bulletPrefabs = new List<GameObject>(); // Lista de prefabs de balas
 
@@ -16,19 +16,38 @@ public class BulletSpawner : MonoBehaviour
     [SerializeField] private SpawnerType spawnerType;
     [SerializeField] private float firingRate = 1f; // cada cuanto tiempo spawnean las balas
 
+
+    public float tiempoParaActualizar = 1.0f; // El tiempo en segundos entre actualizaciones
+    private float contadorDeSegundos = 0.0f;
+
+
     private float timer = 0f;
     private int currentPrefabIndex = 0; // Índice actual en la lista de prefabs
+
+
+
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (spawnerType == SpawnerType.Spin) transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + 1f);
-        if (timer >= firingRate)
+        // Aumentar el contador de segundos
+        contadorDeSegundos += Time.deltaTime;
+
+        // Comprobar si ha pasado el tiempo deseado
+        if (contadorDeSegundos >= tiempoParaActualizar)
         {
             Fire();
-            timer = 0;
+
+            // Reiniciar el contador de segundos
+            contadorDeSegundos = 0.0f;
         }
+            if (spawnerType == SpawnerType.Spin) transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + 1f);
+
+        //if (timer >= firingRate)
+        //{
+        //    Fire();
+        //    timer = 0;
+        //}
     }
 
     public void Fire()

@@ -29,6 +29,8 @@ public class BossBehavior : MonoBehaviour
     public float singleBulletSpeed = 5f;
 
 
+    public GameObject bichosSpawn;
+
 
     void Start()
     {
@@ -139,7 +141,7 @@ public class BossBehavior : MonoBehaviour
         while (true) 
         {
             
-            int opcion = Random.Range(0, 3); 
+            int opcion = Random.Range(0, 4); 
 
             // Ejecuta la acción elegida
             if (opcion == 0)
@@ -152,6 +154,7 @@ public class BossBehavior : MonoBehaviour
 
             if(opcion == 1)
             {
+                animator.SetBool("attacking", true);
                 // Código para la segunda acción
                 Debug.Log("Ejecutando Acción 2");
 
@@ -162,12 +165,26 @@ public class BossBehavior : MonoBehaviour
                 GameObject bala = Instantiate(singleBullet, transform.position, Quaternion.identity);
                 Rigidbody2D rb = bala.GetComponent<Rigidbody2D>();
                 rb.velocity = direccion * singleBulletSpeed;
+
+                yield return new WaitForSeconds(1f);
+                animator.SetBool("attacking", false);
+            }
+        
+
+            if (opcion == 2)
+            {
+                bichosSpawn.SetActive(true);
+                animator.SetBool("attacking", true);
+                bichosSpawn.SetActive(true);
+                yield return new WaitForSeconds(2f);
+                bichosSpawn.SetActive(false);
+                animator.SetBool("attacking", false);
             }
             else
             {
                 animator.SetBool("attacking", true);
                 spiralShoot.SetActive(true);
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(6f);
                 spiralShoot.SetActive(false);
                 animator.SetBool("attacking", false);
             }
