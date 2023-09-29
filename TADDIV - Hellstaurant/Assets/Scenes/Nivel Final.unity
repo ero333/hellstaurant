@@ -626,7 +626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.62157017
+      value: -0.62156945
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -950,6 +950,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321582296}
   m_CullTransparentMesh: 1
+--- !u!1 &438804385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438804387}
+  - component: {fileID: 438804386}
+  m_Layer: 0
+  m_Name: Spawner Cucarachas 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &438804386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438804385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8070f56c78d6fa04a8788f98949b9dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 4
+  enemyPrefabs:
+  - {fileID: 1192900472077790647, guid: 7408eaf23c8757f41b3bfe8c0cdc3504, type: 3}
+  canSpawn: 1
+  enemyClones: []
+--- !u!4 &438804387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438804385}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.0032653213, w: -0.9999947}
+  m_LocalPosition: {x: 8.89, y: -6.48, z: 1512.663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -359.626}
 --- !u!1 &503519271
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,6 +6948,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113869622}
   m_CullTransparentMesh: 1
+--- !u!1 &2126527354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126527356}
+  - component: {fileID: 2126527355}
+  m_Layer: 0
+  m_Name: Spawner Cucarachas 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2126527355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126527354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8070f56c78d6fa04a8788f98949b9dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 4
+  enemyPrefabs:
+  - {fileID: 5782187248381480201, guid: dfc795f7ec140894ea21c116d98daefb, type: 3}
+  canSpawn: 1
+  enemyClones: []
+--- !u!4 &2126527356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126527354}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.0032653213, w: -0.9999947}
+  m_LocalPosition: {x: 8.89, y: -6.48, z: 1512.663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -359.626}
 --- !u!114 &274840275533776717 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6975055564504526206, guid: 6092d25d36c05ed4ca18e83b1146a432, type: 3}
@@ -7056,3 +7154,5 @@ SceneRoots:
   - {fileID: 114776537}
   - {fileID: 575623678}
   - {fileID: 996568732}
+  - {fileID: 438804387}
+  - {fileID: 2126527356}
