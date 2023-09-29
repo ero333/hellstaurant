@@ -372,7 +372,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359303
+      value: 0.8359305
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -907,8 +907,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PLAYMENU, Assembly-CSharp
+      - m_Target: {fileID: 814449697}
+        m_TargetAssemblyTypeName: stopGame, Assembly-CSharp
         m_MethodName: Tienda
         m_Mode: 1
         m_Arguments:
@@ -5348,8 +5348,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PLAYMENU, Assembly-CSharp
+      - m_Target: {fileID: 2121108981}
+        m_TargetAssemblyTypeName: loseGame, Assembly-CSharp
         m_MethodName: Tienda
         m_Mode: 1
         m_Arguments:

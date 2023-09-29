@@ -91,8 +91,10 @@ public class stopGame : MonoBehaviour
         spawner.deleteClones();
         bulletSpawner.SetActive(false);
         
+    }
 
-        
-
+    public void Tienda ()
+    {
+        SceneManager.LoadScene("Tienda");
     }
 }

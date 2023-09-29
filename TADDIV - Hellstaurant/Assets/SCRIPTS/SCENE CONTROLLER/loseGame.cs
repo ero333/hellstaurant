@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class loseGame : MonoBehaviour
 {
@@ -43,9 +44,10 @@ public class loseGame : MonoBehaviour
         spawner.StopAllCoroutines();
         spawner.deleteClones();
         bulletSpawner.SetActive(false);
+    }
 
-
-
-
+    public void Tienda()
+    {
+        SceneManager.LoadScene("Tienda");
     }
 }
