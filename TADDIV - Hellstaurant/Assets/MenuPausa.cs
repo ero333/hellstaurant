@@ -47,7 +47,7 @@ public class MenuPausa : MonoBehaviour
 		menuPausa.SetActive(true);
 		pausa.sprite = play;
 	}
-	else if (Input.GetKey("joystick button 6")){
+	else if (Input.GetKey("joystick button 1")){
 		menuPausa.SetActive(false);
 		Time.timeScale = 1f;
 		pausa.sprite = pausasprite;
