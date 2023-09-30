@@ -45,23 +45,23 @@ public class stopGame : MonoBehaviour
         levelunlocking.unlocklevel();
 
 
-        if (SceneManager.GetActiveScene().buildIndex >= 8)
+        if (SceneManager.GetActiveScene().buildIndex == 9)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 1);
         }
-        if (SceneManager.GetActiveScene().buildIndex >= 9)
+        if (SceneManager.GetActiveScene().buildIndex == 10)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 2);
         }
-        if (SceneManager.GetActiveScene().buildIndex >= 10)
+        if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 3);
         }
 
-        if (SceneManager.GetActiveScene().buildIndex >= 11)
+        if (SceneManager.GetActiveScene().buildIndex == 12)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 4);
