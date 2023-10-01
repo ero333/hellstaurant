@@ -28,6 +28,11 @@ public class UnlockItemHandler : MonoBehaviour
     public GameObject blockFrenzy;
     public GameObject blockCaja;
 
+    public GameObject Vendido1;
+    public GameObject Vendido2;
+    public GameObject Vendido3;
+    public GameObject Vendido4;
+
 
 
     private void Start()
@@ -41,6 +46,10 @@ public class UnlockItemHandler : MonoBehaviour
 
         UnlockedItemsNumber = PlayerPrefs.GetInt("itemsUnlocked");
 
+        Vendido1.SetActive(false);
+        Vendido2.SetActive(false);
+        Vendido3.SetActive(false);
+        Vendido4.SetActive(false);
 
         if (UnlockedItemsNumber <= 0)
         {
@@ -48,6 +57,7 @@ public class UnlockItemHandler : MonoBehaviour
             blockFaina.SetActive(true);
             blockFrenzy.SetActive(true);
             blockFuga.SetActive(true);
+            
         }
 
 
@@ -64,18 +74,22 @@ public class UnlockItemHandler : MonoBehaviour
         if ( UnlockedItemsNumber >= 1)
         {
             blockFuga.SetActive(false);
+            
         }
         if (UnlockedItemsNumber >= 2)
         {
             blockFaina.SetActive(false);
+            
         }
         if (UnlockedItemsNumber >= 3)
         {
             blockCaja.SetActive(false);
+            
         }
         if (UnlockedItemsNumber >= 4)
         {
             blockFrenzy.SetActive(false);
+            
         }
 
 
@@ -113,6 +127,7 @@ public class UnlockItemHandler : MonoBehaviour
 
             cajabutton.SetActive(false);
 
+
         }
 
         if (PlayerPrefs.GetInt("FrenzyUnlocked") == 1)
@@ -140,6 +155,10 @@ public class UnlockItemHandler : MonoBehaviour
 
             PlayerPrefs.SetInt("FugazzettaUnlocked", 1);
 
+            Vendido2.SetActive(true);
+
+            
+
 
 
         }
@@ -159,6 +178,10 @@ public class UnlockItemHandler : MonoBehaviour
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
             coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
             PlayerPrefs.SetInt("FainaUnlocked", 1);
+
+            Vendido3.SetActive(true);
+
+            
         }
 
     }
@@ -175,6 +198,10 @@ public class UnlockItemHandler : MonoBehaviour
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
             coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
             PlayerPrefs.SetInt("CajaUnlocked", 1);
+
+            Vendido1.SetActive(true);
+
+            
         }
 
     }
@@ -192,6 +219,10 @@ public class UnlockItemHandler : MonoBehaviour
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
             coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
             PlayerPrefs.SetInt("FrenzyUnlocked", 1);
+
+            Vendido4.SetActive(true);
+
+            
         }
 
     }
