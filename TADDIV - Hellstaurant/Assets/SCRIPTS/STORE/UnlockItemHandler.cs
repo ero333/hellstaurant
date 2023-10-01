@@ -137,6 +137,25 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
+        if (PlayerPrefs.GetInt("FugazzettaUnlocked") == 1)
+        {
+            Vendido2.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("FainaUnlocked") == 1)
+        {
+            Vendido3.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("CajaUnlocked") == 1)
+        {
+            Vendido1.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("FrenzyUnlocked") == 1)
+        {
+            Vendido4.SetActive(true);
+        }
     }
 
 
