@@ -42,16 +42,18 @@ public class MenuPausa : MonoBehaviour
     }
 
 	private void Update(){
-		if (Input.GetKey("joystick button 7")){
-		Time.timeScale = 0f;
-		menuPausa.SetActive(true);
-		pausa.sprite = play;
-	}
-	else if (Input.GetKey("joystick button 1")){
-		menuPausa.SetActive(false);
-		Time.timeScale = 1f;
-		pausa.sprite = pausasprite;
-	}
+		if (Input.GetKeyDown("joystick button 7") || Input.GetKeyDown("escape")) {
+            if (pausa.sprite == pausasprite) {
+                pausa.sprite = play;
+                menuPausa.SetActive(false);
+				Time.timeScale = 1f;
+            }
+            else {
+                pausa.sprite = pausasprite;
+                menuPausa.SetActive(true);
+				Time.timeScale = 0f;
+            }
+        }
 
 	}
 
