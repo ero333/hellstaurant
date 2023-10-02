@@ -61,6 +61,8 @@ public class PlayerShooting : MonoBehaviour
 
     public string skinName;
 
+    public AOEDamage aoedamage;
+
 
     public void Start()
     {
@@ -72,6 +74,7 @@ public class PlayerShooting : MonoBehaviour
 
         skinName = PlayerPrefs.GetString("skin seleccionada");
 
+        aoedamage = CajaPrefab.GetComponent<AOEDamage>();
 
     }
 
