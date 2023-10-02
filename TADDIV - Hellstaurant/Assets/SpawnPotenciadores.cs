@@ -11,6 +11,8 @@ public class SpawnPotenciadores : MonoBehaviour
 
     public bool canSpawn = true;
 
+    public AudioSource spawnPoten;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,7 @@ public class SpawnPotenciadores : MonoBehaviour
             int rand = Random.Range(0, PowerUp.Length);
             GameObject PowerUpSp = PowerUp[rand];
 
+            spawnPoten.Play();
 
             Instantiate(PowerUpSp, transform.position, Quaternion.identity);
         }
