@@ -40,10 +40,7 @@ public class PlayerSkin : MonoBehaviour
     void Update()
     {
 
-        if (skinName == "girlSkin")
-        {
-            girlSkinchange();
-        }
+        
 
     }
 
@@ -67,7 +64,10 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "girlSkin" )
         {
             StartCoroutine(GirlpicantePowerUp());
-            
+
+           
+
+
         }
 
     }
@@ -75,6 +75,9 @@ public class PlayerSkin : MonoBehaviour
     IEnumerator GirlpicantePowerUp()
     {
         anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
+
+        Debug.Log("girlFrenzy");
+
         yield return new WaitForSeconds(10f);
         anim.runtimeAnimatorController = girlSkin as RuntimeAnimatorController;
     }
