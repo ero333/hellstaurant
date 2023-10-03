@@ -130,6 +130,22 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         // Verificar si se presionó la tecla "P" para desbloquear todos los niveles.
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            UnlockAllLevels();
+        }
+    }
+
+
+    // Función para desbloquear todos los niveles.
+    private void UnlockAllLevels()
+    {
+        // Cambia este valor al número de niveles que tengas en tu juego.
+
+        PlayerPrefs.SetInt("UltimoNivelAlcanzado", 13);
+        PlayerPrefs.SetInt("Niveles desbloqueados:", 13);
+        Debug.Log("DESBLOQUEASTE TODO WACHIN");
         
     }
 }

@@ -61,11 +61,6 @@ public class unlockNextLevel : MonoBehaviour
         nivelactual = PlayerPrefs.GetInt("NivelActual");
 
         lastlevel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
-
-
-
-
-
     }
 
     public void unlocklevel()
