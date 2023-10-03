@@ -198,7 +198,12 @@ MonoBehaviour:
   PUTime: {fileID: 0}
   potenciadorActivo: {fileID: 0}
   is_using_mouse: 0
+  enemyPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
   playerHealthController: {fileID: 0}
+  girlfrenzymode: {fileID: 0}
+  skinName: 
+  aoedamage: {fileID: 3320348978845176371, guid: 3f569827cfb949f4085b4371d81a7da9, type: 3}
 --- !u!114 &8460081661388279870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   girlSkin: {fileID: 22100000, guid: 15ac829bb6230e54a86b89d572b8afab, type: 2}
+  girlSkinFrenzy: {fileID: 22100000, guid: 45efef198c76d8540a0233655a223095, type: 2}
   defaultSkin: {fileID: 9100000, guid: faee9c451b0cc634e9305b87ce4ced4b, type: 2}
   anim: {fileID: 0}
   skinName: 

@@ -190,6 +190,7 @@ public class PlayerShooting : MonoBehaviour
             fugazzetta.GetComponent<Rigidbody2D>().velocity = direction.normalized * FugazzettaSpeed;
             lastShoot = Time.time;
             cooldown = 1f;
+            
         }
 
         if (Faina)
@@ -200,6 +201,7 @@ public class PlayerShooting : MonoBehaviour
             faina.GetComponent<Rigidbody2D>().velocity = direction * FainaSpeed;
             lastShoot = Time.time;
             cooldown = 0.2f;
+            
         }
 
         if (Fugazzetta == false && Faina == false && Picante == false && Caja == false)
@@ -210,6 +212,7 @@ public class PlayerShooting : MonoBehaviour
             pizza.GetComponent<Rigidbody2D>().velocity = direction.normalized * pizzaSpeed;
             lastShoot = Time.time;
             cooldown = 0.5f;
+            
         }
 
         if (Picante)
@@ -220,6 +223,7 @@ public class PlayerShooting : MonoBehaviour
             picante.GetComponent<Rigidbody2D>().velocity = direction * PicanteSpeed;
             lastShoot = Time.time;
             cooldown = 0.3f;
+           
         }
 
         if (Caja)
@@ -230,6 +234,7 @@ public class PlayerShooting : MonoBehaviour
             caja.GetComponent<Rigidbody2D>().velocity = direction * CajaSpeed;
             lastShoot = Time.time;
             cooldown = 1.5f;
+            
         }
     }
 

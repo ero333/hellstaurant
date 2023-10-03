@@ -63,9 +63,10 @@ public class PlayerSkin : MonoBehaviour
     {
         if (collision.CompareTag("PicantePickup") && skinName == "girlSkin" )
         {
-            StartCoroutine(GirlpicantePowerUp());
+            //StartCoroutine(GirlpicantePowerUp());
 
-           
+            anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
+
 
 
         }

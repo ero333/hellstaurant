@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -288, y: 76.63501}
+  m_AnchoredPosition: {x: -288, y: 76.634995}
   m_SizeDelta: {x: 367.12, y: 153.27002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2821750
@@ -3830,10 +3830,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 148273130}
     - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-      propertyPath: aoedamage
-      value: 
-      objectReference: {fileID: 3320348978845176371, guid: 3f569827cfb949f4085b4371d81a7da9, type: 3}
-    - target: {fileID: 1601258319958896136, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: timeBarScript
       value: 
       objectReference: {fileID: 1621184847}
@@ -3877,14 +3873,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6870924815842460318, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-      propertyPath: girlSkinFrenzy
-      value: 
-      objectReference: {fileID: 22100000, guid: 45efef198c76d8540a0233655a223095, type: 2}
-    - target: {fileID: 8100268075168473408, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: faee9c451b0cc634e9305b87ce4ced4b, type: 2}
     - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: puntaje
       value: 
