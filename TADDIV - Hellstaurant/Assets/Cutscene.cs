@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Cutscene : MonoBehaviour
 {
-    public GameObject animacion1, animacion2, animacion3, animacion4, animacion5, animacion6, animacion7, animacion8, animacion9, animacion10, animacion11, animacion12, animacion13, animacion14, animacion15;
+    public GameObject animacion1, animacion2, animacion3, animacion4;
     
     public GameObject botonSiguiente;
 
@@ -43,74 +43,23 @@ public class Cutscene : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
         }
-
-        //    if(contadorAnim == 5)
-        //{
-        //    animacion5.SetActive(false);
-        //    animacion6.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 6)
-        //{
-        //    animacion6.SetActive(false);
-        //    animacion7.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 7)
-        //{
-        //    animacion7.SetActive(false);
-        //    animacion8.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 8)
-        //{
-        //    animacion8.SetActive(false);
-        //    animacion9.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 9)
-        //{
-        //    animacion9.SetActive(false);
-        //    animacion10.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 10)
-        //{
-        //    animacion10.SetActive(false);
-        //    animacion11.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 11)
-        //{
-        //    animacion11.SetActive(false);
-        //    animacion12.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 12)
-        //{
-        //    animacion12.SetActive(false);
-        //    animacion13.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 13)
-        //{
-        //    animacion13.SetActive(false);
-        //    animacion14.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 14)
-        //{
-        //    animacion14.SetActive(false);
-        //    animacion15.SetActive(true);
-        //}
-
-        //    if(contadorAnim == 15)
-        //{
-        //    animacion15.SetActive(false);
-        //}
-
-
+        
     }
+
+
+        public void desactivarBoton()
+        {
+            botonSiguiente.SetActive(false);
+
+        }
+
+        public void activarBoton()
+        {
+            botonSiguiente.SetActive(true);
+
+        }
+
+   
 
 
 }

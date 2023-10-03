@@ -341,6 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 505944163}
   - component: {fileID: 505944164}
+  - component: {fileID: 505944165}
   m_Layer: 0
   m_Name: ANIMACION 4
   m_TagString: Untagged
@@ -416,6 +417,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &505944165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505944162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4aca7233f46a5743a2bbd16d0101ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animacion1: {fileID: 0}
+  animacion2: {fileID: 0}
+  animacion3: {fileID: 0}
+  animacion4: {fileID: 0}
+  botonSiguiente: {fileID: 2078157535}
+  contadorAnim: 0
 --- !u!1 &523380781
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,17 +559,6 @@ MonoBehaviour:
   animacion2: {fileID: 998875618}
   animacion3: {fileID: 1587164321}
   animacion4: {fileID: 505944162}
-  animacion5: {fileID: 0}
-  animacion6: {fileID: 0}
-  animacion7: {fileID: 0}
-  animacion8: {fileID: 0}
-  animacion9: {fileID: 0}
-  animacion10: {fileID: 0}
-  animacion11: {fileID: 0}
-  animacion12: {fileID: 0}
-  animacion13: {fileID: 0}
-  animacion14: {fileID: 0}
-  animacion15: {fileID: 0}
   botonSiguiente: {fileID: 2078157535}
   contadorAnim: 0
 --- !u!1 &657784179
@@ -698,6 +706,7 @@ GameObject:
   - component: {fileID: 998875619}
   - component: {fileID: 998875620}
   - component: {fileID: 998875621}
+  - component: {fileID: 998875622}
   m_Layer: 0
   m_Name: ANIMACION 2
   m_TagString: Untagged
@@ -794,6 +803,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &998875622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998875618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4aca7233f46a5743a2bbd16d0101ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animacion1: {fileID: 0}
+  animacion2: {fileID: 998875618}
+  animacion3: {fileID: 0}
+  animacion4: {fileID: 0}
+  botonSiguiente: {fileID: 2078157535}
+  contadorAnim: 0
 --- !u!1 &1135027374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1118,7 @@ GameObject:
   - component: {fileID: 1587164322}
   - component: {fileID: 1587164323}
   - component: {fileID: 1587164324}
+  - component: {fileID: 1587164325}
   m_Layer: 0
   m_Name: ANIMACION 3
   m_TagString: Untagged
@@ -1187,6 +1215,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1587164325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587164321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4aca7233f46a5743a2bbd16d0101ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animacion1: {fileID: 0}
+  animacion2: {fileID: 0}
+  animacion3: {fileID: 1587164321}
+  animacion4: {fileID: 0}
+  botonSiguiente: {fileID: 2078157535}
+  contadorAnim: 0
 --- !u!1 &2070604596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1244,7 @@ GameObject:
   - component: {fileID: 2070604597}
   - component: {fileID: 2070604598}
   - component: {fileID: 2070604599}
+  - component: {fileID: 2070604600}
   m_Layer: 0
   m_Name: ANIMACION 1
   m_TagString: Untagged
@@ -1293,6 +1340,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2070604600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070604596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4aca7233f46a5743a2bbd16d0101ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animacion1: {fileID: 2070604596}
+  animacion2: {fileID: 998875618}
+  animacion3: {fileID: 1587164321}
+  animacion4: {fileID: 505944162}
+  botonSiguiente: {fileID: 2078157535}
+  contadorAnim: 0
 --- !u!1 &2078157535
 GameObject:
   m_ObjectHideFlags: 0
