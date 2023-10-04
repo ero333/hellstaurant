@@ -34,6 +34,11 @@ public class PlayerSkin : MonoBehaviour
             manSkinchange();
         }
 
+        if (skinName == "halloweenSkin")
+        {
+            manSkinchange();
+        }
+
     }
 
     // Update is called once per frame
