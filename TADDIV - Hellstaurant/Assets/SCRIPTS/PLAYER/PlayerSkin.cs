@@ -8,6 +8,9 @@ public class PlayerSkin : MonoBehaviour
     public AnimatorOverrideController girlSkin;
     public AnimatorOverrideController girlSkinFrenzy;
 
+    public AnimatorOverrideController halloweenSkin;
+    public AnimatorOverrideController halloweenSkinFrenzy;
+
 
     public RuntimeAnimatorController defaultSkin;
     public Animator anim;
@@ -36,7 +39,7 @@ public class PlayerSkin : MonoBehaviour
 
         if (skinName == "halloweenSkin")
         {
-            manSkinchange();
+            halloweenSkinchange();
         }
 
     }
@@ -59,6 +62,11 @@ public class PlayerSkin : MonoBehaviour
         anim.runtimeAnimatorController = defaultSkin as RuntimeAnimatorController;
     }
 
+    public void halloweenSkinchange()
+    {
+        anim.runtimeAnimatorController = halloweenSkin as RuntimeAnimatorController;
+    }
+
 
 
     //CAMBIOS A FRENZY//
@@ -68,9 +76,21 @@ public class PlayerSkin : MonoBehaviour
     {
         if (collision.CompareTag("PicantePickup") && skinName == "girlSkin" )
         {
-            //StartCoroutine(GirlpicantePowerUp());
+           
 
             anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
+
+
+
+        }
+
+
+
+        if (collision.CompareTag("PicantePickup") && skinName == "halloweenSkin")
+        {
+            
+
+            anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
 
 
 

@@ -13,6 +13,8 @@ public class PlayerSelector : MonoBehaviour
 
     public Sprite personajeMujer;
 
+    public Sprite personajeHalloween;
+
     public SpriteRenderer spriteRendererEspejo;
 
     public GameObject imagenEspejo;
@@ -22,6 +24,8 @@ public class PlayerSelector : MonoBehaviour
 
     public GameObject precioMujer;
 
+    public GameObject precioHalloween;
+
 
     public coinData coindata;
 
@@ -29,6 +33,9 @@ public class PlayerSelector : MonoBehaviour
 
     public GameObject buyWomanButton;
     public GameObject selectWomanButton;
+
+    public GameObject buyHalloweenButton;
+    public GameObject selectHalloweenButton;
 
 
     // Start is called before the first frame update
@@ -44,7 +51,25 @@ public class PlayerSelector : MonoBehaviour
         spriteRendererEspejo = imagenEspejo.GetComponent<SpriteRenderer>();
 
         monedasactuales = PlayerPrefs.GetInt("MonedasRecolectadas:");
-        
+
+
+       if( PlayerPrefs.GetString("skin seleccionada") == "halloweenSkin")
+        {
+            spriteRendererEspejo.sprite = personajeHalloween;
+        }
+
+        if (PlayerPrefs.GetString("skin seleccionada") == "girlSkin")
+        {
+            spriteRendererEspejo.sprite = personajeMujer;
+        }
+
+        if (PlayerPrefs.GetString("skin seleccionada") == "manSkin")
+        {
+            spriteRendererEspejo.sprite = personajeHombre;
+        }
+
+
+
     }
 
 
@@ -73,6 +98,23 @@ public class PlayerSelector : MonoBehaviour
             buyWomanButton.SetActive(true);
             precioMujer.SetActive(true);
         }
+
+
+        if (PlayerPrefs.GetInt("skinHalloweenComprada") == 1)
+        {
+            selectHalloweenButton.SetActive(true);
+            buyHalloweenButton.SetActive(false);
+            precioHalloween.SetActive(false);
+        }
+        else
+        {
+            selectHalloweenButton.SetActive(false);
+            buyHalloweenButton.SetActive(true);
+            precioHalloween.SetActive(true);
+        }
+
+
+
     }
 
 
@@ -93,6 +135,13 @@ public class PlayerSelector : MonoBehaviour
         PlayerPrefs.SetString("skin seleccionada", "girlSkin");
 
         spriteRendererEspejo.sprite = personajeMujer;
+    }
+
+    public void SelectHalloween()
+    {
+        PlayerPrefs.SetString("skin seleccionada", "halloweenSkin");
+
+        spriteRendererEspejo.sprite = personajeHalloween;
     }
 
     public void SelectMan()
@@ -119,6 +168,29 @@ public class PlayerSelector : MonoBehaviour
             selectWomanButton.SetActive(true);
             buyWomanButton.SetActive(false) ;
             precioMujer.SetActive(false);
+        }
+
+
+    }
+
+    public void BuyHalloweenSkin()
+    {
+
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 1)
+        {
+
+
+            monedasactuales = monedasactuales - 1;
+
+
+            PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
+            coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
+
+            PlayerPrefs.SetInt("skinHalloweenComprada", 1);
+
+            selectHalloweenButton.SetActive(true);
+            buyHalloweenButton.SetActive(false);
+            precioHalloween.SetActive(false);
         }
 
 

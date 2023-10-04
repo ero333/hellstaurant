@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -288, y: 76.634995}
+  m_AnchoredPosition: {x: -288, y: 76.63501}
   m_SizeDelta: {x: 367.12, y: 153.27002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2821750
@@ -3873,6 +3873,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6870924815842460318, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: halloweenSkin
+      value: 
+      objectReference: {fileID: 22100000, guid: 959e186b706634f4fa8f4538502afdf6, type: 2}
+    - target: {fileID: 6870924815842460318, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: halloweenSkinFrenzy
+      value: 
+      objectReference: {fileID: 22100000, guid: efc9d5b6a2cb36e4aa7f3dc5eb99c930, type: 2}
     - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: puntaje
       value: 
