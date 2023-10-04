@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7351654234735231283}
   - component: {fileID: 8422619593470566159}
   - component: {fileID: 7442340460101119668}
+  - component: {fileID: 576768189682842382}
   - component: {fileID: 8100268075168473408}
   - component: {fileID: 1601258319958896136}
   - component: {fileID: 8460081661388279870}
@@ -136,6 +137,103 @@ MonoBehaviour:
   speed: 4
   speedWithPowerUp: 7
   isHealing: 0
+  Coinsound: {fileID: 576768189682842382}
+--- !u!82 &576768189682842382
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170127940833486984}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c45dbd7bddb5a714799ef1803a9d63eb, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.496
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &8100268075168473408
 Animator:
   serializedVersion: 5
@@ -198,6 +296,7 @@ MonoBehaviour:
   PUTime: {fileID: 0}
   potenciadorActivo: {fileID: 0}
   is_using_mouse: 0
+  is_using_gamepad: 0
   enemyPrefab: {fileID: 0}
   spawnPoint: {fileID: 0}
   playerHealthController: {fileID: 0}
@@ -241,6 +340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   girlSkin: {fileID: 22100000, guid: 15ac829bb6230e54a86b89d572b8afab, type: 2}
   girlSkinFrenzy: {fileID: 22100000, guid: 45efef198c76d8540a0233655a223095, type: 2}
+  halloweenSkin: {fileID: 22100000, guid: 959e186b706634f4fa8f4538502afdf6, type: 2}
+  halloweenSkinFrenzy: {fileID: 22100000, guid: efc9d5b6a2cb36e4aa7f3dc5eb99c930, type: 2}
   defaultSkin: {fileID: 9100000, guid: faee9c451b0cc634e9305b87ce4ced4b, type: 2}
   anim: {fileID: 0}
   skinName: 

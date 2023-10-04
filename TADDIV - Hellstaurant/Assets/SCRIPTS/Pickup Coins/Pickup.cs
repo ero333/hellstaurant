@@ -22,13 +22,11 @@ public class Pickup : MonoBehaviour
 
                 UIController.Instance.coinsCollected++; //conteo de monedas
                 UIController.Instance.UpdateCoinCount(); //Iniciar conteo monedas
-
-                
-
                 
 
                 isCollected = true;
                 Destroy(gameObject); //destruir monedas una vez agarradas 
+                
             }
         }
     }

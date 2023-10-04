@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     public static PlayerMovement instance;
 
-
+    public AudioSource Coinsound;
 
 
     public void Awake()
@@ -72,5 +72,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Collectible"))
+        {
+            Coinsound.Play();
+        }
+    }
 }
