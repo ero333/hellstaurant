@@ -14,10 +14,15 @@ public class EnemyBasicDamage : MonoBehaviour
 
     public int amountToDrop; // Cantidad de monedas a dropear
 
+    public AudioClip enemyAttackSound; // sonido de ataque del enemigo
+    private AudioSource audioSource;
+
     void Start()
     {
         contadorPuntos = GameObject.FindGameObjectWithTag("Score");
         puntaje = contadorPuntos.GetComponent<Puntaje>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()

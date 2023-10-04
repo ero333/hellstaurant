@@ -29,6 +29,10 @@ public class PlayerHealthController : MonoBehaviour
 
     public bool isHealing = true; //verificar si el enemigo se esta curando o no
 
+    public AudioClip enemyAttackSound; // sonido daño al jugador 
+    public AudioSource damageSound;
+
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -91,11 +95,9 @@ public class PlayerHealthController : MonoBehaviour
 
     public void DealDamage()
     {
-
         if (invincibleCounter <= 0)
         {
             currentHealth--;
-
 
             if (currentHealth <= 0)
             {
@@ -103,31 +105,31 @@ public class PlayerHealthController : MonoBehaviour
                 currentHealth = 0;
                 gameObject.SetActive(false);
 
+                // sonido de ataque de los enemigos
+                if (enemyAttackSound != null)
+                {
+                    damageSound.clip = enemyAttackSound;
+                    damageSound.Play();
+                }
+
                 ShowGameOver(); // Mostrar el cartel de Game Over
             }
             else
             {
-                
-
                 invincibleCounter = invincibleLength;
                 Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
                 StartCoroutine(colorchange());
-
             }
 
             UIController.Instance.UpdateHealthDisplay();
-
-
-
 
             if (puntaje.puntos >= 10)
             {
                 puntaje.puntos = puntaje.puntos - 10;
             }
-
-
         }
     }
+
 
     void ShowGameOver()
     {
