@@ -24,6 +24,10 @@ public class HScoreManager : MonoBehaviour
 
     public Text highscoreLevel10;
 
+    public Text highscoreLevel11;
+
+    public Text highscoreLevel12;
+
 
     public GameObject star1Level1, star2Level1, star3Level1;
     public GameObject star1Level2, star2Level2, star3Level2;
@@ -34,6 +38,9 @@ public class HScoreManager : MonoBehaviour
     public GameObject star1Level7, star2Level7, star3Level7;
     public GameObject star1Level8, star2Level8, star3Level8;
     public GameObject star1Level9, star2Level9, star3Level9;
+    public GameObject star1Level10, star2Level10, star3Level10;
+    public GameObject star1Level11, star2Level11, star3Level11;
+    public GameObject star1Level12, star2Level12, star3Level12;
 
 
 
@@ -49,6 +56,8 @@ public class HScoreManager : MonoBehaviour
         highscoreLevel8.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 12, 0).ToString();
         highscoreLevel9.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 13, 0).ToString();
         highscoreLevel10.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 14, 0).ToString();
+        highscoreLevel11.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 14, 0).ToString();
+        highscoreLevel12.text = PlayerPrefs.GetInt("PuntajeRecordLevel" + 14, 0).ToString();
 
 
         //LEVEL 1//
@@ -58,7 +67,7 @@ public class HScoreManager : MonoBehaviour
             star2Level1.SetActive(true);
             star3Level1.SetActive(true);
         }
-        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 300 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 499 )
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 300 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 499)
         {
             star1Level1.SetActive(true);
             star2Level1.SetActive(true);
@@ -306,14 +315,85 @@ public class HScoreManager : MonoBehaviour
             star3Level9.SetActive(false);
         }
 
+        //LEVEL 10//
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 500)
+        {
+            star1Level10.SetActive(true);
+            star2Level10.SetActive(true);
+            star3Level10.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 300 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 499)
+        {
+            star1Level10.SetActive(true);
+            star2Level10.SetActive(true);
+            star3Level10.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 100 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 299)
+        {
+            star1Level10.SetActive(true);
+            star2Level10.SetActive(false);
+            star3Level10.SetActive(false);
+        }
 
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 0 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 99)
+        {
+            star1Level10.SetActive(false);
+            star2Level10.SetActive(false);
+            star3Level10.SetActive(false);
+        }
+
+        //LEVEL 11//
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 500)
+        {
+            star1Level11.SetActive(true);
+            star2Level11.SetActive(true);
+            star3Level11.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 300 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 499)
+        {
+            star1Level11.SetActive(true);
+            star2Level11.SetActive(true);
+            star3Level11.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 100 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 299)
+        {
+            star1Level11.SetActive(true);
+            star2Level11.SetActive(false);
+            star3Level11.SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 0 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 99)
+        {
+            star1Level11.SetActive(false);
+            star2Level11.SetActive(false);
+            star3Level11.SetActive(false);
+        }
+
+        //LEVEL 12//
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 500)
+        {
+            star1Level12.SetActive(true);
+            star2Level12.SetActive(true);
+            star3Level12.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 300 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 499)
+        {
+            star1Level12.SetActive(true);
+            star2Level12.SetActive(true);
+            star3Level12.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 100 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 299)
+        {
+            star1Level12.SetActive(true);
+            star2Level12.SetActive(false);
+            star3Level12.SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) >= 0 && PlayerPrefs.GetInt("PuntajeRecordLevel" + 5) <= 99)
+        {
+            star1Level12.SetActive(false);
+            star2Level12.SetActive(false);
+            star3Level12.SetActive(false);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-
 }
