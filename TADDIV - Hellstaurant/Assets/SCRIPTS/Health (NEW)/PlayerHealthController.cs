@@ -31,6 +31,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public AudioClip enemyAttackSound; // sonido daño al jugador 
     public AudioSource damageSound;
+    public AudioSource eatingSound;
 
 
     void Start()
@@ -82,8 +83,12 @@ public class PlayerHealthController : MonoBehaviour
 
     IEnumerator healingProcess()
     {
+
         anim.SetBool("Curandose", true);
         isHealing = true; // establece isHealing en true al comenzar la curaci�n
+
+        eatingSound.Play();
+
         yield return new WaitForSeconds(2f);
 
         currentHealth++;
