@@ -11,6 +11,9 @@ public class PlayerSkin : MonoBehaviour
     public AnimatorOverrideController halloweenSkin;
     public AnimatorOverrideController halloweenSkinFrenzy;
 
+    public AnimatorOverrideController spidermanSkin;
+    public AnimatorOverrideController spidermanSkinFrenzy;
+
 
     public RuntimeAnimatorController defaultSkin;
     public Animator anim;
@@ -42,6 +45,11 @@ public class PlayerSkin : MonoBehaviour
             halloweenSkinchange();
         }
 
+        if (skinName == "spidermanSkin")
+        {
+            spidermanSkinchange();
+        }
+
     }
 
     // Update is called once per frame
@@ -67,7 +75,10 @@ public class PlayerSkin : MonoBehaviour
         anim.runtimeAnimatorController = halloweenSkin as RuntimeAnimatorController;
     }
 
-
+    public void spidermanSkinchange()
+    {
+        anim.runtimeAnimatorController = spidermanSkin as RuntimeAnimatorController;
+    }
 
     //CAMBIOS A FRENZY//
 
@@ -91,6 +102,17 @@ public class PlayerSkin : MonoBehaviour
             
 
             anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
+
+
+
+        }
+
+
+        if (collision.CompareTag("PicantePickup") && skinName == "spidermanSkin")
+        {
+
+
+            anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
 
 
 

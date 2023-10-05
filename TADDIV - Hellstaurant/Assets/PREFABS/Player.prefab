@@ -152,7 +152,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c45dbd7bddb5a714799ef1803a9d63eb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.496
+  m_Volume: 1
   m_Pitch: 0.15
   Loop: 0
   Mute: 0
@@ -346,6 +346,8 @@ MonoBehaviour:
   girlSkinFrenzy: {fileID: 22100000, guid: 45efef198c76d8540a0233655a223095, type: 2}
   halloweenSkin: {fileID: 22100000, guid: 959e186b706634f4fa8f4538502afdf6, type: 2}
   halloweenSkinFrenzy: {fileID: 22100000, guid: efc9d5b6a2cb36e4aa7f3dc5eb99c930, type: 2}
+  spidermanSkin: {fileID: 22100000, guid: 4e77311f08cf20e498a292f03bfe82fd, type: 2}
+  spidermanSkinFrenzy: {fileID: 22100000, guid: bd5ba53161208d04a8b4ba1e1c4fe0ba, type: 2}
   defaultSkin: {fileID: 9100000, guid: faee9c451b0cc634e9305b87ce4ced4b, type: 2}
   anim: {fileID: 0}
   skinName: 
@@ -465,7 +467,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0daecffa3e4051b4492a1508b0a5e380, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.616
   m_Pitch: 1
   Loop: 0
   Mute: 0

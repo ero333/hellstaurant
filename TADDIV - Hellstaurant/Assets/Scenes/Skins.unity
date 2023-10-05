@@ -405,7 +405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1523, y: 150.99998}
+  m_AnchoredPosition: {x: -1523.0002, y: 150.99998}
   m_SizeDelta: {x: -7417.6406, y: -281.65002}
   m_Pivot: {x: 0.50000006, y: 0.50000006}
 --- !u!114 &194732032
@@ -3506,7 +3506,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 928065398}
         m_TargetAssemblyTypeName: PlayerSelector, Assembly-CSharp
-        m_MethodName: SelectHalloween
+        m_MethodName: SelectSpiderman
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4405,7 +4405,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 928065398}
         m_TargetAssemblyTypeName: PlayerSelector, Assembly-CSharp
-        m_MethodName: BuyHalloweenSkin
+        m_MethodName: BuySpidermanSkin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
