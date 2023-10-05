@@ -15,6 +15,8 @@ public class PlayerSelector : MonoBehaviour
 
     public Sprite personajeHalloween;
 
+    public Sprite personajeSpiderman;
+
     public SpriteRenderer spriteRendererEspejo;
 
     public GameObject imagenEspejo;
@@ -26,6 +28,7 @@ public class PlayerSelector : MonoBehaviour
 
     public GameObject precioHalloween;
 
+    public GameObject precioSpiderman;
 
     public coinData coindata;
 
@@ -37,6 +40,8 @@ public class PlayerSelector : MonoBehaviour
     public GameObject buyHalloweenButton;
     public GameObject selectHalloweenButton;
 
+    public GameObject buySpidermanButton;
+    public GameObject selectSpidermanButton;
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +73,10 @@ public class PlayerSelector : MonoBehaviour
             spriteRendererEspejo.sprite = personajeHombre;
         }
 
+        if (PlayerPrefs.GetString("skin seleccionada") == "spidermanSkin")
+        {
+            spriteRendererEspejo.sprite = personajeSpiderman;
+        }
 
 
     }
@@ -113,6 +122,19 @@ public class PlayerSelector : MonoBehaviour
             precioHalloween.SetActive(true);
         }
 
+        if (PlayerPrefs.GetInt("skinSpidermanComprada") == 1)
+        {
+            selectSpidermanButton.SetActive(true);
+            buySpidermanButton.SetActive(false);
+            precioSpiderman.SetActive(false);
+        }
+        else
+        {
+            selectSpidermanButton.SetActive(false);
+            buySpidermanButton.SetActive(true);
+            precioSpiderman.SetActive(true);
+        }
+
 
 
     }
@@ -144,6 +166,12 @@ public class PlayerSelector : MonoBehaviour
         spriteRendererEspejo.sprite = personajeHalloween;
     }
 
+    public void SelectSpiderman()
+    {
+        PlayerPrefs.SetString("skin seleccionada", "spidermanSkin");
+
+        spriteRendererEspejo.sprite = personajeSpiderman;
+    }
     public void SelectMan()
     {
         PlayerPrefs.SetString("skin seleccionada", "manSkin");
@@ -193,6 +221,28 @@ public class PlayerSelector : MonoBehaviour
             precioHalloween.SetActive(false);
         }
 
+
+    }
+
+    public void BuySpidermanSkin()
+    {
+
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 1)
+        {
+
+
+            monedasactuales = monedasactuales - 1;
+
+
+            PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
+            coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
+
+            PlayerPrefs.SetInt("skinSpidermanComprada", 1);
+
+            selectSpidermanButton.SetActive(true);
+            buySpidermanButton.SetActive(false);
+            precioSpiderman.SetActive(false);
+        }
 
     }
 
