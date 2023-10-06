@@ -26,6 +26,8 @@ public class stopGame : MonoBehaviour
 
     public GameObject bulletSpawner;
 
+    public AudioSource winSound;
+
 
     private void Awake()
     {
@@ -76,6 +78,7 @@ public class stopGame : MonoBehaviour
 
     public void OnEnable()
     {
+        winSound.Play();
 
         GameObject[] taggedEnemies = GameObject.FindGameObjectsWithTag("Enemy");
 
@@ -90,7 +93,8 @@ public class stopGame : MonoBehaviour
         spawner.StopAllCoroutines();
         spawner.deleteClones();
         bulletSpawner.SetActive(false);
-        
+
+
     }
 
     public void Tienda ()
