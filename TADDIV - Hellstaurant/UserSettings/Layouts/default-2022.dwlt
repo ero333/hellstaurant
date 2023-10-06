@@ -15,11 +15,17 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 43.2
     width: 1536
     height: 780.8
+=======
+    y: 43
+    width: 1920
+    height: 997
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -44,8 +50,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1536
     height: 780.8
+=======
+    width: 1920
+    height: 997
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +80,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1536
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +101,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 760.8
     width: 1536
+=======
+    y: 977
+    width: 1920
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,12 +130,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1536
     height: 730.8
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
   controlID: 103
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 106
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,8 +164,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1128
     height: 730.8
+=======
+    width: 1405
+    height: 947
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
@@ -164,8 +194,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1128
     height: 462.4
+=======
+    width: 1405
+    height: 600
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -187,8 +222,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 255.2
     height: 462.4
+=======
+    width: 319
+    height: 600
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -211,10 +251,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 255.2
+    x: 319
     y: 0
+<<<<<<< HEAD
     width: 872.8
     height: 462.4
+=======
+    width: 1086
+    height: 600
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -240,9 +285,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 462.4
     width: 1128
     height: 268.4
+=======
+    y: 600
+    width: 1405
+    height: 347
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 16}
@@ -266,10 +317,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1128
     y: 0
     width: 408
     height: 730.8
+=======
+    x: 1405
+    y: 0
+    width: 515
+    height: 947
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
@@ -293,14 +351,18 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 319
     y: 73
     width: 1084
+<<<<<<< HEAD
     height: 604
+=======
+    height: 579
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -317,7 +379,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 1296, y: 728.75}
+=======
+  m_TargetSize: {x: 992, y: 558}
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -332,10 +398,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -518.4
     m_HBaseRangeMax: 518.4
     m_VBaseRangeMin: -291.5
     m_VBaseRangeMax: 291.5
+=======
+    m_HBaseRangeMin: -496
+    m_HBaseRangeMax: 496
+    m_VBaseRangeMin: -279
+    m_VBaseRangeMax: 279
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -354,9 +427,15 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1084
+<<<<<<< HEAD
       height: 583
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 542, y: 291.5}
+=======
+      height: 558
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 542, y: 279}
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -364,12 +443,21 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -542
+<<<<<<< HEAD
       y: -291.5
       width: 1084
       height: 583
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1355, y: 755}
+=======
+      y: -279
+      width: 1084
+      height: 558
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1084, y: 579}
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -391,14 +479,20 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 73.6
     width: 254.2
     height: 441.4
+=======
+    y: 73
+    width: 318
+    height: 579
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -412,9 +506,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 08b60000
       m_LastClickedID: 0
       m_ExpandedIDs: 0461feffbe61feff7862feff3263feffec63feffa664feff6065feff1a66feffd466feff8e67feff4868feff0069feffba69feff406afefffa6afeff806cfeff086efeff886ffeffda70feff2a72feff8a73fefffc74feffae75feff5e77feff9a78feff287afeff667bfeff207cfeff6080feffe880feffe489feff948afeff848cfeffc8ca0000b2d20000
+=======
+      m_SelectedIDs: 58970000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 36a9fefff4faffff
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -454,14 +554,21 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 255.2
     y: 73.6
     width: 870.8
     height: 441.4
+=======
+    x: 319
+    y: 73
+    width: 1084
+    height: 579
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -820,9 +927,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 4.184419, y: 0.13932128, z: 4.6244946}
     speed: 2
     m_Value: {x: 4.184419, y: 0.13932128, z: 4.6244946}
+=======
+    m_Target: {x: 1.3244145, y: 0.21362336, z: 485.08636}
+    speed: 2
+    m_Value: {x: 1.0292366, y: 0.0075833797, z: 460.40634}
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -872,9 +985,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 6.910896
     speed: 2
     m_Value: 6.910896
+=======
+    m_Target: 6.2551794
+    speed: 2
+    m_Value: 5.9858174
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -915,7 +1034,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Animator
-    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -1073,9 +1192,15 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
+<<<<<<< HEAD
   m_AnimatorController: {fileID: 9100000, guid: faee9c451b0cc634e9305b87ce4ced4b, type: 2}
   m_BreadCrumbs:
   - m_Target: {fileID: 487169832976798004, guid: faee9c451b0cc634e9305b87ce4ced4b, type: 2}
+=======
+  m_AnimatorController: {fileID: 9100000, guid: 5de8ab7e64aa6f0448b15d576a64ece9, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1533842793125065841, guid: 5de8ab7e64aa6f0448b15d576a64ece9, type: 2}
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1104,14 +1229,20 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 536
     width: 1127
     height: 247.4
+=======
+    y: 673
+    width: 1404
+    height: 326
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1133,7 +1264,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/ASSETS/BACKGROUND
+=======
+    - Assets/Scenes
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1141,6 +1276,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/ASSETS/BACKGROUND
   m_LastFoldersGridSize: 67
   m_LastProjectPath: "C:\\Users\\I\xF1aki\\Documents\\GitHub\\hellstaurant\\TADDIV
@@ -1152,6 +1288,18 @@ MonoBehaviour:
     m_SelectedIDs: fa070000
     m_LastClickedID: 2042
     m_ExpandedIDs: 0000000026060000ae060000c60600004a080000120b000000ca9a3b
+=======
+  - Assets/Scenes
+  m_LastFoldersGridSize: 51
+  m_LastProjectPath: C:\Users\Hogar\Desktop\hellstaurant\TADDIV - Hellstaurant
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 7e6d0000
+    m_LastClickedID: 28030
+    m_ExpandedIDs: 00000000566d0000586d0000806d000000ca9a3b
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1179,7 +1327,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000026060000ae060000c60600004a080000120b0000
+=======
+    m_ExpandedIDs: 00000000566d0000586d0000
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1251,14 +1403,20 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 698
     width: 1404
     height: 341
+=======
+    y: 673
+    width: 1404
+    height: 326
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1285,14 +1443,21 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1128
     y: 73.6
     width: 407
     height: 709.8
+=======
+    x: 1405
+    y: 73
+    width: 514
+    height: 926
+>>>>>>> parent of 63bfc394 (+ EventSystem en todas las escenas del juego para navegar menús desde el teclado/gamepad)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

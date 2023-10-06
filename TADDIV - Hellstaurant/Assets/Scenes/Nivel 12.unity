@@ -5369,7 +5369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 676932052}
+  m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1494490938
@@ -5558,9 +5558,6 @@ MonoBehaviour:
   pausa: {fileID: 1460925075}
   play: {fileID: -901962771, guid: b30b7e240760d8a4ea2cfb5fb44f38ac, type: 3}
   pausasprite: {fileID: -526820904, guid: b30b7e240760d8a4ea2cfb5fb44f38ac, type: 3}
-  popupPanel: {fileID: 0}
-  popupPausa: {fileID: 0}
-  Resume: {fileID: 0}
 --- !u!114 &1565823845
 MonoBehaviour:
   m_ObjectHideFlags: 0
