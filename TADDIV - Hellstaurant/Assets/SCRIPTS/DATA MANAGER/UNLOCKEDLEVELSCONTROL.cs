@@ -35,6 +35,21 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     public GameObject level9Button;
 
 
+    public GameObject blocklevel10;
+    public GameObject level10Button;
+
+    public GameObject blocklevel11;
+    public GameObject level11Button;
+
+    public GameObject blocklevel12;
+    public GameObject level12Button;
+
+    public GameObject blocklevel13;
+    public GameObject level13Button;
+
+    public GameObject blocklevel14;
+    public GameObject level14Button;
+
 
     public unlockNextLevel levelUnlockCheck;
 
@@ -69,7 +84,40 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
 
         blocklevel9.SetActive(true);
         level9Button.SetActive(false);
-        
+
+        blocklevel10.SetActive(true);
+        level10Button.SetActive(false);
+
+        blocklevel11.SetActive(true);
+        level11Button.SetActive(false);
+
+        blocklevel12.SetActive(true);
+        level12Button.SetActive(false);
+
+        blocklevel13.SetActive(true);
+        level13Button.SetActive(false);
+
+        blocklevel14.SetActive(true);
+        level14Button.SetActive(false);
+
+
+
+
+
+
+
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+         // Verificar si se presionó la tecla "P" para desbloquear todos los niveles.
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            UnlockAllLevels();
+        }
 
 
         if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 4)
@@ -125,16 +173,39 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
             blocklevel9.SetActive(false);
             level9Button.SetActive(true);
         }
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 14)
+        {
+            blocklevel10.SetActive(false);
+            level10Button.SetActive(true);
         }
 
-    // Update is called once per frame
-    void Update()
-    {
-         // Verificar si se presionó la tecla "P" para desbloquear todos los niveles.
-        if (Input.GetKeyDown(KeyCode.P))
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 15)
         {
-            UnlockAllLevels();
+            blocklevel11.SetActive(false);
+            level11Button.SetActive(true);
         }
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 16)
+        {
+            blocklevel12.SetActive(false);
+            level12Button.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 17)
+        {
+            blocklevel13.SetActive(false);
+            level13Button.SetActive(true);
+        }
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 18)
+        {
+            blocklevel14.SetActive(false);
+            level14Button.SetActive(true);
+        }
+
+
+
     }
 
 
@@ -143,8 +214,8 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     {
         // Cambia este valor al número de niveles que tengas en tu juego.
 
-        PlayerPrefs.SetInt("UltimoNivelAlcanzado", 13);
-        PlayerPrefs.SetInt("Niveles desbloqueados:", 13);
+        PlayerPrefs.SetInt("UltimoNivelAlcanzado", 18);
+        PlayerPrefs.SetInt("Niveles desbloqueados:", 18);
         Debug.Log("DESBLOQUEASTE TODO WACHIN");
         
     }

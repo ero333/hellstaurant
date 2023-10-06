@@ -14,6 +14,8 @@ public class loseGame : MonoBehaviour
     public EnemySpawner spawner2;
     public EnemySpawner spawner3;
 
+    public AudioSource loseSound;
+
     public GameObject bulletSpawner;
 
     // Start is called before the first frame update
@@ -30,6 +32,8 @@ public class loseGame : MonoBehaviour
 
     public void OnEnable()
     {
+
+        loseSound.Play();
 
         GameObject[] taggedEnemies = GameObject.FindGameObjectsWithTag("Enemy");
 

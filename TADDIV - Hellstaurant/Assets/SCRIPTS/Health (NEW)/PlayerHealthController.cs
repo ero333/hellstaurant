@@ -27,7 +27,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public Rigidbody2D rb2d;
 
-    public bool isHealing = true; //verificar si el enemigo se esta curando o no
+    public bool isHealing; //verificar si el enemigo se esta curando o no
 
     public AudioSource damageSound; 
     public AudioSource eatingSound;
@@ -35,6 +35,9 @@ public class PlayerHealthController : MonoBehaviour
 
     void Start()
     {
+
+        isHealing = false;
+
         currentHealth = maxHealth;
         theSR = GetComponent<SpriteRenderer>();
 

@@ -18,7 +18,15 @@ public class MenuPausa : MonoBehaviour
     public GameObject popupPausa;
 	public GameObject Resume;
 
-	 public void OpenPopup()
+    public bool pausedGame;
+
+
+    public void Start()
+    {
+        pausedGame = false;
+    }
+
+    public void OpenPopup()
     {
         popupPanel.SetActive(true);
         EventSystem.current.SetSelectedGameObject(popupPausa.GetComponentInChildren<Button>().gameObject);
@@ -34,6 +42,8 @@ public class MenuPausa : MonoBehaviour
 	   Time.timeScale = 0f;
 	   menuPausa.SetActive(true);
 	   pausa.sprite = play;
+
+        pausedGame=true;
    }   
 
 	public void MenuInicial()
@@ -59,17 +69,32 @@ public class MenuPausa : MonoBehaviour
     }
 
 	private void Update(){
-		if (Input.GetKeyDown("joystick button 7") || Input.GetKeyDown("escape")) {
-            if (pausa.sprite == pausasprite) {
-                pausa.sprite = play;
-                menuPausa.SetActive(false);
-				Time.timeScale = 1f;
+
+		if (Input.GetKeyDown("joystick button 9") || Input.GetKeyDown("escape")) {
+
+            if (!pausedGame)
+            {
+                Pausa();
             }
-            else {
+
+            else
+            {
                 pausa.sprite = pausasprite;
-                menuPausa.SetActive(true);
-				Time.timeScale = 0f;
+                menuPausa.SetActive(false);
+                Time.timeScale = 1f;
+
+                pausedGame = false;
             }
+            //        if (pausa.sprite == pausasprite) {
+            //            pausa.sprite = play;
+            //            menuPausa.SetActive(false);
+            //Time.timeScale = 1f;
+            //        }
+            //        else {
+            //            pausa.sprite = pausasprite;
+            //            menuPausa.SetActive(true);
+            //Time.timeScale = 0f;
+            //        }
         }
 
 	}
