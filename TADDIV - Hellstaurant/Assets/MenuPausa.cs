@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class MenuPausa : MonoBehaviour
 {
@@ -12,6 +14,21 @@ public class MenuPausa : MonoBehaviour
 	public Image pausa;
 	public Sprite play;
 	public Sprite pausasprite;
+	public GameObject popupPanel;
+    public GameObject popupPausa;
+	public GameObject Resume;
+
+	 public void OpenPopup()
+    {
+        popupPanel.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(popupPausa.GetComponentInChildren<Button>().gameObject);
+    }
+
+    public void ClosePopup()
+    {
+        popupPanel.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(Resume.GetComponentInChildren<Button>().gameObject);
+    }
   
 	public void Pausa(){
 	   Time.timeScale = 0f;
