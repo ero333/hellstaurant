@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class muteSound : MonoBehaviour
+
 {
 
     private bool sonidoMuteado = true; // Estado de sonido mutado
+
+    public Sprite spriteMuteado;
+    public Sprite spriteDesmuteado;
+    public Button botonSonido;
 
     private void Start()
     {
@@ -24,8 +31,9 @@ public class muteSound : MonoBehaviour
         PlayerPrefs.Save();
 
         ActualizarAudioListener();
-    }
-
+        ActualizarSpriteBoton();
+    } 
+    
     private void ActualizarAudioListener()
     {
         // Encuentra el componente AudioListener en la escena
@@ -37,5 +45,19 @@ public class muteSound : MonoBehaviour
             audioListener.enabled = !sonidoMuteado;
         }
     }
+
+    private void ActualizarSpriteBoton()
+    {
+        if (botonSonido != null)
+        {
+            Image imagenBoton = botonSonido.GetComponent<Image>();
+            if (imagenBoton != null)
+            {
+                imagenBoton.sprite = sonidoMuteado ? spriteMuteado : spriteDesmuteado;
+            }
+        }
+
+    }
+    
 
 }
