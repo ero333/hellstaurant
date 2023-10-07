@@ -13,13 +13,13 @@ public class UnlockItemHandler : MonoBehaviour
 
     public int monedasactuales;
 
-    public GameObject fugabutton;
+    public Button fugabutton;
 
-    public GameObject fainabutton;
+    public Button fainabutton;
 
-    public GameObject cajabutton;
+    public Button cajabutton;
 
-    public GameObject frenzybutton;
+    public Button frenzybutton;
 
 
 
@@ -111,21 +111,21 @@ public class UnlockItemHandler : MonoBehaviour
         if (PlayerPrefs.GetInt("FugazzettaUnlocked") == 1)
         {
 
-            fugabutton.SetActive(false);
+            fugabutton.interactable=false;
 
         }
 
         if (PlayerPrefs.GetInt("FainaUnlocked") == 1)
         {
 
-            fainabutton.SetActive(false);
+            fainabutton.interactable = false;
 
         }
 
         if (PlayerPrefs.GetInt("CajaUnlocked") == 1)
         {
 
-            cajabutton.SetActive(false);
+            cajabutton.interactable = false;
 
 
         }
@@ -133,13 +133,14 @@ public class UnlockItemHandler : MonoBehaviour
         if (PlayerPrefs.GetInt("FrenzyUnlocked") == 1)
         {
 
-            frenzybutton.SetActive(false);
+            frenzybutton.interactable = false;
 
         }
 
         if (PlayerPrefs.GetInt("FugazzettaUnlocked") == 1)
         {
             Vendido2.SetActive(true);
+            
         }
 
         if (PlayerPrefs.GetInt("FainaUnlocked") == 1)
