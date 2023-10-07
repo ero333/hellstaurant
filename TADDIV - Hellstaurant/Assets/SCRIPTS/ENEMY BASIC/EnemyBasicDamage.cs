@@ -14,7 +14,9 @@ public class EnemyBasicDamage : MonoBehaviour
 
     public int amountToDrop; // Cantidad de monedas a dropear
 
-    
+    public AudioSource killSound;
+
+
 
     void Start()
     {
@@ -36,6 +38,7 @@ public class EnemyBasicDamage : MonoBehaviour
             enemyLife--; // Le baja 1 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
+           
             if (enemyLife <= 0)
             {
                 onDeath();
@@ -49,6 +52,8 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
+                
+
                 onDeath();
             }
         }
@@ -60,6 +65,8 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
+                
+
                 onDeath();
             }
         }
@@ -71,6 +78,8 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
+                killSound.Play();
+
                 onDeath();
             }
         }
@@ -82,6 +91,8 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
+                killSound.Play();
+
                 onDeath();
             }
         }
@@ -89,8 +100,14 @@ public class EnemyBasicDamage : MonoBehaviour
 
     public void onDeath()
     {
+        
+
         puntaje.obtenerPuntaje(puntosEnemigo);
+
+        killSound.Play();
+
         Destroy(gameObject); // Cuando la vida es menor o igual a cero se destruye el enemigo
+
 
         float dropSelect = Random.Range(0, 100f);
 
