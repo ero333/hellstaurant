@@ -17,6 +17,9 @@ public class PlayerSelector : MonoBehaviour
 
     public Sprite personajeSpiderman;
 
+    public Sprite personajeDorado;
+
+
     public SpriteRenderer spriteRendererEspejo;
 
     public GameObject imagenEspejo;
@@ -43,6 +46,16 @@ public class PlayerSelector : MonoBehaviour
     public GameObject buySpidermanButton;
     public GameObject selectSpidermanButton;
 
+    public GameObject goldenSkin;
+    public Button selectGoldButton;
+
+    public Sprite goldSkinLocked;
+    public Sprite goldSkinUnlocked;
+
+    public SpriteRenderer spriteRendererGoldenSkin;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +65,8 @@ public class PlayerSelector : MonoBehaviour
         //}
 
         //this.Select(0);
+
+        selectGoldButton.interactable = false;
 
         spriteRendererEspejo = imagenEspejo.GetComponent<SpriteRenderer>();
 
@@ -77,6 +92,17 @@ public class PlayerSelector : MonoBehaviour
         {
             spriteRendererEspejo.sprite = personajeSpiderman;
         }
+
+        if (PlayerPrefs.GetString("skin seleccionada") == "goldSkin")
+        {
+            spriteRendererEspejo.sprite = personajeDorado;
+        }
+
+
+
+        selectGoldButton.interactable = false;
+        spriteRendererGoldenSkin.sprite = goldSkinLocked;
+
 
 
     }
@@ -136,6 +162,23 @@ public class PlayerSelector : MonoBehaviour
         }
 
 
+        if (PlayerPrefs.GetInt("goldSkinConseguida") == 1)
+        {
+            selectGoldButton.interactable = true;
+            spriteRendererGoldenSkin.sprite = goldSkinUnlocked;
+        }
+        else
+        {
+            selectGoldButton.interactable = false;
+            spriteRendererGoldenSkin.sprite = goldSkinLocked;
+        }
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 18)
+        {
+            PlayerPrefs.SetInt("goldSkinConseguida", 1);
+        }
+
+
 
     }
 
@@ -177,6 +220,14 @@ public class PlayerSelector : MonoBehaviour
         PlayerPrefs.SetString("skin seleccionada", "manSkin");
         spriteRendererEspejo.sprite = personajeHombre;
     }
+
+
+    public void SelectGold()
+    {
+        PlayerPrefs.SetString("skin seleccionada", "goldSkin");
+        spriteRendererEspejo.sprite = personajeDorado;
+    }
+
 
     public void BuyWomanSkin()
     {
