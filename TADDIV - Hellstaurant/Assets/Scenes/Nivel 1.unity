@@ -5163,6 +5163,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7614502072817805402}
+    - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AlternarMute
+      objectReference: {fileID: 0}
     - target: {fileID: 5131681599346470858, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5176,6 +5184,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
+--- !u!114 &56237105518801639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
+  m_PrefabInstance: {fileID: 56237105518801638}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &880023810023270046
 GameObject:
   m_ObjectHideFlags: 0
@@ -5551,7 +5570,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.835931
+      value: 0.8359305
       objectReference: {fileID: 0}
     - target: {fileID: 3881648654193666262, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: target
@@ -5601,6 +5620,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: botonSonido
+      value: 
+      objectReference: {fileID: 56237105518801639}
+    - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: spriteMuteado
+      value: 
+      objectReference: {fileID: -1476897938, guid: 530c4dbeceed33545aff1533c157c7c5, type: 3}
+    - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: spriteDesmuteado
+      value: 
+      objectReference: {fileID: 1329714365, guid: dfc2413bf18cbc04c929f243d01fb311, type: 3}
     - target: {fileID: 8895184780357875469, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Name
       value: Camara

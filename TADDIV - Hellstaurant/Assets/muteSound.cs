@@ -19,6 +19,7 @@ public class muteSound : MonoBehaviour
         // Cargar el estado de mute al inicio de la escena
         sonidoMuteado = PlayerPrefs.GetInt("SonidoMuteado", 0) == 1;
         ActualizarAudioListener();
+        ActualizarSpriteBoton();
     }
 
     public void AlternarMute()
