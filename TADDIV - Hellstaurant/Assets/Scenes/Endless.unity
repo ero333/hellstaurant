@@ -376,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359305
+      value: 0.8359298
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -2265,8 +2265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f96add48466cae4599a579e0f740c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 12
-  TimeUntilHourChange: 15
+  startingTime: 0
+  TimeUntilHourChange: 1
   timeText: {fileID: 1276537253}
   playerAlive: 1
   WIN: {fileID: 0}
@@ -3559,8 +3559,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 13, y: -73}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 15.2, y: -71.9}
+  m_SizeDelta: {x: 396.33, y: 47.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1276537252
 CanvasRenderer:

@@ -35,7 +35,7 @@ public class Endlesstimer : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        timeText.text = timeHours + ":00 PM";
+        timeText.text = " " + timeHours;
 
 
     }
@@ -46,16 +46,17 @@ public class Endlesstimer : MonoBehaviour
         {
             yield return new WaitForSeconds(TimeUntilHourChange);
 
-            if (timeHours == 12)
-                timeHours = 1;
-            else
                 timeHours++;
+
+          
+           StartCoroutine(routine: advanceHourOverTime());
+
 
 
         }
         // else
-       // {
-         //   stopTimer();
+        // {
+        //   stopTimer();
         //}
 
     }
@@ -65,7 +66,7 @@ public class Endlesstimer : MonoBehaviour
         if (!playerAlive)
         {
             StopAllCoroutines();
-            timeText.text = timeHours + ":00 PM";
+            timeText.text = " " + timeHours;
         }
     }
 
