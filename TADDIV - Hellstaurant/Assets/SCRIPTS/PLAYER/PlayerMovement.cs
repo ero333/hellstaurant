@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource Coinsound;
 
+    public AudioSource Pickupsound;
+
 
     public void Awake()
     {
@@ -78,5 +80,27 @@ public class PlayerMovement : MonoBehaviour
         {
             Coinsound.Play();
         }
+
+        if(collision.CompareTag("FugaPickup"))
+        {
+            Pickupsound.Play();
+        }
+
+        if(collision.CompareTag("FainaPickup"))
+        {
+            Pickupsound.Play();
+        }
+
+        if(collision.CompareTag("PicantePickup"))
+        {
+            Pickupsound.Play();
+        }
+
+        if(collision.CompareTag("CajaPickup"))
+        {
+            Pickupsound.Play();
+        }
     }
+
+   
 }

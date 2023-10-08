@@ -4017,7 +4017,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359305
+      value: 0.83593124
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -4578,6 +4578,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 576768189682842382, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c45dbd7bddb5a714799ef1803a9d63eb, type: 3}
     - target: {fileID: 1170127940833486984, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4633,6 +4637,10 @@ PrefabInstance:
     - target: {fileID: 4306983515515980842, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442340460101119668, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: Pickupsound
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: puntaje
