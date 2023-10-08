@@ -35,12 +35,19 @@ public class EnemyBasicDamage : MonoBehaviour
     {
         if (other.CompareTag("PizzaShoot")) // Si la pizza tiene el tag PizzaShoot
         {
+            
+
             enemyLife--; // Le baja 1 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
-           
+            
+
+
             if (enemyLife <= 0)
             {
+                
+
+
                 onDeath();
             }
         }
@@ -52,7 +59,6 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
-                
 
                 onDeath();
             }
@@ -65,7 +71,7 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
-                
+
 
                 onDeath();
             }
@@ -78,7 +84,6 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
-                killSound.Play();
 
                 onDeath();
             }
@@ -91,7 +96,6 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
-                killSound.Play();
 
                 onDeath();
             }
@@ -100,14 +104,8 @@ public class EnemyBasicDamage : MonoBehaviour
 
     public void onDeath()
     {
-        
 
-        puntaje.obtenerPuntaje(puntosEnemigo);
-
-        killSound.Play();
-
-        Destroy(gameObject); // Cuando la vida es menor o igual a cero se destruye el enemigo
-
+        StartCoroutine(deathCorrutine());
 
         float dropSelect = Random.Range(0, 100f);
 
@@ -119,5 +117,17 @@ public class EnemyBasicDamage : MonoBehaviour
                 Instantiate(collectible, transform.position + new Vector3(xOffset, 0, 0), Quaternion.identity);
             }
         }
+    }
+
+
+    IEnumerator deathCorrutine()
+    {
+        killSound.Play();
+        yield return new WaitForSeconds(0.4f);
+        puntaje.obtenerPuntaje(puntosEnemigo);
+
+
+        Destroy(gameObject); // Cuando la vida es menor o igual a cero se destruye el enemigo
+
     }
 }
