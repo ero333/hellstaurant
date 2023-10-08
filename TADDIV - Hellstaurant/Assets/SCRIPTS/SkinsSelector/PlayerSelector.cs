@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class PlayerSelector : MonoBehaviour
@@ -247,6 +248,8 @@ public class PlayerSelector : MonoBehaviour
             selectWomanButton.SetActive(true);
             buyWomanButton.SetActive(false) ;
             precioMujer.SetActive(false);
+
+            EventSystem.current.SetSelectedGameObject(selectWomanButton.GetComponentInChildren<Button>().gameObject);
         }
 
 
@@ -270,6 +273,8 @@ public class PlayerSelector : MonoBehaviour
             selectHalloweenButton.SetActive(true);
             buyHalloweenButton.SetActive(false);
             precioHalloween.SetActive(false);
+
+            EventSystem.current.SetSelectedGameObject(selectHalloweenButton.GetComponentInChildren<Button>().gameObject);
         }
 
 
@@ -293,6 +298,8 @@ public class PlayerSelector : MonoBehaviour
             selectSpidermanButton.SetActive(true);
             buySpidermanButton.SetActive(false);
             precioSpiderman.SetActive(false);
+
+            EventSystem.current.SetSelectedGameObject(selectSpidermanButton.GetComponentInChildren<Button>().gameObject);
         }
 
     }
