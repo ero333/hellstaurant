@@ -100,4 +100,10 @@ public class LEVELSELECTOR : MonoBehaviour
         PlayerPrefs.SetInt("PartidaGuardada", 1);
         SceneManager.LoadScene("Cutscene");
     }
+
+    public void endless()
+    {
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Endless");
+    }
 }

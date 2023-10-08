@@ -51,11 +51,17 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     public GameObject level14Button;
 
 
+    public GameObject endlessButton;
+
+
     public unlockNextLevel levelUnlockCheck;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        endlessButton.SetActive(false);
+
         PlayerPrefs.GetInt("UltimoNivelAlcanzado"); ;
 
         blocklevel1.SetActive(true);
@@ -205,6 +211,11 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
         }
 
 
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 20)
+        {
+            endlessButton.SetActive(true);
+        }
+
 
     }
 
@@ -214,8 +225,8 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     {
         // Cambia este valor al número de niveles que tengas en tu juego.
 
-        PlayerPrefs.SetInt("UltimoNivelAlcanzado", 18);
-        PlayerPrefs.SetInt("Niveles desbloqueados:", 18);
+        PlayerPrefs.SetInt("UltimoNivelAlcanzado", 20);
+        PlayerPrefs.SetInt("Niveles desbloqueados:", 20);
         Debug.Log("DESBLOQUEASTE TODO WACHIN");
         
     }
