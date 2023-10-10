@@ -8,17 +8,17 @@ public class TutorialController : MonoBehaviour
     //VARIABLES DE CADA CARTEL DEL TUTORIAL//
     public GameObject cartel1, cartel2, cartel3, cartel4, cartel5, cartel6, cartel7, cartel8, cartel9, cartel10, cartel11, cartel12, cartel13, cartel14, cartel15, cartel16, cartel17, cartel18;
 
-    //VARIABLE DEL BOTÓN SIGUIENTE//
+    //VARIABLE DEL BOTï¿½N SIGUIENTE//
     public GameObject botonSaltar;
 
-    //CONTADOR DE POR CUÁL CARTEL VAS//
+    //CONTADOR DE POR CUï¿½L CARTEL VAS//
 
     public float contadorCarteles;
 
 
 
     public GameObject contadorMonedas;
-    public GameObject íconoMonedas;
+    public GameObject Ã­conoMonedas;
     public GameObject timer;
     public GameObject spawner;
     
@@ -37,7 +37,7 @@ public class TutorialController : MonoBehaviour
 
         //CADA VEZ QUE EL CONTADOR SUMA 1, SE DESACTIVA EL CARTEL ACTUAL Y SE ACTIVA EL SIGUIENTE//
 
-        //LOS CARTELES QUE TE DEJAN JUGAR UN RATO, TIENEN CORRUTINAS ESPECIALES MÁS ABAJO//
+        //LOS CARTELES QUE TE DEJAN JUGAR UN RATO, TIENEN CORRUTINAS ESPECIALES Mï¿½S ABAJO//
 
         if (contadorCarteles == 1)
         {
@@ -65,7 +65,7 @@ public class TutorialController : MonoBehaviour
             cartel6.SetActive(true);
         }
 
-        //ESTE POR EJEMPLO TIENE UNA CORRUTINA, ENTONCES DESACTIVAMOS EL BOTÓN DE SIGUIENTE PARA PODER JUGAR TAMBIÉN, Y ACTIVAMOS LA CORRUTINA//
+        //ESTE POR EJEMPLO TIENE UNA CORRUTINA, ENTONCES DESACTIVAMOS EL BOTï¿½N DE SIGUIENTE PARA PODER JUGAR TAMBIï¿½N, Y ACTIVAMOS LA CORRUTINA//
 
         if (contadorCarteles == 6)
         {
@@ -170,7 +170,7 @@ public class TutorialController : MonoBehaviour
     //EN EL CARTEL 13, SE TIENEN QUE ACTIVAR DE LA JERARQUIA EL SPAWNER (LO HACES CON UN SET ACTIVE) Y DEL OBJETO "CANVAS", EL COINS Y EL CONTADOR DE MONEDAS//
     //A ESA CORRUTINA DEL CARTEL 13, LE PONES QUE ESPERE 15 SEGUNDOS EN VEZ DE 8//
 
-    //EN EL ÚLTIMO CARTEL, ADEMÁS DE DESAPARECERLO, HACES QUE SE ACTIVE DE LA JERARQUÍA EL OBJETO DE ADVANCETIMER, ASÍ SE PUEDE JUGAR//
+    //EN EL ï¿½LTIMO CARTEL, ADEMï¿½S DE DESAPARECERLO, HACES QUE SE ACTIVE DE LA JERARQUï¿½A EL OBJETO DE ADVANCETIMER, ASï¿½ SE PUEDE JUGAR//
 
 
     IEnumerator pruebadisparo()
@@ -220,7 +220,7 @@ public class TutorialController : MonoBehaviour
         Time.timeScale = 1f;
 
         spawner.SetActive(true);
-        íconoMonedas.SetActive(true);
+        Ã­conoMonedas.SetActive(true);
         contadorMonedas.SetActive(true);
 
         cartel13.SetActive(false);

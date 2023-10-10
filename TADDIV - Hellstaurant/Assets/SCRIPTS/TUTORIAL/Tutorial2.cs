@@ -7,17 +7,17 @@ public class Tutorial2 : MonoBehaviour
     //VARIABLES DE CADA CARTEL DEL TUTORIAL//
     public GameObject cartel1, cartel2, cartel3, cartel4, cartel5, cartel6, cartel7, cartel8, cartel9, cartel10;
 
-    //VARIABLE DEL BOTÓN SIGUIENTE//
+    //VARIABLE DEL BOTï¿½N SIGUIENTE//
     public GameObject botonSaltar;
 
-    //CONTADOR DE POR CUÁL CARTEL VAS//
+    //CONTADOR DE POR CUï¿½L CARTEL VAS//
 
     public float contadorCarteles;
 
     
 
     public GameObject contadorMonedas;
-    public GameObject íconoMonedas;
+    public GameObject Ã­conoMonedas;
     public GameObject timer;
     public GameObject spawner;
 
@@ -114,7 +114,7 @@ public class Tutorial2 : MonoBehaviour
             fainaspawner.SetActive(true);
             fugaspawner.SetActive(true);
             contadorMonedas.SetActive(true);
-            íconoMonedas.SetActive(true);
+            Ã­conoMonedas.SetActive(true);
 
             spawners.startSpawning();
             spawners2.startSpawning();
@@ -133,7 +133,7 @@ public class Tutorial2 : MonoBehaviour
         spawner.SetActive(true);
         fugaspawn.SetActive(true);
         contadorMonedas.SetActive(true);
-        íconoMonedas.SetActive(true);
+        Ã­conoMonedas.SetActive(true);
 
         yield return new WaitForSeconds(12f);
 
@@ -142,7 +142,7 @@ public class Tutorial2 : MonoBehaviour
         Time.timeScale = 0f;
 
         contadorMonedas.SetActive(false);
-        íconoMonedas.SetActive(false);
+        Ã­conoMonedas.SetActive(false);
         botonSaltar.SetActive (true);
         cartel4.SetActive (true);
         
@@ -162,7 +162,7 @@ public class Tutorial2 : MonoBehaviour
 
             fainaspawn.SetActive(true);
             contadorMonedas.SetActive(true);
-            íconoMonedas.SetActive(true);
+            Ã­conoMonedas.SetActive(true);
 
             yield return new WaitForSeconds(12f);
 
@@ -194,7 +194,7 @@ public class Tutorial2 : MonoBehaviour
         //fainaspawner.SetActive(true);
         //fugaspawner.SetActive(true);    
         contadorMonedas.SetActive(true);
-        íconoMonedas.SetActive(true);
+        Ã­conoMonedas.SetActive(true);
 
         yield return new WaitForSeconds(15f);
 
@@ -228,7 +228,7 @@ public class Tutorial2 : MonoBehaviour
         fainaspawner.SetActive(true);
         fugaspawner.SetActive(true);    
         contadorMonedas.SetActive(true);
-        íconoMonedas.SetActive(true);
+        Ã­conoMonedas.SetActive(true);
 
         yield return null;
     }
