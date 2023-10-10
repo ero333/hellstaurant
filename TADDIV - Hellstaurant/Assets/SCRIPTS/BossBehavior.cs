@@ -31,6 +31,7 @@ public class BossBehavior : MonoBehaviour
 
     public GameObject bichosSpawn;
 
+    public AudioSource eructo;
 
     void Start()
     {
@@ -147,7 +148,8 @@ public class BossBehavior : MonoBehaviour
             if (opcion == 0)
             {
                 animator.SetBool("attacking", true);
-               fireBullets.Fire();
+                eructo.Play();
+                fireBullets.Fire();
                 yield return new WaitForSeconds(1f);
                     animator.SetBool("attacking", false); 
             }
@@ -155,6 +157,7 @@ public class BossBehavior : MonoBehaviour
             if(opcion == 1)
             {
                 animator.SetBool("attacking", true);
+                eructo.Play();
                 // Código para la segunda acción
                 Debug.Log("Ejecutando Acción 2");
 
@@ -176,6 +179,7 @@ public class BossBehavior : MonoBehaviour
                 bichosSpawn.SetActive(true);
                 animator.SetBool("attacking", true);
                 bichosSpawn.SetActive(true);
+                eructo.Play();
                 yield return new WaitForSeconds(2f);
                 bichosSpawn.SetActive(false);
                 animator.SetBool("attacking", false);
@@ -184,6 +188,7 @@ public class BossBehavior : MonoBehaviour
             {
                 animator.SetBool("attacking", true);
                 spiralShoot.SetActive(true);
+                eructo.Play();
                 yield return new WaitForSeconds(6f);
                 spiralShoot.SetActive(false);
                 animator.SetBool("attacking", false);
