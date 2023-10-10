@@ -13,6 +13,7 @@ public class muteSound : MonoBehaviour
     public Sprite spriteMuteado;
     public Sprite spriteDesmuteado;
     public Button botonSonido;
+    public AudioSource buttonsound;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class muteSound : MonoBehaviour
 
     public void AlternarMute()
     {
+        buttonsound.Play(); 
         // Cambia el estado de sonido mutado
         sonidoMuteado = !sonidoMuteado;
 

@@ -2352,6 +2352,7 @@ MonoBehaviour:
   spriteMuteado: {fileID: -1476897938, guid: 530c4dbeceed33545aff1533c157c7c5, type: 3}
   spriteDesmuteado: {fileID: 1329714365, guid: dfc2413bf18cbc04c929f243d01fb311, type: 3}
   botonSonido: {fileID: 5822453199617693887}
+  buttonsound: {fileID: 1702818718}
 --- !u!1 &1070870556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,7 +2966,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fb88a1d1edc83834bad9e37fb824ab1b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.307
+  m_Volume: 0.22
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3517,7 +3518,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b4b4c546d03a4c647a201be72e2244d1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.276
+  m_Volume: 0.51
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4169,18 +4170,6 @@ MonoBehaviour:
       - m_Target: {fileID: 948286501}
         m_TargetAssemblyTypeName: muteSound, Assembly-CSharp
         m_MethodName: AlternarMute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 165892414}
-        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
-        m_MethodName: playThisSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -55,6 +55,9 @@ public class PlayerSelector : MonoBehaviour
 
     public SpriteRenderer spriteRendererGoldenSkin;
 
+    public int lastlevel;
+
+    public int order = 0;
 
 
     // Start is called before the first frame update
@@ -66,6 +69,9 @@ public class PlayerSelector : MonoBehaviour
         //}
 
         //this.Select(0);
+        order = PlayerPrefs.GetInt("ordenDeSkin");
+
+        lastlevel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
 
         selectGoldButton.interactable = false;
 
@@ -250,6 +256,14 @@ public class PlayerSelector : MonoBehaviour
             precioMujer.SetActive(false);
 
             EventSystem.current.SetSelectedGameObject(selectWomanButton.GetComponentInChildren<Button>().gameObject);
+
+            order++;
+
+            PlayerPrefs.SetInt("ordenDeSkin",order);
+
+            Debug.Log("BuySkin.skinSe = MUJER");
+            Debug.Log("BuySkin.lastLevel =" + lastlevel);
+            Debug.Log("BuySkin.order =" + order);
         }
 
 
@@ -275,6 +289,14 @@ public class PlayerSelector : MonoBehaviour
             precioHalloween.SetActive(false);
 
             EventSystem.current.SetSelectedGameObject(selectHalloweenButton.GetComponentInChildren<Button>().gameObject);
+
+            order++;
+
+            PlayerPrefs.SetInt("ordenDeSkin", order);
+
+            Debug.Log("BuySkin.skinSe = HALLOWEEN");
+            Debug.Log("BuySkin.lastLevel =" + lastlevel);
+            Debug.Log("BuySkin.order =" + order);
         }
 
 
@@ -300,6 +322,14 @@ public class PlayerSelector : MonoBehaviour
             precioSpiderman.SetActive(false);
 
             EventSystem.current.SetSelectedGameObject(selectSpidermanButton.GetComponentInChildren<Button>().gameObject);
+
+            order++;
+
+            PlayerPrefs.SetInt("ordenDeSkin", order);
+
+            Debug.Log("BuySkin.skinSe = SPIDERMAN");
+            Debug.Log("BuySkin.lastLevel =" + lastlevel);
+            Debug.Log("BuySkin.order =" + order);
         }
 
     }
