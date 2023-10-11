@@ -33,6 +33,8 @@ public class BossBehavior : MonoBehaviour
 
     public AudioSource eructo;
 
+    public AudioSource hitjefe;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -53,6 +55,8 @@ public class BossBehavior : MonoBehaviour
     {
         if (other.CompareTag("PizzaShoot")) // Si la pizza tiene el tag PizzaShoot
         {
+            hitjefe.Play();
+
             Hitpoints--; // Le baja 1 de vida al enemigo
 
             BossHealth.reducelife(Hitpoints);
@@ -69,6 +73,8 @@ public class BossBehavior : MonoBehaviour
 
         if (other.CompareTag("FugazzettaShoot")) // Si la pizza tiene el tag FugazzettaShoot
         {
+            hitjefe.Play();
+
             Hitpoints = Hitpoints - 2; // Le baja 2 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
@@ -84,6 +90,8 @@ public class BossBehavior : MonoBehaviour
 
         if (other.CompareTag("FainaShoot")) // Si la pizza tiene el tag FainaShoot
         {
+            hitjefe.Play();
+
             Hitpoints = Hitpoints - 1; // Le baja 0.5 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
@@ -99,6 +107,8 @@ public class BossBehavior : MonoBehaviour
 
         if (other.CompareTag("PicanteShoot")) // Si la pizza tiene el tag FainaShoot
         {
+            hitjefe.Play();
+
             Hitpoints = Hitpoints - 3; // Le baja 0.5 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
@@ -114,6 +124,8 @@ public class BossBehavior : MonoBehaviour
 
         if (other.CompareTag("CajaShoot")) // Si la pizza tiene el tag CajaShoot
         {
+            hitjefe.Play();
+
             Hitpoints = Hitpoints - 5; // Le baja 0.5 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
 
