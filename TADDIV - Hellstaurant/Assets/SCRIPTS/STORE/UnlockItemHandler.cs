@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UnlockItemHandler : MonoBehaviour
@@ -33,10 +34,17 @@ public class UnlockItemHandler : MonoBehaviour
     public GameObject Vendido3;
     public GameObject Vendido4;
 
+    public int lastlevel;
+
+    public int order = 0;
+
 
 
     private void Start()
     {
+        order = PlayerPrefs.GetInt("ordenDePotenciador");
+
+        lastlevel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
 
         monedasactuales = PlayerPrefs.GetInt("MonedasRecolectadas:");
 
@@ -177,6 +185,14 @@ public class UnlockItemHandler : MonoBehaviour
 
             Vendido2.SetActive(true);
 
+            order++;
+
+            PlayerPrefs.SetInt("ordenDePotenciador",order);
+
+            Debug.Log("BuyPower.skinSe = FUGAZZETA");
+            Debug.Log("BuyPower.lastLevel =" + lastlevel);
+            Debug.Log("BuyPower.order =" + order);
+
             
 
 
@@ -201,6 +217,14 @@ public class UnlockItemHandler : MonoBehaviour
 
             Vendido3.SetActive(true);
 
+            order++;
+
+            PlayerPrefs.SetInt("ordenDePotenciador",order);
+
+            Debug.Log("BuyPower.skinSe = FAINA");
+            Debug.Log("BuyPower.lastLevel =" + lastlevel);
+            Debug.Log("BuyPower.order =" + order);
+
             
         }
 
@@ -220,6 +244,14 @@ public class UnlockItemHandler : MonoBehaviour
             PlayerPrefs.SetInt("CajaUnlocked", 1);
 
             Vendido1.SetActive(true);
+
+            order++;
+
+            PlayerPrefs.SetInt("ordenDePotenciador",order);
+
+            Debug.Log("BuyPower.skinSe = CAJA");
+            Debug.Log("BuyPower.lastLevel =" + lastlevel);
+            Debug.Log("BuyPower.order =" + order);
 
             
         }
@@ -241,6 +273,14 @@ public class UnlockItemHandler : MonoBehaviour
             PlayerPrefs.SetInt("FrenzyUnlocked", 1);
 
             Vendido4.SetActive(true);
+
+            order++;
+
+            PlayerPrefs.SetInt("ordenDePotenciador",order);
+
+            Debug.Log("BuyPower.skinSe = PICANTE");
+            Debug.Log("BuyPower.lastLevel =" + lastlevel);
+            Debug.Log("BuyPower.order =" + order);
 
             
         }
