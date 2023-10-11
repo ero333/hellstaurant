@@ -92,7 +92,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 4.51, y: 4.51}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -350,6 +350,8 @@ MonoBehaviour:
   halloweenSkinFrenzy: {fileID: 22100000, guid: efc9d5b6a2cb36e4aa7f3dc5eb99c930, type: 2}
   spidermanSkin: {fileID: 22100000, guid: 4e77311f08cf20e498a292f03bfe82fd, type: 2}
   spidermanSkinFrenzy: {fileID: 22100000, guid: bd5ba53161208d04a8b4ba1e1c4fe0ba, type: 2}
+  doradoSkin: {fileID: 22100000, guid: 3f9d7e6b79ee7ff4dbd43fe06ffd77d3, type: 2}
+  doradoSkinFrenzy: {fileID: 22100000, guid: f229ad400818b0d40ad792a7dc6cf2ed, type: 2}
   defaultSkin: {fileID: 9100000, guid: faee9c451b0cc634e9305b87ce4ced4b, type: 2}
   anim: {fileID: 0}
   skinName: 
@@ -390,7 +392,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 4.51, y: 4.51}
-    newSize: {x: 0.16, y: 0.16}
+    newSize: {x: 4.51, y: 4.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -435,7 +437,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 4.51, y: 4.51}
-    newSize: {x: 0.16, y: 0.16}
+    newSize: {x: 4.51, y: 4.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

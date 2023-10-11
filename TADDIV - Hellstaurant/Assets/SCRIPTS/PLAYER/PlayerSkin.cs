@@ -14,6 +14,10 @@ public class PlayerSkin : MonoBehaviour
     public AnimatorOverrideController spidermanSkin;
     public AnimatorOverrideController spidermanSkinFrenzy;
 
+    public AnimatorOverrideController doradoSkin;
+    public AnimatorOverrideController doradoSkinFrenzy;
+
+
 
     public RuntimeAnimatorController defaultSkin;
     public Animator anim;
@@ -50,6 +54,11 @@ public class PlayerSkin : MonoBehaviour
             spidermanSkinchange();
         }
 
+        if (skinName == "goldSkin")
+        {
+            doradoSkinchange();
+        }
+
     }
 
     // Update is called once per frame
@@ -79,6 +88,14 @@ public class PlayerSkin : MonoBehaviour
     {
         anim.runtimeAnimatorController = spidermanSkin as RuntimeAnimatorController;
     }
+
+
+    public void doradoSkinchange()
+    {
+        anim.runtimeAnimatorController = doradoSkin as RuntimeAnimatorController;
+    }
+
+
 
     //CAMBIOS A FRENZY//
 
@@ -113,6 +130,17 @@ public class PlayerSkin : MonoBehaviour
 
 
             anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
+
+
+
+        }
+
+
+        if (collision.CompareTag("PicantePickup") && skinName == "goldSkin")
+        {
+
+
+            anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
 
 
 
