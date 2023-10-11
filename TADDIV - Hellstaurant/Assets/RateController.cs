@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class RateController : MonoBehaviour
 {
-    
+    public int puntuation;
+    public string note;
+
+    public int lastlevel;
+
     public GameObject botonRate;
     public int rateado;
     public GameObject popupRate;
@@ -36,7 +40,8 @@ public class RateController : MonoBehaviour
 
         rateado = PlayerPrefs.GetInt("rateado");
         popupRate.SetActive(false);
-        
+
+        lastlevel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
     }
 
     // Update is called once per frame
@@ -162,6 +167,9 @@ public class RateController : MonoBehaviour
         estrellart5image.sprite = estrellavacia;
 
         ratingart = 1;
+
+        puntuation = 1;
+        note = "HORRIBLE";
     }
 
     public void DosEstrellart()
@@ -181,6 +189,10 @@ public class RateController : MonoBehaviour
         estrellart5image.sprite = estrellavacia;
 
         ratingart = 2;
+
+
+        puntuation = 2;
+        note = "MALO";
     }
 
     public void TresEstrellart()
@@ -200,6 +212,10 @@ public class RateController : MonoBehaviour
         estrellart5image.sprite = estrellavacia;
 
         ratingart = 3;
+
+
+        puntuation = 3;
+        note = "NEUTRAL";
     }
 
     public void CuatroEstrellart()
@@ -219,6 +235,10 @@ public class RateController : MonoBehaviour
         estrellart5image.sprite = estrellavacia;
 
         ratingart = 4;
+
+
+        puntuation = 4;
+        note = "BUENO";
     }
 
     public void CincoEstrellart()
@@ -238,10 +258,20 @@ public class RateController : MonoBehaviour
         estrellart5image.sprite = estrellallena;
 
         ratingart = 5;
+
+
+        puntuation = 5;
+        note = "EXCELENTE";
     }
 
     public void sendRate()
     {
+        Debug.Log("RateArt.puntuation ="+ puntuation);
+        Debug.Log("RateArt.note ="+ note);
+        Debug.Log("RateArte.lastLevel ="+ lastlevel);
+        PlayerPrefs.SetInt("RateArt.puntuation =", puntuation);
+        PlayerPrefs.SetString("RateArt.note =", note);
+        PlayerPrefs.SetInt("RateArt.lastLevel =", lastlevel);
         PlayerPrefs.SetInt("puntajeJuego =", ratinggame);
         PlayerPrefs.SetInt("puntajeArte =", ratingart);
         popupRate.SetActive(false);
@@ -258,4 +288,8 @@ public class RateController : MonoBehaviour
     { 
         popupRate.SetActive(true); 
     }
+
+
 }
+
+
