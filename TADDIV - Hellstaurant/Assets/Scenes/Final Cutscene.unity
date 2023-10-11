@@ -514,14 +514,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 618415705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4aca7233f46a5743a2bbd16d0101ca1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f00f8ffb37f8d64d90328a4d9600c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animacion1: {fileID: 1460954353}
   animacion2: {fileID: 1659209856}
   animacion3: {fileID: 1432927875}
   animacion4: {fileID: 1118013393}
-  botonSiguiente: {fileID: 0}
+  botonSiguiente: {fileID: 1424078313}
+  popupEndless: {fileID: 1179644710}
   contadorAnim: 0
 --- !u!1 &829243453
 GameObject:
@@ -1149,7 +1150,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 618415712}
-        m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+        m_TargetAssemblyTypeName: cutsceneFinal, Assembly-CSharp
         m_MethodName: pasarAnim
         m_Mode: 1
         m_Arguments:
@@ -1398,7 +1399,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1460954353}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4aca7233f46a5743a2bbd16d0101ca1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f00f8ffb37f8d64d90328a4d9600c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animacion1: {fileID: 1460954353}
@@ -1406,6 +1407,7 @@ MonoBehaviour:
   animacion3: {fileID: 1432927875}
   animacion4: {fileID: 1118013393}
   botonSiguiente: {fileID: 1424078313}
+  popupEndless: {fileID: 1179644710}
   contadorAnim: 0
 --- !u!1 &1484647163
 GameObject:
