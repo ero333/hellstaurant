@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: b44d8fce04c49d448a3750b62856191f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1215
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b5503ad5dbd2b47ae4027ff508e38a
+      internalID: -505225283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1205
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28316b004bfd9ca449b9195b3185a38b
+      internalID: -365321783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_6
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1205
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652d8eec22ad7e048b6eb0abdd6a6230
+      internalID: 1857864633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_7
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1205
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379e05954eab7074caca6372c7c084fb
+      internalID: -214501117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 784
+        width: 391
+        height: 589
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306714e61da72194eb486849cb6fc0a7
+      internalID: 1773523964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_9
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1195
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900a2817451979043b0288144f72a1b9
+      internalID: 1058220146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_10
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1195
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0952889939942c4aac8ea861edcf554
+      internalID: 2083099822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_11
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1195
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d835b8dc71ba040896a65c57d21931
+      internalID: 1631992352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 774
+        width: 391
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b900fa6ba2bea8b4b97d76bf22e3108c
+      internalID: -912232512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_13
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 782
+        width: 391
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e449832f0eb7f694898dac06d3306b15
+      internalID: -120867853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_14
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 774
+        width: 390
+        height: 598
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8200d8ed89ad8ed40931419b2ce26a7c
+      internalID: -38590718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_16
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 715
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc2dd06513ce1541ba0a7e27a2e7ecd
+      internalID: 394123103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_17
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 715
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8ece0a834443946ba52b19316237f3
+      internalID: 2134385478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_21
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 535
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04219567bfc2ffa42bce980b0ab62cb1
+      internalID: 119413449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_22
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 525
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6863cc25d4660ab46a596fb67332f928
+      internalID: -1589639110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_23
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 525
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710911cfbd2ec2247a7559b052405b47
+      internalID: -2103453554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_24
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 525
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb678073bec49584a873e23f9f32f692
+      internalID: -1484183501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_25
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 105
+        width: 391
+        height: 590
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16095e308200e15418811c95a7f3686a
+      internalID: 732065018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_26
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 515
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4910942bf53c1f4ab0b4997287d2b03
+      internalID: -955167868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 515
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72655f77542ef434cb349ed227f95625
+      internalID: -1883245920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_28
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 515
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd043f17aa028f346b51899e9eeb4d65
+      internalID: 1322197938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_29
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 95
+        width: 391
+        height: 604
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6411fb90e640f0a4c8fce42144830d6c
+      internalID: 1217643704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_30
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 107
+        width: 391
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea1e4c7e8f99f644a04e4992a69ca69
+      internalID: 1631841332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi curacion idle y caminando_31
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 98
+        width: 390
+        height: 601
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da287c3fc6fb04b49ba4d807f1a3fef1
+      internalID: -76199705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ss messi curacion idle y caminando_0: 1221615205
+      ss messi curacion idle y caminando_1: 354622216
+      ss messi curacion idle y caminando_10: 2083099822
+      ss messi curacion idle y caminando_11: 1631992352
+      ss messi curacion idle y caminando_12: -912232512
+      ss messi curacion idle y caminando_13: -120867853
+      ss messi curacion idle y caminando_14: -38590718
+      ss messi curacion idle y caminando_15: 690917630
+      ss messi curacion idle y caminando_16: 394123103
+      ss messi curacion idle y caminando_17: 2134385478
+      ss messi curacion idle y caminando_18: 1478414531
+      ss messi curacion idle y caminando_19: -1721072800
+      ss messi curacion idle y caminando_2: -984150882
+      ss messi curacion idle y caminando_20: 1511334975
+      ss messi curacion idle y caminando_21: 119413449
+      ss messi curacion idle y caminando_22: -1589639110
+      ss messi curacion idle y caminando_23: -2103453554
+      ss messi curacion idle y caminando_24: -1484183501
+      ss messi curacion idle y caminando_25: 732065018
+      ss messi curacion idle y caminando_26: -955167868
+      ss messi curacion idle y caminando_27: -1883245920
+      ss messi curacion idle y caminando_28: 1322197938
+      ss messi curacion idle y caminando_29: 1217643704
+      ss messi curacion idle y caminando_3: -1262492973
+      ss messi curacion idle y caminando_30: 1631841332
+      ss messi curacion idle y caminando_31: -76199705
+      ss messi curacion idle y caminando_4: -505225283
+      ss messi curacion idle y caminando_5: -365321783
+      ss messi curacion idle y caminando_6: 1857864633
+      ss messi curacion idle y caminando_7: -214501117
+      ss messi curacion idle y caminando_8: 1773523964
+      ss messi curacion idle y caminando_9: 1058220146
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

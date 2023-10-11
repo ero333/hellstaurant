@@ -20,6 +20,8 @@ public class PlayerSelector : MonoBehaviour
 
     public Sprite personajeDorado;
 
+    public Sprite personajeMessi;
+
 
     public SpriteRenderer spriteRendererEspejo;
 
@@ -33,6 +35,8 @@ public class PlayerSelector : MonoBehaviour
     public GameObject precioHalloween;
 
     public GameObject precioSpiderman;
+
+    public GameObject precioMessi;
 
     public coinData coindata;
 
@@ -49,6 +53,9 @@ public class PlayerSelector : MonoBehaviour
 
     public GameObject goldenSkin;
     public Button selectGoldButton;
+
+    public GameObject buyMessiButton;
+    public GameObject selectMessiButton;
 
     public Sprite goldSkinLocked;
     public Sprite goldSkinUnlocked;
@@ -80,7 +87,7 @@ public class PlayerSelector : MonoBehaviour
         monedasactuales = PlayerPrefs.GetInt("MonedasRecolectadas:");
 
 
-       if( PlayerPrefs.GetString("skin seleccionada") == "halloweenSkin")
+        if (PlayerPrefs.GetString("skin seleccionada") == "halloweenSkin")
         {
             spriteRendererEspejo.sprite = personajeHalloween;
         }
@@ -104,6 +111,12 @@ public class PlayerSelector : MonoBehaviour
         {
             spriteRendererEspejo.sprite = personajeDorado;
         }
+
+        if (PlayerPrefs.GetString("skin seleccionada") == "messiSkin")
+        {
+            spriteRendererEspejo.sprite = personajeMessi;
+        }
+
 
 
 
@@ -168,6 +181,19 @@ public class PlayerSelector : MonoBehaviour
             precioSpiderman.SetActive(true);
         }
 
+        if (PlayerPrefs.GetInt("skinMessiComprada") == 1)
+        {
+            selectMessiButton.SetActive(true);
+            buyMessiButton.SetActive(false);
+            precioMessi.SetActive(false);
+        }
+        else
+        {
+            selectMessiButton.SetActive(false);
+            buyMessiButton.SetActive(true);
+            precioMessi.SetActive(true);
+        }
+
 
         if (PlayerPrefs.GetInt("goldSkinConseguida") == 1)
         {
@@ -229,6 +255,15 @@ public class PlayerSelector : MonoBehaviour
     }
 
 
+
+    public void SelectMessi()
+    {
+        PlayerPrefs.SetString("skin seleccionada", "messiSkin");
+
+        spriteRendererEspejo.sprite = personajeMessi;
+    }
+
+
     public void SelectGold()
     {
         PlayerPrefs.SetString("skin seleccionada", "goldSkin");
@@ -238,7 +273,7 @@ public class PlayerSelector : MonoBehaviour
 
     public void BuyWomanSkin()
     {
-        
+
         if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 1)
         {
 
@@ -252,14 +287,14 @@ public class PlayerSelector : MonoBehaviour
             PlayerPrefs.SetInt("skinMujerComprada", 1);
 
             selectWomanButton.SetActive(true);
-            buyWomanButton.SetActive(false) ;
+            buyWomanButton.SetActive(false);
             precioMujer.SetActive(false);
 
             EventSystem.current.SetSelectedGameObject(selectWomanButton.GetComponentInChildren<Button>().gameObject);
 
             order++;
 
-            PlayerPrefs.SetInt("ordenDeSkin",order);
+            PlayerPrefs.SetInt("ordenDeSkin", order);
 
             Debug.Log("BuySkin.skinSe = MUJER");
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
@@ -332,6 +367,40 @@ public class PlayerSelector : MonoBehaviour
             Debug.Log("BuySkin.order =" + order);
         }
 
+
+
     }
 
+
+    public void BuyMessiSkin()
+    {
+
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 1)
+        {
+
+
+            monedasactuales = monedasactuales - 1;
+
+
+            PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
+            coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
+
+            PlayerPrefs.SetInt("skinMessiComprada", 1);
+
+            selectMessiButton.SetActive(true);
+            buyMessiButton.SetActive(false);
+            precioMessi.SetActive(false);
+
+            EventSystem.current.SetSelectedGameObject(selectMessiButton.GetComponentInChildren<Button>().gameObject);
+
+            order++;
+
+            PlayerPrefs.SetInt("ordenDeSkin", order);
+
+            Debug.Log("BuySkin.skinSe = MESSI");
+            Debug.Log("BuySkin.lastLevel =" + lastlevel);
+            Debug.Log("BuySkin.order =" + order);
+        }
+
+    }
 }

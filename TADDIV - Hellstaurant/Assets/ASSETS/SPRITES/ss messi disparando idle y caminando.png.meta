@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: a394a15ef2f693b469c3da54ce82b824
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1659
+        width: 391
+        height: 422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68323d96db996d64397c22c21070be14
+      internalID: 1307721461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2080
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ea0941e34945a46aac60637f37ef12
+      internalID: -1156811620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_2
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 2069
+        width: 11
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c369c42440bb6054aae4cd123c194c5b
+      internalID: -634005735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_3
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2069
+        width: 10
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa642adbb9d94244d8cb76db72ec8c0c
+      internalID: 1909292527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_4
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1659
+        width: 381
+        height: 411
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c127945cebeb90049bfb5eef9fa89d54
+      internalID: -165722482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_5
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1659
+        width: 372
+        height: 402
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15b8f5e3adb0a048a6a5fb8de007793
+      internalID: 353781848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_6
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 2060
+        width: 11
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7efe76ac61ffab478cd58810f8b12c6
+      internalID: 1584569905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_7
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 1659
+        width: 442
+        height: 411
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff817b950a009ad419b2f3d623764fa6
+      internalID: 896738652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_8
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1539
+        width: 11
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bb8b02f183fe04da245107eb0f413a
+      internalID: 1425550051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_9
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1539
+        width: 10
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88db2f487fa4ed84ca14b86c244d7bf5
+      internalID: 704364657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_10
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1550
+        width: 12
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce1ba2d59c0994439a0413b4a2a70ad
+      internalID: -590272471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1131
+        width: 471
+        height: 411
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3db09d6ac0cb5a4cbdaa1522e668298
+      internalID: 1122484263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_12
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1129
+        width: 432
+        height: 411
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3323d5597314141bb8348ad5920a02
+      internalID: 1002915613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_13
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 1115
+        width: 391
+        height: 416
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3da688daa4c462478ba592d00513a35
+      internalID: -1037619105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_14
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1530
+        width: 11
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8156acbb625a8419878ddb1c092189
+      internalID: -585596662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 589
+        width: 391
+        height: 421
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee69f5c5446257644a11e8e200e93d98
+      internalID: 484770614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_16
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1009
+        width: 10
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0efb8da2c693641845d040a2df2096
+      internalID: -662342437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_17
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1000
+        width: 11
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a588ee6d03a3984793974476a639122
+      internalID: -1228393012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_18
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1000
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14f5baba9bde85459661e707daa414a
+      internalID: 2102513080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_19
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 589
+        width: 381
+        height: 412
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970cf958da2035c40aaca3f22845dffe
+      internalID: 1892917674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_20
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 589
+        width: 372
+        height: 402
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80f724faf703114eafb521eb40b6b05
+      internalID: 738356100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_21
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 990
+        width: 11
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b507e7ae103f564a9456b3fb881ac5f
+      internalID: 98215289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_22
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 589
+        width: 442
+        height: 412
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007414dfac05a2547ab90e3dbed3ff03
+      internalID: 2136467402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_23
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 509
+        width: 11
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115608ec63309224f827be90d2a090b8
+      internalID: 146169293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_24
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 509
+        width: 10
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5f121beeb6804498072edaa5fc0164
+      internalID: -1497144938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_25
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 520
+        width: 12
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7781e1dc111814744979e85d83703861
+      internalID: 336396214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 99
+        width: 471
+        height: 411
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f1f235b3423f24180313d06c29e0c0
+      internalID: 1778876172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_27
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 89
+        width: 432
+        height: 421
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eded3c71cee2c32459156c2436a23606
+      internalID: 1669589288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_28
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 88
+        width: 391
+        height: 413
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e3b3ce4d1320e48b2aee06c21614da
+      internalID: -1742898914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss messi disparando idle y caminando_29
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 500
+        width: 11
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567063c697460ea47a67f2981423339f
+      internalID: 288430098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ss messi disparando idle y caminando_0: 1307721461
+      ss messi disparando idle y caminando_1: -1156811620
+      ss messi disparando idle y caminando_10: -590272471
+      ss messi disparando idle y caminando_11: 1122484263
+      ss messi disparando idle y caminando_12: 1002915613
+      ss messi disparando idle y caminando_13: -1037619105
+      ss messi disparando idle y caminando_14: -585596662
+      ss messi disparando idle y caminando_15: 484770614
+      ss messi disparando idle y caminando_16: -662342437
+      ss messi disparando idle y caminando_17: -1228393012
+      ss messi disparando idle y caminando_18: 2102513080
+      ss messi disparando idle y caminando_19: 1892917674
+      ss messi disparando idle y caminando_2: -634005735
+      ss messi disparando idle y caminando_20: 738356100
+      ss messi disparando idle y caminando_21: 98215289
+      ss messi disparando idle y caminando_22: 2136467402
+      ss messi disparando idle y caminando_23: 146169293
+      ss messi disparando idle y caminando_24: -1497144938
+      ss messi disparando idle y caminando_25: 336396214
+      ss messi disparando idle y caminando_26: 1778876172
+      ss messi disparando idle y caminando_27: 1669589288
+      ss messi disparando idle y caminando_28: -1742898914
+      ss messi disparando idle y caminando_29: 288430098
+      ss messi disparando idle y caminando_3: 1909292527
+      ss messi disparando idle y caminando_4: -165722482
+      ss messi disparando idle y caminando_5: 353781848
+      ss messi disparando idle y caminando_6: 1584569905
+      ss messi disparando idle y caminando_7: 896738652
+      ss messi disparando idle y caminando_8: 1425550051
+      ss messi disparando idle y caminando_9: 704364657
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
