@@ -52,7 +52,7 @@ public class PLAYMENU : MonoBehaviour
 
         PlayerPrefs.SetInt("PartidaGuardada", nohaypartida);
 
-        SceneManager.LoadScene("Selector de Niv");
+        SceneManager.LoadScene("Inicial Cutscene");
 
         
 
