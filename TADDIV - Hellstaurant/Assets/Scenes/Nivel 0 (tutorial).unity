@@ -2626,7 +2626,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.835931
+      value: 0.8359303
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -2676,6 +2676,10 @@ PrefabInstance:
       propertyPath: botonSonido
       value: 
       objectReference: {fileID: 1281559865}
+    - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: buttonsound
+      value: 
+      objectReference: {fileID: 1034039501}
     - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: spriteMuteado
       value: 
@@ -6856,9 +6860,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1700517279}
-        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
-        m_MethodName: playThisSound
+      - m_Target: {fileID: 7464852032880874426}
+        m_TargetAssemblyTypeName: levelStart, Assembly-CSharp
+        m_MethodName: saltear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9336,6 +9340,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+--- !u!114 &7464852032880874426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6622377257218798287, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+  m_PrefabInstance: {fileID: 7464852032880874425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446669955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a67b35151c02904bbaf352a2fb5c932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
