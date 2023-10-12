@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class RateController : MonoBehaviour
 {
     public int puntuation;
+    public int puntuationGame;
     public string note;
+    public string noteGame;
 
     public int lastlevel;
 
@@ -70,6 +72,9 @@ public class RateController : MonoBehaviour
         estrella5image.sprite = estrellavacia;
 
         ratinggame = 1;
+
+        puntuationGame = 1;
+        noteGame = "HORRIBLE";
     }
 
     public void DosEstrella()
@@ -89,6 +94,9 @@ public class RateController : MonoBehaviour
         estrella5image.sprite = estrellavacia;
 
         ratinggame = 2;
+
+        puntuationGame = 2;
+        noteGame = "MALO";
     }
 
     public void TresEstrella()
@@ -108,6 +116,9 @@ public class RateController : MonoBehaviour
         estrella5image.sprite = estrellavacia;
 
         ratinggame = 3;
+
+        puntuationGame = 3;
+        noteGame = "NEUTRAL";
     }
 
     public void CuatroEstrella()
@@ -127,6 +138,9 @@ public class RateController : MonoBehaviour
         estrella5image.sprite = estrellavacia;
 
         ratinggame = 4;
+
+        puntuationGame = 4;
+        noteGame = "BUENO";
     }
 
     public void CincoEstrella()
@@ -146,6 +160,9 @@ public class RateController : MonoBehaviour
         estrella5image.sprite = estrellallena;
 
         ratinggame = 5;
+
+        puntuationGame = 5;
+        noteGame = "EXCELENTE";
     }
 
     //arte
@@ -266,14 +283,28 @@ public class RateController : MonoBehaviour
 
     public void sendRate()
     {
+        Debug.Log("RateGame.puntuation ="+ puntuationGame);
         Debug.Log("RateArt.puntuation ="+ puntuation);
+
+        Debug.Log("RateGame.note ="+ noteGame);
         Debug.Log("RateArt.note ="+ note);
+
+        Debug.Log("RateGame.lastLevel ="+ lastlevel);
         Debug.Log("RateArte.lastLevel ="+ lastlevel);
+
+        PlayerPrefs.SetInt("RateGame.puntuation =", puntuationGame);
         PlayerPrefs.SetInt("RateArt.puntuation =", puntuation);
+
+        PlayerPrefs.SetString("RateGame.note =", noteGame);
         PlayerPrefs.SetString("RateArt.note =", note);
+
+        PlayerPrefs.SetInt("RateGame.lastLevel =", lastlevel);
         PlayerPrefs.SetInt("RateArt.lastLevel =", lastlevel);
+
         PlayerPrefs.SetInt("puntajeJuego =", ratinggame);
+
         PlayerPrefs.SetInt("puntajeArte =", ratingart);
+
         popupRate.SetActive(false);
         botonRate.SetActive(false);
         PlayerPrefs.SetInt("rateado", 1);
