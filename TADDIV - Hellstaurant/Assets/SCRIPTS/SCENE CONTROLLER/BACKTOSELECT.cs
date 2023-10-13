@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BACKTOSELECT : MonoBehaviour
 {
+    public AudioSource buttonsound;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class BACKTOSELECT : MonoBehaviour
 
     public void backToSelect()
     {
+        buttonsound.Play();
         SceneManager.LoadScene("Selector de Niv");
     }
 }

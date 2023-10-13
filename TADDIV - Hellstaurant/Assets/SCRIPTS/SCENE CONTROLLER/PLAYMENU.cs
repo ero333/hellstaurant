@@ -14,6 +14,8 @@ public class PLAYMENU : MonoBehaviour
 
     public int nohaypartida = 0;
 
+    public AudioSource buttonsound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,8 @@ public class PLAYMENU : MonoBehaviour
 
     public void jugar()
     {
+        buttonsound.Play(); 
+
         SceneManager.LoadScene("Selector de Niv");
 
         PlayerPrefs.SetInt("PartidaGuardada", 1 );
@@ -46,6 +50,8 @@ public class PLAYMENU : MonoBehaviour
 
     public void Reset()
     {
+        buttonsound.Play();
+
         PlayerPrefs.DeleteAll();
 
         botonContinuar.SetActive(false);
@@ -61,26 +67,36 @@ public class PLAYMENU : MonoBehaviour
 
     public void Tienda()
     {
+        buttonsound.Play();
+
         SceneManager.LoadScene("Tienda");
     }
 
     public void creditos()
     {
+        buttonsound.Play();
+
         SceneManager.LoadScene("Creditos");
     }
 
     public void continuar()
     {
+        buttonsound.Play();
+
         SceneManager.LoadScene(ultimoNivel +1);
     }
 
     public void menuprincipal()
     {
+        buttonsound.Play();
+
         SceneManager.LoadScene("Menu");
     }
 
     public void tiendaskins()
     {
+        buttonsound.Play();
+
         SceneManager.LoadScene("Skins");
     }
 }

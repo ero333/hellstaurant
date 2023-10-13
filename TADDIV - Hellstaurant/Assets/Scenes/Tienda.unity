@@ -650,6 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9703a6dff399341a99e44f5e6485df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonsound: {fileID: 961125797}
 --- !u!1 &169193938
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +759,7 @@ MonoBehaviour:
   spriteMuteado: {fileID: 0}
   spriteDesmuteado: {fileID: 0}
   botonSonido: {fileID: 0}
+  buttonsound: {fileID: 961125797}
 --- !u!1001 &333725211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1182,6 +1184,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942848882}
   m_CullTransparentMesh: 1
+--- !u!1 &961125796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961125798}
+  - component: {fileID: 961125797}
+  m_Layer: 0
+  m_Name: buttonSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &961125797
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961125796}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b4b4c546d03a4c647a201be72e2244d1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.51
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 99
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &961125798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961125796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.17557529, y: -1.1933937, z: -3.3537767}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &979943022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2051451800337876228, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
@@ -1199,6 +1329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a540942af5c638f4a88227894063ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonsound: {fileID: 961125797}
 --- !u!114 &979943029 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6265162973398768928, guid: 0b9bb21645668784195f2261d88a7772, type: 3}
@@ -1739,10 +1870,10 @@ MonoBehaviour:
   UnlockedItemsNumber: 0
   coindata: {fileID: 638251460}
   monedasactuales: 0
-  fugabutton: {fileID: 1708323454}
-  fainabutton: {fileID: 1667082831}
-  cajabutton: {fileID: 65208192}
-  frenzybutton: {fileID: 138699809}
+  fugabutton: {fileID: 1708323456}
+  fainabutton: {fileID: 1667082833}
+  cajabutton: {fileID: 65208194}
+  frenzybutton: {fileID: 138699811}
   blockFuga: {fileID: 1081297118}
   blockFaina: {fileID: 2070667478}
   blockFrenzy: {fileID: 1076892050}
@@ -1751,6 +1882,8 @@ MonoBehaviour:
   Vendido2: {fileID: 933140626}
   Vendido3: {fileID: 1225497913}
   Vendido4: {fileID: 1435632960}
+  lastlevel: 0
+  order: 0
 --- !u!1 &1221223666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,3 +2958,4 @@ SceneRoots:
   - {fileID: 109890604}
   - {fileID: 638251461}
   - {fileID: 1741540462}
+  - {fileID: 961125798}

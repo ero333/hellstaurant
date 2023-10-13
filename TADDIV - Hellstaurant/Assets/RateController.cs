@@ -36,6 +36,7 @@ public class RateController : MonoBehaviour
     public Button estrellart4;
     public Button estrellart5;
 
+    public AudioSource buttonsound;
 
     void Start()
     {
@@ -349,6 +350,8 @@ public class RateController : MonoBehaviour
 
     public void sendRate()
     {
+        buttonsound.Play();
+
         Debug.Log("RateGame.puntuation ="+ puntuationGame);
         Debug.Log("RateArt.puntuation ="+ puntuation);
 
@@ -378,11 +381,15 @@ public class RateController : MonoBehaviour
 
     public void cerrarRate()
     {
+        buttonsound.Play();
+
         popupRate.SetActive(false);
     }
 
     public void abrirRate()
-    { 
+    {
+        buttonsound.Play();
+
         popupRate.SetActive(true); 
     }
 

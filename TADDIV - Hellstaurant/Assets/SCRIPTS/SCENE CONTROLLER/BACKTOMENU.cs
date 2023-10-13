@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class BACKTOMENU : MonoBehaviour
 {
+
+    public AudioSource buttonsound;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class BACKTOMENU : MonoBehaviour
 
     public void backToMenu()
     {
+        buttonsound.Play();
         SceneManager.LoadScene("Menu");
     }
 }

@@ -573,6 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a540942af5c638f4a88227894063ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonsound: {fileID: 1166014768}
 --- !u!114 &804388673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,18 +1232,6 @@ MonoBehaviour:
       - m_Target: {fileID: 804388672}
         m_TargetAssemblyTypeName: BACKTOMENU, Assembly-CSharp
         m_MethodName: backToMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 804388673}
-        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
-        m_MethodName: playThisSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1911,6 +1900,7 @@ MonoBehaviour:
   spriteMuteado: {fileID: 0}
   spriteDesmuteado: {fileID: 0}
   botonSonido: {fileID: 0}
+  buttonsound: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
