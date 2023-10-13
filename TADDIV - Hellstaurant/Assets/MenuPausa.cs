@@ -18,6 +18,8 @@ public class MenuPausa : MonoBehaviour
     public GameObject popupPausa;
 	public GameObject Resume;
 
+    public levelStart levelStart;
+
     public bool pausedGame;
 
 
@@ -98,6 +100,15 @@ public class MenuPausa : MonoBehaviour
         }
 
 	}
+
+
+    public void eventMenu()
+    {
+
+        Debug.Log("Quit.Level =" + levelStart.level);
+        Debug.Log("Quit.time =" + levelStart.leveltimer);
+        
+    }
 
 
 
