@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.InputSystem.LowLevel;
+using Unity.VisualScripting;
 
 public class Endlesstimer : MonoBehaviour
 {
     [SerializeField] private int startingTime;
     [SerializeField] private float TimeUntilHourChange;
     [SerializeField] private TMP_Text timeText;
+    [SerializeField] private int timeLimit;
 
     [NonSerialized] public int timeHours;
 
@@ -17,17 +20,30 @@ public class Endlesstimer : MonoBehaviour
     public GameObject WIN;
     private Animator WinAnimator;
 
+    public static Endlesstimer instance;
 
+
+    public EnemySpawner enemyspawner;
+
+    public float spawnRates;
+
+
+
+    public void Awake()
+    {
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
         playerAlive = true;
         timeHours = startingTime;
 
+        enemyspawner.spawnRate = 15f;
 
         StartCoroutine(routine: advanceHourOverTime());
 
-
+        StartCoroutine (riseDifficulty());
 
 
     }
@@ -35,9 +51,7 @@ public class Endlesstimer : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        timeText.text = " " + timeHours;
-
-
+        timeText.text = timeHours.ToString();
     }
 
     private IEnumerator advanceHourOverTime()
@@ -48,17 +62,19 @@ public class Endlesstimer : MonoBehaviour
 
                 timeHours++;
 
-          
-           StartCoroutine(routine: advanceHourOverTime());
+            
+                StartCoroutine(routine: advanceHourOverTime());
 
 
+        if (!playerAlive)
+            {
+                stopTimer();
+            }
+            
+
+            
 
         }
-        // else
-        // {
-        //   stopTimer();
-        //}
-
     }
 
     public void stopTimer()
@@ -66,8 +82,30 @@ public class Endlesstimer : MonoBehaviour
         if (!playerAlive)
         {
             StopAllCoroutines();
-            timeText.text = " " + timeHours;
+            timeText.text = timeHours.ToString();
         }
+    }
+
+    IEnumerator riseDifficulty()
+    {
+        yield return new WaitForSeconds(30f);
+
+
+        GameObject[] spawners = GameObject.FindGameObjectsWithTag("spawners");
+
+        foreach (GameObject obj in spawners)
+        {
+            EnemySpawner script = obj.GetComponent<EnemySpawner>();
+            if (script != null)
+            {
+                script.spawnRate = script.spawnRate -1;
+            }
+        }
+
+        enemyspawner.spawnRate = enemyspawner.spawnRate - 1f;
+
+        StartCoroutine (routine: riseDifficulty());
+
     }
 
 

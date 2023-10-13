@@ -45,6 +45,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public AdvanceTime advanceTime;
 
+
     public Puntaje puntaje;
 
     public Animator anim;
@@ -229,6 +230,7 @@ public class PlayerHealthController : MonoBehaviour
     {
         levelstart.timerRunning = false;
         advanceTime.playerAlive = false;
+
 
         currentHealth = 0;
 
