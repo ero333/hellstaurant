@@ -78,6 +78,16 @@ public class stopGame : MonoBehaviour
 
     public void OnEnable()
     {
+        StartCoroutine(winProcess());
+    }
+
+    public void Tienda ()
+    {
+        SceneManager.LoadScene("Tienda");
+    }
+
+    IEnumerator winProcess()
+    {
         winSound.Play();
 
         GameObject[] taggedEnemies = GameObject.FindGameObjectsWithTag("Enemy");
@@ -89,16 +99,12 @@ public class stopGame : MonoBehaviour
 
 
         }
-        player.SetActive(false);
+
         spawner.StopAllCoroutines();
         spawner.deleteClones();
         bulletSpawner.SetActive(false);
 
-
-    }
-
-    public void Tienda ()
-    {
-        SceneManager.LoadScene("Tienda");
+        yield return new WaitForSeconds(0.5f);
+        player.SetActive(false);
     }
 }

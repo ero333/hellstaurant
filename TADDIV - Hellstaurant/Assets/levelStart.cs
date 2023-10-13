@@ -56,6 +56,10 @@ public class levelStart : MonoBehaviour
 
     public bool skip;
 
+    public bool bossDefeated = false;
+
+    public levelStart levelstart;
+
     public void Awake()
     {
         instance = this;
@@ -445,6 +449,12 @@ public class levelStart : MonoBehaviour
             Debug.Log("GameOver.level = " + level);
 
             timerRunning = true;
+        }
+
+        if (bossDefeated) 
+        {
+            Debug.Log("LevelComplete = " + leveltimer);
+            bossDefeated = false;
         }
     }
 }
