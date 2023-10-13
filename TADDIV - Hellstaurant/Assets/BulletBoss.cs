@@ -40,9 +40,16 @@ public class Bullet : MonoBehaviour
     {
         // Verifica si el objeto colisionado tiene el componente PlayerHealthController
         PlayerHealthController playerHealthController = other.GetComponent<PlayerHealthController>();
-        if (playerHealthController != null)
+        if (playerHealthController != null && playerHealthController.invincibleLength <= 0)
         {
             playerHealthController.TakeDamage(damageAmount);
+
+
+
+                playerHealthController.lastAttackingEnemy = "JEFE";
+
+                playerHealthController.bossHit++;
+                playerHealthController.hit++;
 
                 if (puntaje.puntos >= 10)
                 {

@@ -6,6 +6,30 @@ public class PlayerHealthController : MonoBehaviour
 {
     public int currentHealth, maxHealth;
 
+    public int healingTimes = 0;
+
+    public string lastAttackingEnemy;
+
+
+    public int basicoHit = 0;
+    public int gordoHit = 0;
+    public int rapidoHit = 0;
+    public int rodeteHit = 0;
+    public int basicoPHit = 0;
+    public int gordoPHit = 0;
+    public int rapidoPHit = 0;
+    public int rodetePHit = 0;
+    public int arañaHit = 0;
+    public int cucarachaHit = 0;
+    public int bossHit = 0;
+
+    public int hit = 0;
+
+
+
+
+    public levelStart levelstart;
+
     public float invincibleLength;
     private float invincibleCounter;
 
@@ -93,10 +117,14 @@ public class PlayerHealthController : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
+
         currentHealth++;
         UIController.Instance.UpdateHealthDisplay();
 
         anim.SetBool("Curandose", false);
+
+        healingTimes++;
+
         isHealing = false; // establece isHealing en false al terminar la curaci�n
     }
 
@@ -108,11 +136,24 @@ public class PlayerHealthController : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                advanceTime.playerAlive = false;
-                currentHealth = 0;
-                gameObject.SetActive(false);
 
-                ShowGameOver(); // Mostrar el cartel de Game Over
+                Debug.Log("GameOver.enemy =" + lastAttackingEnemy);
+                Debug.Log("GameOver.healing =" + healingTimes);
+                Debug.Log("GameOver.hit =" + hit);
+                Debug.Log("GameOver.basicoHit =" + basicoHit);
+                Debug.Log("GameOver.basicoPHit =" + basicoPHit);
+                Debug.Log("GameOver.gordoHit =" + gordoHit);
+                Debug.Log("GameOver.gordoPHit =" + gordoPHit);
+                Debug.Log("GameOver.rapidoHit =" + rapidoHit);
+                Debug.Log("GameOver.rapidoPHit =" + rapidoPHit);
+                Debug.Log("GameOver.rodeteHit =" + rodeteHit);
+                Debug.Log("GameOver.rodetePHit =" + rodetePHit);
+                Debug.Log("GameOver.arañaHit =" + arañaHit);
+                Debug.Log("GameOver.cucarachaHit =" + cucarachaHit);
+                Debug.Log("GameOver.jefeHit =" + bossHit);
+
+                StartCoroutine(death());
+
             }
             else
             {
@@ -160,10 +201,24 @@ public class PlayerHealthController : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                advanceTime.playerAlive = false;
-                currentHealth = 0;
-                gameObject.SetActive(false);
-                ShowGameOver(); // Mostrar el cartel de Game Over
+
+
+                Debug.Log("GameOver.enemy =" + lastAttackingEnemy);
+                Debug.Log("GameOver.healing =" + healingTimes);
+                Debug.Log("GameOver.hit =" + hit);
+                Debug.Log("GameOver.basicoHit =" + basicoHit);
+                Debug.Log("GameOver.basicoPHit =" + basicoPHit);
+                Debug.Log("GameOver.gordoHit =" + gordoHit);
+                Debug.Log("GameOver.gordoPHit =" + gordoPHit);
+                Debug.Log("GameOver.rapidoHit =" + rapidoHit);
+                Debug.Log("GameOver.rapidoPHit =" + rapidoPHit);
+                Debug.Log("GameOver.rodeteHit =" + rodeteHit);
+                Debug.Log("GameOver.rodetePHit =" + rodetePHit);
+                Debug.Log("GameOver.arañaHit =" + arañaHit);
+                Debug.Log("GameOver.cucarachaHit =" + cucarachaHit);
+                Debug.Log("GameOver.jefeHit =" + bossHit);
+
+                StartCoroutine(death());
             }
             else
             {
@@ -195,6 +250,21 @@ public class PlayerHealthController : MonoBehaviour
         
         yield return 0;
 
+    }
+
+    public IEnumerator death()
+    {
+        levelstart.timerRunning = false;
+        advanceTime.playerAlive = false;
+
+
+
+        currentHealth = 0;
+
+        yield return new WaitForSeconds(0.05f);
+
+        gameObject.SetActive(false);
+        ShowGameOver(); // Mostrar el cartel de Game Over
     }
 
     public IEnumerator colorchange()

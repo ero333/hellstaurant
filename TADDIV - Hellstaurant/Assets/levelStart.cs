@@ -6,6 +6,16 @@ using UnityEngine.SceneManagement;
 public class levelStart : MonoBehaviour
 {
 
+    public static levelStart instance;
+
+    public long leveltimer;
+
+    public float DeltaTime;
+
+    public float seconds = 1.0f;
+
+    public bool timerRunning;
+
     public int level;
 
     public int times1 = 0;
@@ -46,10 +56,19 @@ public class levelStart : MonoBehaviour
 
     public bool skip;
 
-
+    public void Awake()
+    {
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
+
+        leveltimer = 0;
+
+        timerRunning = true;
+
+
         times1 = PlayerPrefs.GetInt("LevelStart.level1.times = ");
         times2 = PlayerPrefs.GetInt("LevelStart.level2.times = ");
         times3 = PlayerPrefs.GetInt("LevelStart.level3.times = ");
@@ -409,6 +428,21 @@ public class levelStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (timerRunning)
+        {
+            DeltaTime += Time.deltaTime;
+
+            if (DeltaTime >= seconds)
+            {
+                leveltimer++;
+                DeltaTime = 0;
+            }
+        }
+
+        if (!timerRunning)
+        {
+            Debug.Log("GameOver.time = " + leveltimer);
+            Debug.Log("GameOver.level = " + level);
+        }
     }
 }

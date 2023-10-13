@@ -54,10 +54,17 @@ public class bolloScript : MonoBehaviour
         {
             // Verifica si el objeto colisionado tiene el componente PlayerHealthController
             PlayerHealthController playerHealthController = other.GetComponent<PlayerHealthController>();
+
+
+
             if (playerHealthController != null)
 
-
             {
+
+                playerHealthController.lastAttackingEnemy = "JEFE";
+
+                playerHealthController.bossHit++;
+                playerHealthController.hit++;
 
                 if (puntaje.puntos >= 10)
                 {

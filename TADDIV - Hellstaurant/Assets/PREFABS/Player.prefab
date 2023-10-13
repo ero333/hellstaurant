@@ -322,6 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 6
+  levelstart: {fileID: 6622377257218798287}
   invincibleLength: 2
   controlUI: {fileID: 0}
   gameOverScreen: {fileID: 0}
@@ -762,6 +763,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a67b35151c02904bbaf352a2fb5c932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leveltimer: 0
+  DeltaTime: 0
+  seconds: 1
+  timerRunning: 0
   level: 0
   times1: 0
   times2: 0

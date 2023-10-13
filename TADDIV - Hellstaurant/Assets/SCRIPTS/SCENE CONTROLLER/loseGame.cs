@@ -44,7 +44,7 @@ public class loseGame : MonoBehaviour
 
 
         }
-        player.SetActive(false);
+        //player.SetActive(false);
         spawner.StopAllCoroutines();
         spawner.deleteClones();
         bulletSpawner.SetActive(false);
