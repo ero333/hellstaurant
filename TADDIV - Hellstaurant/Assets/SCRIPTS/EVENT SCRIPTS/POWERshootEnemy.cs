@@ -21,7 +21,7 @@ public class POWERshootEnemy : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             PlayerHealthController player = other.gameObject.GetComponent<PlayerHealthController>();
-            if (player != null && player.invincibleLength <= 0)
+            if (player != null)
             {
                 player.lastAttackingEnemy = "RODETESP";
 

@@ -443,6 +443,8 @@ public class levelStart : MonoBehaviour
         {
             Debug.Log("GameOver.time = " + leveltimer);
             Debug.Log("GameOver.level = " + level);
+
+            timerRunning = true;
         }
     }
 }

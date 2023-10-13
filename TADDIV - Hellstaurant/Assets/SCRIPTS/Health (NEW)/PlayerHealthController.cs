@@ -10,6 +10,8 @@ public class PlayerHealthController : MonoBehaviour
 
     public string lastAttackingEnemy;
 
+    public GameObject playerDeathDebug;
+
 
     public int basicoHit = 0;
     public int gordoHit = 0;
@@ -31,7 +33,7 @@ public class PlayerHealthController : MonoBehaviour
     public levelStart levelstart;
 
     public float invincibleLength;
-    private float invincibleCounter;
+    public float invincibleCounter;
 
     private SpriteRenderer theSR;
 
@@ -59,6 +61,7 @@ public class PlayerHealthController : MonoBehaviour
 
     void Start()
     {
+        playerDeathDebug.GetComponent<playerDebugControl>();
 
         isHealing = false;
 
@@ -137,21 +140,6 @@ public class PlayerHealthController : MonoBehaviour
             if (currentHealth <= 0)
             {
 
-                Debug.Log("GameOver.enemy =" + lastAttackingEnemy);
-                Debug.Log("GameOver.healing =" + healingTimes);
-                Debug.Log("GameOver.hit =" + hit);
-                Debug.Log("GameOver.basicoHit =" + basicoHit);
-                Debug.Log("GameOver.basicoPHit =" + basicoPHit);
-                Debug.Log("GameOver.gordoHit =" + gordoHit);
-                Debug.Log("GameOver.gordoPHit =" + gordoPHit);
-                Debug.Log("GameOver.rapidoHit =" + rapidoHit);
-                Debug.Log("GameOver.rapidoPHit =" + rapidoPHit);
-                Debug.Log("GameOver.rodeteHit =" + rodeteHit);
-                Debug.Log("GameOver.rodetePHit =" + rodetePHit);
-                Debug.Log("GameOver.arañaHit =" + arañaHit);
-                Debug.Log("GameOver.cucarachaHit =" + cucarachaHit);
-                Debug.Log("GameOver.jefeHit =" + bossHit);
-
                 StartCoroutine(death());
 
             }
@@ -193,6 +181,7 @@ public class PlayerHealthController : MonoBehaviour
         }
     }
 
+
     public void TakeDamage(int damage)
     {
         if (invincibleCounter <= 0)
@@ -201,22 +190,6 @@ public class PlayerHealthController : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-
-
-                Debug.Log("GameOver.enemy =" + lastAttackingEnemy);
-                Debug.Log("GameOver.healing =" + healingTimes);
-                Debug.Log("GameOver.hit =" + hit);
-                Debug.Log("GameOver.basicoHit =" + basicoHit);
-                Debug.Log("GameOver.basicoPHit =" + basicoPHit);
-                Debug.Log("GameOver.gordoHit =" + gordoHit);
-                Debug.Log("GameOver.gordoPHit =" + gordoPHit);
-                Debug.Log("GameOver.rapidoHit =" + rapidoHit);
-                Debug.Log("GameOver.rapidoPHit =" + rapidoPHit);
-                Debug.Log("GameOver.rodeteHit =" + rodeteHit);
-                Debug.Log("GameOver.rodetePHit =" + rodetePHit);
-                Debug.Log("GameOver.arañaHit =" + arañaHit);
-                Debug.Log("GameOver.cucarachaHit =" + cucarachaHit);
-                Debug.Log("GameOver.jefeHit =" + bossHit);
 
                 StartCoroutine(death());
             }
@@ -257,9 +230,9 @@ public class PlayerHealthController : MonoBehaviour
         levelstart.timerRunning = false;
         advanceTime.playerAlive = false;
 
-
-
         currentHealth = 0;
+
+        playerDeathDebug.SetActive(true);
 
         yield return new WaitForSeconds(0.05f);
 
