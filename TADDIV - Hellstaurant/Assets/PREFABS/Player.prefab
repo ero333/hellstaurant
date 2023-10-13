@@ -142,7 +142,7 @@ MonoBehaviour:
   speedWithPowerUp: 7
   isHealing: 0
   Coinsound: {fileID: 576768189682842382}
-  Pickupsound: {fileID: 2472794123837319283}
+  Pickupsound: {fileID: 0}
 --- !u!82 &576768189682842382
 AudioSource:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   is_using_mouse: 0
   is_using_gamepad: 0
   enemyPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 2142375769131420283}
   playerHealthController: {fileID: 0}
   girlfrenzymode: {fileID: 0}
   skinName: 
@@ -322,8 +322,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 6
+  healingTimes: 0
+  lastAttackingEnemy: 
+  playerDeathDebug: {fileID: 0}
+  basicoHit: 0
+  gordoHit: 0
+  rapidoHit: 0
+  rodeteHit: 0
+  basicoPHit: 0
+  gordoPHit: 0
+  rapidoPHit: 0
+  rodetePHit: 0
+  "ara\xF1aHit": 0
+  cucarachaHit: 0
+  bossHit: 0
+  hit: 0
   levelstart: {fileID: 6622377257218798287}
   invincibleLength: 2
+  invincibleCounter: 0
   controlUI: {fileID: 0}
   gameOverScreen: {fileID: 0}
   advanceTime: {fileID: 0}
