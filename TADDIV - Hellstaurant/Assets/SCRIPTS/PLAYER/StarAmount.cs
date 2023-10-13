@@ -56,70 +56,70 @@ public class StarAmount : MonoBehaviour
 
        if (PlayerPrefs.GetInt("NivelActual") == 4)
             {
-             lastlevel = 1;
+             level = 1;
             }
        if (PlayerPrefs.GetInt("NivelActual") == 5)
             {
-             lastlevel = 2;
+             level = 2;
             }
        if (PlayerPrefs.GetInt("NivelActual") == 6)
             {
-             lastlevel = 3;
+             level = 3;
             }
        if (PlayerPrefs.GetInt("NivelActual") == 7)
             {
-             lastlevel = 4;
+             level = 4;
             }
        if (PlayerPrefs.GetInt("NivelActual") == 9)
             {
-             lastlevel = 5;
+             level = 5;
             }
        if (PlayerPrefs.GetInt("NivelActual") == 10)
             {
-             lastlevel = 6;
+             level = 6;
             }
        if (PlayerPrefs.GetInt("NivelActual") == 11)
             {
-             lastlevel = 7;
+             level = 7;
             }
        if (PlayerPrefs.GetInt("NivelActual") == 12)
             {
-             lastlevel = 8;
+             level = 8;
             }
        if (PlayerPrefs.GetInt("NivelActual") == 13)
            {
-            lastlevel = 9;
+            level = 9;
            }
        if (PlayerPrefs.GetInt("NivelActual") == 14)
            {
-            lastlevel = 10;
+            level = 10;
            }
        if (PlayerPrefs.GetInt("NivelActual") == 15)
            {
-            lastlevel = 11;
+            level = 11;
            }
        if (PlayerPrefs.GetInt("NivelActual") == 16)
            {
-            lastlevel = 12;
+            level = 12;
            }
        if (PlayerPrefs.GetInt("NivelActual") == 17)
            {
-            lastlevel = 13;
+            level = 13;
            }
        if (PlayerPrefs.GetInt("NivelActual") == 18)
            {
-            lastlevel = 14;
+            level = 14;
            }
        if (PlayerPrefs.GetInt("NivelActual") == 20)
            {
-            lastlevel = 15;
+            level = 15;
            }
        if (PlayerPrefs.GetInt("NivelActual") == 22)
            {
-            lastlevel = 16;
+            level = 16;
            }
 
-    Debug.Log("LevelComplete =" + level);
+        Debug.Log("LevelComplete =" + level);
 
     }
 
@@ -154,6 +154,6 @@ public class StarAmount : MonoBehaviour
 
         Debug.Log("LevelComplete.stars =" + stars);
 
-        levelstart.bossdefeated = true;
+        levelstart.bossDefeated = true;
     }
 }

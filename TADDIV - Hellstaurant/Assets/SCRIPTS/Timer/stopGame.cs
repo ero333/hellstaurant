@@ -104,7 +104,7 @@ public class stopGame : MonoBehaviour
         spawner.deleteClones();
         bulletSpawner.SetActive(false);
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(5f);
         player.SetActive(false);
     }
 }

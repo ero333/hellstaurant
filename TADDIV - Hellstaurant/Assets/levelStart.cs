@@ -453,7 +453,7 @@ public class levelStart : MonoBehaviour
 
         if (bossDefeated) 
         {
-            Debug.Log("LevelComplete = " + leveltimer);
+            Debug.Log("LevelComplete.time = " + leveltimer);
             bossDefeated = false;
         }
     }

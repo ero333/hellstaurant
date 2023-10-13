@@ -3626,22 +3626,6 @@ PrefabInstance:
       propertyPath: timeBarScript
       value: 
       objectReference: {fileID: 1645528777}
-    - target: {fileID: 2088622074340852892, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-      propertyPath: Hrange.x
-      value: -10.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2088622074340852892, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-      propertyPath: Hrange.y
-      value: 4.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 2088622074340852892, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-      propertyPath: Vrange.x
-      value: -9.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 2088622074340852892, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
-      propertyPath: Vrange.y
-      value: 11.55
-      objectReference: {fileID: 0}
     - target: {fileID: 4306983515515980842, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.58
@@ -3698,6 +3682,10 @@ PrefabInstance:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 1890628359}
+    - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: playerDeathDebug
+      value: 
+      objectReference: {fileID: 1729272127}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3722,6 +3710,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38d7efc1d6343674d9c4851ff1882ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1315016616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6622377257218798287, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+  m_PrefabInstance: {fileID: 1315016612}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315016614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a67b35151c02904bbaf352a2fb5c932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1315016619 stripped
@@ -5026,6 +5025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9703a6dff399341a99e44f5e6485df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonsound: {fileID: 0}
 --- !u!114 &1595966823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5233,6 +5233,12 @@ MonoBehaviour:
   star1: {fileID: 32339244}
   star2: {fileID: 1680329042}
   star3: {fileID: 2113869622}
+  healthController: {fileID: 1315016615}
+  stars: 0
+  level: 0
+  bossDefeated: 0
+  levelstart: {fileID: 1315016616}
+  lastlevel: 0
 --- !u!114 &1605475947
 MonoBehaviour:
   m_ObjectHideFlags: 0
