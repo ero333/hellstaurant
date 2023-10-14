@@ -334,7 +334,7 @@ MonoBehaviour:
   popupPanel: {fileID: 0}
   popupPausa: {fileID: 0}
   Resume: {fileID: 0}
-  levelStart: {fileID: 0}
+  levelStart: {fileID: 1315016616}
   pausedGame: 0
 --- !u!114 &110602404
 MonoBehaviour:
@@ -752,6 +752,10 @@ PrefabInstance:
       propertyPath: botonSonido
       value: 
       objectReference: {fileID: 132502145}
+    - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: buttonsound
+      value: 
+      objectReference: {fileID: 2049417181}
     - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: spriteMuteado
       value: 

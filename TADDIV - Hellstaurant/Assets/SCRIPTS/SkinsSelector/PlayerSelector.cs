@@ -83,7 +83,7 @@ public class PlayerSelector : MonoBehaviour
         //this.Select(0);
         order = PlayerPrefs.GetInt("ordenDeSkin");
 
-        lastlevel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
+        //lastlevel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
 
         selectGoldButton.interactable = false;
 
@@ -127,6 +127,76 @@ public class PlayerSelector : MonoBehaviour
 
         selectGoldButton.interactable = false;
         spriteRendererGoldenSkin.sprite = goldSkinLocked;
+
+
+
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 4)
+        {
+            lastlevel = 1;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 5)
+        {
+            lastlevel = 2;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 6)
+        {
+            lastlevel = 3;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 7)
+        {
+            lastlevel = 4;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 9)
+        {
+            lastlevel = 5;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 10)
+        {
+            lastlevel = 6;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 11)
+        {
+            lastlevel = 7;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 12)
+        {
+            lastlevel = 8;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 13)
+        {
+            lastlevel = 9;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 14)
+        {
+            lastlevel = 10;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 15)
+        {
+            lastlevel = 11;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 16)
+        {
+            lastlevel = 12;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 17)
+        {
+            lastlevel = 13;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 18)
+        {
+            lastlevel = 14;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 20)
+        {
+            lastlevel = 15;
+        }
+        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") == 22)
+        {
+            lastlevel = 16;
+        }
+
+
+
 
 
 

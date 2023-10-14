@@ -4089,7 +4089,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359303
+      value: 0.835931
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -4139,6 +4139,10 @@ PrefabInstance:
       propertyPath: botonSonido
       value: 
       objectReference: {fileID: 2113430908}
+    - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: buttonsound
+      value: 
+      objectReference: {fileID: 2090761892}
     - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: spriteMuteado
       value: 
@@ -4698,6 +4702,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d7efc1d6343674d9c4851ff1882ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1817709976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6622377257218798287, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+  m_PrefabInstance: {fileID: 1817709973}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817709974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a67b35151c02904bbaf352a2fb5c932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1817709983 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4306983515515980842, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
@@ -5041,6 +5056,12 @@ MonoBehaviour:
   star1: {fileID: 372453039}
   star2: {fileID: 886405535}
   star3: {fileID: 1132302083}
+  healthController: {fileID: 1817709975}
+  stars: 0
+  level: 0
+  bossDefeated: 0
+  levelstart: {fileID: 1817709976}
+  lastlevel: 0
 --- !u!114 &1877279698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5270,7 +5291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -287.99994, y: 76.63495}
+  m_AnchoredPosition: {x: -287.99994, y: 76.634964}
   m_SizeDelta: {x: 367.12, y: 153.27002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888670613
@@ -5722,7 +5743,7 @@ MonoBehaviour:
   popupPanel: {fileID: 0}
   popupPausa: {fileID: 0}
   Resume: {fileID: 0}
-  levelStart: {fileID: 0}
+  levelStart: {fileID: 1817709976}
   pausedGame: 0
 --- !u!114 &2022101042
 MonoBehaviour:

@@ -2669,10 +2669,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.83593124
-      objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
       value: 
@@ -2725,14 +2721,6 @@ PrefabInstance:
       propertyPath: buttonsound
       value: 
       objectReference: {fileID: 1034039501}
-    - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
-      propertyPath: spriteMuteado
-      value: 
-      objectReference: {fileID: -1476897938, guid: 530c4dbeceed33545aff1533c157c7c5, type: 3}
-    - target: {fileID: 8547342360122238225, guid: 30418214efddfed4999c1a14726939b4, type: 3}
-      propertyPath: spriteDesmuteado
-      value: 
-      objectReference: {fileID: 1329714365, guid: dfc2413bf18cbc04c929f243d01fb311, type: 3}
     - target: {fileID: 8895184780357875469, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Name
       value: Camara
@@ -3733,7 +3721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -287.99994, y: 76.63495}
+  m_AnchoredPosition: {x: -287.99994, y: 76.634964}
   m_SizeDelta: {x: 367.12, y: 153.27002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &760563038
@@ -6354,7 +6342,7 @@ MonoBehaviour:
   popupPanel: {fileID: 0}
   popupPausa: {fileID: 0}
   Resume: {fileID: 0}
-  levelStart: {fileID: 0}
+  levelStart: {fileID: 7464852032880874426}
   pausedGame: 0
 --- !u!114 &1357241697
 MonoBehaviour:
@@ -7899,6 +7887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9703a6dff399341a99e44f5e6485df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonsound: {fileID: 0}
 --- !u!114 &1700517278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8840,6 +8829,12 @@ MonoBehaviour:
   star1: {fileID: 38793964}
   star2: {fileID: 480331531}
   star3: {fileID: 1694815226}
+  healthController: {fileID: 1446669971}
+  stars: 0
+  level: 0
+  bossDefeated: 0
+  levelstart: {fileID: 7464852032880874426}
+  lastlevel: 0
 --- !u!1 &1975274208
 GameObject:
   m_ObjectHideFlags: 0

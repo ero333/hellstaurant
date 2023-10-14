@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class RateController : MonoBehaviour
 {
@@ -377,6 +378,11 @@ public class RateController : MonoBehaviour
         popupRate.SetActive(false);
         botonRate.SetActive(false);
         PlayerPrefs.SetInt("rateado", 1);
+
+
+
+
+
     }
 
     public void cerrarRate()

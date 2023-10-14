@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using Unity.Services.Analytics;
+using UnityEngine.Analytics;
+using UnityEditor.Experimental.GraphView;
 
 public class MenuPausa : MonoBehaviour
 {
@@ -107,7 +110,13 @@ public class MenuPausa : MonoBehaviour
 
         Debug.Log("Quit.Level =" + levelStart.level);
         Debug.Log("Quit.time =" + levelStart.leveltimer);
-        
+
+        AnalyticsService.Instance.CustomData("Quit", new Dictionary<string, object>
+            {
+            { "level", levelStart.level },
+             { "time", levelStart.leveltimer }
+            });
+
     }
 
 
