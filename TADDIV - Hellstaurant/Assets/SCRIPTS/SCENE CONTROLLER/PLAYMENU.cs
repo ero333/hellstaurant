@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
+using Unity.Services.Analytics;
+using Unity.Services.Core;
 
 public class PLAYMENU : MonoBehaviour
 {
@@ -15,6 +18,14 @@ public class PLAYMENU : MonoBehaviour
     public int nohaypartida = 0;
 
     public AudioSource buttonsound;
+
+
+
+    private void Awake()
+    {
+
+    }
+
 
     // Start is called before the first frame update
     void Start()

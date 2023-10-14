@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
+using Unity.Services.Analytics;
 
 public class PlayerSelector : MonoBehaviour
 {
@@ -65,6 +67,9 @@ public class PlayerSelector : MonoBehaviour
     public int lastlevel;
 
     public int order = 0;
+
+
+    public string skinSe;
 
 
     // Start is called before the first frame update
@@ -209,9 +214,8 @@ public class PlayerSelector : MonoBehaviour
         if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 18)
         {
             PlayerPrefs.SetInt("goldSkinConseguida", 1);
+
         }
-
-
 
     }
 
@@ -296,9 +300,20 @@ public class PlayerSelector : MonoBehaviour
 
             PlayerPrefs.SetInt("ordenDeSkin", order);
 
-            Debug.Log("BuySkin.skinSe = MUJER");
+            skinSe = "MUJER";
+
+            Debug.Log("BuySkin.skinSe =" + skinSe);
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
             Debug.Log("BuySkin.order =" + order);
+
+
+            AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            {
+            { "order", order },
+             { "lastLevel", lastlevel },
+              { "skinSe", skinSe },
+            });
+
         }
 
 
@@ -329,9 +344,21 @@ public class PlayerSelector : MonoBehaviour
 
             PlayerPrefs.SetInt("ordenDeSkin", order);
 
-            Debug.Log("BuySkin.skinSe = HALLOWEEN");
+            skinSe = "HALLOWEEN";
+
+            Debug.Log("BuySkin.skinSe =" + skinSe);
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
             Debug.Log("BuySkin.order =" + order);
+
+
+
+            AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            {
+            { "order", order },
+             { "lastLevel", lastlevel },
+              { "skinSe", skinSe },
+            });
+
         }
 
 
@@ -362,9 +389,22 @@ public class PlayerSelector : MonoBehaviour
 
             PlayerPrefs.SetInt("ordenDeSkin", order);
 
-            Debug.Log("BuySkin.skinSe = SPIDERMAN");
+            skinSe = "SPIDERMAN";
+
+            Debug.Log("BuySkin.skinSe =" + skinSe);
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
             Debug.Log("BuySkin.order =" + order);
+
+
+
+            AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            {
+            { "order", order },
+             { "lastLevel", lastlevel },
+              { "skinSe", skinSe },
+            });
+
+
         }
 
 
@@ -397,9 +437,20 @@ public class PlayerSelector : MonoBehaviour
 
             PlayerPrefs.SetInt("ordenDeSkin", order);
 
-            Debug.Log("BuySkin.skinSe = MESSI");
+            skinSe = "MESSI";
+
+            Debug.Log("BuySkin.skinSe =" + skinSe);
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
             Debug.Log("BuySkin.order =" + order);
+
+
+
+            AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            {
+            { "order", order },
+             { "lastLevel", lastlevel },
+              { "skinSe", skinSe },
+            });
         }
 
     }

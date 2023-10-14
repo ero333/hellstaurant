@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Analytics;
 using Unity.Services.Analytics;
+using Unity.Services.Core;
 
 public class levelStart : MonoBehaviour
 {
@@ -65,10 +66,23 @@ public class levelStart : MonoBehaviour
     public void Awake()
     {
         instance = this;
+
+        UnityServices.InitializeAsync();
+        AnalyticsService.Instance.StartDataCollection();
     }
     // Start is called before the first frame update
     void Start()
     {
+
+        skinSe = PlayerPrefs.GetString("skin seleccionada");
+        Debug.Log("LevelStart.skinSe = " + skinSe);
+
+
+        AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "skinSe", skinSe }
+            });
+
 
         leveltimer = 0;
 
@@ -552,16 +566,6 @@ public class levelStart : MonoBehaviour
              { "first", firstTime }
             });
         }
-
-        skinSe = PlayerPrefs.GetString("skin seleccionada");
-        Debug.Log("LevelStart.skinSe = " + skinSe);
-
-
-        AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
-            {
-            { "skinSe", skinSe }
-            });
-
 
 
     }
