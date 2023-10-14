@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
+using Unity.Services.Analytics;
 
 public class UnlockItemHandler : MonoBehaviour
 {
@@ -38,7 +40,10 @@ public class UnlockItemHandler : MonoBehaviour
 
     public int order = 0;
 
+    public string powerSe;
 
+
+    
 
     private void Start()
     {
@@ -189,16 +194,24 @@ public class UnlockItemHandler : MonoBehaviour
 
             PlayerPrefs.SetInt("ordenDePotenciador",order);
 
-            Debug.Log("BuyPower.skinSe = FUGAZZETA");
+            powerSe = "FUGAZZETTA";
+
+            Debug.Log("BuyPower.powerSe =" + powerSe);
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
 
-            
+
+            AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            {
+            { "powerSe", powerSe },
+            { "lastLevel", lastlevel },
+             { "order", order }
+            });
 
 
 
         }
-        
+
     }
 
     public void BuyFaina()
@@ -219,13 +232,25 @@ public class UnlockItemHandler : MonoBehaviour
 
             order++;
 
+            powerSe = "FAINA";
+
             PlayerPrefs.SetInt("ordenDePotenciador",order);
 
-            Debug.Log("BuyPower.skinSe = FAINA");
+            Debug.Log("BuyPower.powerSe =" + powerSe);
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
 
-            
+
+
+            AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            {
+            { "powerSe", powerSe },
+            { "lastLevel", lastlevel },
+             { "order", order }
+            });
+
+
+
         }
 
     }
@@ -247,13 +272,23 @@ public class UnlockItemHandler : MonoBehaviour
 
             order++;
 
+            powerSe = "CAJA";
+
             PlayerPrefs.SetInt("ordenDePotenciador",order);
 
-            Debug.Log("BuyPower.skinSe = CAJA");
+            Debug.Log("BuyPower.powerSe =" + powerSe);
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
 
-            
+
+            AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            {
+            { "powerSe", powerSe },
+            { "lastLevel", lastlevel },
+             { "order", order }
+            });
+
+
         }
 
     }
@@ -276,13 +311,24 @@ public class UnlockItemHandler : MonoBehaviour
 
             order++;
 
+            powerSe = "PICANTE";
+
             PlayerPrefs.SetInt("ordenDePotenciador",order);
 
-            Debug.Log("BuyPower.skinSe = PICANTE");
+            Debug.Log("BuyPower.powerSe =" + powerSe);
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
 
-            
+
+            AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            {
+            { "powerSe", powerSe },
+            { "lastLevel", lastlevel },
+             { "order", order }
+            });
+
+
+
         }
 
     }
