@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
+using Unity.Services.Analytics;
 
 public class levelStart : MonoBehaviour
 {
@@ -94,6 +96,7 @@ public class levelStart : MonoBehaviour
         {
             level = 1;
             times1 ++ ;
+
             PlayerPrefs.SetInt("LevelStart.level1.times = " , times1);
             
             if (times1 == 1)
@@ -108,6 +111,14 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times1);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times1 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 1")
@@ -130,6 +141,13 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times2);
             Debug.Log("LevelStart.first = " + firstTime);
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times2 },
+            { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 2")
@@ -151,6 +169,15 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times3);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times3 },
+             { "first", firstTime }
+            });
+
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 3")
@@ -171,6 +198,14 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times4);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times4 },
+             { "first", firstTime }
+            });
 
         }
 
@@ -193,6 +228,15 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times5);
             Debug.Log("LevelStart.first = " + firstTime);
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times2 },
+            { "first", firstTime }
+            });
+
+
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 5")
@@ -213,6 +257,15 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times6);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times6 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 6")
@@ -233,6 +286,15 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times7);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times7 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 7")
@@ -253,6 +315,14 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times8);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times8 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 8")
@@ -273,6 +343,15 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times9);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times9 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 9")
@@ -293,6 +372,14 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times10);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times10 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 10")
@@ -313,6 +400,14 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times11);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times11 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 11")
@@ -333,6 +428,15 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times12);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times12 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 12")
@@ -353,6 +457,15 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times13);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times13 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 13")
@@ -373,6 +486,14 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times14);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times14 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel Final")
@@ -393,6 +514,14 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times15);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times15 },
+             { "first", firstTime }
+            });
         }
 
         if (SceneManager.GetActiveScene().name == "Endless")
@@ -413,12 +542,27 @@ public class levelStart : MonoBehaviour
             Debug.Log("LevelStart.level = " + level);
             Debug.Log("LevelStart.times = " + times16);
             Debug.Log("LevelStart.first = " + firstTime);
+
+
+
+            AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "level", level },
+            { "times", times16 },
+             { "first", firstTime }
+            });
         }
 
         skinSe = PlayerPrefs.GetString("skin seleccionada");
         Debug.Log("LevelStart.skinSe = " + skinSe);
-         
-        
+
+
+        AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "skinSe", skinSe }
+            });
+
+
 
     }
 
@@ -426,6 +570,12 @@ public class levelStart : MonoBehaviour
     {
         skip = true;
         PlayerPrefs.SetInt("LevelStart.skip = " , 1);
+
+
+        AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+            {
+            { "skip", skip },
+            });
     }
 
 
@@ -447,6 +597,8 @@ public class levelStart : MonoBehaviour
         {
             Debug.Log("GameOver.time = " + leveltimer);
             Debug.Log("GameOver.level = " + level);
+
+
 
             timerRunning = true;
         }
