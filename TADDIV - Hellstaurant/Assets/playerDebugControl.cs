@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Services.Analytics;
 using UnityEngine;
+using UnityEngine.Analytics;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class playerDebugControl : MonoBehaviour
 {
@@ -24,6 +27,26 @@ public class playerDebugControl : MonoBehaviour
         Debug.Log("GameOver.arañaHit =" + healthController.arañaHit);
         Debug.Log("GameOver.cucarachaHit =" + healthController.cucarachaHit);
         Debug.Log("GameOver.jefeHit =" + healthController.bossHit);
+
+
+        AnalyticsService.Instance.CustomData("GameOver", new Dictionary<string, object>
+            {
+            { "enemy", healthController.lastAttackingEnemy },
+            { "healing",  healthController.healingTimes },
+            { "hit",  healthController.hit },
+            { "basicoHit",  healthController.basicoHit },
+            { "basicoPHit",  healthController.basicoPHit },
+            { "gordoHit",  healthController.gordoHit },
+            { "gordoPHit",  healthController.gordoPHit },
+            { "rapidoHit",  healthController.rapidoHit },
+            { "rapidoPHit",  healthController.rapidoPHit },
+            { "rodeteHit",  healthController.rodeteHit },
+            { "rodetePHit",  healthController.rodetePHit },
+            { "arañaHit",  healthController.arañaHit },
+            { "cucarachaHit",  healthController.cucarachaHit },
+            { "jefeHit",  healthController.bossHit }
+
+            });
 
     }
 

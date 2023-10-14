@@ -598,6 +598,12 @@ public class levelStart : MonoBehaviour
             Debug.Log("GameOver.time = " + leveltimer);
             Debug.Log("GameOver.level = " + level);
 
+            AnalyticsService.Instance.CustomData("GameOver", new Dictionary<string, object>
+            {
+            { "time", leveltimer },
+            { "level", level },
+            });
+
 
 
             timerRunning = true;
