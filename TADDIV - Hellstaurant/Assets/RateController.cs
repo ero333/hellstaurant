@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Analytics;
+using Unity.Services.Analytics;
 
 public class RateController : MonoBehaviour
 {
@@ -378,6 +379,13 @@ public class RateController : MonoBehaviour
         popupRate.SetActive(false);
         botonRate.SetActive(false);
         PlayerPrefs.SetInt("rateado", 1);
+
+        AnalyticsService.Instance.CustomData("RateGame", new Dictionary<string, object>
+        {
+            {"puntuationGame", puntuationGame},
+            {"noteGame", noteGame},
+            {"lastlevel", lastlevel},
+        });
 
 
 
