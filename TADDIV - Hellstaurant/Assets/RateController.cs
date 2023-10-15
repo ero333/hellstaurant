@@ -354,14 +354,14 @@ public class RateController : MonoBehaviour
     {
         buttonsound.Play();
 
-        Debug.Log("RateGame.puntuation ="+ puntuationGame);
-        Debug.Log("RateArt.puntuation ="+ puntuation);
+        Debug.Log("RateGame.puntuation =" + puntuationGame);
+        Debug.Log("RateArt.puntuation =" + puntuation);
 
-        Debug.Log("RateGame.note ="+ noteGame);
-        Debug.Log("RateArt.note ="+ note);
+        Debug.Log("RateGame.note =" + noteGame);
+        Debug.Log("RateArt.note =" + note);
 
-        Debug.Log("RateGame.lastLevel ="+ lastlevel);
-        Debug.Log("RateArte.lastLevel ="+ lastlevel);
+        Debug.Log("RateGame.lastLevel =" + lastlevel);
+        Debug.Log("RateArte.lastLevel =" + lastlevel);
 
         PlayerPrefs.SetInt("RateGame.puntuation =", puntuationGame);
         PlayerPrefs.SetInt("RateArt.puntuation =", puntuation);
@@ -380,20 +380,24 @@ public class RateController : MonoBehaviour
         botonRate.SetActive(false);
         PlayerPrefs.SetInt("rateado", 1);
 
+
         AnalyticsService.Instance.CustomData("RateGame", new Dictionary<string, object>
-        {
-            {"puntuationGame", puntuationGame},
-            {"noteGame", noteGame},
-            {"lastlevel", lastlevel},
-        });
+            {
+            { "puntuation", puntuationGame },
+             { "lastLevel", lastlevel },
+              { "note", noteGame },
+            });
 
 
-
-
-
+        AnalyticsService.Instance.CustomData("RateArt", new Dictionary<string, object>
+            {
+            { "puntuation", puntuation },
+             { "lastLevel", lastlevel },
+              { "note", note },
+            });
     }
 
-    public void cerrarRate()
+        public void cerrarRate()
     {
         buttonsound.Play();
 
