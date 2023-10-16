@@ -616,7 +616,14 @@ public class levelStart : MonoBehaviour
         if (bossDefeated) 
         {
             Debug.Log("LevelComplete.time = " + leveltimer);
-            bossDefeated = false;
+
+            AnalyticsService.Instance.CustomData("LevelComplete", new Dictionary<string, object>
+            {
+                {"time", leveltimer },
+            });
+
+
+           bossDefeated = false;
         }
     }
 }

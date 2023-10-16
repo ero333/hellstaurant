@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Services.Analytics;
+using UnityEngine.Analytics;
 
 public class StarAmount : MonoBehaviour
 {
@@ -40,19 +42,42 @@ public class StarAmount : MonoBehaviour
     {
        StartCoroutine(sumarEstrellas()); 
 
-       Debug.Log("GameOver.healing =" + healthController.healingTimes);
-       Debug.Log("GameOver.hit =" + healthController.hit);
-       Debug.Log("GameOver.basicoHit =" + healthController.basicoHit);
-       Debug.Log("GameOver.basicoPHit =" + healthController.basicoPHit);
-       Debug.Log("GameOver.gordoHit =" + healthController.gordoHit);
-       Debug.Log("GameOver.gordoPHit =" + healthController.gordoPHit);
-       Debug.Log("GameOver.rapidoHit =" + healthController.rapidoHit);
-       Debug.Log("GameOver.rapidoPHit =" + healthController.rapidoPHit);
-       Debug.Log("GameOver.rodeteHit =" + healthController.rodeteHit);
-       Debug.Log("GameOver.rodetePHit =" + healthController.rodetePHit);
-       Debug.Log("GameOver.ara�aHit =" + healthController.ara�aHit);
-       Debug.Log("GameOver.cucarachaHit =" + healthController.cucarachaHit);
-       Debug.Log("GameOver.jefeHit =" + healthController.bossHit);
+       Debug.Log("LevelComplete.healing =" + healthController.healingTimes);
+       Debug.Log("LevelComplete.hit =" + healthController.hit);
+       Debug.Log("LevelComplete.basicoHit =" + healthController.basicoHit);
+       Debug.Log("LevelComplete.basicoPHit =" + healthController.basicoPHit);
+       Debug.Log("LevelComplete.gordoHit =" + healthController.gordoHit);
+       Debug.Log("LevelComplete.gordoPHit =" + healthController.gordoPHit);
+       Debug.Log("LevelComplete.rapidoHit =" + healthController.rapidoHit);
+       Debug.Log("LevelComplete.rapidoPHit =" + healthController.rapidoPHit);
+       Debug.Log("LevelComplete.rodeteHit =" + healthController.rodeteHit);
+       Debug.Log("LevelComplete.rodetePHit =" + healthController.rodetePHit);
+       Debug.Log("LevelComplete.arañaHit =" + healthController.arañaHit);
+       Debug.Log("LevelComplete.cucarachaHit =" + healthController.cucarachaHit);
+       Debug.Log("LevelComplete.jefeHit =" + healthController.bossHit);
+
+
+        AnalyticsService.Instance.CustomData("LevelComplete", new Dictionary<string, object>
+       {
+           {"healing", healthController.healingTimes},
+           {"hit", healthController.hit},
+           {"basicoHit", healthController.basicoHit},
+           {"basicoPHit", healthController.basicoPHit},
+           {"gordoHit", healthController.gordoHit},
+           {"gordoPHit", healthController.gordoPHit},
+           {"rapidoHit", healthController.rapidoHit},
+           {"rapidoPHit", healthController.rapidoPHit},
+           {"rodeteHit", healthController.rodeteHit},
+           {"rodetePHit", healthController.rodetePHit},
+           {"arañaHit", healthController.arañaHit},
+           {"cucarachaHit", healthController.cucarachaHit},
+           {"jefeHit", healthController.bossHit}
+
+
+       });
+
+
+
 
        if (PlayerPrefs.GetInt("NivelActual") == 4)
             {
@@ -121,6 +146,7 @@ public class StarAmount : MonoBehaviour
 
         Debug.Log("LevelComplete =" + level);
 
+
     }
 
     IEnumerator sumarEstrellas()
@@ -155,5 +181,10 @@ public class StarAmount : MonoBehaviour
         Debug.Log("LevelComplete.stars =" + stars);
 
         levelstart.bossDefeated = true;
+
+        AnalyticsService.Instance.CustomData("LevelComplete", new Dictionary<string, object>
+        {
+            {"stars", stars},
+        });
     }
 }
