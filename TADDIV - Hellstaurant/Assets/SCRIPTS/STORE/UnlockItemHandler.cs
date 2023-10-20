@@ -26,7 +26,6 @@ public class UnlockItemHandler : MonoBehaviour
     public Button frenzybutton;
 
 
-
     public GameObject blockFuga;
     public GameObject blockFaina;
     public GameObject blockFrenzy;
@@ -156,6 +155,7 @@ public class UnlockItemHandler : MonoBehaviour
         if ( UnlockedItemsNumber >= 1)
         {
             blockFuga.SetActive(false);
+
             
         }
         if (UnlockedItemsNumber >= 2)
@@ -185,6 +185,16 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            PlayerPrefs.SetInt("FugazzettaUnlocked", 1);
+            PlayerPrefs.SetInt("FainaUnlocked", 1);
+            PlayerPrefs.SetInt("CajaUnlocked", 1);
+            PlayerPrefs.SetInt("FrenzyUnlocked", 1);
+
+
+        }
+
 
         //for (int i=0; i<buttons.Length; i++) {
         //    buttons[i].interactable = true;
@@ -194,6 +204,7 @@ public class UnlockItemHandler : MonoBehaviour
         {
 
             fugabutton.interactable=false;
+            Vendido2.SetActive(true);
 
         }
 
@@ -201,6 +212,7 @@ public class UnlockItemHandler : MonoBehaviour
         {
 
             fainabutton.interactable = false;
+            Vendido3.SetActive(true);
 
         }
 
@@ -208,6 +220,7 @@ public class UnlockItemHandler : MonoBehaviour
         {
 
             cajabutton.interactable = false;
+            Vendido1.SetActive(true);
 
 
         }
@@ -216,6 +229,7 @@ public class UnlockItemHandler : MonoBehaviour
         {
 
             frenzybutton.interactable = false;
+            Vendido4.SetActive(true);
 
         }
 
