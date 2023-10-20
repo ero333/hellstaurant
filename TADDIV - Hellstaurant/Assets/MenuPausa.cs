@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using UnityEngine.Analytics;
 using Unity.Services.Analytics;
-using UnityEditor.Experimental.GraphView;
+
 
 public class MenuPausa : MonoBehaviour
 {

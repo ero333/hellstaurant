@@ -14,14 +14,14 @@ public class BulletSpawner : MonoBehaviour
 
     [Header("Spawner Attributes")]
     [SerializeField] private SpawnerType spawnerType;
-    [SerializeField] private float firingRate = 1f; // cada cuanto tiempo spawnean las balas
+    //[SerializeField] private float firingRate = 1f; // cada cuanto tiempo spawnean las balas
 
 
     public float tiempoParaActualizar = 1.0f; // El tiempo en segundos entre actualizaciones
     private float contadorDeSegundos = 0.0f;
 
 
-    private float timer = 0f;
+    //private float timer = 0f;
     private int currentPrefabIndex = 0; // Índice actual en la lista de prefabs
 
 
