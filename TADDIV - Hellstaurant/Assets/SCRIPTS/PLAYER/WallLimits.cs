@@ -23,5 +23,14 @@ public class WallLimits : MonoBehaviour
         theTransform = GetComponent<Transform>();
     }
 
-    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        // Dibuja un rectángulo en el límite horizontal (Hrange)
+        Gizmos.DrawWireCube(new Vector3(transform.position.x, (Hrange.x + Hrange.y) / 2, transform.position.z), new Vector3(Hrange.y - Hrange.x, 0, 0));
+
+        Gizmos.color = Color.blue;
+        // Dibuja un rectángulo en el límite vertical (Vrange)
+        Gizmos.DrawWireCube(new Vector3((Vrange.x + Vrange.y) / 2, transform.position.y, transform.position.z), new Vector3(0, Vrange.y - Vrange.x, 0));
+    }
 }

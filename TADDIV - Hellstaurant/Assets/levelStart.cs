@@ -68,7 +68,7 @@ public class levelStart : MonoBehaviour
         instance = this;
 
         UnityServices.InitializeAsync();
-        AnalyticsService.Instance.StartDataCollection();
+
     }
     // Start is called before the first frame update
     void Start()
