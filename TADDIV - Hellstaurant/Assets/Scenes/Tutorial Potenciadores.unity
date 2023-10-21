@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9703a6dff399341a99e44f5e6485df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonsound: {fileID: 0}
 --- !u!114 &38806893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,6 +536,10 @@ PrefabInstance:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 2126036243}
+    - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: playerDeathDebug
+      value: 
+      objectReference: {fileID: 181663894}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -630,6 +635,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171400030}
   m_CullTransparentMesh: 1
+--- !u!1 &181663894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181663896}
+  - component: {fileID: 181663895}
+  m_Layer: 0
+  m_Name: DEBUGGING
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &181663895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181663894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthController: {fileID: 106963871}
+--- !u!4 &181663896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181663894}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.44659328, y: -0.63265586, z: 0.036899365}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189137273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,6 +2894,7 @@ MonoBehaviour:
   popupPanel: {fileID: 0}
   popupPausa: {fileID: 0}
   Resume: {fileID: 0}
+  levelStart: {fileID: 0}
   pausedGame: 0
 --- !u!114 &778562169
 MonoBehaviour:
@@ -4713,6 +4764,12 @@ MonoBehaviour:
   star1: {fileID: 1649992721}
   star2: {fileID: 1789083035}
   star3: {fileID: 1842909037}
+  healthController: {fileID: 0}
+  stars: 0
+  level: 0
+  bossDefeated: 0
+  levelstart: {fileID: 0}
+  lastlevel: 0
 --- !u!114 &1455167069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7253,3 +7310,4 @@ SceneRoots:
   - {fileID: 1691412471}
   - {fileID: 796819295}
   - {fileID: 778562172}
+  - {fileID: 181663896}
