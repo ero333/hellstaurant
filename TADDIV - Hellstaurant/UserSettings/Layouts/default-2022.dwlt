@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 103
+  controlID: 39
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 52
+  controlID: 40
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,7 +322,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -330,16 +330,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: 55
   m_LastProjectPath: C:\Users\maria\OneDrive\Desktop\hellstaurant\TADDIV - Hellstaurant
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ae720000
-    m_LastClickedID: 29358
-    m_ExpandedIDs: 00000000ae72000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 50070000
+    m_LastClickedID: 1872
+    m_ExpandedIDs: 00000000280600002007000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae720000
+    m_ExpandedIDs: 0000000028060000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -460,9 +460,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ae720000
+      m_SelectedIDs: 0ad30000
       m_LastClickedID: 0
-      m_ExpandedIDs: eaf3ffff
+      m_ExpandedIDs: e8d3fdff76dafdffbadafdffb8ddfdffd0ddfdffa2defdffb4defdff92dffdffc8dffdff94e0fdff60e1fdff2ce2fdfff8e2fdffc4e3fdff90e4fdff5ce5fdff28e6fdfff4e6fdffc2e7fdffaae8fdff76e9fdff42eafdff1cebfdffecebfdff04ecfdff2eecfdff46ecfdff72ecfdfff6edfdff7ceffdff04f1fdff7cf2fdfff0f3fdff66f5fdffdaf6fdff54f8fdffe0f9fdff56fbfdffc8fcfdff3cfefdffb6fffdff2c01feff6002feffd202feff6804feffbc05feff0606feff6607feff9408feff3219feffe621feffd423feff8425feff2c27feffce28feff882afeff402cfeffec2dfeff962ffeff4a31feff0433feffb434feff6036feff0838feffb239fefffa3bfeff584bfeffa451feff8c53feff8c55feff545dfefff45efeffe2d9000076db0000d8db000078dd000090dd000028de00005edf000040e00000d0e00000f0eb000010ec0000d2ec000062ed00005afb0000eefc000050fd0000423d0100703d0100ea3d0100a4440100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1244,7 +1244,7 @@ MonoBehaviour:
     x: 317
     y: 73
     width: 1117
-    height: 584
+    height: 610
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1001, y: 563}
+  m_TargetSize: {x: 1047, y: 589}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1276,10 +1276,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -500.5
-    m_HBaseRangeMax: 500.5
-    m_VBaseRangeMin: -281.5
-    m_VBaseRangeMax: 281.5
+    m_HBaseRangeMin: -523.5
+    m_HBaseRangeMax: 523.5
+    m_VBaseRangeMin: -294.5
+    m_VBaseRangeMax: 294.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1298,9 +1298,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1117
-      height: 563
+      height: 589
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 558.5, y: 281.5}
+    m_Translation: {x: 558.5, y: 294.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1308,12 +1308,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -558.5
-      y: -281.5
+      y: -294.5
       width: 1117
-      height: 563
+      height: 589
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1117, y: 584}
+  m_LastWindowPixelSize: {x: 1117, y: 610}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
