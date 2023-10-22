@@ -26,6 +26,8 @@ public class stopGame : MonoBehaviour
 
     public GameObject bulletSpawner;
 
+    public GameObject enemiespawner;
+
     public AudioSource winSound;
 
 
@@ -103,8 +105,9 @@ public class stopGame : MonoBehaviour
         spawner.StopAllCoroutines();
         spawner.deleteClones();
 
+        enemiespawner.SetActive(false);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         player.SetActive(false);
 
         bulletSpawner.SetActive(false);

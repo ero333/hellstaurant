@@ -25,10 +25,7 @@ public class MusicAlternate : MonoBehaviour
 
         // Asigna esta instancia como la única instancia
         instancia = this;
-    }
 
-    void Update()
-    {
         if (SceneManager.GetActiveScene().buildIndex >= 4 && SceneManager.GetActiveScene().buildIndex <= 18)
 
         {
@@ -46,6 +43,11 @@ public class MusicAlternate : MonoBehaviour
         {
             musicaMenu.SetActive(true);
         }
+    }
+
+    void Update()
+    {
+
 
     }
 
