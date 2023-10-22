@@ -23,4 +23,10 @@ public class BACKTOSELECT : MonoBehaviour
         buttonsound.Play();
         SceneManager.LoadScene("Selector de Niv");
     }
+
+    public void backToMenu()
+    {
+        buttonsound.Play();
+        SceneManager.LoadScene("Menu");
+    }
 }
