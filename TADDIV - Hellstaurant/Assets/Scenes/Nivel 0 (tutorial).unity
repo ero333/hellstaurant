@@ -1102,9 +1102,10 @@ GameObject:
   - component: {fileID: 151086494}
   - component: {fileID: 151086495}
   - component: {fileID: 151086496}
+  - component: {fileID: 151086497}
   m_Layer: 5
   m_Name: GameOver
-  m_TagString: Untagged
+  m_TagString: losescreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1207,6 +1208,8 @@ MonoBehaviour:
   spawner3: {fileID: 0}
   loseSound: {fileID: 151086496}
   bulletSpawner: {fileID: 0}
+  winscreen: {fileID: 1933297748}
+  enemiespawner: {fileID: 1387389917}
 --- !u!82 &151086496
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1303,6 +1306,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &151086497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151086489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78a212e18dd37ce448953b00a452d6d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialcanvas: {fileID: 523380781}
 --- !u!1 &175247425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,7 +1597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 12
+  m_text: 12:00 PM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
   m_sharedMaterial: {fileID: -4622975185388663613, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
@@ -9184,6 +9200,7 @@ MonoBehaviour:
   bulletSpawner: {fileID: 0}
   enemiespawner: {fileID: 0}
   winSound: {fileID: 0}
+  losescreen: {fileID: 0}
 --- !u!114 &1933297753
 MonoBehaviour:
   m_ObjectHideFlags: 0

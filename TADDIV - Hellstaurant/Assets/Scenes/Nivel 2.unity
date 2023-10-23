@@ -1432,6 +1432,8 @@ MonoBehaviour:
   spawner3: {fileID: 0}
   loseSound: {fileID: 360641913}
   bulletSpawner: {fileID: 0}
+  winscreen: {fileID: 1877279695}
+  enemiespawner: {fileID: 1944544926}
 --- !u!82 &360641913
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5581,6 +5583,7 @@ MonoBehaviour:
   bulletSpawner: {fileID: 0}
   enemiespawner: {fileID: 1944544926}
   winSound: {fileID: 1877279703}
+  losescreen: {fileID: 0}
 --- !u!114 &1877279699
 MonoBehaviour:
   m_ObjectHideFlags: 0

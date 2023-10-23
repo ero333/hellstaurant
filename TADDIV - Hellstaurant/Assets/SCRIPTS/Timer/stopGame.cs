@@ -30,6 +30,8 @@ public class stopGame : MonoBehaviour
 
     public AudioSource winSound;
 
+    public GameObject losescreen;
+
 
     private void Awake()
     {
@@ -47,6 +49,8 @@ public class stopGame : MonoBehaviour
 
 
         levelunlocking.unlocklevel();
+
+        losescreen = GameObject.FindGameObjectWithTag("losescreen");
 
 
         if (SceneManager.GetActiveScene().buildIndex == 9)
@@ -75,7 +79,7 @@ public class stopGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
+        losescreen.SetActive(false);
     }
 
     public void OnEnable()

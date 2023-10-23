@@ -2413,6 +2413,7 @@ MonoBehaviour:
   bulletSpawner: {fileID: 0}
   enemiespawner: {fileID: 1211233730}
   winSound: {fileID: 814449703}
+  losescreen: {fileID: 0}
 --- !u!82 &814449703
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5473,7 +5474,7 @@ GameObject:
   - component: {fileID: 2121108982}
   m_Layer: 5
   m_Name: GameOver
-  m_TagString: Untagged
+  m_TagString: losescreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5577,6 +5578,8 @@ MonoBehaviour:
   spawner3: {fileID: 0}
   loseSound: {fileID: 2121108982}
   bulletSpawner: {fileID: 0}
+  winscreen: {fileID: 814449694}
+  enemiespawner: {fileID: 1211233730}
 --- !u!82 &2121108982
 AudioSource:
   m_ObjectHideFlags: 0

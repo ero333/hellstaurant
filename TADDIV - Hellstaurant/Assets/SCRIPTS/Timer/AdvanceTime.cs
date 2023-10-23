@@ -37,7 +37,11 @@ public class AdvanceTime : MonoBehaviour
     private void Update()
     {
         timeText.text = timeHours + ":00 PM";
-        
+
+        if (!playerAlive)
+        {
+            stopTimer();
+        }
 
     }
 
@@ -55,7 +59,7 @@ public class AdvanceTime : MonoBehaviour
             if (timeHours < timeLimit)
                 StartCoroutine(routine: advanceHourOverTime());
 
-            if (timeHours == 8)
+            if (timeHours >= 8)
 
                 WIN.gameObject.SetActive(true);
 

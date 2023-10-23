@@ -18,21 +18,37 @@ public class loseGame : MonoBehaviour
 
     public GameObject bulletSpawner;
 
+    public GameObject winscreen;
+
+    public GameObject enemiespawner;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        winscreen = GameObject.FindGameObjectWithTag("winscreen");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        winscreen.SetActive(false);
     }
 
     public void OnEnable()
     {
 
+      StartCoroutine(loseProcess());
+
+    }
+
+    public void Tienda()
+    {
+        SceneManager.LoadScene("Tienda");
+    }
+
+
+    IEnumerator loseProcess()
+    {
         loseSound.Play();
 
         GameObject[] taggedEnemies = GameObject.FindGameObjectsWithTag("Enemy");
@@ -44,14 +60,15 @@ public class loseGame : MonoBehaviour
 
 
         }
-        //player.SetActive(false);
+
         spawner.StopAllCoroutines();
         spawner.deleteClones();
-        bulletSpawner.SetActive(false);
-    }
 
-    public void Tienda()
-    {
-        SceneManager.LoadScene("Tienda");
+        enemiespawner.SetActive(false);
+
+        yield return new WaitForSeconds(0.5f);
+        player.SetActive(false);
+
+        bulletSpawner.SetActive(false);
     }
 }
