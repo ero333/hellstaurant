@@ -2874,7 +2874,7 @@ Transform:
   m_GameObject: {fileID: 694052355}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.064, y: -6.774, z: 1512.663}
+  m_LocalPosition: {x: 4.38, y: -6.8, z: 1512.663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3366,7 +3366,9 @@ MonoBehaviour:
   nivelActual: 0
   levelunlocking: {fileID: 0}
   bulletSpawner: {fileID: 0}
+  enemiespawner: {fileID: 0}
   winSound: {fileID: 843979028}
+  losescreen: {fileID: 0}
 --- !u!114 &843979023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4371,7 +4373,7 @@ Transform:
   m_GameObject: {fileID: 1121114317}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.749, y: 2.864, z: 1512.663}
+  m_LocalPosition: {x: -2.65, y: -6.78, z: 1512.663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6004,7 +6006,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359305
+      value: 0.8359303
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -7142,6 +7144,8 @@ MonoBehaviour:
   spawner3: {fileID: 0}
   loseSound: {fileID: 2117327008}
   bulletSpawner: {fileID: 0}
+  winscreen: {fileID: 0}
+  enemiespawner: {fileID: 0}
 --- !u!95 &2117327004
 Animator:
   serializedVersion: 5
