@@ -702,11 +702,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9102654
+      value: 2.906241
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6558159
+      value: -0.65585023
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -5620,6 +5620,8 @@ GameObject:
   - component: {fileID: 1605475947}
   - component: {fileID: 1605475946}
   - component: {fileID: 1605475945}
+  - component: {fileID: 1605475950}
+  - component: {fileID: 1605475951}
   m_Layer: 5
   m_Name: WIN
   m_TagString: winscreen
@@ -5730,9 +5732,9 @@ MonoBehaviour:
   nivelActual: 0
   levelunlocking: {fileID: 0}
   bulletSpawner: {fileID: 7890148778095338128}
-  enemiespawner: {fileID: 0}
-  winSound: {fileID: 0}
-  losescreen: {fileID: 0}
+  enemiespawner: {fileID: 1442380930}
+  winSound: {fileID: 1605475950}
+  losescreen: {fileID: 1890628359}
 --- !u!114 &1605475948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5771,6 +5773,118 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605475942}
   m_CullTransparentMesh: 1
+--- !u!82 &1605475950
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605475942}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e2c46eb5d4422f469a26e7f344acf81, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1605475951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605475942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7191fc6f357214787ce43b5e4c053a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletspawner: {fileID: 7890148778095338128}
+  bulletpool: {fileID: 1717025584}
+  bulletburst: {fileID: 143635451}
+  spawnerbichos: {fileID: 1442380930}
 --- !u!1001 &1645528774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6636,6 +6750,7 @@ GameObject:
   - component: {fileID: 1890628360}
   - component: {fileID: 1890628365}
   - component: {fileID: 1890628366}
+  - component: {fileID: 1890628367}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -6741,9 +6856,9 @@ MonoBehaviour:
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
   loseSound: {fileID: 1890628366}
-  bulletSpawner: {fileID: 0}
-  winscreen: {fileID: 0}
-  enemiespawner: {fileID: 0}
+  bulletSpawner: {fileID: 7890148778095338128}
+  winscreen: {fileID: 1605475942}
+  enemiespawner: {fileID: 1442380930}
 --- !u!82 &1890628366
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6840,6 +6955,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1890628367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890628359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7191fc6f357214787ce43b5e4c053a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletspawner: {fileID: 7890148778095338128}
+  bulletpool: {fileID: 1717025584}
+  bulletburst: {fileID: 143635451}
+  spawnerbichos: {fileID: 1442380930}
 --- !u!1 &1950396384
 GameObject:
   m_ObjectHideFlags: 0
