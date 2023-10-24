@@ -44,6 +44,8 @@ AnimationClip:
       value: {fileID: 21300000, guid: 4f6cfa569b779f14a9d0bca2a8ee597a, type: 3}
     - time: 3.55
       value: {fileID: 21300000, guid: 4f6cfa569b779f14a9d0bca2a8ee597a, type: 3}
+    - time: 4
+      value: {fileID: 21300000, guid: ce4f7269ba0558048b05e5915265f4cd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -78,12 +80,13 @@ AnimationClip:
     - {fileID: 21300000, guid: dafe72f75ad9033429569e7719527423, type: 3}
     - {fileID: 21300000, guid: 4f6cfa569b779f14a9d0bca2a8ee597a, type: 3}
     - {fileID: 21300000, guid: 4f6cfa569b779f14a9d0bca2a8ee597a, type: 3}
+    - {fileID: 21300000, guid: ce4f7269ba0558048b05e5915265f4cd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 3.5666666
+    m_StopTime: 4.016667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -110,7 +113,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 3.55
+  - time: 4
     functionName: activarBoton
     data: 
     objectReferenceParameter: {fileID: 0}

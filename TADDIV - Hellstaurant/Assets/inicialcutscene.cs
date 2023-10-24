@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class inicialcutscene : MonoBehaviour
 {
-    public GameObject animacion1, animacion2, animacion3, animacion4;
+    public GameObject animacion1, animacion2, animacion3;
 
     public GameObject botonSiguiente;
 
@@ -35,15 +35,10 @@ public class inicialcutscene : MonoBehaviour
 
         if (contadorAnim == 3)
         {
-            animacion3.SetActive(false);
-            animacion4.SetActive(true);
-        }
-
-        if (contadorAnim == 4)
-        {
             SceneManager.LoadScene("Nivel 0 (tutorial)");
-
         }
+
+       
 
     }
 
