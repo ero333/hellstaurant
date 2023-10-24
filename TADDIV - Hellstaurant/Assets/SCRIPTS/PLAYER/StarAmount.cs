@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Unity.Services.Analytics;
 using UnityEngine.Analytics;
+using UnityEngine.SceneManagement;
 
 public class StarAmount : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class StarAmount : MonoBehaviour
 
     private void OnEnable()
     {
-       StartCoroutine(sumarEstrellas()); 
+    
 
        Debug.Log("LevelComplete.healing =" + healthController.healingTimes);
        Debug.Log("LevelComplete.hit =" + healthController.hit);
@@ -146,11 +147,14 @@ public class StarAmount : MonoBehaviour
 
         Debug.Log("LevelComplete =" + level);
 
+        StartCoroutine(sumarEstrellas());
 
     }
 
     IEnumerator sumarEstrellas()
     {
+
+
         if (puntaje.puntos >= 20 && puntaje.puntos <= 100)
         {
             yield return new WaitForSeconds(1f);
