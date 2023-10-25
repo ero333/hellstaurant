@@ -121,9 +121,9 @@ public class PlayerSkin : MonoBehaviour
     {
         if (collision.CompareTag("PicantePickup") && skinName == "girlSkin" )
         {
-           
 
-            anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
+            StartCoroutine(GirlpicantePowerUp());
+            //anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -133,9 +133,9 @@ public class PlayerSkin : MonoBehaviour
 
         if (collision.CompareTag("PicantePickup") && skinName == "halloweenSkin")
         {
-            
 
-            anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
+            StartCoroutine(HalloweenpicantePowerUp());
+            //anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -145,8 +145,8 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "spidermanSkin")
         {
 
-
-            anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
+            StartCoroutine(SpidermanpicantePowerUp());
+           //anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -156,8 +156,8 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "goldSkin")
         {
 
-
-            anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
+            StartCoroutine(DoradopicantePowerUp());
+            //anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -166,8 +166,8 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "messiSkin")
         {
 
-
-            anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
+            StartCoroutine(MessipicantePowerUp());
+            //anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -183,6 +183,46 @@ public class PlayerSkin : MonoBehaviour
 
         yield return new WaitForSeconds(10f);
         anim.runtimeAnimatorController = girlSkin as RuntimeAnimatorController;
+    }
+
+    IEnumerator HalloweenpicantePowerUp()
+    {
+        anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
+
+        Debug.Log("halloweenFrenzy");
+
+        yield return new WaitForSeconds(10f);
+        anim.runtimeAnimatorController = halloweenSkin as RuntimeAnimatorController;
+    }
+
+    IEnumerator SpidermanpicantePowerUp()
+    {
+        anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
+
+        Debug.Log("SpidermanFrenzy");
+
+        yield return new WaitForSeconds(10f);
+        anim.runtimeAnimatorController = spidermanSkin as RuntimeAnimatorController;
+    }
+
+    IEnumerator DoradopicantePowerUp()
+    {
+        anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
+
+        Debug.Log("DoradoFrenzy");
+
+        yield return new WaitForSeconds(10f);
+        anim.runtimeAnimatorController = doradoSkin as RuntimeAnimatorController;
+    }
+
+    IEnumerator MessipicantePowerUp()
+    {
+        anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
+
+        Debug.Log("CAMPEON WACHO");
+
+        yield return new WaitForSeconds(10f);
+        anim.runtimeAnimatorController = messiSkin as RuntimeAnimatorController;
     }
 
 }

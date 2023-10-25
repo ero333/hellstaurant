@@ -3627,6 +3627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7442340460101119668, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: Pickupsound
+      value: 
+      objectReference: {fileID: 1315016641}
     - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: puntaje
       value: 
@@ -3695,6 +3699,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a67b35151c02904bbaf352a2fb5c932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1315016641 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2472794123837319283, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+  m_PrefabInstance: {fileID: 1315016612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1349493317
 GameObject:
   m_ObjectHideFlags: 0
@@ -6467,7 +6476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359303
+      value: 0.83593124
       objectReference: {fileID: 0}
     - target: {fileID: 3881648654193666262, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: target
