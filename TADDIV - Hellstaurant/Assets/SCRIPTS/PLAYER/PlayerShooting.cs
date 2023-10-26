@@ -183,7 +183,7 @@ public class PlayerShooting : MonoBehaviour
 
         if (Fugazzetta || Caja || Faina)
         {
-            anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
+            //anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
 
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
             isInvincible = false;
