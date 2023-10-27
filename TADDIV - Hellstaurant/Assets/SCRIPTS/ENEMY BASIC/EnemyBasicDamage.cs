@@ -15,6 +15,7 @@ public class EnemyBasicDamage : MonoBehaviour
     public int amountToDrop; // Cantidad de monedas a dropear
 
     public AudioSource killSound;
+    public AudioSource hitSound;
 
 
 
@@ -39,6 +40,7 @@ public class EnemyBasicDamage : MonoBehaviour
 
             enemyLife--; // Le baja 1 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
+            hitSound.Play();
 
             
 
@@ -56,6 +58,7 @@ public class EnemyBasicDamage : MonoBehaviour
         {
             enemyLife = enemyLife -2; // Le baja 2 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
+            hitSound.Play();
 
             if (enemyLife <= 0)
             {
@@ -68,6 +71,7 @@ public class EnemyBasicDamage : MonoBehaviour
         {
             enemyLife = enemyLife - 0.5; // Le baja 0.5 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
+            hitSound.Play();
 
             if (enemyLife <= 0)
             {
@@ -81,6 +85,7 @@ public class EnemyBasicDamage : MonoBehaviour
         {
             enemyLife = enemyLife - 3; // Le baja 3 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
+            hitSound.Play();
 
             if (enemyLife <= 0)
             {
@@ -92,6 +97,7 @@ public class EnemyBasicDamage : MonoBehaviour
         if (other.CompareTag("CajaShoot")) // Si la pizza tiene el tag CajaShoot
         {
             enemyLife = enemyLife - 2; // Le baja 2 de vida al enemigo
+            hitSound.Play();
             
 
             if (enemyLife <= 0)
@@ -108,6 +114,8 @@ public class EnemyBasicDamage : MonoBehaviour
         StartCoroutine(deathCorrutine());
 
         float dropSelect = Random.Range(0, 100f);
+
+        
 
         if (dropSelect <= chanceToDrop) 
         {
