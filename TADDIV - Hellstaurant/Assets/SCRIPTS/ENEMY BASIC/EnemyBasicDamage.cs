@@ -131,7 +131,7 @@ public class EnemyBasicDamage : MonoBehaviour
     IEnumerator deathCorrutine()
     {
         killSound.Play();
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
         puntaje.obtenerPuntaje(puntosEnemigo);
 
 

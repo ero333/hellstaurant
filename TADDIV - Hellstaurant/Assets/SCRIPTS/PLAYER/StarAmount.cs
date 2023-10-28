@@ -43,43 +43,6 @@ public class StarAmount : MonoBehaviour
     {
     
 
-       Debug.Log("LevelComplete.healing =" + healthController.healingTimes);
-       Debug.Log("LevelComplete.hit =" + healthController.hit);
-       Debug.Log("LevelComplete.basicoHit =" + healthController.basicoHit);
-       Debug.Log("LevelComplete.basicoPHit =" + healthController.basicoPHit);
-       Debug.Log("LevelComplete.gordoHit =" + healthController.gordoHit);
-       Debug.Log("LevelComplete.gordoPHit =" + healthController.gordoPHit);
-       Debug.Log("LevelComplete.rapidoHit =" + healthController.rapidoHit);
-       Debug.Log("LevelComplete.rapidoPHit =" + healthController.rapidoPHit);
-       Debug.Log("LevelComplete.rodeteHit =" + healthController.rodeteHit);
-       Debug.Log("LevelComplete.rodetePHit =" + healthController.rodetePHit);
-       Debug.Log("LevelComplete.arañaHit =" + healthController.arañaHit);
-       Debug.Log("LevelComplete.cucarachaHit =" + healthController.cucarachaHit);
-       Debug.Log("LevelComplete.jefeHit =" + healthController.bossHit);
-
-
-        AnalyticsService.Instance.CustomData("LevelComplete", new Dictionary<string, object>
-       {
-           {"healing", healthController.healingTimes},
-           {"hit", healthController.hit},
-           {"basicoHit", healthController.basicoHit},
-           {"basicoPHit", healthController.basicoPHit},
-           {"gordoHit", healthController.gordoHit},
-           {"gordoPHit", healthController.gordoPHit},
-           {"rapidoHit", healthController.rapidoHit},
-           {"rapidoPHit", healthController.rapidoPHit},
-           {"rodeteHit", healthController.rodeteHit},
-           {"rodetePHit", healthController.rodetePHit},
-           {"arañaHit", healthController.arañaHit},
-           {"cucarachaHit", healthController.cucarachaHit},
-           {"jefeHit", healthController.bossHit}
-
-
-       });
-
-
-
-
        if (PlayerPrefs.GetInt("NivelActual") == 4)
             {
              level = 1;
@@ -183,12 +146,41 @@ public class StarAmount : MonoBehaviour
         }
 
         Debug.Log("LevelComplete.stars =" + stars);
+        Debug.Log("LevelComplete.healing =" + healthController.healingTimes);
+        Debug.Log("LevelComplete.hit =" + healthController.hit);
+        Debug.Log("LevelComplete.basicoHit =" + healthController.basicoHit);
+        Debug.Log("LevelComplete.basicoPHit =" + healthController.basicoPHit);
+        Debug.Log("LevelComplete.gordoHit =" + healthController.gordoHit);
+        Debug.Log("LevelComplete.gordoPHit =" + healthController.gordoPHit);
+        Debug.Log("LevelComplete.rapidoHit =" + healthController.rapidoHit);
+        Debug.Log("LevelComplete.rapidoPHit =" + healthController.rapidoPHit);
+        Debug.Log("LevelComplete.rodeteHit =" + healthController.rodeteHit);
+        Debug.Log("LevelComplete.rodetePHit =" + healthController.rodetePHit);
+        Debug.Log("LevelComplete.arañaHit =" + healthController.arañaHit);
+        Debug.Log("LevelComplete.cucarachaHit =" + healthController.cucarachaHit);
+        Debug.Log("LevelComplete.jefeHit =" + healthController.bossHit);
 
         levelstart.bossDefeated = true;
 
         AnalyticsService.Instance.CustomData("LevelComplete", new Dictionary<string, object>
         {
-            {"stars", stars},
+           {"level", level },
+           {"stars", stars},
+           {"healing", healthController.healingTimes},
+           {"hit", healthController.hit},
+           {"basicoHit", healthController.basicoHit},
+           {"basicoPHit", healthController.basicoPHit},
+           {"gordoHit", healthController.gordoHit},
+           {"gordoPHit", healthController.gordoPHit},
+           {"rapidoHit", healthController.rapidoHit},
+           {"rapidoPHit", healthController.rapidoPHit},
+           {"rodeteHit", healthController.rodeteHit},
+           {"rodetePHit", healthController.rodetePHit},
+           {"arañaHit", healthController.arañaHit},
+           {"cucarachaHit", healthController.cucarachaHit},
+           {"jefeHit", healthController.bossHit}
+
         });
+
     }
 }
