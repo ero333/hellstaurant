@@ -122,10 +122,6 @@ public class levelStart : MonoBehaviour
 
             times = times1;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times1);
-            Debug.Log("LevelStart.first = " + firstTime);
-
             
         }
 
@@ -149,9 +145,7 @@ public class levelStart : MonoBehaviour
             times = times2;
 
             Debug.Log("LevelStart.skip = " + PlayerPrefs.GetInt("LevelStart.skip = "));
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times2);
-            Debug.Log("LevelStart.first = " + firstTime);
+
 
         }
 
@@ -173,9 +167,6 @@ public class levelStart : MonoBehaviour
 
             times = times3;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times3);
-            Debug.Log("LevelStart.first = " + firstTime);
 
 
         }
@@ -198,9 +189,6 @@ public class levelStart : MonoBehaviour
 
             times = times4;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times4);
-            Debug.Log("LevelStart.first = " + firstTime);
 
         }
 
@@ -223,9 +211,7 @@ public class levelStart : MonoBehaviour
             times = times5;
 
             Debug.Log("LevelStart.skip = " + PlayerPrefs.GetInt("LevelStart.skip = "));
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times5);
-            Debug.Log("LevelStart.first = " + firstTime);
+
 
         }
 
@@ -244,9 +230,6 @@ public class levelStart : MonoBehaviour
                 firstTime = false;
             }
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times6);
-            Debug.Log("LevelStart.first = " + firstTime);
 
 
             times = times6;
@@ -271,9 +254,7 @@ public class levelStart : MonoBehaviour
 
             times = times7;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times7);
-            Debug.Log("LevelStart.first = " + firstTime);
+
 
         }
 
@@ -295,9 +276,7 @@ public class levelStart : MonoBehaviour
 
             times = times8;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times8);
-            Debug.Log("LevelStart.first = " + firstTime);
+
 
         }
 
@@ -319,9 +298,7 @@ public class levelStart : MonoBehaviour
 
             times = times9;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times9);
-            Debug.Log("LevelStart.first = " + firstTime);
+
         }
 
         if (SceneManager.GetActiveScene().name == "Nivel 9")
@@ -342,9 +319,6 @@ public class levelStart : MonoBehaviour
 
             times = times10;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times10);
-            Debug.Log("LevelStart.first = " + firstTime);
 
 
         }
@@ -367,9 +341,7 @@ public class levelStart : MonoBehaviour
 
             times = times11;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times11);
-            Debug.Log("LevelStart.first = " + firstTime);
+
 
         }
 
@@ -390,10 +362,6 @@ public class levelStart : MonoBehaviour
 
 
             times = times12;
-
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times12);
-            Debug.Log("LevelStart.first = " + firstTime);
 
 
         }
@@ -416,9 +384,6 @@ public class levelStart : MonoBehaviour
 
             times = times13;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times13);
-            Debug.Log("LevelStart.first = " + firstTime);
 
         }
 
@@ -440,9 +405,6 @@ public class levelStart : MonoBehaviour
 
             times = times14;
 
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times14);
-            Debug.Log("LevelStart.first = " + firstTime);
 
         }
 
@@ -465,14 +427,16 @@ public class levelStart : MonoBehaviour
 
             times = times15;
 
-            Debug.Log("LevelStart.skinSe = " + skinSe);
-
-            Debug.Log("LevelStart.level = " + level);
-            Debug.Log("LevelStart.times = " + times16);
-            Debug.Log("LevelStart.first = " + firstTime);
-
 
         }
+
+
+        Debug.Log("LevelStart.skinSe = " + skinSe);
+
+        Debug.Log("LevelStart.level = " + level);
+        Debug.Log("LevelStart.times = " + times);
+        Debug.Log("LevelStart.first = " + firstTime);
+
 
         AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
             {
@@ -512,17 +476,6 @@ public class levelStart : MonoBehaviour
 
         if (!timerRunning)
         {
-            Debug.Log("GameOver.time = " + leveltimer);
-            Debug.Log("GameOver.level = " + level);
-
-            AnalyticsService.Instance.CustomData("GameOver", new Dictionary<string, object>
-            {
-            { "time", leveltimer },
-            { "level", level },
-            });
-
-
-
             timerRunning = true;
         }
 

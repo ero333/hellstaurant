@@ -8,6 +8,8 @@ using static Cinemachine.DocumentationSortingAttribute;
 public class playerDebugControl : MonoBehaviour
 {
 
+    public levelStart levelStart;
+
     public PlayerHealthController healthController;
 
     // Start is called before the first frame update
@@ -28,6 +30,9 @@ public class playerDebugControl : MonoBehaviour
         Debug.Log("GameOver.cucarachaHit =" + healthController.cucarachaHit);
         Debug.Log("GameOver.jefeHit =" + healthController.bossHit);
 
+        Debug.Log("GameOver.time = " + levelStart.leveltimer);
+        Debug.Log("GameOver.level = " + levelStart.level);
+
 
         AnalyticsService.Instance.CustomData("GameOver", new Dictionary<string, object>
             {
@@ -44,7 +49,10 @@ public class playerDebugControl : MonoBehaviour
             { "rodetePHit",  healthController.rodetePHit },
             { "arañaHit",  healthController.arañaHit },
             { "cucarachaHit",  healthController.cucarachaHit },
-            { "jefeHit",  healthController.bossHit }
+            { "jefeHit",  healthController.bossHit },
+
+            {"time", levelStart.leveltimer },
+            { "level", levelStart.level }
 
             });
 
