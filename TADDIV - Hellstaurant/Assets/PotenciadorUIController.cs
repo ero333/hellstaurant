@@ -40,9 +40,9 @@ public class PotenciadorUIController : MonoBehaviour
     }
     IEnumerator Animsalida()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         anim.SetBool("potensalida", true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         anim.SetBool("potensalida", false);
         icono.SetActive(false);
         porcionfuga.SetActive(false);
