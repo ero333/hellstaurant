@@ -3,30 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class backgroundmusic : MonoBehaviour
+
+public class ControladorMusica : MonoBehaviour
 {
-    private static backgroundmusic instancia;
+    public AudioSource musica;
 
-    private void Awake()
+    private bool musicaSilenciada;
+
+private void Start()
+{
+    // AsegÃºrate de que el componente AudioSource de la mÃºsica estÃ© asignado en el Inspector.
+    if (musica == null)
     {
-        // Verifica si ya existe una instancia de ControlDeMusica
-        if (instancia != null && instancia != this)
-        {
-            // Destruye este objeto si ya hay una instancia
-            Destroy(gameObject);
-            return;
-        }
-
-        // Marca este objeto como persistente entre escenas
-        DontDestroyOnLoad(gameObject);
-
-        // Asigna esta instancia como la única instancia
-        instancia = this;
+        musica = GetComponent<AudioSource>();
     }
-
-    // Lógica para reproducir, pausar, detener la música, etc.
-    // Puedes usar un componente AudioSource para reproducir la música.
-
-
-
 }
+
+public void AlternarMusica()
+{
+    musicaSilenciada = !musicaSilenciada;
+
+    if (musicaSilenciada)
+    {
+        musica.Pause();
+    }
+    else
+    {
+        musica.UnPause();
+    }
+  }
+}
+
+
