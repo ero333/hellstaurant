@@ -35,6 +35,13 @@ public class BossBehavior : MonoBehaviour
 
     public AudioSource hitjefe;
 
+
+    public float KBPower = 100;
+    public float KBDuration = 2;
+
+    public PlayerHealthController playerhealthcontroller;
+
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -138,6 +145,11 @@ public class BossBehavior : MonoBehaviour
                 onDeath();
             }
         }
+
+        if (other.gameObject.tag == "Player" && !playerhealthcontroller.isHealing)
+        {
+            StartCoroutine(playerhealthcontroller.knockback(KBDuration, KBPower, this.transform));
+        }
     }
 
 
@@ -210,5 +222,7 @@ public class BossBehavior : MonoBehaviour
             yield return new WaitForSeconds(tiempoEntreAcciones);
         }
     }
+
+
 
 }

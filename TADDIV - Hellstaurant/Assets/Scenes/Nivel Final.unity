@@ -702,11 +702,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9042487
+      value: 2.908136
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.65586597
+      value: -0.65583473
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -5805,7 +5805,7 @@ GameObject:
   - component: {fileID: 1564408385}
   m_Layer: 0
   m_Name: final boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5905,6 +5905,9 @@ MonoBehaviour:
   bichosSpawn: {fileID: 1442380930}
   eructo: {fileID: 1564408384}
   hitjefe: {fileID: 1564408385}
+  KBPower: 80
+  KBDuration: 2
+  playerhealthcontroller: {fileID: 1315016615}
 --- !u!61 &1564408382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5937,7 +5940,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17118073, y: -0.74177885}
+  m_Offset: {x: -0.115242004, y: -0.6115869}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5948,7 +5951,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.489365, y: 11.005809}
+  m_Size: {x: 9.937607, y: 9.026893}
   m_EdgeRadius: 0
 --- !u!95 &1564408383
 Animator:
