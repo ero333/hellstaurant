@@ -3243,7 +3243,7 @@ RectTransform:
   m_GameObject: {fileID: 894874610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1.36, y: -1.36, z: -1.36}
+  m_LocalScale: {x: -3.0800002, y: -3.0800002, z: -3.0800002}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1263904939}
@@ -3251,7 +3251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -248, y: 250.34}
+  m_AnchoredPosition: {x: -467, y: 475}
   m_SizeDelta: {x: 28.2, y: 28.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894874612
@@ -5735,7 +5735,6 @@ RectTransform:
   - {fileID: 1276537251}
   - {fileID: 1297571098}
   - {fileID: 1033417910}
-  - {fileID: 814449701}
   - {fileID: 1349493318}
   - {fileID: 2041406470}
   - {fileID: 1799196281}
@@ -5748,6 +5747,7 @@ RectTransform:
   - {fileID: 2130934468}
   - {fileID: 1015653601}
   - {fileID: 1592466742}
+  - {fileID: 814449701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7180,7 +7180,7 @@ RectTransform:
   m_GameObject: {fileID: 2060624293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.906478, y: 1.5778023, z: 1.1044616}
+  m_LocalScale: {x: 1.58, y: 0.85771435, z: 0.60040003}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 894874611}
@@ -7188,8 +7188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 404.6874, y: 22}
-  m_SizeDelta: {x: 497.98, y: 497.98}
+  m_AnchoredPosition: {x: 450, y: 22}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2060624295
 MonoBehaviour:
@@ -7211,7 +7211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -563218143, guid: 71d821ad6d5f7a1429667f1b33179ad5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da102e14943a6404c99f3b91696916aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

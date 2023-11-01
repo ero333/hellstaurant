@@ -312,8 +312,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -248, y: 250.34}
-  m_SizeDelta: {x: 28.2, y: 28.89}
+  m_AnchoredPosition: {x: -460, y: 475}
+  m_SizeDelta: {x: 63.2, y: 64.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58059161
 MonoBehaviour:
@@ -2861,7 +2861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.0500002, y: 0}
+  m_AnchoredPosition: {x: 1.0500011, y: 0}
   m_SizeDelta: {x: -2.0999997, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826063069
@@ -2911,8 +2911,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 47.9
+  m_fontSizeBase: 47.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3063,7 +3063,7 @@ RectTransform:
   m_GameObject: {fileID: 913191624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.906478, y: 1.5778023, z: 1.1044616}
+  m_LocalScale: {x: 1.58, y: 0.85771435, z: 0.6004001}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 58059160}
@@ -3071,8 +3071,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 404.6874, y: 22}
-  m_SizeDelta: {x: 497.98, y: 497.98}
+  m_AnchoredPosition: {x: 452.99994, y: 21.205004}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &913191626
 MonoBehaviour:
@@ -3094,7 +3094,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 611255999, guid: 4a78f8e4b0ea7c84d823c461bf242e99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19f0670dff1f62d459a9754be2bd98d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5526,7 +5526,6 @@ RectTransform:
   - {fileID: 1276537251}
   - {fileID: 1297571098}
   - {fileID: 1033417910}
-  - {fileID: 814449701}
   - {fileID: 1349493318}
   - {fileID: 2041406470}
   - {fileID: 1799196281}
@@ -5539,6 +5538,7 @@ RectTransform:
   - {fileID: 2130934468}
   - {fileID: 1015653601}
   - {fileID: 1592466742}
+  - {fileID: 814449701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
