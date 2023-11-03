@@ -14,6 +14,8 @@ public class stopGame : MonoBehaviour
     public EnemySpawner spawner2;
     public EnemySpawner spawner3;
 
+   
+
     public int ultimoNivelDesbloqueado;
 
     public int nivelActual;
@@ -27,6 +29,8 @@ public class stopGame : MonoBehaviour
     public GameObject bulletSpawner;
 
     public GameObject enemiespawner;
+
+    public GameObject potenciadoresspawner;
 
     public AudioSource winSound;
 
@@ -110,6 +114,8 @@ public class stopGame : MonoBehaviour
         spawner.deleteClones();
 
         enemiespawner.SetActive(false);
+
+        potenciadoresspawner.SetActive(false);
 
         yield return new WaitForSeconds(0.5f);
         player.SetActive(false);

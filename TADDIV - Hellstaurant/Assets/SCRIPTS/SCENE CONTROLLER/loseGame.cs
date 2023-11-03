@@ -22,6 +22,8 @@ public class loseGame : MonoBehaviour
 
     public GameObject enemiespawner;
 
+    public GameObject potenciadoresspawner;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +67,8 @@ public class loseGame : MonoBehaviour
         spawner.deleteClones();
 
         enemiespawner.SetActive(false);
+
+        potenciadoresspawner.SetActive(false);
 
         yield return new WaitForSeconds(0.5f);
         player.SetActive(false);
