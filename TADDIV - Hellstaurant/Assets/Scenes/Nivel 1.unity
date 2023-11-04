@@ -6816,10 +6816,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0454c5f93bc213e44a932e3b001a59fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 23
+  spawnRate: 40
   PowerUp:
   - {fileID: 3419380598909174098, guid: e62a92b7e329a8145af4b84e4675e168, type: 3}
-  canSpawn: 1
+  canSpawn: 0
   spawnPoten: {fileID: 9047613863917057165}
 --- !u!114 &4400878587932392607
 MonoBehaviour:
@@ -6833,10 +6833,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0454c5f93bc213e44a932e3b001a59fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 10
+  spawnRate: 45
   PowerUp:
   - {fileID: 9178800356683737833, guid: b964c71e2fd4cce4f821c5ddf18e2798, type: 3}
-  canSpawn: 1
+  canSpawn: 0
   spawnPoten: {fileID: 4400878587932392608}
 --- !u!82 &4400878587932392608
 AudioSource:
@@ -6979,10 +6979,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0454c5f93bc213e44a932e3b001a59fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 12
+  spawnRate: 25
   PowerUp:
   - {fileID: 3109607735408773315, guid: 11537fce42d632f4283a8e2f808a79d7, type: 3}
-  canSpawn: 1
+  canSpawn: 0
   spawnPoten: {fileID: 6819538998734865846}
 --- !u!82 &6819538998734865846
 AudioSource:
@@ -7229,7 +7229,7 @@ MonoBehaviour:
   spawnRate: 33
   PowerUp:
   - {fileID: 8045299656839389437, guid: edd65bfd54dcd6f48ad704f705a478c6, type: 3}
-  canSpawn: 1
+  canSpawn: 0
   spawnPoten: {fileID: 9205873881452259332}
 --- !u!1001 &9014597502082509123
 PrefabInstance:

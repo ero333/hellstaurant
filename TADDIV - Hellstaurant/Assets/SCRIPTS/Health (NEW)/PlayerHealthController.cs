@@ -66,6 +66,8 @@ public class PlayerHealthController : MonoBehaviour
 
         isHealing = false;
 
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+
         currentHealth = maxHealth;
         theSR = GetComponent<SpriteRenderer>();
 
