@@ -807,6 +807,7 @@ GameObject:
   - component: {fileID: 272205043}
   m_Layer: 0
   m_Name: DEBUGGING
+  m_TagString: Untagged
   m_TagString: debugDeath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7392,6 +7393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagEnemy: Enemy
   player: {fileID: 1315016614}
+  spawner: {fileID: 0}
+  spawner2: {fileID: 0}
   spawner: {fileID: 1387196433}
   spawner2: {fileID: 1679126909}
   spawner3: {fileID: 0}
