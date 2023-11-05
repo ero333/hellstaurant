@@ -702,11 +702,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9085603
+      value: 2.901773
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6558309
+      value: -0.6558867
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -8640,7 +8640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ee44c2e73329046ad32de8b4fe55eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 0.6
+  spawnRate: 1
   enemyPrefabs:
   - {fileID: 1192900472077790647, guid: 7408eaf23c8757f41b3bfe8c0cdc3504, type: 3}
   canSpawn: 1
