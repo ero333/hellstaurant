@@ -12,16 +12,8 @@ public class playerDebugControl : MonoBehaviour
 
     public PlayerHealthController healthController;
 
-
-
-    public void Start()
-    {
-        levelStart = GameObject.FindGameObjectWithTag ("Player").GetComponent<levelStart> ();
-
-        healthController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthController>();
-    }
     // Start is called before the first frame update
-    public void OnEnable()
+    void Start()
     {
         Debug.Log("GameOver.enemy =" + healthController.lastAttackingEnemy);
         Debug.Log("GameOver.healing =" + healthController.healingTimes);
