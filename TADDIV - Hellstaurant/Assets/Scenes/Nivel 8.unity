@@ -4500,7 +4500,7 @@ GameObject:
   - component: {fileID: 1370458299}
   m_Layer: 0
   m_Name: DEBUGGING
-  m_TagString: Untagged
+  m_TagString: debugDeath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7512,15 +7512,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagEnemy: Enemy
   player: {fileID: 1315016614}
-  spawner: {fileID: 0}
-  spawner2: {fileID: 0}
-  spawner3: {fileID: 0}
   spawner: {fileID: 1525298384}
   spawner2: {fileID: 1731725740}
   spawner3: {fileID: 1934406487}
   loseSound: {fileID: 2121108982}
   bulletSpawner: {fileID: 0}
-  winscreen: {fileID: 0}
   winscreen: {fileID: 814449694}
   enemiespawner: {fileID: 1524341135}
   potenciadoresspawner: {fileID: 272455509}
