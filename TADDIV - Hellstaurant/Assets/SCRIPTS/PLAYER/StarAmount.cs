@@ -41,86 +41,110 @@ public class StarAmount : MonoBehaviour
 
     private void OnEnable()
     {
-        switch (PlayerPrefs.GetInt("NivelActual"))
-        {
-            case 4:
-                level = 1;
-                break;
+    
 
-            case 5:
-                level = 2;
-                break;
+       if (PlayerPrefs.GetInt("NivelActual") == 4)
+            {
+             level = 1;
+            }
+       if (PlayerPrefs.GetInt("NivelActual") == 5)
+            {
+             level = 2;
+            }
+       if (PlayerPrefs.GetInt("NivelActual") == 6)
+            {
+             level = 3;
+            }
+       if (PlayerPrefs.GetInt("NivelActual") == 7)
+            {
+             level = 4;
+            }
+       if (PlayerPrefs.GetInt("NivelActual") == 9)
+            {
+             level = 5;
+            }
+       if (PlayerPrefs.GetInt("NivelActual") == 10)
+            {
+             level = 6;
+            }
+       if (PlayerPrefs.GetInt("NivelActual") == 11)
+            {
+             level = 7;
+            }
+       if (PlayerPrefs.GetInt("NivelActual") == 12)
+            {
+             level = 8;
+            }
+       if (PlayerPrefs.GetInt("NivelActual") == 13)
+           {
+            level = 9;
+           }
+       if (PlayerPrefs.GetInt("NivelActual") == 14)
+           {
+            level = 10;
+           }
+       if (PlayerPrefs.GetInt("NivelActual") == 15)
+           {
+            level = 11;
+           }
+       if (PlayerPrefs.GetInt("NivelActual") == 16)
+           {
+            level = 12;
+           }
+       if (PlayerPrefs.GetInt("NivelActual") == 17)
+           {
+            level = 13;
+           }
+       if (PlayerPrefs.GetInt("NivelActual") == 18)
+           {
+            level = 14;
+           }
+       if (PlayerPrefs.GetInt("NivelActual") == 20)
+           {
+            level = 15;
+           }
+       if (PlayerPrefs.GetInt("NivelActual") == 22)
+           {
+            level = 16;
+           }
 
-            case 6:
-                level = 3;
-                break;
+        Debug.Log("LevelComplete =" + level);
 
-            case 7:
-                level = 4;
-                break;
+        StartCoroutine(sumarEstrellas());
 
-            case 9:
-                level = 5;
-                break;
+    }
 
-            case 10:
-                level = 6;
-                break;
+    IEnumerator sumarEstrellas()
+    {
 
-            case 11:
-                level = 7;
-                break;
-
-            case 12:
-                level = 8;
-                break;
-
-            case 13:
-                level = 9;
-                break;
-
-            case 14:
-                level = 10;
-                break;
-
-            case 15:
-                level = 11;
-                break;
-
-            case 16:
-                level = 12;
-                break;
-
-            case 17:
-                level = 13;
-                break;
-
-            case 19:
-                level = 14;
-                break;
-
-            case 21:
-                level = 15;
-                break;
-
-        }
 
         if (puntaje.puntos >= 20 && puntaje.puntos <= 100)
         {
+            yield return new WaitForSeconds(1f);
+            star1.SetActive (true);
             stars = 1;
         }
 
         if (puntaje.puntos >= 40 && puntaje.puntos <= 300)
         {
+            yield return new WaitForSeconds(1f);
+            star1.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            star2.SetActive(true);
             stars = 2;
         }
 
         if (puntaje.puntos >= 500)
         {
+            yield return new WaitForSeconds(1f);
+            star1.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            star2.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            star3.SetActive(true);
             stars = 3;
         }
 
-        Debug.Log("LevelComplete =" + level);
         Debug.Log("LevelComplete.stars =" + stars);
         Debug.Log("LevelComplete.healing =" + healthController.healingTimes);
         Debug.Log("LevelComplete.hit =" + healthController.hit);
@@ -157,41 +181,6 @@ public class StarAmount : MonoBehaviour
            {"jefeHit", healthController.bossHit}
 
         });
-
-
-        StartCoroutine(sumarEstrellas());
-
-    }
-
-    IEnumerator sumarEstrellas()
-    {
-
-
-        if (puntaje.puntos >= 20 && puntaje.puntos <= 100)
-        {
-            yield return new WaitForSeconds(1f);
-            star1.SetActive (true);
-        }
-
-        if (puntaje.puntos >= 40 && puntaje.puntos <= 300)
-        {
-            yield return new WaitForSeconds(1f);
-            star1.SetActive(true);
-            yield return new WaitForSeconds(1f);
-            star2.SetActive(true);
-        }
-
-        if (puntaje.puntos >= 500)
-        {
-            yield return new WaitForSeconds(1f);
-            star1.SetActive(true);
-            yield return new WaitForSeconds(1f);
-            star2.SetActive(true);
-            yield return new WaitForSeconds(1f);
-            star3.SetActive(true);
-        }
-
-   
 
     }
 }

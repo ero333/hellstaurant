@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 83975280}
   m_Layer: 0
   m_Name: DEBUGGING
-  m_TagString: debugDeath
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -618,7 +618,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.83593124
+      value: 0.8359303
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -7558,15 +7558,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagEnemy: Enemy
   player: {fileID: 1315016614}
-  spawner: {fileID: 1751201289}
-  spawner2: {fileID: 16470920}
-  spawner3: {fileID: 40537787}
+  spawner: {fileID: 0}
+  spawner2: {fileID: 0}
+  spawner3: {fileID: 0}
   loseSound: {fileID: 2121108982}
   bulletSpawner: {fileID: 0}
-  winscreen: {fileID: 814449694}
+  winscreen: {fileID: 0}
   enemiespawner: {fileID: 930415908}
   potenciadoresspawner: {fileID: 272455509}
-  deathdebug: {fileID: 83975279}
 --- !u!82 &2121108982
 AudioSource:
   m_ObjectHideFlags: 0
