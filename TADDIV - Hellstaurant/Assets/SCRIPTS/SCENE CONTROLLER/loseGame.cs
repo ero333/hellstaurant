@@ -18,18 +18,21 @@ public class loseGame : MonoBehaviour
 
     public GameObject bulletSpawner;
 
-    public GameObject winscreen;
+    [SerializeField] private GameObject winscreen;
 
     public GameObject enemiespawner;
 
     public GameObject potenciadoresspawner;
 
+    [SerializeField] private GameObject deathdebug;
+
     // Start is called before the first frame update
     void Start()
     {
-        winscreen = GameObject.FindGameObjectWithTag("winscreen");
-    }
+        winscreen = GameObject.FindGameObjectWithTag("winscreen"); 
 
+        deathdebug = GameObject.FindGameObjectWithTag("debugDeath");
+    }
     // Update is called once per frame
     void Update()
     {
@@ -38,6 +41,8 @@ public class loseGame : MonoBehaviour
 
     public void OnEnable()
     {
+
+       deathdebug.SetActive(true);
 
       StartCoroutine(loseProcess());
 
@@ -64,13 +69,15 @@ public class loseGame : MonoBehaviour
         }
 
         spawner.StopAllCoroutines();
+
         spawner.deleteClones();
 
         enemiespawner.SetActive(false);
 
         potenciadoresspawner.SetActive(false);
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.6f);
+
         player.SetActive(false);
 
         bulletSpawner.SetActive(false);
