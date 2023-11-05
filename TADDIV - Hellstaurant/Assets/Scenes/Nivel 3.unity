@@ -366,7 +366,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359303
+      value: 0.83593124
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 335467675}
   m_Layer: 0
   m_Name: DEBUGGING
-  m_TagString: Untagged
+  m_TagString: debugDeath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7276,6 +7276,7 @@ MonoBehaviour:
   winscreen: {fileID: 814449694}
   enemiespawner: {fileID: 275693497}
   potenciadoresspawner: {fileID: 1098458709}
+  deathdebug: {fileID: 335467674}
 --- !u!82 &2121108982
 AudioSource:
   m_ObjectHideFlags: 0

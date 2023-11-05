@@ -24,6 +24,8 @@ public class RateController : MonoBehaviour
     public int ratinggame;
     public int ratingart;
 
+    public GameObject botonSend;
+
     [Header("botones estrellas juego")]
     public Button estrella1;
     public Button estrella2;
@@ -42,6 +44,7 @@ public class RateController : MonoBehaviour
 
     void Start()
     {
+        botonSend.SetActive(false);
 
         rateado = PlayerPrefs.GetInt("rateado");
         popupRate.SetActive(false);
@@ -116,6 +119,12 @@ public class RateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (ratingart >= 1 && ratinggame >=1)
+        {
+            botonSend.SetActive(true);
+        }
+
         if(rateado >= 1)
         {
             botonRate.SetActive(false);
