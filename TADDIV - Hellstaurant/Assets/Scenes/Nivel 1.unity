@@ -5442,7 +5442,7 @@ GameObject:
   - component: {fileID: 1765290322}
   m_Layer: 0
   m_Name: DEBUGGING
-  m_TagString: debugDeath
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6207,7 +6207,6 @@ MonoBehaviour:
   winscreen: {fileID: 814449694}
   enemiespawner: {fileID: 1211233730}
   potenciadoresspawner: {fileID: 3726067160568124795}
-  deathdebug: {fileID: 1765290321}
 --- !u!82 &2121108982
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7095,7 +7094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.83593124
+      value: 0.8359303
       objectReference: {fileID: 0}
     - target: {fileID: 3881648654193666262, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: target
