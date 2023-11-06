@@ -256,11 +256,10 @@ public class PlayerHealthController : MonoBehaviour
 
         currentHealth = 0;
 
-        playerDeathDebug.SetActive(true);
+
 
         yield return new WaitForSeconds(0.05f);
 
-        gameObject.SetActive(false);
         ShowGameOver(); // Mostrar el cartel de Game Over
     }
 

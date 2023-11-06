@@ -68,9 +68,14 @@ public class loseGame : MonoBehaviour
 
         }
 
-        spawner.StopAllCoroutines();
+        if (spawner != null)
+        {
 
-        spawner.deleteClones();
+            spawner.StopAllCoroutines();
+
+            spawner.deleteClones();
+
+        }
 
         enemiespawner.SetActive(false);
 
