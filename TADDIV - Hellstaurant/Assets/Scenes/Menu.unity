@@ -997,6 +997,7 @@ MonoBehaviour:
   estrellallena: {fileID: 888855441, guid: 33c235d449faace46a079106afd23b8e, type: 3}
   ratinggame: 0
   ratingart: 0
+  botonSend: {fileID: 1110071029}
   estrella1: {fileID: 1967634610}
   estrella2: {fileID: 1635489506}
   estrella3: {fileID: 817660273}
@@ -3158,10 +3159,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e70eaa88396d6459162b48f34af787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMuteado: 1
   spriteMuteado: {fileID: -1476897938, guid: 530c4dbeceed33545aff1533c157c7c5, type: 3}
   spriteDesmuteado: {fileID: 1329714365, guid: dfc2413bf18cbc04c929f243d01fb311, type: 3}
   botonSonido: {fileID: 5822453199617693887}
   buttonsound: {fileID: 1702818718}
+  BGMusic: {fileID: 1505254082}
 --- !u!1 &1070870556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4199,6 +4202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ae1224e70dc764a8da67c6a388d028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musica: {fileID: 1505254084}
 --- !u!82 &1505254084
 AudioSource:
   m_ObjectHideFlags: 0

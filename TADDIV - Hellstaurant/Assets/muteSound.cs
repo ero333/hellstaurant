@@ -8,44 +8,53 @@ public class muteSound : MonoBehaviour
 
 {
 
-    private bool sonidoMuteado = true; // Estado de sonido mutado
-
+    public bool sonidoMuteado = true; // Estado de sonido mutado
     public Sprite spriteMuteado;
     public Sprite spriteDesmuteado;
     public Button botonSonido;
     public AudioSource buttonsound;
+    public GameObject BGMusic;
+
+
 
     private void Start()
     {
-        // Cargar el estado de mute al inicio de la escena
+        buttonsound = GetComponent<AudioSource>();
+
         sonidoMuteado = PlayerPrefs.GetInt("SonidoMuteado", 0) == 1;
-        ActualizarAudioListener();
-        ActualizarSpriteBoton();
+
+
+        BGMusic = GameObject.FindGameObjectWithTag("musicamenu");
+
+        //    // Cargar el estado de mute al inicio de la escena
+        //    sonidoMuteado = PlayerPrefs.GetInt("SonidoMuteado", 0) == 1;
+            ActualizarAudioListener();
+            ActualizarSpriteBoton();
     }
 
     public void AlternarMute()
     {
-        buttonsound.Play(); 
-        // Cambia el estado de sonido mutado
-        sonidoMuteado = !sonidoMuteado;
+        //buttonsound.Play(); 
+    //    // Cambia el estado de sonido mutado
+     sonidoMuteado = !sonidoMuteado;
 
-        // Guarda el estado de mute o unmute en PlayerPrefs
-        PlayerPrefs.SetInt("SonidoMuteado", sonidoMuteado ? 1 : 0);
-        PlayerPrefs.Save();
+    //    // Guarda el estado de mute o unmute en PlayerPrefs
+     PlayerPrefs.SetInt("SonidoMuteado", sonidoMuteado ? 1 : 0);
+        //    PlayerPrefs.Save();
 
         ActualizarAudioListener();
         ActualizarSpriteBoton();
-    } 
-    
+    }
+
     private void ActualizarAudioListener()
     {
-        // Encuentra el componente AudioListener en la escena
-        AudioListener audioListener = FindObjectOfType<AudioListener>();
-
-        if (audioListener != null)
+         if (sonidoMuteado)
         {
-            // Muta o desmuta el AudioListener según el estado
-            audioListener.enabled = !sonidoMuteado;
+            BGMusic.SetActive(false);
+        }
+        if (!sonidoMuteado)
+        {
+            BGMusic.SetActive(true);
         }
     }
 
@@ -61,6 +70,6 @@ public class muteSound : MonoBehaviour
         }
 
     }
-    
+
 
 }

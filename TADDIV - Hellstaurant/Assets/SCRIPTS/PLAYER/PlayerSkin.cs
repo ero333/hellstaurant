@@ -122,8 +122,8 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "girlSkin" )
         {
 
-            StartCoroutine(GirlpicantePowerUp());
-            //anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -134,8 +134,8 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "halloweenSkin")
         {
 
-            StartCoroutine(HalloweenpicantePowerUp());
-            //anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
+            //StartCoroutine(HalloweenpicantePowerUp());
+            anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -145,8 +145,8 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "spidermanSkin")
         {
 
-            StartCoroutine(SpidermanpicantePowerUp());
-           //anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
+            //StartCoroutine(SpidermanpicantePowerUp());
+           anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -156,8 +156,8 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "goldSkin")
         {
 
-            StartCoroutine(DoradopicantePowerUp());
-            //anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
+            //StartCoroutine(DoradopicantePowerUp());
+            anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
 
 
 
@@ -166,8 +166,8 @@ public class PlayerSkin : MonoBehaviour
         if (collision.CompareTag("PicantePickup") && skinName == "messiSkin")
         {
 
-            StartCoroutine(MessipicantePowerUp());
-            //anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
+            //StartCoroutine(MessipicantePowerUp());
+            anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
 
 
 
