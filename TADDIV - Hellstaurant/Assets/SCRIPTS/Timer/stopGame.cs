@@ -110,17 +110,33 @@ public class stopGame : MonoBehaviour
 
         }
 
-        spawner.StopAllCoroutines();
-        spawner.deleteClones();
+        if (spawner != null)
+        {
 
-        enemiespawner.SetActive(false);
+            spawner.StopAllCoroutines();
+            spawner.deleteClones();
 
-        potenciadoresspawner.SetActive(false);
+        }
+
+        if (enemiespawner != null)
+        {
+            enemiespawner.SetActive(false);
+        }
+
+        if (potenciadoresspawner != null) 
+        {
+            potenciadoresspawner.SetActive(false);
+                }
 
         yield return new WaitForSeconds(0.5f);
+
         player.SetActive(false);
 
-        bulletSpawner.SetActive(false);
+        if (bulletSpawner != null)
+        {
+            bulletSpawner.SetActive(false);
+        }
+
 
     }
 }
