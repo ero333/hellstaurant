@@ -88,20 +88,20 @@ public class Tutorial2 : MonoBehaviour
             cartel7.SetActive(true);
         }
 
-        if (contadorCarteles == 8)
-        {
-            cartel7.SetActive(false);
-            cartel8.SetActive(true);
-        }
+        //if (contadorCarteles == 8)
+        //{
+        //    cartel7.SetActive(false);
+        //    cartel8.SetActive(true);
+        //}
 
 
-        if (contadorCarteles == 9)
-        {
-            StartCoroutine(pruebaHeal());
-        }
+        //if (contadorCarteles == 9)
+        //{
+        //    StartCoroutine(pruebaHeal());
+        //}
 
 
-        if (contadorCarteles >= 10)
+        if (contadorCarteles >= 8)
         {
             Time.timeScale = 1f;
 

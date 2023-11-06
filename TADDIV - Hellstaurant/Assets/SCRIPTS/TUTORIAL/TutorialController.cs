@@ -6,7 +6,7 @@ public class TutorialController : MonoBehaviour
 {
 
     //VARIABLES DE CADA CARTEL DEL TUTORIAL//
-    public GameObject cartel1, cartel2, cartel3, cartel4, cartel5, cartel6, cartel7, cartel8, cartel9, cartel10, cartel11, cartel12, cartel13, cartel14, cartel15, cartel16, cartel17, cartel18;
+    public GameObject cartel1, cartel2, cartel3, cartel4, cartel5, cartel6, cartel7, cartel8, cartel9, cartel10, cartel11, cartel12, cartel13, cartel14, cartel15, cartel16, cartel17, cartel18, cartel19, cartel20;
 
     //VARIABLE DEL BOT�N SIGUIENTE//
     public GameObject botonSaltar;
@@ -156,6 +156,23 @@ public class TutorialController : MonoBehaviour
         if (contadorCarteles == 18)
         {
             cartel18.SetActive(false);
+            cartel19.SetActive(true);
+
+            StartCoroutine(pruebacuración());
+
+        }
+
+        if (contadorCarteles == 19)
+        {
+            cartel19.SetActive(false);
+            cartel20.SetActive(true);
+
+        }
+
+
+        if (contadorCarteles == 20)
+        {
+            cartel20.SetActive(false);
             timer.SetActive(true);
             Time.timeScale = 1.0f;
             botonSaltar.SetActive(false);
@@ -214,6 +231,9 @@ public class TutorialController : MonoBehaviour
 
     }
 
+
+
+
     
     IEnumerator pruebaspawner()
     {
@@ -233,6 +253,32 @@ public class TutorialController : MonoBehaviour
 
         cartel14.SetActive(false);
         cartel15.SetActive(true);
+
+        botonSaltar.SetActive(true);
+        Time.timeScale = 0f;
+
+    }
+
+
+
+    IEnumerator pruebacuración()
+    {
+        Time.timeScale = 1f;
+
+        spawner.SetActive(true);
+        íconoMonedas.SetActive(true);
+        contadorMonedas.SetActive(true);
+
+        cartel18.SetActive(false);
+        cartel19.SetActive(true);
+
+        yield return new WaitForSeconds(15f);
+
+
+        contadorCarteles++;
+
+        cartel19.SetActive(false);
+        cartel20.SetActive(true);
 
         botonSaltar.SetActive(true);
         Time.timeScale = 0f;

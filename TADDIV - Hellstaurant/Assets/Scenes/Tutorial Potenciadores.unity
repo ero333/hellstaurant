@@ -3904,7 +3904,7 @@ MonoBehaviour:
   cartel4: {fileID: 1411558915}
   cartel5: {fileID: 1661401143}
   cartel6: {fileID: 1041902192}
-  cartel7: {fileID: 1500692768}
+  cartel7: {fileID: 2093901882}
   cartel8: {fileID: 1970902109}
   cartel9: {fileID: 2093901882}
   cartel10: {fileID: 0}
@@ -4794,6 +4794,7 @@ MonoBehaviour:
   levelunlocking: {fileID: 0}
   bulletSpawner: {fileID: 0}
   enemiespawner: {fileID: 1665692824}
+  potenciadoresspawner: {fileID: 0}
   winSound: {fileID: 1455167074}
   losescreen: {fileID: 1982427676}
 --- !u!114 &1455167070
@@ -4869,7 +4870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -290.99988, y: -25}
+  m_AnchoredPosition: {x: -290.99985, y: -25}
   m_SizeDelta: {x: -667.41, y: -375.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1455167074
@@ -6593,6 +6594,8 @@ MonoBehaviour:
   bulletSpawner: {fileID: 0}
   winscreen: {fileID: 1455167066}
   enemiespawner: {fileID: 1665692824}
+  potenciadoresspawner: {fileID: 0}
+  deathdebug: {fileID: 0}
 --- !u!82 &1982427679
 AudioSource:
   m_ObjectHideFlags: 0
