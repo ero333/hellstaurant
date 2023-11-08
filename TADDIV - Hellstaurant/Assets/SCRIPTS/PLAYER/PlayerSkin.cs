@@ -31,6 +31,8 @@ public class PlayerSkin : MonoBehaviour
 
     public string skinName;
 
+    public PlayerShooting playershooting;
+
 
     // Start is called before the first frame update
     void Start()
@@ -77,7 +79,74 @@ public class PlayerSkin : MonoBehaviour
     void Update()
     {
 
-        
+        if (playershooting.Picante && skinName == "girlSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
+        }
+        if (playershooting.Picante == false && skinName == "girlSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = girlSkin as RuntimeAnimatorController;
+        }
+
+
+
+
+        if (playershooting.Picante && skinName == "halloweenSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
+        }
+        if (playershooting.Picante == false && skinName == "halloweenSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = halloweenSkin as RuntimeAnimatorController;
+        }
+
+
+
+
+        if (playershooting.Picante && skinName == "spidermanSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
+        }
+        if (playershooting.Picante == false && skinName == "spidermanSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = spidermanSkin as RuntimeAnimatorController;
+        }
+
+
+
+
+
+        if (playershooting.Picante && skinName == "messiSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
+        }
+        if (playershooting.Picante == false && skinName == "messiSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = messiSkin as RuntimeAnimatorController;
+        }
+
+
+
+
+
+        if (playershooting.Picante && skinName == "goldSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
+        }
+        if (playershooting.Picante == false && skinName == "goldSkin")
+        {
+            //StartCoroutine(GirlpicantePowerUp());
+            anim.runtimeAnimatorController = doradoSkin as RuntimeAnimatorController;
+        }
 
     }
 
@@ -117,112 +186,121 @@ public class PlayerSkin : MonoBehaviour
     //CAMBIOS A FRENZY//
 
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("PicantePickup") && skinName == "girlSkin" )
-        {
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (playershooting.Picante && skinName == "girlSkin" )
+    //    {
 
-            //StartCoroutine(GirlpicantePowerUp());
-            anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
-
-
-
-        }
+    //        //StartCoroutine(GirlpicantePowerUp());
+    //        anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
 
 
 
-        if (collision.CompareTag("PicantePickup") && skinName == "halloweenSkin")
-        {
-
-            //StartCoroutine(HalloweenpicantePowerUp());
-            anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
+    //    }
 
 
 
-        }
+    //    if (collision.CompareTag("PicantePickup") && skinName == "halloweenSkin")
+    //    {
 
-
-        if (collision.CompareTag("PicantePickup") && skinName == "spidermanSkin")
-        {
-
-            //StartCoroutine(SpidermanpicantePowerUp());
-           anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
+    //        //StartCoroutine(HalloweenpicantePowerUp());
+    //        anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
 
 
 
-        }
+    //    }
 
 
-        if (collision.CompareTag("PicantePickup") && skinName == "goldSkin")
-        {
+    //    if (collision.CompareTag("PicantePickup") && skinName == "spidermanSkin")
+    //    {
 
-            //StartCoroutine(DoradopicantePowerUp());
-            anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
-
-
-
-        }
-
-        if (collision.CompareTag("PicantePickup") && skinName == "messiSkin")
-        {
-
-            //StartCoroutine(MessipicantePowerUp());
-            anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
+    //        //StartCoroutine(SpidermanpicantePowerUp());
+    //       anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
 
 
 
-        }
+    //    }
 
-    }
 
-    IEnumerator GirlpicantePowerUp()
-    {
-        anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
+    //    if (collision.CompareTag("PicantePickup") && skinName == "goldSkin")
+    //    {
 
-        Debug.Log("girlFrenzy");
+    //        //StartCoroutine(DoradopicantePowerUp());
+    //        anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
 
-        yield return new WaitForSeconds(10f);
-        anim.runtimeAnimatorController = girlSkin as RuntimeAnimatorController;
-    }
 
-    IEnumerator HalloweenpicantePowerUp()
-    {
-        anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
 
-        Debug.Log("halloweenFrenzy");
+    //    }
 
-        yield return new WaitForSeconds(10f);
-        anim.runtimeAnimatorController = halloweenSkin as RuntimeAnimatorController;
-    }
+    //    if (collision.CompareTag("PicantePickup") && skinName == "messiSkin")
+    //    {
 
-    IEnumerator SpidermanpicantePowerUp()
-    {
-        anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
+    //        //StartCoroutine(MessipicantePowerUp());
+    //        anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
 
-        Debug.Log("SpidermanFrenzy");
 
-        yield return new WaitForSeconds(10f);
-        anim.runtimeAnimatorController = spidermanSkin as RuntimeAnimatorController;
-    }
 
-    IEnumerator DoradopicantePowerUp()
-    {
-        anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
+    //    }
 
-        Debug.Log("DoradoFrenzy");
+    //}
 
-        yield return new WaitForSeconds(10f);
-        anim.runtimeAnimatorController = doradoSkin as RuntimeAnimatorController;
-    }
+    //IEnumerator GirlpicantePowerUp()
+    //{
+    //    anim.runtimeAnimatorController = girlSkinFrenzy as RuntimeAnimatorController;
 
-    IEnumerator MessipicantePowerUp()
-    {
-        anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
+    //    Debug.Log("girlFrenzy");
 
-        Debug.Log("CAMPEON WACHO");
+    //    //yield return new WaitForSeconds(10f);
+    //    //anim.runtimeAnimatorController = girlSkin as RuntimeAnimatorController;
 
-        yield return new WaitForSeconds(10f);
-        anim.runtimeAnimatorController = messiSkin as RuntimeAnimatorController;
-    }
+    //    yield return null;
+    //}
+
+    //IEnumerator HalloweenpicantePowerUp()
+    //{
+    //    anim.runtimeAnimatorController = halloweenSkinFrenzy as RuntimeAnimatorController;
+
+    //    Debug.Log("halloweenFrenzy");
+
+    //    //yield return new WaitForSeconds(10f);
+    //    //anim.runtimeAnimatorController = halloweenSkin as RuntimeAnimatorController;
+
+    //    yield return null;
+    //}
+
+    //IEnumerator SpidermanpicantePowerUp()
+    //{
+    //    anim.runtimeAnimatorController = spidermanSkinFrenzy as RuntimeAnimatorController;
+
+    //    Debug.Log("SpidermanFrenzy");
+
+    //    //yield return new WaitForSeconds(10f);
+    //    //anim.runtimeAnimatorController = spidermanSkin as RuntimeAnimatorController;
+    //    yield return null;
+    //}
+
+    //IEnumerator DoradopicantePowerUp()
+    //{
+    //    anim.runtimeAnimatorController = doradoSkinFrenzy as RuntimeAnimatorController;
+
+    //    Debug.Log("DoradoFrenzy");
+
+    //    //yield return new WaitForSeconds(10f);
+    //    //anim.runtimeAnimatorController = doradoSkin as RuntimeAnimatorController;
+    //    yield return null;
+
+    //}
+
+    //IEnumerator MessipicantePowerUp()
+    //{
+    //    anim.runtimeAnimatorController = messiSkinFrenzy as RuntimeAnimatorController;
+
+    //    Debug.Log("CAMPEON WACHO");
+
+    //    //yield return new WaitForSeconds(10f);
+    //    //anim.runtimeAnimatorController = messiSkin as RuntimeAnimatorController;
+
+    //    yield return null;
+    //}
 
 }
