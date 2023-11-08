@@ -399,12 +399,7 @@ public class PlayerShooting : MonoBehaviour
 
         timeBarScript.SetActive(true);
 
-
-        if (skinName == "girlSkin")
-        {
-            anim.runtimeAnimatorController = girlfrenzymode as RuntimeAnimatorController;
-        }
-
+        
         anim.runtimeAnimatorController = frenzymode as RuntimeAnimatorController;
 
         PUTime.tiempoEnMarcha = true;
