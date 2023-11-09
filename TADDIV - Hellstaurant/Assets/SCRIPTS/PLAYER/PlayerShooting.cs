@@ -216,7 +216,7 @@ public class PlayerShooting : MonoBehaviour
             faina.transform.rotation = Quaternion.AngleAxis(angle3, Vector3.forward);
             faina.GetComponent<Rigidbody2D>().velocity = direction * FainaSpeed;
             lastShoot = Time.time;
-            cooldown = 0.2f;
+            cooldown = 0.5f;
             
         }
 
