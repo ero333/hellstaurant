@@ -10,13 +10,17 @@ public class MusicAlternate : MonoBehaviour
 
     public GameObject musicaMenu;
 
+    public AudioSource musicaMenues;
+
+    public AudioSource musicaNiveles;
+
     private void Awake()
     {
         // Verifica si ya existe una instancia de ControlDeMusica
         if (instancia != null && instancia != this)
         {
             // Destruye este objeto si ya hay una instancia
-            Destroy(gameObject);
+            Destroy(this.gameObject);
             return;
         }
 
@@ -25,23 +29,36 @@ public class MusicAlternate : MonoBehaviour
 
         // Asigna esta instancia como la única instancia
         instancia = this;
+    }
+
+    public void Start()
+    {
+
+        musicaMenues = GameObject.FindGameObjectWithTag ("musicafondo").GetComponent<AudioSource>();
+
+        musicaNiveles = GameObject.FindGameObjectWithTag("musicabatalla").GetComponent<AudioSource>();
+
+
 
         if (SceneManager.GetActiveScene().buildIndex >= 4 && SceneManager.GetActiveScene().buildIndex <= 18)
 
         {
-            musicaMenu.SetActive(false);
+            musicaMenues.volume = 0.0f;
+            musicaNiveles.volume = 1.0f;
         }
 
         if (SceneManager.GetActiveScene().buildIndex >= 19 && SceneManager.GetActiveScene().buildIndex <= 22)
 
         {
-            musicaMenu.SetActive(false);
+            musicaMenues.volume = 0.0f;
+            musicaNiveles.volume = 1.0f;
         }
 
 
         else
         {
-            musicaMenu.SetActive(true);
+            musicaMenues.volume = 1.0f;
+            musicaNiveles.volume = 0.0f;
         }
     }
 

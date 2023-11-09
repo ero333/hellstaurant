@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 5996943380562272310}
   - component: {fileID: 3881648654193666262}
   - component: {fileID: 24443636452662711}
-  - component: {fileID: 8547342360122238225}
+  - component: {fileID: 3610766546125841873}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8547342360122238225
+--- !u!114 &3610766546125841873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -413,10 +413,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e70eaa88396d6459162b48f34af787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMuteado: 1
   spriteMuteado: {fileID: -1476897938, guid: 530c4dbeceed33545aff1533c157c7c5, type: 3}
   spriteDesmuteado: {fileID: 1329714365, guid: dfc2413bf18cbc04c929f243d01fb311, type: 3}
   botonSonido: {fileID: 0}
   buttonsound: {fileID: 0}
+  BGMusic: {fileID: 0}
 --- !u!1 &8895184780357875469
 GameObject:
   m_ObjectHideFlags: 0

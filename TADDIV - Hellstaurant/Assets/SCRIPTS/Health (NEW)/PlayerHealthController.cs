@@ -66,6 +66,12 @@ public class PlayerHealthController : MonoBehaviour
 
     void Start()
     {
+
+        damageSound = GameObject.FindGameObjectWithTag ("sonidohit").GetComponent<AudioSource> ();
+
+        eatingSound = GameObject.FindGameObjectWithTag ("sonidocomer").GetComponent <AudioSource> ();
+
+
         playerDeathDebug.GetComponent<playerDebugControl>();
 
         isHealing = false;

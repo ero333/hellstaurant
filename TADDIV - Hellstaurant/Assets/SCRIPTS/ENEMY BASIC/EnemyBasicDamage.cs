@@ -14,7 +14,6 @@ public class EnemyBasicDamage : MonoBehaviour
 
     public int amountToDrop; // Cantidad de monedas a dropear
 
-    public AudioSource killSound;
     public AudioSource hitSound;
 
 
@@ -23,6 +22,8 @@ public class EnemyBasicDamage : MonoBehaviour
     {
         contadorPuntos = GameObject.FindGameObjectWithTag("Score");
         puntaje = contadorPuntos.GetComponent<Puntaje>();
+
+        hitSound = GameObject.FindGameObjectWithTag("sonidohitenemigo").GetComponent<AudioSource>();
 
         
     }
@@ -130,7 +131,7 @@ public class EnemyBasicDamage : MonoBehaviour
 
     IEnumerator deathCorrutine()
     {
-        killSound.Play();
+        
         yield return new WaitForSeconds(0.2f);
         puntaje.obtenerPuntaje(puntosEnemigo);
 

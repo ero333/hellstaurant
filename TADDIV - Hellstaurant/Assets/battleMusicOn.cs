@@ -20,14 +20,14 @@ public class battleMusicOn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (SceneManager.GetActiveScene().buildIndex >= 4 && SceneManager.GetActiveScene().buildIndex <= 18)
-        //{
-        //    musicaMenu.SetActive(false);
-        //}
-        //else
-        //{
-        //    musicaMenu.SetActive(true);
-        //}
+        if (SceneManager.GetActiveScene().buildIndex >= 4 && SceneManager.GetActiveScene().buildIndex <= 18)
+        {
+            musicaMenu.SetActive(false);
+        }
+        else
+        {
+            musicaMenu.SetActive(true);
+        }
 
     }
 }

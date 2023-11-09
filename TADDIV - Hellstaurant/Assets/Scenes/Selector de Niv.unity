@@ -3098,7 +3098,7 @@ GameObject:
   - component: {fileID: 787251723}
   m_Layer: 0
   m_Name: buttonSound
-  m_TagString: Untagged
+  m_TagString: sonidoboton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3922,10 +3922,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e70eaa88396d6459162b48f34af787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMuteado: 1
   spriteMuteado: {fileID: 0}
   spriteDesmuteado: {fileID: 0}
   botonSonido: {fileID: 0}
-  buttonsound: {fileID: 0}
+  buttonsound: {fileID: 787251723}
+  BGMusic: {fileID: 0}
 --- !u!1 &894771744
 GameObject:
   m_ObjectHideFlags: 0

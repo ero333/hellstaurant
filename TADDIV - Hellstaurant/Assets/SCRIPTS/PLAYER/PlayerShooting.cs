@@ -205,7 +205,7 @@ public class PlayerShooting : MonoBehaviour
             fugazzetta.transform.rotation = Quaternion.AngleAxis(angle2, Vector3.forward.normalized);
             fugazzetta.GetComponent<Rigidbody2D>().velocity = direction.normalized * FugazzettaSpeed;
             lastShoot = Time.time;
-            cooldown = 1f;
+            cooldown = 0.8f;
             
         }
 
@@ -216,7 +216,7 @@ public class PlayerShooting : MonoBehaviour
             faina.transform.rotation = Quaternion.AngleAxis(angle3, Vector3.forward);
             faina.GetComponent<Rigidbody2D>().velocity = direction * FainaSpeed;
             lastShoot = Time.time;
-            cooldown = 0.5f;
+            cooldown = 0.2f;
             
         }
 

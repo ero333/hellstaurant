@@ -55,6 +55,10 @@ public class stopGame : MonoBehaviour
         levelunlocking = GameObject.FindGameObjectWithTag("unlocker").GetComponent<unlockNextLevel>();
 
 
+
+        winSound= GameObject.FindGameObjectWithTag("sonidowin").GetComponent<AudioSource>();
+
+
         levelunlocking.unlocklevel();
 
         losescreen = GameObject.FindGameObjectWithTag("losescreen");

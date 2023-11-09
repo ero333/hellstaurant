@@ -35,6 +35,9 @@ public class loseGame : MonoBehaviour
         winscreen = GameObject.FindGameObjectWithTag("winscreen"); 
 
         deathdebug = GameObject.FindGameObjectWithTag("debugDeath");
+
+
+        loseSound = GameObject.FindGameObjectWithTag("sonidolose").GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()

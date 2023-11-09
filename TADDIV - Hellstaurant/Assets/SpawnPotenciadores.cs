@@ -17,7 +17,7 @@ public class SpawnPotenciadores : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawnPoten = GameObject.FindGameObjectWithTag("sonidospawn").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

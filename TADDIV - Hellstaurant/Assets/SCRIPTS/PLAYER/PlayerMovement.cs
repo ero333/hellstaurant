@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
         playerRb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>(); //para el animator
         isHealing = false;
+
+        Coinsound = GameObject.FindGameObjectWithTag("sonidocoin").GetComponent<AudioSource>();
+        Pickupsound = GameObject.FindGameObjectWithTag("sonidopickup").GetComponent<AudioSource>();
     }
 
     void Update()
