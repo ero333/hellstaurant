@@ -105,20 +105,256 @@ public class StarAmount : MonoBehaviour
 
         }
 
-        if (puntaje.puntos >= 20 && puntaje.puntos <= 100)
+        //if (puntaje.puntos >= 20 && puntaje.puntos <= 100)
+        //{
+        //    stars = 1;
+        //}
+
+        //if (puntaje.puntos >= 40 && puntaje.puntos <= 300)
+        //{
+        //    stars = 2;
+        //}
+
+        //if (puntaje.puntos >= 500)
+        //{
+        //    stars = 3;
+        //}
+
+        switch (level)
         {
-            stars = 1;
+            case 2:
+                if (puntaje.puntos >= 20 && puntaje.puntos <= 60)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 60 && puntaje.puntos <= 99)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 100)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+            case 3:
+                if (puntaje.puntos >= 60 && puntaje.puntos <= 80)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 80 && puntaje.puntos <= 200)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 200)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+            case 4:
+                if (puntaje.puntos >= 60 && puntaje.puntos <= 100)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 100 && puntaje.puntos <= 299)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 300)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+            case 5:
+                if (puntaje.puntos >= 100 && puntaje.puntos <= 200)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 200 && puntaje.puntos <= 399)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 400)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+            case 6:
+                if (puntaje.puntos >= 150 && puntaje.puntos <= 300)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 300 && puntaje.puntos <= 519)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 520)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+            case 7:
+                if (puntaje.puntos >= 150 && puntaje.puntos <= 300)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 300 && puntaje.puntos <= 519)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 520)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+            case 8:
+                if (puntaje.puntos >= 300 && puntaje.puntos <= 500)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 500 && puntaje.puntos <= 699)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 700)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+            case 9:
+                if (puntaje.puntos >= 300 && puntaje.puntos <= 500)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 500 && puntaje.puntos <= 699)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 700)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+
+            case 10:
+
+                if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 900)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+
+            case 11:
+
+                if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 900)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+
+            case 12:
+
+                if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 900)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+
+
+            case 13:
+
+                if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 900)
+                {
+                    stars = 3;
+                }
+                break;
+
+
+
+
+            case 14:
+
+                if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+                {
+                    stars = 1;
+                }
+
+                if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+                {
+                    stars = 2;
+                }
+                if (puntaje.puntos >= 900)
+                {
+                    stars = 3;
+                }
+                break;
         }
 
-        if (puntaje.puntos >= 40 && puntaje.puntos <= 300)
-        {
-            stars = 2;
-        }
-
-        if (puntaje.puntos >= 500)
-        {
-            stars = 3;
-        }
 
         Debug.Log("LevelComplete =" + level);
         Debug.Log("LevelComplete.stars =" + stars);
@@ -166,32 +402,299 @@ public class StarAmount : MonoBehaviour
     IEnumerator sumarEstrellas()
     {
 
-
-        if (puntaje.puntos >= 20 && puntaje.puntos <= 100)
-        {
-            yield return new WaitForSeconds(1f);
-            star1.SetActive (true);
-        }
-
-        if (puntaje.puntos >= 40 && puntaje.puntos <= 300)
+        if (stars == 1)
         {
             yield return new WaitForSeconds(1f);
             star1.SetActive(true);
-            yield return new WaitForSeconds(1f);
-            star2.SetActive(true);
         }
-
-        if (puntaje.puntos >= 500)
+        if (stars == 2)
         {
             yield return new WaitForSeconds(1f);
             star1.SetActive(true);
-            yield return new WaitForSeconds(1f);
             star2.SetActive(true);
+        }
+        if (stars == 3)
+        {
             yield return new WaitForSeconds(1f);
+            star1.SetActive(true);
+            star2.SetActive(true);
             star3.SetActive(true);
         }
 
-   
+        //switch (level)
+        //{
+        //    case 2:
+        //        if (puntaje.puntos >= 20 && puntaje.puntos <= 60)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 60 && puntaje.puntos <= 99)
+        //        {
+        //            star1.SetActive(true) ;
+        //            star2.SetActive(true) ;
+                    
+        //        }
+        //        if (puntaje.puntos >= 100)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true) ;
+        //            star3.SetActive(true) ;
+        //        }
+        //        break;
+
+
+        //    case 3:
+        //        if (puntaje.puntos >= 60 && puntaje.puntos <= 80)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 80 && puntaje.puntos <= 200)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true) ;
+        //        }
+        //        if (puntaje.puntos >= 200)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true) ;
+        //            star3.SetActive(true) ;
+        //        }
+        //        break;
+
+
+        //    case 4:
+        //        if (puntaje.puntos >= 60 && puntaje.puntos <= 100)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 100 && puntaje.puntos <= 299)
+        //        {
+        //            star1 .SetActive(true);
+        //            star2 .SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 300)
+        //        {
+        //            star1.SetActive(true);
+        //            star2 .SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+        //    case 5:
+        //        if (puntaje.puntos >= 100 && puntaje.puntos <= 200)
+        //        {
+        //            star1.SetActive (true);
+        //        }
+
+        //        if (puntaje.puntos >= 200 && puntaje.puntos <= 399)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive (true);
+        //        }
+        //        if (puntaje.puntos >= 400)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+        //    case 6:
+        //        if (puntaje.puntos >= 150 && puntaje.puntos <= 300)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 300 && puntaje.puntos <= 519)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 520)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+        //    case 7:
+        //        if (puntaje.puntos >= 150 && puntaje.puntos <= 300)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 300 && puntaje.puntos <= 519)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 520)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+        //    case 8:
+        //        if (puntaje.puntos >= 300 && puntaje.puntos <= 500)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 500 && puntaje.puntos <= 699)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 700)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+        //    case 9:
+        //        if (puntaje.puntos >= 300 && puntaje.puntos <= 500)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 500 && puntaje.puntos <= 699)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 700)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+
+        //    case 10:
+
+        //        if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 900)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+
+        //    case 11:
+
+        //        if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+        //        {
+
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 900)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+
+        //    case 12:
+
+        //        if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 900)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+
+
+        //    case 13:
+
+        //        if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 900)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+
+
+        //    case 14:
+
+        //        if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+        //        {
+        //            star1.SetActive(true);
+        //        }
+
+        //        if (puntaje.puntos >= 600 && puntaje.puntos <= 899)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //        }
+        //        if (puntaje.puntos >= 900)
+        //        {
+        //            star1.SetActive(true);
+        //            star2.SetActive(true);
+        //            star3.SetActive(true);
+        //        }
+        //        break;
+        //}
+
 
     }
 }
