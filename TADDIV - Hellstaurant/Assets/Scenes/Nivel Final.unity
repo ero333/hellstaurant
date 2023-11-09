@@ -702,11 +702,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9112172
+      value: 2.901773
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6558085
+      value: -0.6558867
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -1483,7 +1483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 406.5, y: -88.00003}
+  m_AnchoredPosition: {x: 406.5, y: -88}
   m_SizeDelta: {x: 290, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &583127192
@@ -1762,7 +1762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0454c5f93bc213e44a932e3b001a59fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 20
+  spawnRate: 45
   PowerUp:
   - {fileID: 9178800356683737833, guid: b964c71e2fd4cce4f821c5ddf18e2798, type: 3}
   canSpawn: 1
@@ -1912,7 +1912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 279.10004, y: -88.00003}
+  m_AnchoredPosition: {x: 279.10004, y: -88}
   m_SizeDelta: {x: 290, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &626129017
@@ -4355,7 +4355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0454c5f93bc213e44a932e3b001a59fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 10
+  spawnRate: 15
   PowerUp:
   - {fileID: 3109607735408773315, guid: 11537fce42d632f4283a8e2f808a79d7, type: 3}
   canSpawn: 1
@@ -5690,7 +5690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -352.4499, y: -86.99997}
+  m_AnchoredPosition: {x: -352.4499, y: -87}
   m_SizeDelta: {x: 249.12, y: 102.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464609283
@@ -6731,6 +6731,7 @@ MonoBehaviour:
   potenciadoresspawner: {fileID: 505803637}
   winSound: {fileID: 1605475950}
   losescreen: {fileID: 1890628359}
+  botonOmitir: {fileID: 0}
 --- !u!114 &1605475948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7859,6 +7860,7 @@ MonoBehaviour:
   enemiespawner: {fileID: 1442380930}
   potenciadoresspawner: {fileID: 505803637}
   deathdebug: {fileID: 1729272127}
+  botonOmitir: {fileID: 0}
 --- !u!82 &1890628366
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8191,7 +8193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0454c5f93bc213e44a932e3b001a59fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 15
+  spawnRate: 20
   PowerUp:
   - {fileID: 3419380598909174098, guid: e62a92b7e329a8145af4b84e4675e168, type: 3}
   canSpawn: 1
