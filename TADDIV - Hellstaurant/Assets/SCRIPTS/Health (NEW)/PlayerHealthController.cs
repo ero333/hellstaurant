@@ -39,7 +39,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public UIController controlUI;
 
-    public GameObject gameOverScreen; // Referencia al cartel de Game Over
+    public GameObject gameOverScreen; 
 
     public static PlayerHealthController instance;
 
@@ -54,10 +54,14 @@ public class PlayerHealthController : MonoBehaviour
 
     public Rigidbody2D rb2d;
 
-    public bool isHealing; //verificar si el enemigo se esta curando o no
+    public bool isHealing; 
 
     public AudioSource damageSound; 
     public AudioSource eatingSound;
+
+
+    private float lastHealTime; 
+    public float cooldown = 10.0f; 
 
 
     void Start()
@@ -107,8 +111,10 @@ public class PlayerHealthController : MonoBehaviour
         {
             if (currentHealth < maxHealth)
             {
-                isHealing = true; // Comienza la curaci�n
-                StartCoroutine(healingProcess());
+                //isHealing = true; // Comienza la curaci�n
+                //StartCoroutine(healingProcess());
+
+                TryStartHealing();
             }
         }
 
@@ -116,8 +122,10 @@ public class PlayerHealthController : MonoBehaviour
         {
             if (currentHealth < maxHealth)
             {
-                isHealing = true; // Comienza la curaci�n
-                StartCoroutine(healingProcess());
+                //isHealing = true; // Comienza la curaci�n
+                //StartCoroutine(healingProcess());
+
+                TryStartHealing();
             }
         }
 
@@ -125,8 +133,25 @@ public class PlayerHealthController : MonoBehaviour
         {
             if (currentHealth < maxHealth)
             {
-                isHealing = true; // Comienza la curaci�n
-                StartCoroutine(healingProcess());
+                //isHealing = true; // Comienza la curaci�n
+                //StartCoroutine(healingProcess());
+
+                TryStartHealing();
+            }
+        }
+
+
+        void TryStartHealing()
+        {
+
+            if (Time.time - lastHealTime > cooldown)
+            {
+                if (currentHealth < maxHealth)
+                {
+                    lastHealTime = Time.time; 
+                    isHealing = true; 
+                    StartCoroutine(healingProcess());
+                }
             }
         }
 
