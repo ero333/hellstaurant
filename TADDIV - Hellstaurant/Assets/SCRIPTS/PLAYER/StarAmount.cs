@@ -123,7 +123,7 @@ public class StarAmount : MonoBehaviour
         switch (level)
         {
             case 2:
-                if (puntaje.puntos >= 20 && puntaje.puntos <= 60)
+                if (puntaje.puntos >= 20 && puntaje.puntos <= 59)
                 {
                     stars = 1;
                 }
@@ -140,12 +140,12 @@ public class StarAmount : MonoBehaviour
 
 
             case 3:
-                if (puntaje.puntos >= 60 && puntaje.puntos <= 80)
+                if (puntaje.puntos >= 60 && puntaje.puntos <= 79)
                 {
                     stars = 1;
                 }
 
-                if (puntaje.puntos >= 80 && puntaje.puntos <= 200)
+                if (puntaje.puntos >= 80 && puntaje.puntos <= 199)
                 {
                     stars = 2;
                 }
@@ -157,7 +157,7 @@ public class StarAmount : MonoBehaviour
 
 
             case 4:
-                if (puntaje.puntos >= 60 && puntaje.puntos <= 100)
+                if (puntaje.puntos >= 60 && puntaje.puntos <= 99)
                 {
                     stars = 1;
                 }
@@ -174,7 +174,7 @@ public class StarAmount : MonoBehaviour
 
 
             case 5:
-                if (puntaje.puntos >= 100 && puntaje.puntos <= 200)
+                if (puntaje.puntos >= 100 && puntaje.puntos <= 199)
                 {
                     stars = 1;
                 }
@@ -191,7 +191,7 @@ public class StarAmount : MonoBehaviour
 
 
             case 6:
-                if (puntaje.puntos >= 150 && puntaje.puntos <= 300)
+                if (puntaje.puntos >= 150 && puntaje.puntos <= 299)
                 {
                     stars = 1;
                 }
@@ -208,7 +208,7 @@ public class StarAmount : MonoBehaviour
 
 
             case 7:
-                if (puntaje.puntos >= 150 && puntaje.puntos <= 300)
+                if (puntaje.puntos >= 150 && puntaje.puntos <= 299)
                 {
                     stars = 1;
                 }
@@ -225,7 +225,7 @@ public class StarAmount : MonoBehaviour
 
 
             case 8:
-                if (puntaje.puntos >= 300 && puntaje.puntos <= 500)
+                if (puntaje.puntos >= 300 && puntaje.puntos <= 499)
                 {
                     stars = 1;
                 }
@@ -242,7 +242,7 @@ public class StarAmount : MonoBehaviour
 
 
             case 9:
-                if (puntaje.puntos >= 300 && puntaje.puntos <= 500)
+                if (puntaje.puntos >= 300 && puntaje.puntos <= 499)
                 {
                     stars = 1;
                 }
@@ -261,7 +261,7 @@ public class StarAmount : MonoBehaviour
 
             case 10:
 
-                if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+                if (puntaje.puntos >= 400 && puntaje.puntos <= 599)
                 {
                     stars = 1;
                 }
@@ -280,7 +280,7 @@ public class StarAmount : MonoBehaviour
 
             case 11:
 
-                if (puntaje.puntos >= 400 && puntaje.puntos <= 600)
+                if (puntaje.puntos >= 400 && puntaje.puntos <= 599)
                 {
                     stars = 1;
                 }
