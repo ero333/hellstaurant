@@ -1,0 +1,977 @@
+fileFormatVersion: 2
+guid: 5cd0a03de08154e45b4d1878e79a0213
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_0
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1799
+        width: 160
+        height: 171
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528a6fcfb881b4943be90a9d41358aaa
+      internalID: -843716215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1950
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d228368d689672429d4bb7ee661890b
+      internalID: 1846461652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_2
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1950
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade42d9b70f10094c82c241af44d4787
+      internalID: 1720202678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_3
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1799
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11903966c89ffc54288c54cb73860658
+      internalID: -1775169372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_4
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1799
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8380f00caa4b641827f2b87eac9ab2
+      internalID: 1299136468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_5
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1799
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607ef4ec13a9d194699a8b6081cd2010
+      internalID: 1488764857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1339
+        width: 451
+        height: 591
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97e03dd8967c5e43aa1afb658e1162d
+      internalID: -924721250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_7
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1330
+        width: 451
+        height: 601
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8845fc637e77e9447b873f4ebd945967
+      internalID: 1454641087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_8
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1339
+        width: 451
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f265a07abd197b4d87499892d0d29b7
+      internalID: 202328439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_9
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1330
+        width: 450
+        height: 598
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6501d8a6d422af747b778cc46eedd658
+      internalID: -1631641050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 699
+        width: 411
+        height: 591
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6914feea44e9a44a1168fe26e38557
+      internalID: -1093347953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1159
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabe5cd2cf1cc4b4e82631146b27bcb3
+      internalID: -2064084982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_12
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1159
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91405c58e15cc3a419c9493d0d505fd1
+      internalID: 809648742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_13
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1159
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3339183071d22d6458f83a32948d2e38
+      internalID: -1057327608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_14
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1159
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d587a8cb0d389c943b0b1ec71b072edb
+      internalID: 111909919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 529
+        width: 160
+        height: 171
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24775cf275441441977efbdc1b1a607
+      internalID: -588904793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_16
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 680
+        width: 411
+        height: 610
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabba63b92d694648a9c9913ede41129
+      internalID: 1706958401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_17
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 699
+        width: 411
+        height: 593
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adeac8cae1f066f438df9553fd31bea6
+      internalID: 1452471244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_18
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 690
+        width: 410
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7bf01e509ffe44abedd250c0e20ff7
+      internalID: 1060249554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_19
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 529
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1da94d424f44c4b976029566abb82b
+      internalID: -1365446115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_20
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 529
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64288a6497685614ebc97569c2911e24
+      internalID: 1266321053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_21
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 529
+        width: 160
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260efef03c07f2a4ebd6d7b52e60d9fc
+      internalID: -70410371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_22
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 460
+        width: 10
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d59e8b6205f0a949a3651045990509f
+      internalID: -774128054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_23
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 470
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa9c762868dc9447b1f2d5d04365975
+      internalID: 170012916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_24
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 460
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a64e51955d03f459fdd7fa3e49aa9d
+      internalID: -1570556615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_25
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 460
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336bbf14467761246869394b858641f0
+      internalID: -521607611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_26
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 460
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98b1bfbee5e6ce44b355be2e7d15bab
+      internalID: 1503391981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_27
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 450
+        width: 10
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0377975d1aa26af4284ac28be819a53b
+      internalID: 1828977693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_28
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 450
+        width: 10
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0eb796adec5b8489cdc467993ea8f5
+      internalID: -1028946324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_29
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 450
+        width: 10
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b9f5acf86784b41975e441b0ce7e9a
+      internalID: 1229523017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_30
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 69
+        width: 381
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f5867c515038a418906ea7c343b778
+      internalID: 1749499021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 59
+        width: 381
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cf4a09a11ab8d49919ba86a7ff7c3c
+      internalID: 1837211062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_32
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 69
+        width: 381
+        height: 589
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572d6b16f0ed265459ac9e2778ed096f
+      internalID: -198437808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_33
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 59
+        width: 380
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e14201c0486b843b0dd9d7bf7a84c1
+      internalID: -1750067159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_34
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 50
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6495338e220be14fb596cfed76fd520
+      internalID: -1577765818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_35
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 40
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ca52d7781a66e41870cf37e2c8242b
+      internalID: -1879001928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_36
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 40
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8945e472ae31f4141b738048a066a61c
+      internalID: -353297835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss comiendo frenzy 1_37
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 40
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d98130f08ea90f4cb9d307af2b7fd79
+      internalID: -2057855068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ss comiendo frenzy 1_0: -843716215
+      ss comiendo frenzy 1_1: 1846461652
+      ss comiendo frenzy 1_10: -1093347953
+      ss comiendo frenzy 1_11: -2064084982
+      ss comiendo frenzy 1_12: 809648742
+      ss comiendo frenzy 1_13: -1057327608
+      ss comiendo frenzy 1_14: 111909919
+      ss comiendo frenzy 1_15: -588904793
+      ss comiendo frenzy 1_16: 1706958401
+      ss comiendo frenzy 1_17: 1452471244
+      ss comiendo frenzy 1_18: 1060249554
+      ss comiendo frenzy 1_19: -1365446115
+      ss comiendo frenzy 1_2: 1720202678
+      ss comiendo frenzy 1_20: 1266321053
+      ss comiendo frenzy 1_21: -70410371
+      ss comiendo frenzy 1_22: -774128054
+      ss comiendo frenzy 1_23: 170012916
+      ss comiendo frenzy 1_24: -1570556615
+      ss comiendo frenzy 1_25: -521607611
+      ss comiendo frenzy 1_26: 1503391981
+      ss comiendo frenzy 1_27: 1828977693
+      ss comiendo frenzy 1_28: -1028946324
+      ss comiendo frenzy 1_29: 1229523017
+      ss comiendo frenzy 1_3: -1775169372
+      ss comiendo frenzy 1_30: 1749499021
+      ss comiendo frenzy 1_31: 1837211062
+      ss comiendo frenzy 1_32: -198437808
+      ss comiendo frenzy 1_33: -1750067159
+      ss comiendo frenzy 1_34: -1577765818
+      ss comiendo frenzy 1_35: -1879001928
+      ss comiendo frenzy 1_36: -353297835
+      ss comiendo frenzy 1_37: -2057855068
+      ss comiendo frenzy 1_38: -2022467317
+      ss comiendo frenzy 1_4: 1299136468
+      ss comiendo frenzy 1_5: 1488764857
+      ss comiendo frenzy 1_6: -924721250
+      ss comiendo frenzy 1_7: 1454641087
+      ss comiendo frenzy 1_8: 202328439
+      ss comiendo frenzy 1_9: -1631641050
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
