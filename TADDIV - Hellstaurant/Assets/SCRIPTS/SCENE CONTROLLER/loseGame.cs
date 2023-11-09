@@ -26,6 +26,9 @@ public class loseGame : MonoBehaviour
 
     [SerializeField] private GameObject deathdebug;
 
+
+    public GameObject botonOmitir;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +39,11 @@ public class loseGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        winscreen.SetActive(false);
+        if (winscreen != null)
+        {
+            winscreen.SetActive(false);
+        }
+
     }
 
     public void OnEnable()
@@ -57,6 +64,11 @@ public class loseGame : MonoBehaviour
     IEnumerator loseProcess()
     {
         loseSound.Play();
+
+        if (botonOmitir != null)
+        {
+            botonOmitir.SetActive(false);
+        }
 
         GameObject[] taggedEnemies = GameObject.FindGameObjectsWithTag("Enemy");
 
@@ -79,12 +91,20 @@ public class loseGame : MonoBehaviour
 
         enemiespawner.SetActive(false);
 
-        potenciadoresspawner.SetActive(false);
+        if (potenciadoresspawner != null)
+        {
+            potenciadoresspawner.SetActive(false);
+        }
+
 
         yield return new WaitForSeconds(0.6f);
 
         player.SetActive(false);
 
-        bulletSpawner.SetActive(false);
+        if (bulletSpawner != null)
+        {
+            bulletSpawner.SetActive(false);
+        }
+
     }
 }

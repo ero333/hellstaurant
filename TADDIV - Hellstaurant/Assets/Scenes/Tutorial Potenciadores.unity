@@ -4801,6 +4801,7 @@ MonoBehaviour:
   potenciadoresspawner: {fileID: 0}
   winSound: {fileID: 1455167074}
   losescreen: {fileID: 1982427676}
+  botonOmitir: {fileID: 2112515776}
 --- !u!114 &1455167070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6598,8 +6599,9 @@ MonoBehaviour:
   bulletSpawner: {fileID: 0}
   winscreen: {fileID: 1455167066}
   enemiespawner: {fileID: 1665692824}
-  potenciadoresspawner: {fileID: 0}
-  deathdebug: {fileID: 0}
+  potenciadoresspawner: {fileID: 388503572}
+  deathdebug: {fileID: 181663894}
+  botonOmitir: {fileID: 2112515776}
 --- !u!82 &1982427679
 AudioSource:
   m_ObjectHideFlags: 0

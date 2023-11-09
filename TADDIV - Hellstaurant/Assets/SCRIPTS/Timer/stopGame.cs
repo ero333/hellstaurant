@@ -37,6 +37,9 @@ public class stopGame : MonoBehaviour
     public GameObject losescreen;
 
 
+    public GameObject botonOmitir;
+
+
     private void Awake()
     {
         instance = this; 
@@ -99,6 +102,11 @@ public class stopGame : MonoBehaviour
     IEnumerator winProcess()
     {
         winSound.Play();
+
+        if (botonOmitir != null)
+        {
+            botonOmitir.SetActive(false);
+        }
 
         GameObject[] taggedEnemies = GameObject.FindGameObjectsWithTag("Enemy");
 
