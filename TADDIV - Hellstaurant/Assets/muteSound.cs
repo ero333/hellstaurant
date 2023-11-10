@@ -15,15 +15,21 @@ public class muteSound : MonoBehaviour
     public AudioSource buttonsound;
     public GameObject BGMusic;
 
+    public GameObject musicGroup;
+
 
     public void Awake()
     {
-        BGMusic = GameObject.FindGameObjectWithTag("musicamenu");
+
 
     }
 
     public void Start()
     {
+
+
+        musicGroup = GameObject.FindGameObjectWithTag("musicamenu");
+
         buttonsound = GameObject.FindGameObjectWithTag("sonidoboton").GetComponent<AudioSource>();
 
         sonidoMuteado = PlayerPrefs.GetInt("SonidoMuteado", 0) == 1;
@@ -44,19 +50,20 @@ public class muteSound : MonoBehaviour
      PlayerPrefs.SetInt("SonidoMuteado", sonidoMuteado ? 1 : 0);
         //    PlayerPrefs.Save();
 
-        ActualizarAudioListener();
         ActualizarSpriteBoton();
+        ActualizarAudioListener();
+
     }
 
     public void ActualizarAudioListener()
     {
          if (sonidoMuteado)
         {
-            BGMusic.SetActive(false);
+            musicGroup.SetActive(false);
         }
         if (!sonidoMuteado)
         {
-            BGMusic.SetActive(true);
+            musicGroup.SetActive(true);
         }
     }
 

@@ -14,6 +14,10 @@ public class MusicAlternate : MonoBehaviour
 
     public AudioSource musicaNiveles;
 
+    public GameObject levelmusic;
+
+    public GameObject menumusic;
+
     private void Awake()
     {
         // Verifica si ya existe una instancia de ControlDeMusica
@@ -34,37 +38,54 @@ public class MusicAlternate : MonoBehaviour
     public void Start()
     {
 
-        musicaMenues = GameObject.FindGameObjectWithTag ("musicafondo").GetComponent<AudioSource>();
+        levelmusic = GameObject.FindGameObjectWithTag("musicanivel");
 
-        musicaNiveles = GameObject.FindGameObjectWithTag("musicabatalla").GetComponent<AudioSource>();
+        menumusic = GameObject.FindGameObjectWithTag("musicafondo");
+
+
+        //musicaMenues = GameObject.FindGameObjectWithTag ("musicafondo").GetComponent<AudioSource>();
+
+        //musicaNiveles = GameObject.FindGameObjectWithTag("musicabatalla").GetComponent<AudioSource>();
 
 
 
-        if (SceneManager.GetActiveScene().buildIndex >= 4 && SceneManager.GetActiveScene().buildIndex <= 18)
+
+    }
+
+    public void Update()
+    {
+
+        if (SceneManager.GetActiveScene().buildIndex >= 5 && SceneManager.GetActiveScene().buildIndex <= 18)
 
         {
-            musicaMenues.volume = 0.0f;
-            musicaNiveles.volume = 1.0f;
+
+            levelmusic.SetActive(true);
+            menumusic.SetActive(false);
+
+            //musicaMenues.volume = 0.0f;
+            //musicaNiveles.volume = 1.0f;
         }
 
         if (SceneManager.GetActiveScene().buildIndex >= 19 && SceneManager.GetActiveScene().buildIndex <= 22)
 
         {
-            musicaMenues.volume = 0.0f;
-            musicaNiveles.volume = 1.0f;
+
+            levelmusic.SetActive(true);
+            menumusic.SetActive(false);
+
+            //musicaMenues.volume = 0.0f;
+            //musicaNiveles.volume = 1.0f;
         }
 
 
         else
         {
-            musicaMenues.volume = 1.0f;
-            musicaNiveles.volume = 0.0f;
+
+            levelmusic.SetActive(false);
+            menumusic.SetActive(true);
+            //musicaMenues.volume = 0.0f;
+            //musicaNiveles.volume = 0.0f;
         }
-    }
-
-    void Update()
-    {
-
 
     }
 
