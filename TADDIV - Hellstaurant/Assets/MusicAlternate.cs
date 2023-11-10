@@ -47,6 +47,17 @@ public class MusicAlternate : MonoBehaviour
 
         //musicaNiveles = GameObject.FindGameObjectWithTag("musicabatalla").GetComponent<AudioSource>();
 
+        MusicAlternate[] musicObjects = FindObjectsOfType<MusicAlternate>();
+
+        if (musicObjects.Length > 1)
+        {
+            // Hay más de un objeto MusicAlternate, elimina los extras
+            for (int i = 1; i < musicObjects.Length; i++)
+            {
+                Destroy(musicObjects[i].gameObject);
+            }
+        }
+
 
 
 
@@ -81,8 +92,8 @@ public class MusicAlternate : MonoBehaviour
         else
         {
 
-            levelmusic.SetActive(false);
-            menumusic.SetActive(true);
+            levelmusic.SetActive(true);
+            menumusic.SetActive(false);
             //musicaMenues.volume = 0.0f;
             //musicaNiveles.volume = 0.0f;
         }

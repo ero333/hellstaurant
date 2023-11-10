@@ -3020,7 +3020,7 @@ GameObject:
   - component: {fileID: 925984274}
   m_Layer: 0
   m_Name: MusicAlternate
-  m_TagString: Untagged
+  m_TagString: musicAlterner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3038,11 +3038,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instancia: {fileID: 0}
-  musicaMenu: {fileID: 1505254082}
-  musicaMenues: {fileID: 2004249588}
+  musicaMenu: {fileID: 1488592784}
+  musicaMenues: {fileID: 1488592786}
   musicaNiveles: {fileID: 1488592786}
   levelmusic: {fileID: 1488592784}
-  menumusic: {fileID: 2004249586}
+  menumusic: {fileID: 1488592784}
 --- !u!4 &925984275
 Transform:
   m_ObjectHideFlags: 0
@@ -3171,6 +3171,7 @@ MonoBehaviour:
   buttonsound: {fileID: 1827029872}
   BGMusic: {fileID: 1991007784}
   musicGroup: {fileID: 0}
+  musicAlternate: {fileID: 0}
 --- !u!1 &1070870556
 GameObject:
   m_ObjectHideFlags: 0

@@ -654,7 +654,7 @@ PrefabInstance:
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 139758076}
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AlternarMute
@@ -700,13 +700,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3610766546125841873, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: botonSonido
+      value: 
+      objectReference: {fileID: 132502145}
+    - target: {fileID: 3610766546125841873, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: buttonsound
+      value: 
+      objectReference: {fileID: 614906684}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9042573
+      value: 2.9063725
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.65586597
+      value: -0.6558488
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -834,6 +842,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 7724749161356855606, guid: 30418214efddfed4999c1a14726939b4, type: 3}
   m_PrefabInstance: {fileID: 139758074}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &139758076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3610766546125841873, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+  m_PrefabInstance: {fileID: 139758074}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e70eaa88396d6459162b48f34af787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &143635451
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +982,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1605475947}
         m_TargetAssemblyTypeName: stopGame, Assembly-CSharp
         m_MethodName: Tienda
         m_Mode: 1
@@ -2873,7 +2892,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1605475944}
         m_TargetAssemblyTypeName: NEXTSCENE, Assembly-CSharp
         m_MethodName: NextScene
         m_Mode: 1
@@ -3525,7 +3544,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595966822}
         m_TargetAssemblyTypeName: BACKTOSELECT, Assembly-CSharp
         m_MethodName: backToMenu
         m_Mode: 1
@@ -6787,7 +6806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1605475943
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6896,7 +6915,7 @@ MonoBehaviour:
   bulletSpawner: {fileID: 7890148778095338128}
   enemiespawner: {fileID: 1442380930}
   potenciadoresspawner: {fileID: 505803637}
-  winSound: {fileID: 0}
+  winSound: {fileID: 395295765}
   losescreen: {fileID: 1890628359}
   botonOmitir: {fileID: 0}
 --- !u!114 &1605475948
@@ -7918,7 +7937,7 @@ MonoBehaviour:
   spawner: {fileID: 0}
   spawner2: {fileID: 0}
   spawner3: {fileID: 0}
-  loseSound: {fileID: 0}
+  loseSound: {fileID: 1572953134}
   bulletSpawner: {fileID: 7890148778095338128}
   winscreen: {fileID: 1605475942}
   enemiespawner: {fileID: 1442380930}

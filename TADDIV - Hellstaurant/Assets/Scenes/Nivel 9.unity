@@ -617,6 +617,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3610766546125841873, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: botonSonido
+      value: 
+      objectReference: {fileID: 1971537536}
+    - target: {fileID: 3610766546125841873, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: buttonsound
+      value: 
+      objectReference: {fileID: 1312519045}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.8359305
@@ -695,6 +703,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 7724749161356855606, guid: 30418214efddfed4999c1a14726939b4, type: 3}
   m_PrefabInstance: {fileID: 139758074}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &139758076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3610766546125841873, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+  m_PrefabInstance: {fileID: 139758074}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e70eaa88396d6459162b48f34af787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &146545471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,7 +2637,7 @@ MonoBehaviour:
   bulletSpawner: {fileID: 0}
   enemiespawner: {fileID: 1623211466}
   potenciadoresspawner: {fileID: 272455509}
-  winSound: {fileID: 0}
+  winSound: {fileID: 160184621}
   losescreen: {fileID: 2121108975}
   botonOmitir: {fileID: 0}
 --- !u!114 &814449698
@@ -3284,7 +3303,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 814449698}
         m_TargetAssemblyTypeName: NEXTSCENE, Assembly-CSharp
         m_MethodName: NextScene
         m_Mode: 1
@@ -4935,7 +4954,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1734858721}
         m_TargetAssemblyTypeName: BACKTOSELECT, Assembly-CSharp
         m_MethodName: backToMenu
         m_Mode: 1
@@ -5232,7 +5251,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 814449697}
         m_TargetAssemblyTypeName: stopGame, Assembly-CSharp
         m_MethodName: Tienda
         m_Mode: 1
@@ -6892,7 +6911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 90648561523296364, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 90648561523296364, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -6924,7 +6943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2755843609265672077, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2755843609265672077, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -6980,7 +6999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3124319934710341211, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3124319934710341211, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -7117,7 +7136,7 @@ PrefabInstance:
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 139758076}
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AlternarMute
@@ -7984,7 +8003,7 @@ MonoBehaviour:
   spawner: {fileID: 40537787}
   spawner2: {fileID: 2043050857}
   spawner3: {fileID: 146545472}
-  loseSound: {fileID: 0}
+  loseSound: {fileID: 1505455471}
   bulletSpawner: {fileID: 0}
   winscreen: {fileID: 814449694}
   enemiespawner: {fileID: 1623211466}

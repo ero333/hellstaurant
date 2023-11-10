@@ -17,6 +17,8 @@ public class muteSound : MonoBehaviour
 
     public GameObject musicGroup;
 
+    public MusicAlternate musicAlternate;
+
 
     public void Awake()
     {
@@ -28,6 +30,7 @@ public class muteSound : MonoBehaviour
     {
 
 
+
         musicGroup = GameObject.FindGameObjectWithTag("musicamenu");
 
         buttonsound = GameObject.FindGameObjectWithTag("sonidoboton").GetComponent<AudioSource>();
@@ -36,6 +39,8 @@ public class muteSound : MonoBehaviour
 
         //    // Cargar el estado de mute al inicio de la escena
         //    sonidoMuteado = PlayerPrefs.GetInt("SonidoMuteado", 0) == 1;
+
+
             ActualizarAudioListener();
             ActualizarSpriteBoton();
     }
