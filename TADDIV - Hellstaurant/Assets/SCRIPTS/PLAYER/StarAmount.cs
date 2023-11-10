@@ -11,11 +11,11 @@ public class StarAmount : MonoBehaviour
     public Puntaje puntaje;
     public GameObject star1, star2, star3;
 
-    public PlayerHealthController healthController;
+    public  PlayerHealthController healthController;
 
-    public int stars;
+    public static int stars;
 
-    public int level;
+    public static int level;
 
     public bool bossDefeated = false;
 
@@ -23,15 +23,49 @@ public class StarAmount : MonoBehaviour
 
     public int lastlevel;
 
+    [Header("variables diccionario")]
+
+    public static int healing;
+    public static int hit;
+    public static int basicoHit;
+    public static int basicoPHit;
+    public static int gordoHit;
+    public static int gordoPHit;
+    public static int rapidoHit;
+    public static int rapidoPHit;
+    public static int rodeteHit;
+    public static int rodetePHit;
+    public static int aranaHit;
+    public static int cucarachaHit;
+    public static int jefeHit;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        star1.SetActive(false);
-        star2.SetActive(false);
-        star3.SetActive(false);
-    }
+
+    Dictionary<string, object> DatosEndgame = new Dictionary<string, object>()
+{
+           {"level", level },
+           {"stars", stars},
+           {"healing", healing},
+           {"hit", hit},
+           {"basicoHit", basicoHit},
+           {"basicoPHit", basicoPHit},
+           {"gordoHit", gordoHit},
+           {"gordoPHit", gordoPHit},
+           {"rapidoHit", rapidoHit},
+           {"rapidoPHit", rapidoPHit},
+           {"rodeteHit", rodeteHit},
+           {"rodetePHit", rodetePHit},
+           {"aranaHit", aranaHit},
+           {"cucarachaHit", cucarachaHit},
+           {"jefeHit", jefeHit}
+};
+
+
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+
+    //}
 
     // Update is called once per frame
     void Update()
@@ -39,8 +73,32 @@ public class StarAmount : MonoBehaviour
         
     }
 
-    private void OnEnable()
+    public void Start()
     {
+
+
+        star1.SetActive(false);
+        star2.SetActive(false);
+        star3.SetActive(false);
+
+
+        healing = healthController.healingTimes;
+        hit = healthController.hit;
+        basicoHit = healthController.basicoHit;
+        basicoPHit = healthController.basicoPHit;
+        gordoHit = healthController.gordoHit;
+        gordoPHit = healthController.gordoPHit;
+        rapidoHit = healthController.rapidoHit;
+        rapidoPHit = healthController.rapidoPHit;
+        rodeteHit = healthController.rodeteHit;
+        rodetePHit = healthController.rodetePHit;
+        aranaHit = healthController.aranaHit;
+        cucarachaHit = healthController.cucarachaHit;
+        jefeHit = healthController.bossHit;
+
+
+
+
         switch (PlayerPrefs.GetInt("NivelActual"))
         {
             case 4:
@@ -357,42 +415,26 @@ public class StarAmount : MonoBehaviour
 
 
 
-        AnalyticsService.Instance.CustomData("LevelComplete", new Dictionary<string, object>
-        {
-           {"level", level },
-           {"stars", stars},
-           {"healing", healthController.healingTimes},
-           {"hit", healthController.hit},
-           {"basicoHit", healthController.basicoHit},
-           {"basicoPHit", healthController.basicoPHit},
-           {"gordoHit", healthController.gordoHit},
-           {"gordoPHit", healthController.gordoPHit},
-           {"rapidoHit", healthController.rapidoHit},
-           {"rapidoPHit", healthController.rapidoPHit},
-           {"rodeteHit", healthController.rodeteHit},
-           {"rodetePHit", healthController.rodetePHit},
-           {"aranaHit", healthController.aranaHit},
-           {"cucarachaHit", healthController.cucarachaHit},
-           {"jefeHit", healthController.bossHit}
 
-        });
+
+        AnalyticsService.Instance.CustomData("LevelComplete", DatosEndgame);
 
 
         Debug.Log("LevelComplete =" + level);
         Debug.Log("LevelComplete.stars =" + stars);
-        Debug.Log("LevelComplete.healing =" + healthController.healingTimes);
-        Debug.Log("LevelComplete.hit =" + healthController.hit);
-        Debug.Log("LevelComplete.basicoHit =" + healthController.basicoHit);
-        Debug.Log("LevelComplete.basicoPHit =" + healthController.basicoPHit);
-        Debug.Log("LevelComplete.gordoHit =" + healthController.gordoHit);
-        Debug.Log("LevelComplete.gordoPHit =" + healthController.gordoPHit);
-        Debug.Log("LevelComplete.rapidoHit =" + healthController.rapidoHit);
-        Debug.Log("LevelComplete.rapidoPHit =" + healthController.rapidoPHit);
-        Debug.Log("LevelComplete.rodeteHit =" + healthController.rodeteHit);
-        Debug.Log("LevelComplete.rodetePHit =" + healthController.rodetePHit);
-        Debug.Log("LevelComplete.aranaHit =" + healthController.aranaHit);
-        Debug.Log("LevelComplete.cucarachaHit =" + healthController.cucarachaHit);
-        Debug.Log("LevelComplete.jefeHit =" + healthController.bossHit);
+        Debug.Log("LevelComplete.healing =" + healing);
+        Debug.Log("LevelComplete.hit =" + hit);
+        Debug.Log("LevelComplete.basicoHit =" + basicoHit);
+        Debug.Log("LevelComplete.basicoPHit =" + basicoPHit);
+        Debug.Log("LevelComplete.gordoHit =" + gordoHit);
+        Debug.Log("LevelComplete.gordoPHit =" + gordoPHit);
+        Debug.Log("LevelComplete.rapidoHit =" + rapidoHit);
+        Debug.Log("LevelComplete.rapidoPHit =" + rapidoPHit);
+        Debug.Log("LevelComplete.rodeteHit =" + rodeteHit);
+        Debug.Log("LevelComplete.rodetePHit =" + rodetePHit);
+        Debug.Log("LevelComplete.aranaHit =" + aranaHit);
+        Debug.Log("LevelComplete.cucarachaHit =" + cucarachaHit);
+        Debug.Log("LevelComplete.jefeHit =" + jefeHit);
 
         levelstart.bossDefeated = true;
 
