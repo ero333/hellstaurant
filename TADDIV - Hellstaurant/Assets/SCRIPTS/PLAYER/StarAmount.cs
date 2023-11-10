@@ -371,7 +371,7 @@ public class StarAmount : MonoBehaviour
            {"rapidoPHit", healthController.rapidoPHit},
            {"rodeteHit", healthController.rodeteHit},
            {"rodetePHit", healthController.rodetePHit},
-           {"arañaHit", healthController.arañaHit},
+           {"aranaHit", healthController.arañaHit},
            {"cucarachaHit", healthController.cucarachaHit},
            {"jefeHit", healthController.bossHit}
 
@@ -390,7 +390,7 @@ public class StarAmount : MonoBehaviour
         Debug.Log("LevelComplete.rapidoPHit =" + healthController.rapidoPHit);
         Debug.Log("LevelComplete.rodeteHit =" + healthController.rodeteHit);
         Debug.Log("LevelComplete.rodetePHit =" + healthController.rodetePHit);
-        Debug.Log("LevelComplete.arañaHit =" + healthController.arañaHit);
+        Debug.Log("LevelComplete.aranaHit =" + healthController.arañaHit);
         Debug.Log("LevelComplete.cucarachaHit =" + healthController.cucarachaHit);
         Debug.Log("LevelComplete.jefeHit =" + healthController.bossHit);
 
