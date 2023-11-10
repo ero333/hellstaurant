@@ -25,7 +25,7 @@ public class arañaEnemy : MonoBehaviour
             {
                 player.lastAttackingEnemy = "ARAÑA";
 
-                player.arañaHit++;
+                player.aranaHit++;
                 player.hit++;
             }
         }
