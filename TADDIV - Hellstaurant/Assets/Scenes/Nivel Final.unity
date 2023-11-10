@@ -710,11 +710,11 @@ PrefabInstance:
       objectReference: {fileID: 614906684}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9063725
+      value: 2.90768
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6558488
+      value: -0.6558383
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -5111,7 +5111,7 @@ PrefabInstance:
       objectReference: {fileID: 1645528777}
     - target: {fileID: 2088622074340852892, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: Hrange.x
-      value: -754
+      value: -7.54
       objectReference: {fileID: 0}
     - target: {fileID: 2088622074340852892, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: Hrange.y
@@ -6887,8 +6887,6 @@ MonoBehaviour:
   star2: {fileID: 1680329042}
   star3: {fileID: 2113869622}
   healthController: {fileID: 1315016615}
-  stars: 0
-  level: 0
   bossDefeated: 0
   levelstart: {fileID: 1315016616}
   lastlevel: 0
