@@ -21,7 +21,7 @@ public class PlayerHealthController : MonoBehaviour
     public int gordoPHit = 0;
     public int rapidoPHit = 0;
     public int rodetePHit = 0;
-    public int arañaHit = 0;
+    public int aranaHit = 0;
     public int cucarachaHit = 0;
     public int bossHit = 0;
 
