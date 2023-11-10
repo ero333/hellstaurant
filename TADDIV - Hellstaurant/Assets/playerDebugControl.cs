@@ -34,7 +34,7 @@ public class playerDebugControl : MonoBehaviour
         Debug.Log("GameOver.rapidoPHit =" + healthController.rapidoPHit);
         Debug.Log("GameOver.rodeteHit =" + healthController.rodeteHit);
         Debug.Log("GameOver.rodetePHit =" + healthController.rodetePHit);
-        Debug.Log("GameOver.arañaHit =" + healthController.arañaHit);
+        Debug.Log("GameOver.aranaHit =" + healthController.arañaHit);
         Debug.Log("GameOver.cucarachaHit =" + healthController.cucarachaHit);
         Debug.Log("GameOver.jefeHit =" + healthController.bossHit);
 
@@ -55,7 +55,7 @@ public class playerDebugControl : MonoBehaviour
             { "rapidoPHit",  healthController.rapidoPHit },
             { "rodeteHit",  healthController.rodeteHit },
             { "rodetePHit",  healthController.rodetePHit },
-            { "arañaHit",  healthController.arañaHit },
+            { "aranaHit",  healthController.arañaHit },
             { "cucarachaHit",  healthController.cucarachaHit },
             { "jefeHit",  healthController.bossHit },
 
