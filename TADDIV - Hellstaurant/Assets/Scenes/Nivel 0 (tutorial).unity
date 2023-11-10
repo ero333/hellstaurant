@@ -6358,6 +6358,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1357241696}
+    - target: {fileID: 3124319934710341211, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MenuInicial
+      objectReference: {fileID: 0}
     - target: {fileID: 3514699010791923484, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10387,8 +10391,6 @@ MonoBehaviour:
   star2: {fileID: 480331531}
   star3: {fileID: 1694815226}
   healthController: {fileID: 1446669971}
-  stars: 0
-  level: 0
   bossDefeated: 0
   levelstart: {fileID: 7464852032880874426}
   lastlevel: 0
