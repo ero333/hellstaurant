@@ -186,6 +186,7 @@ public class PlayerShooting : MonoBehaviour
             //anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
 
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+            
             isInvincible = false;
 
             // Restaurar velocidad normal del jugador inmediatamente
@@ -409,7 +410,8 @@ public class PlayerShooting : MonoBehaviour
 
        // Ignorar colisiones con enemigos 
        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
-       isInvincible = true;
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Bullet"), true);
+        isInvincible = true;
 
         yield return null;
     }

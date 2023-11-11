@@ -77,6 +77,7 @@ public class PlayerHealthController : MonoBehaviour
         isHealing = false;
 
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+      
 
         currentHealth = maxHealth;
         theSR = GetComponent<SpriteRenderer>();
@@ -109,6 +110,7 @@ public class PlayerHealthController : MonoBehaviour
                 isHealing = false;
                 StopCoroutine(colorchange());
                 Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+                
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, 1f);
             }
         }
@@ -201,6 +203,7 @@ public class PlayerHealthController : MonoBehaviour
             {
                 invincibleCounter = invincibleLength;
                 Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+                
                 StartCoroutine(colorchange());
             }
 
@@ -251,7 +254,9 @@ public class PlayerHealthController : MonoBehaviour
             {
                 invincibleCounter = invincibleLength;
                 Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+               
                 StartCoroutine(colorchange());
+
             }
 
             UIController.Instance.UpdateHealthDisplay();
