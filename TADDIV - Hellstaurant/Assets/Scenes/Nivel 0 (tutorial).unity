@@ -2678,7 +2678,7 @@ PrefabInstance:
       objectReference: {fileID: 1325409569}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.83593124
+      value: 0.835931
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -3528,7 +3528,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1700517277}
         m_TargetAssemblyTypeName: BACKTOSELECT, Assembly-CSharp
         m_MethodName: backToMenu
         m_Mode: 1
@@ -9523,7 +9523,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1933297753}
         m_TargetAssemblyTypeName: NEXTSCENE, Assembly-CSharp
         m_MethodName: NextScene
         m_Mode: 1
@@ -9882,7 +9882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -217, y: 158}
+  m_AnchoredPosition: {x: -179, y: 186}
   m_SizeDelta: {x: 1477.55, y: 414.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800195346
@@ -9907,7 +9907,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2abefb69f2ea5ec44b7743525038d25d, type: 3}
-    m_FontSize: 89
+    m_FontSize: 73
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 9
@@ -9918,9 +9918,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.94
-  m_Text: 'Click
-
-    Izq.'
+  m_Text: "Click\nIzq. - \nFlechas \n"
 --- !u!222 &1800195347
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10364,7 +10362,7 @@ MonoBehaviour:
   bulletSpawner: {fileID: 0}
   enemiespawner: {fileID: 1387389917}
   potenciadoresspawner: {fileID: 0}
-  winSound: {fileID: 0}
+  winSound: {fileID: 1571837351}
   losescreen: {fileID: 151086489}
   botonOmitir: {fileID: 1498803173}
 --- !u!114 &1933297753
