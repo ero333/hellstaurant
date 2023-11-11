@@ -408,14 +408,14 @@ public class RateController : MonoBehaviour
 
         public void cerrarRate()
     {
-        buttonsound.Play();
+        
 
         popupRate.SetActive(false);
     }
 
     public void abrirRate()
     {
-        buttonsound.Play();
+        
 
         popupRate.SetActive(true); 
     }
