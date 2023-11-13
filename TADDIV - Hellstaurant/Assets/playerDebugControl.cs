@@ -159,7 +159,7 @@ public class playerDebugControl : MonoBehaviour
         }
 
 
-        AnalyticsService.Instance.CustomData("LevelComplete", DatosGameover);
+        AnalyticsService.Instance.CustomData("GameOver", DatosGameover);
 
 
         Debug.Log("GameOver.enemy =" + enemy);
