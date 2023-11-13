@@ -158,6 +158,8 @@ public class TutorialController : MonoBehaviour
             cartel18.SetActive(false);
             cartel19.SetActive(true);
 
+            botonSaltar.SetActive(false);
+
             StartCoroutine(pruebacuración());
 
         }
