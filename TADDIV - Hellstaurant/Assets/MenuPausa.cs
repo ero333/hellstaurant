@@ -75,7 +75,7 @@ public class MenuPausa : MonoBehaviour
 
 	private void Update(){
 
-		if (Input.GetKeyDown("joystick button 9") || Input.GetKeyDown("escape")) {
+		if (Input.GetKeyDown("joystick button 5") || Input.GetKeyDown("joystick button 4") || Input.GetKeyDown("escape")) {
 
             if (!pausedGame)
             {
