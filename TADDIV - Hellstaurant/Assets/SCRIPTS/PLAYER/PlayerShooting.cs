@@ -153,7 +153,7 @@ public class PlayerShooting : MonoBehaviour
 
                 else if (is_using_gamepad)
                 {
-                    direction = new Vector3(Input.GetAxis("ShootHorizontal"), -Input.GetAxis("ShootVertical"), 0f);
+                    direction = new Vector3(Input.GetAxis("ShootHorizontal"), -Input.GetAxis("ShootVertical"), 0f).normalized;
                     Debug.Log("direction:" + direction);
                 }
 
