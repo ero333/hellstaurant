@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource Pickupsound;
 
+    public float umbralMovimiento = 0.1f; // Umbral para considerar que el analógico está siendo movido
+
 
     public void Awake()
     {
@@ -39,6 +41,13 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal") + Input.GetAxisRaw("DpadHorizontal"); // Teclas A y D
         float moveY = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("DpadVertical");   // Teclas W y S
         moveInput = new Vector2(moveX, moveY).normalized; // que no se mueva mas rapido al ir en diagonal
+
+        bool estaMoviendo = Mathf.Abs(moveX) > umbralMovimiento || Mathf.Abs(moveY) > umbralMovimiento;
+
+        if (estaMoviendo)
+        {
+            playerAnimator.SetBool("Caminar", true);
+        }
 
         RotarSprite();
     }
@@ -74,6 +83,7 @@ public class PlayerMovement : MonoBehaviour
 
         //  Si presiono el Input Horizontal (Sin importar que sea positivo o negativo) activa animación de moverse
         playerAnimator.SetBool("Caminar", Input.GetButton("Horizontal")||Input.GetButton("Vertical"));
+        
 
     }
 

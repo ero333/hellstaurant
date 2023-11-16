@@ -3980,10 +3980,10 @@ PrefabInstance:
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1065424447}
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AlternarMute
+      value: mutearSonido
       objectReference: {fileID: 0}
     - target: {fileID: 5131681599346470858, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4021,6 +4021,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1065424447 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4291343797509575487, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
+  m_PrefabInstance: {fileID: 1065424443}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cd1e01c70f7974f9dcce143b2f0643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1098458709

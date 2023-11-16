@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Mutear : MonoBehaviour
 {
-    bool Muteado;
+    public bool Muteado;
 
     public Sprite spriteMuteado;
     public Sprite spriteDesmuteado;
@@ -35,7 +35,7 @@ public class Mutear : MonoBehaviour
         botonMusica = GameObject.FindGameObjectWithTag ("botonMusica").GetComponent<Button> ();
 
 
-        Muteado = PlayerPrefs.GetInt("MUTEADO") == 1;
+        Muteado = PlayerPrefs.GetInt("MUTEADO") == 0;
 
 
         MuteDesmute();
@@ -115,7 +115,7 @@ public class Mutear : MonoBehaviour
 
                 if (imagenBoton != null)
                 {
-                    imagenBoton.sprite = spriteMuteado;
+                    imagenBoton.sprite = spriteDesmuteado;
                 }
 
             }
@@ -133,7 +133,7 @@ public class Mutear : MonoBehaviour
                 Image imagenBoton = botonMusica.GetComponent<Image>();
                 if (imagenBoton != null)
                 {
-                    imagenBoton.sprite = spriteDesmuteado;
+                    imagenBoton.sprite = spriteMuteado;
                 }
 
             }

@@ -4760,6 +4760,10 @@ PrefabInstance:
       propertyPath: Pickupsound
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7442340460101119668, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: umbralMovimiento
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
       propertyPath: puntaje
       value: 
@@ -7268,18 +7272,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 56237105518801640}
-    - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: mutearSonido
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MuteFind, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 6802325946883192758, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_Name
       value: Caja
@@ -7289,17 +7281,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
---- !u!114 &56237105518801640 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4291343797509575487, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
-  m_PrefabInstance: {fileID: 56237105518801638}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96cd1e01c70f7974f9dcce143b2f0643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &880023810023270046
 GameObject:
   m_ObjectHideFlags: 0
@@ -7479,6 +7460,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.835931
+      objectReference: {fileID: 0}
     - target: {fileID: 3881648654193666262, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: target
       value: 
