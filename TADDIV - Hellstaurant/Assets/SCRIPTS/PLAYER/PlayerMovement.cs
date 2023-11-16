@@ -84,8 +84,8 @@ public class PlayerMovement : MonoBehaviour
 
 
         //  Si presiono el Input Horizontal (Sin importar que sea positivo o negativo) activa animación de moverse
-        playerAnimator.SetBool("Caminar", Input.GetButton("Horizontal")||Input.GetButton("Vertical"));
-        
+        playerAnimator.SetBool("Caminar", Mathf.Abs(Input.GetAxisRaw("Horizontal")) > umbralMovimiento || Mathf.Abs(Input.GetAxisRaw("Vertical")) > umbralMovimiento);
+
 
     }
 
