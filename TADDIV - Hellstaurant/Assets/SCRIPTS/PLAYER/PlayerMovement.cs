@@ -38,13 +38,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal") + Input.GetAxisRaw("DpadHorizontal"); // Teclas A y D
-        float moveY = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("DpadVertical");   // Teclas W y S
+        float moveX = Input.GetAxis("Horizontal") + Input.GetAxis("DpadHorizontal"); // Teclas A y D
+        float moveY = Input.GetAxis("Vertical") + Input.GetAxis("DpadVertical");   // Teclas W y S
         moveInput = new Vector2(moveX, moveY).normalized; // que no se mueva mas rapido al ir en diagonal
 
         bool estaMoviendo = Mathf.Abs(moveX) > umbralMovimiento || Mathf.Abs(moveY) > umbralMovimiento;
 
-        if (estaMoviendo)
+        if (!estaMoviendo)
         {
             playerAnimator.SetBool("Caminar", true);
         }
