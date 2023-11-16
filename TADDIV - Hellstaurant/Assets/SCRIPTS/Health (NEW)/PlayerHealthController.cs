@@ -159,6 +159,17 @@ public class PlayerHealthController : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.JoystickButton8) && !isHealing)
+        {
+            if (currentHealth < maxHealth)
+            {
+                //isHealing = true; // Comienza la curaci�n
+                //StartCoroutine(healingProcess());
+
+                TryStartHealing();
+            }
+        }
+
 
         void TryStartHealing()
         {
