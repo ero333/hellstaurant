@@ -50,6 +50,8 @@ public class PotenciadorUIController : MonoBehaviour
         porcionpicante.SetActive (false);
         cajapizza.SetActive(false);
 
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Potenciador"), false);
+
         poweruptime.SetActive(false);
 
     }

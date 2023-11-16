@@ -128,7 +128,7 @@ public class PlayerShooting : MonoBehaviour
         // Evita que el jugador dispare mientras se est� curando
         if (playerHealthController.isHealing == false)
         {
-            if (canShoot && ((Mathf.Abs(Input.GetAxisRaw("ShootHorizontal") + Input.GetAxisRaw("ShootVertical")) > 0.5) || Input.GetMouseButtonDown(0) || Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("right")|| Input.GetKey("left") || Input.GetKey("joystick button 0") || Input.GetKey("joystick button 1") || Input.GetKey("joystick button 2") || Input.GetKey("joystick button 3")) && Time.time - lastShoot >= cooldown)
+            if (canShoot && ((Mathf.Abs(Input.GetAxisRaw("ShootHorizontal") + Input.GetAxisRaw("ShootVertical")) > 0.1) || Input.GetMouseButtonDown(0) || Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("right")|| Input.GetKey("left") || Input.GetKey("joystick button 0") || Input.GetKey("joystick button 1") || Input.GetKey("joystick button 2") || Input.GetKey("joystick button 3")) && Time.time - lastShoot >= cooldown)
             {
                 Debug.Log("Shooting");
 
@@ -311,6 +311,8 @@ public class PlayerShooting : MonoBehaviour
 
         PUTime.tiempoEnMarcha = true;
 
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Potenciador"), true);
+
         yield return null;
 
     }
@@ -343,6 +345,8 @@ public class PlayerShooting : MonoBehaviour
 
         PUTime.tiempoEnMarcha = true;
 
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Potenciador"), true);
+
         yield return null;
     }
 
@@ -372,6 +376,8 @@ public class PlayerShooting : MonoBehaviour
         timeBarScript.SetActive(true);
 
         PUTime.tiempoEnMarcha = true;
+
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Potenciador"), true);
 
         yield return null;
     }
@@ -411,6 +417,9 @@ public class PlayerShooting : MonoBehaviour
        // Ignorar colisiones con enemigos 
        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Bullet"), true);
+
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Potenciador"), true);
+
         isInvincible = true;
 
         yield return null;
