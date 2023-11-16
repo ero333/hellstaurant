@@ -41,7 +41,12 @@ public class EnemyBasicDamage : MonoBehaviour
 
             enemyLife--; // Le baja 1 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
-            hitSound.Play();
+            
+            if (hitSound != null)
+            {
+                hitSound.Play();
+            }
+            
 
             
 
