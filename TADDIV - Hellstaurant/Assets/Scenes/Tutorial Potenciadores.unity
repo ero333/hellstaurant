@@ -7051,6 +7051,7 @@ GameObject:
   - component: {fileID: 1982427680}
   - component: {fileID: 1982427678}
   - component: {fileID: 1982427683}
+  - component: {fileID: 1982427684}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: losescreen
@@ -7175,6 +7176,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialcanvas: {fileID: 1101557647}
+--- !u!114 &1982427684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982427676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStart: {fileID: 1999618800}
+  healthController: {fileID: 106963871}
 --- !u!1 &1999618789 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1170127940833486984, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}

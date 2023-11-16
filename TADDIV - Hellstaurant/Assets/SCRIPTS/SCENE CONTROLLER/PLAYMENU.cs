@@ -35,6 +35,8 @@ public class PLAYMENU : MonoBehaviour
         hayPartida = PlayerPrefs.GetInt("PartidaGuardada");
 
         ultimoNivel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
+
+        buttonsound = GameObject.FindGameObjectWithTag ("sonidoboton").GetComponent<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -52,7 +54,12 @@ public class PLAYMENU : MonoBehaviour
 
     public void jugar()
     {
-        buttonsound.Play();
+        
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+
+        }
 
         SceneManager.LoadScene("Selector de Niv");
 
@@ -63,7 +70,12 @@ public class PLAYMENU : MonoBehaviour
 
     public void Reset()
     {
-        buttonsound.Play();
+        
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+        }
+
 
         PlayerPrefs.DeleteAll();
 
@@ -84,28 +96,43 @@ public class PLAYMENU : MonoBehaviour
 
     public void creditos()
     {
-        buttonsound.Play();
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+
+        }
 
         SceneManager.LoadScene("Creditos");
     }
 
     public void continuar()
     {
-        buttonsound.Play();
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
 
+        }
         SceneManager.LoadScene(ultimoNivel + 1);
     }
 
     public void menuprincipal()
     {
-        buttonsound.Play();
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+
+        }
 
         SceneManager.LoadScene("Menu");
     }
 
     public void tiendaskins()
     {
-        buttonsound.Play();
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+
+        }
 
         SceneManager.LoadScene("Skins");
     }

@@ -83,7 +83,7 @@ public class muteSound : MonoBehaviour
          if (sonidoMuteado)
         {
             // Busca el objeto por su tag
-            mantenerObjeto MantenerObjeto = FindObjectOfType<mantenerObjeto>();
+            MusicaFondo MantenerObjeto = FindObjectOfType<MusicaFondo>();
 
             // Verifica si se encontró un objeto con el tag especificado
             if (MantenerObjeto != null)
@@ -101,7 +101,7 @@ public class muteSound : MonoBehaviour
         if (!sonidoMuteado)
         {
             // Busca el objeto por su tag
-            mantenerObjeto MantenerObjeto = FindObjectOfType<mantenerObjeto>();
+            MusicaFondo MantenerObjeto = FindObjectOfType<MusicaFondo>();
 
             // Verifica si se encontró un objeto con el tag especificado
             if (MantenerObjeto != null)

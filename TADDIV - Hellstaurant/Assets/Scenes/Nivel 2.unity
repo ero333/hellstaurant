@@ -1220,6 +1220,7 @@ GameObject:
   - component: {fileID: 360641910}
   - component: {fileID: 360641908}
   - component: {fileID: 360641912}
+  - component: {fileID: 360641913}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -1332,6 +1333,20 @@ MonoBehaviour:
   potenciadoresspawner: {fileID: 1533247836}
   deathdebug: {fileID: 1388412111}
   botonOmitir: {fileID: 0}
+--- !u!114 &360641913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360641906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStart: {fileID: 1817709976}
+  healthController: {fileID: 1817709975}
 --- !u!1 &364317804
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,7 +5266,7 @@ PrefabInstance:
       objectReference: {fileID: 2090761892}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359303
+      value: 0.835931
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -5311,17 +5326,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 7724749161356855606, guid: 30418214efddfed4999c1a14726939b4, type: 3}
   m_PrefabInstance: {fileID: 1599436638}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1599436640 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3610766546125841873, guid: 30418214efddfed4999c1a14726939b4, type: 3}
-  m_PrefabInstance: {fileID: 1599436638}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e70eaa88396d6459162b48f34af787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1605672905
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,7 +6347,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -287.99994, y: 76.63493}
+  m_AnchoredPosition: {x: -287.99994, y: 76.63495}
   m_SizeDelta: {x: 367.12, y: 153.27002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888670613
@@ -7659,7 +7663,7 @@ PrefabInstance:
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1599436640}
+      objectReference: {fileID: 0}
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AlternarMute

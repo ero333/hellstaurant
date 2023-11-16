@@ -24,7 +24,11 @@ public class NEXTSCENE : MonoBehaviour
 
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            
+            skipTutorial(); 
+        }
     }
 
     public void NextScene()

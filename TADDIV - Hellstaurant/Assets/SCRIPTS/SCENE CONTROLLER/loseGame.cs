@@ -52,7 +52,7 @@ public class loseGame : MonoBehaviour
     public void OnEnable()
     {
 
-       deathdebug.SetActive(true);
+       //deathdebug.SetActive(true);
 
       StartCoroutine(loseProcess());
 
@@ -66,7 +66,12 @@ public class loseGame : MonoBehaviour
 
     IEnumerator loseProcess()
     {
-        loseSound.Play();
+        if (loseSound != null)
+        {
+
+            loseSound.Play();
+        }
+        
 
         if (botonOmitir != null)
         {

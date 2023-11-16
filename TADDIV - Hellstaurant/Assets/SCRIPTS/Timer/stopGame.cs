@@ -105,7 +105,11 @@ public class stopGame : MonoBehaviour
 
     IEnumerator winProcess()
     {
-        winSound.Play();
+        if (winSound != null)
+        {
+            winSound.Play();
+        }
+
 
         if (botonOmitir != null)
         {

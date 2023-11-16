@@ -322,17 +322,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 7724749161356855606, guid: 30418214efddfed4999c1a14726939b4, type: 3}
   m_PrefabInstance: {fileID: 139758074}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &139758076 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3610766546125841873, guid: 30418214efddfed4999c1a14726939b4, type: 3}
-  m_PrefabInstance: {fileID: 139758074}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e70eaa88396d6459162b48f34af787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &161989810
 GameObject:
   m_ObjectHideFlags: 0
@@ -5270,7 +5259,7 @@ PrefabInstance:
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 139758076}
+      objectReference: {fileID: 0}
     - target: {fileID: 4702264046736078229, guid: 476c31b80d84df8429b0d09f938295b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AlternarMute
@@ -7850,6 +7839,7 @@ GameObject:
   - component: {fileID: 2121108979}
   - component: {fileID: 2121108977}
   - component: {fileID: 2121108981}
+  - component: {fileID: 2121108982}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -7962,6 +7952,20 @@ MonoBehaviour:
   potenciadoresspawner: {fileID: 272455509}
   deathdebug: {fileID: 1370458298}
   botonOmitir: {fileID: 0}
+--- !u!114 &2121108982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121108975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStart: {fileID: 1315016616}
+  healthController: {fileID: 1315016615}
 --- !u!1 &2130934467
 GameObject:
   m_ObjectHideFlags: 0
