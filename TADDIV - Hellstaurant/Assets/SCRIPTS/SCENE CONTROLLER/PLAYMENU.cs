@@ -152,4 +152,16 @@ public class PLAYMENU : MonoBehaviour
 
         }
     }
+
+    public void closeEndless()
+    {
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+
+        }
+
+        PlayerPrefs.SetInt("UltimoNivelAlcanzado", 20);
+        SceneManager.LoadScene("Creditos");
+    }
 }

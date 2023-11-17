@@ -77,6 +77,8 @@ public class PowerUpTime : MonoBehaviour
         playershoot.anim.runtimeAnimatorController = playershoot.normal as RuntimeAnimatorController;
 
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Potenciador"), false);
+
         playershoot.isInvincible = false;
 
         // Restaurar velocidad normal del jugador inmediatamente

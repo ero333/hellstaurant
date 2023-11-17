@@ -572,17 +572,17 @@ RectTransform:
   - {fileID: 1674760982}
   - {fileID: 1985188736}
   - {fileID: 935487857}
-  - {fileID: 1877279702}
   - {fileID: 69859067}
   - {fileID: 181241846}
   - {fileID: 1761225470}
   - {fileID: 1377214804}
-  - {fileID: 360641907}
   - {fileID: 2124751977}
   - {fileID: 1388265341}
   - {fileID: 423993375}
   - {fileID: 1404653581}
   - {fileID: 1888670612}
+  - {fileID: 360641907}
+  - {fileID: 1877279702}
   - {fileID: 728970733}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2075,7 +2075,7 @@ GameObject:
   - component: {fileID: 475996632}
   - component: {fileID: 475996631}
   - component: {fileID: 475996630}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColliderMesas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2987,7 +2987,7 @@ GameObject:
   - component: {fileID: 951325391}
   - component: {fileID: 951325390}
   - component: {fileID: 951325389}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColliderBarra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3950,7 +3950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1294965614
 MonoBehaviour:
   m_ObjectHideFlags: 0

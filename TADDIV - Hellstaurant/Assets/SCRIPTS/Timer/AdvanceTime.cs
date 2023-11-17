@@ -36,7 +36,12 @@ public class AdvanceTime : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        timeText.text = timeHours + ":00 PM";
+        if (timeText.text != null)
+        {
+            timeText.text = timeHours + ":00 PM";
+        }
+        
+
 
         if (!playerAlive)
         {

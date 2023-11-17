@@ -21,7 +21,12 @@ public class BACKTOMENU : MonoBehaviour
 
     public void backToMenu()
     {
-        buttonsound.Play();
+        
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+        }
+
         SceneManager.LoadScene("Menu");
     }
 }

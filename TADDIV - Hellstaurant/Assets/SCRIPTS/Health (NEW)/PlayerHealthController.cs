@@ -137,7 +137,7 @@ public class PlayerHealthController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.JoystickButton6) && !isHealing)
+        if (Input.GetKey("joystick button 6") && !isHealing)
         {
             if (currentHealth < maxHealth)
             {
@@ -148,7 +148,7 @@ public class PlayerHealthController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.JoystickButton7) && !isHealing)
+        if  (Input.GetKey("joystick button 7") && !isHealing)
         {
             if (currentHealth < maxHealth)
             {

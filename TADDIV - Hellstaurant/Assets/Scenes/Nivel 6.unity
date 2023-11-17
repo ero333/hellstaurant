@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 107611926}
   - component: {fileID: 107611925}
   - component: {fileID: 107611924}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColliderMesas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2843,7 +2843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &645566351
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3728,6 +3728,7 @@ MonoBehaviour:
   losescreen: {fileID: 2121108975}
   botonOmitir: {fileID: 0}
   botonSiguiente: {fileID: 160329767}
+  popupPotenciador: {fileID: 645566350}
 --- !u!114 &814449698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6608,7 +6609,6 @@ RectTransform:
   - {fileID: 2041406470}
   - {fileID: 1799196281}
   - {fileID: 642204767}
-  - {fileID: 2121108976}
   - {fileID: 462429916}
   - {fileID: 1334935720}
   - {fileID: 795540267}
@@ -6616,6 +6616,7 @@ RectTransform:
   - {fileID: 2130934468}
   - {fileID: 1015653601}
   - {fileID: 1592466742}
+  - {fileID: 2121108976}
   - {fileID: 814449701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6832,7 +6833,7 @@ GameObject:
   - component: {fileID: 1782287702}
   - component: {fileID: 1782287701}
   - component: {fileID: 1782287700}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColliderBarra
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -51,7 +51,17 @@ public class cutsceneFinal : MonoBehaviour
         if (contadorAnim == 4)
         {
             botonSiguiente.SetActive(false);
-            popupEndless.SetActive(true);
+
+            if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") <= 19)
+            {
+                popupEndless.SetActive(true);
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Creditos");
+            }
+
 
 
             EventSystem.current.SetSelectedGameObject(botonPopup.GetComponentInChildren<Button>().gameObject);

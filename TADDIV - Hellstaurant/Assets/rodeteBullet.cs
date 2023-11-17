@@ -11,6 +11,8 @@ public class rodeteBullet : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, lifetime); //Destruye la pizza después del tiempo que asignemos
+
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("muebles"), true);
     }
 
     // Update is called once per frame

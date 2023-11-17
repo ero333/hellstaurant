@@ -78,6 +78,8 @@ public class PlayerShooting : MonoBehaviour
 
         aoedamage = CajaPrefab.GetComponent<AOEDamage>();
 
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Potenciador"), false);
+
     }
 
     private Vector3 PlayerPosition()
@@ -217,7 +219,7 @@ public class PlayerShooting : MonoBehaviour
             faina.transform.rotation = Quaternion.AngleAxis(angle3, Vector3.forward);
             faina.GetComponent<Rigidbody2D>().velocity = direction * FainaSpeed;
             lastShoot = Time.time;
-            cooldown = 0.2f;
+            cooldown = 0.3f;
             
         }
 

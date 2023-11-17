@@ -56,7 +56,9 @@ public class MenuPausa : MonoBehaviour
         Time.timeScale = 1f;
 		botonPausa.SetActive(false);
 		menuPausa.SetActive(false);
-		SceneManager.LoadScene("Menu");
+
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Menu");
     }
 
    public void Reanudar(){
@@ -70,7 +72,8 @@ public class MenuPausa : MonoBehaviour
         Time.timeScale = 1f;
 		botonPausa.SetActive(false);
 		menuPausa.SetActive(false);
-		SceneManager.LoadScene("Tienda");
+        PlayerPrefs.SetInt("PartidaGuardada", 1);
+        SceneManager.LoadScene("Tienda");
     }
 
 	private void Update(){

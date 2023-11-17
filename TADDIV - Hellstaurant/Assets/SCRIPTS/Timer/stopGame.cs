@@ -43,6 +43,8 @@ public class stopGame : MonoBehaviour
 
     public GameObject botonSiguiente;
 
+    public GameObject popupPotenciador;
+
     private void Awake()
     {
         instance = this; 
@@ -71,22 +73,43 @@ public class stopGame : MonoBehaviour
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 1);
+
+            if (popupPotenciador != null)
+            {
+                popupPotenciador.SetActive(true);
+            }
+
         }
         if (SceneManager.GetActiveScene().buildIndex == 10)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 2);
+
+            if (popupPotenciador != null)
+            {
+                popupPotenciador.SetActive(true);
+            }
         }
         if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 3);
+
+            if (popupPotenciador != null)
+            {
+                popupPotenciador.SetActive(true);
+            }
         }
 
         if (SceneManager.GetActiveScene().buildIndex == 12)
         {
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 4);
+
+            if (popupPotenciador != null)
+            {
+                popupPotenciador.SetActive(true);
+            }
         }
 
         EventSystem.current.SetSelectedGameObject(botonSiguiente.GetComponentInChildren<Button>().gameObject);

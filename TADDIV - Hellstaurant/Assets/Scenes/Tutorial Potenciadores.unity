@@ -292,13 +292,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1455167073}
   - {fileID: 2018757934}
   - {fileID: 274282571}
   - {fileID: 219902079}
   - {fileID: 677030698}
   - {fileID: 609710424}
-  - {fileID: 1982427677}
   - {fileID: 1748801468}
   - {fileID: 1415585994}
   - {fileID: 2112515777}
@@ -307,6 +305,8 @@ RectTransform:
   - {fileID: 171400031}
   - {fileID: 88965113}
   - {fileID: 471630216}
+  - {fileID: 1982427677}
+  - {fileID: 1455167073}
   - {fileID: 2006040515}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3144,7 +3144,7 @@ GameObject:
   - component: {fileID: 796819295}
   - component: {fileID: 796819294}
   - component: {fileID: 796819293}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColliderBarra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6084,7 +6084,7 @@ GameObject:
   - component: {fileID: 1691412471}
   - component: {fileID: 1691412470}
   - component: {fileID: 1691412469}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColliderMesas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8447,7 +8447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2135978055
 RectTransform:
   m_ObjectHideFlags: 0

@@ -25,8 +25,7 @@ public class NEXTSCENE : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-        {
-            
+        { 
             skipTutorial(); 
         }
     }
@@ -56,8 +55,8 @@ public class NEXTSCENE : MonoBehaviour
         }
 
         Time.timeScale = 1.0f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
 
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
 
 
     }
@@ -67,4 +66,16 @@ public class NEXTSCENE : MonoBehaviour
         Time.timeScale = 1.0f;
         levelUnlock.skipTutorial();
     }
+
+
+
+    public void playEndless()
+    {
+
+        PlayerPrefs.SetInt("UltimoNivelAlcanzado", 20);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+
+
 }
