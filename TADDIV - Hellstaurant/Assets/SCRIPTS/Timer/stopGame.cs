@@ -71,38 +71,58 @@ public class stopGame : MonoBehaviour
 
         if (SceneManager.GetActiveScene().buildIndex == 9)
         {
+
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 1);
+
+
 
             if (popupPotenciador != null)
             {
                 popupPotenciador.SetActive(true);
             }
+
+
+
 
         }
         if (SceneManager.GetActiveScene().buildIndex == 10)
         {
+
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 2);
 
-            if (popupPotenciador != null)
-            {
-                popupPotenciador.SetActive(true);
-            }
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 11)
-        {
-            PlayerPrefs.GetInt("itemsUnlocked");
-            PlayerPrefs.SetInt("itemsUnlocked", 3);
 
             if (popupPotenciador != null)
             {
                 popupPotenciador.SetActive(true);
             }
+
+
+
+
+
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 11)
+        {
+
+            PlayerPrefs.GetInt("itemsUnlocked");
+            PlayerPrefs.SetInt("itemsUnlocked", 3);
+
+
+            if (popupPotenciador != null)
+            {
+                popupPotenciador.SetActive(true);
+            }
+
+
+
         }
 
         if (SceneManager.GetActiveScene().buildIndex == 12)
         {
+
+
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 4);
 
@@ -110,6 +130,8 @@ public class stopGame : MonoBehaviour
             {
                 popupPotenciador.SetActive(true);
             }
+
+
         }
 
         EventSystem.current.SetSelectedGameObject(botonSiguiente.GetComponentInChildren<Button>().gameObject);
@@ -118,7 +140,13 @@ public class stopGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        losescreen.SetActive(false);
+        
+        if (losescreen != null)
+        {
+            losescreen.SetActive(false);
+        }
+        
+
     }
 
     public void OnEnable()

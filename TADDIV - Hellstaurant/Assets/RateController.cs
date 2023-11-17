@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Analytics;
 using Unity.Services.Analytics;
+using Unity.VisualScripting;
 
 public class RateController : MonoBehaviour
 {
@@ -45,6 +46,8 @@ public class RateController : MonoBehaviour
     void Start()
     {
         botonSend.SetActive(false);
+
+        buttonsound = GameObject.FindGameObjectWithTag ("sonidoboton").GetComponent<AudioSource> ();
 
         rateado = PlayerPrefs.GetInt("rateado");
         popupRate.SetActive(false);
@@ -361,7 +364,13 @@ public class RateController : MonoBehaviour
 
     public void sendRate()
     {
-        buttonsound.Play();
+        
+        if (buttonsound != null)
+        {
+
+            buttonsound.Play();
+        }
+
 
         Debug.Log("RateGame.puntuation =" + puntuationGame);
         Debug.Log("RateArt.puntuation =" + puntuation);

@@ -20,13 +20,19 @@ public class BACKTOSELECT : MonoBehaviour
 
     public void backToSelect()
     {
-        buttonsound.Play();
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+        }
         SceneManager.LoadScene("Selector de Niv");
     }
 
     public void backToMenu()
     {
-        buttonsound.Play();
+        if (buttonsound != null)
+        {
+            buttonsound.Play();
+        }
         SceneManager.LoadScene("Menu");
     }
 }

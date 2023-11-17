@@ -219,7 +219,7 @@ public class PlayerShooting : MonoBehaviour
             faina.transform.rotation = Quaternion.AngleAxis(angle3, Vector3.forward);
             faina.GetComponent<Rigidbody2D>().velocity = direction * FainaSpeed;
             lastShoot = Time.time;
-            cooldown = 0.3f;
+            cooldown = 0.40f;
             
         }
 
@@ -230,7 +230,7 @@ public class PlayerShooting : MonoBehaviour
             pizza.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward.normalized);
             pizza.GetComponent<Rigidbody2D>().velocity = direction.normalized * pizzaSpeed;
             lastShoot = Time.time;
-            cooldown = 0.5f;
+            cooldown = 0.55f;
             
         }
 
@@ -252,7 +252,7 @@ public class PlayerShooting : MonoBehaviour
             caja.transform.rotation = Quaternion.AngleAxis(angle5, Vector3.forward);
             caja.GetComponent<Rigidbody2D>().velocity = direction * CajaSpeed;
             lastShoot = Time.time;
-            cooldown = 1.5f;
+            cooldown = 1.3f;
             
         }
     }
