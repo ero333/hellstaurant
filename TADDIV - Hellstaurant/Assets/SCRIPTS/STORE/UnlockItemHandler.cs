@@ -175,7 +175,7 @@ public class UnlockItemHandler : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.P))
+      /*  if (Input.GetKeyDown(KeyCode.P))
         {
 
             monedasactuales = monedasactuales + 150;
@@ -195,7 +195,7 @@ public class UnlockItemHandler : MonoBehaviour
 
 
         }
-
+        */
 
         //for (int i=0; i<buttons.Length; i++) {
         //    buttons[i].interactable = true;

@@ -205,7 +205,7 @@ public class PlayerSelector : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+       /* if (Input.GetKeyDown(KeyCode.P))
         {
 
             monedasactuales = monedasactuales + 150;
@@ -214,7 +214,7 @@ public class PlayerSelector : MonoBehaviour
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
             coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
 
-        }
+        }*/
 
         if (PlayerPrefs.GetInt("skinMujerComprada") == 1)
         {

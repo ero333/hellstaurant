@@ -120,10 +120,10 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     void Update()
     {
         // Verificar si se presionó la tecla "P" para desbloquear todos los niveles.
-        if (Input.GetKeyDown(KeyCode.P))
+        /*if (Input.GetKeyDown(KeyCode.P))
         {
             UnlockAllLevels();
-        }
+        }*/
 
 
         if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 4)
