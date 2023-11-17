@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class inicialcutscene : MonoBehaviour
 {
@@ -9,12 +11,17 @@ public class inicialcutscene : MonoBehaviour
 
     public GameObject botonSiguiente;
 
+
+
+
     public float contadorAnim;
 
     void Start()
     {
         contadorAnim = 0;
         animacion1.SetActive(true);
+
+        EventSystem.current.SetSelectedGameObject(botonSiguiente.GetComponentInChildren<Button>().gameObject);
     }
 
     public void pasarAnim()

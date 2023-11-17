@@ -119,7 +119,7 @@ public class UNLOCKEDLEVELSCONTROL : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         // Verificar si se presionó la tecla "P" para desbloquear todos los niveles.
+        // Verificar si se presionó la tecla "P" para desbloquear todos los niveles.
         if (Input.GetKeyDown(KeyCode.P))
         {
             UnlockAllLevels();

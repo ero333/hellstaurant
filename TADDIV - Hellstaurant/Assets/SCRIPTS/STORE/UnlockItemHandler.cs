@@ -175,7 +175,8 @@ public class UnlockItemHandler : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.P)) {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
 
             monedasactuales = monedasactuales + 150;
 

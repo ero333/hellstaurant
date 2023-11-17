@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class cutsceneFinal : MonoBehaviour
 {
@@ -11,12 +13,17 @@ public class cutsceneFinal : MonoBehaviour
 
     public GameObject popupEndless;
 
+    public GameObject botonPopup;
+
     public float contadorAnim;
 
     void Start()
     {
         contadorAnim = 0;
         animacion1.SetActive(true);
+
+
+        EventSystem.current.SetSelectedGameObject(botonSiguiente.GetComponentInChildren<Button>().gameObject);
     }
 
     public void pasarAnim()
@@ -45,6 +52,9 @@ public class cutsceneFinal : MonoBehaviour
         {
             botonSiguiente.SetActive(false);
             popupEndless.SetActive(true);
+
+
+            EventSystem.current.SetSelectedGameObject(botonPopup.GetComponentInChildren<Button>().gameObject);
         }
 
     }
