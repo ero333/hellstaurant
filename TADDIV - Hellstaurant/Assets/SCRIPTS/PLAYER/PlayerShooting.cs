@@ -128,7 +128,7 @@ public class PlayerShooting : MonoBehaviour
         // Evita que el jugador dispare mientras se est� curando
         if (playerHealthController.isHealing == false)
         {
-            if (canShoot && ((Mathf.Abs(Input.GetAxisRaw("ShootHorizontal") + Input.GetAxisRaw("ShootVertical")) > 0.1) || Input.GetMouseButtonDown(0) || Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("right")|| Input.GetKey("left") || Input.GetKey("joystick button 0") || Input.GetKey("joystick button 1") || Input.GetKey("joystick button 2") || Input.GetKey("joystick button 3")) && Time.time - lastShoot >= cooldown)
+            if (canShoot && (Input.GetMouseButtonDown(0) || Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("right")|| Input.GetKey("left") || Input.GetKey("joystick button 0") || Input.GetKey("joystick button 1") || Input.GetKey("joystick button 2") || Input.GetKey("joystick button 3")) && Time.time - lastShoot >= cooldown)
             {
                 Debug.Log("Shooting");
 

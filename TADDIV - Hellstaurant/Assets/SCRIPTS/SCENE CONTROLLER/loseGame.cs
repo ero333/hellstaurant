@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class loseGame : MonoBehaviour
 {
@@ -26,6 +28,7 @@ public class loseGame : MonoBehaviour
 
     [SerializeField] private GameObject deathdebug;
 
+    public GameObject botonRestart;
 
     public GameObject botonOmitir;
 
@@ -38,6 +41,8 @@ public class loseGame : MonoBehaviour
 
 
         loseSound = GameObject.FindGameObjectWithTag("sonidolose").GetComponent<AudioSource>();
+
+        EventSystem.current.SetSelectedGameObject(botonRestart.GetComponentInChildren<Button>().gameObject);
     }
     // Update is called once per frame
     void Update()

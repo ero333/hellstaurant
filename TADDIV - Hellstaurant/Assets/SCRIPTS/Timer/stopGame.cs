@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class stopGame : MonoBehaviour
 {
@@ -39,6 +41,7 @@ public class stopGame : MonoBehaviour
 
     public GameObject botonOmitir;
 
+    public GameObject botonSiguiente;
 
     private void Awake()
     {
@@ -85,6 +88,8 @@ public class stopGame : MonoBehaviour
             PlayerPrefs.GetInt("itemsUnlocked");
             PlayerPrefs.SetInt("itemsUnlocked", 4);
         }
+
+        EventSystem.current.SetSelectedGameObject(botonSiguiente.GetComponentInChildren<Button>().gameObject);
     }
 
     // Update is called once per frame
