@@ -976,7 +976,6 @@ GameObject:
   - component: {fileID: 151086494}
   - component: {fileID: 151086495}
   - component: {fileID: 151086497}
-  - component: {fileID: 151086498}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: losescreen
@@ -1088,6 +1087,8 @@ MonoBehaviour:
   deathdebug: {fileID: 199548535}
   botonRestart: {fileID: 854122211}
   botonOmitir: {fileID: 1498803173}
+  levelStart: {fileID: 7464852032880874426}
+  healthController: {fileID: 1446669971}
 --- !u!114 &151086497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,20 +1102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialcanvas: {fileID: 523380781}
---- !u!114 &151086498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151086489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelStart: {fileID: 7464852032880874426}
-  healthController: {fileID: 1446669971}
 --- !u!1 &175247425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,8 +1498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelStart: {fileID: 7464852032880874426}
-  healthController: {fileID: 1446669971}
 --- !u!4 &199548537
 Transform:
   m_ObjectHideFlags: 0

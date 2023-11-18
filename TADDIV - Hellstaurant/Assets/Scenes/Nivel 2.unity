@@ -1220,7 +1220,6 @@ GameObject:
   - component: {fileID: 360641910}
   - component: {fileID: 360641908}
   - component: {fileID: 360641912}
-  - component: {fileID: 360641913}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -1334,18 +1333,6 @@ MonoBehaviour:
   deathdebug: {fileID: 1388412111}
   botonRestart: {fileID: 1110380347}
   botonOmitir: {fileID: 0}
---- !u!114 &360641913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360641906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   levelStart: {fileID: 1817709976}
   healthController: {fileID: 1817709975}
 --- !u!1 &364317804
@@ -4379,8 +4366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelStart: {fileID: 1817709976}
-  healthController: {fileID: 1817709975}
 --- !u!4 &1388412113
 Transform:
   m_ObjectHideFlags: 0

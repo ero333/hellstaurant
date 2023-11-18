@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Analytics;
 using Unity.Services.Analytics;
 using Unity.VisualScripting;
+using UnityEngine.EventSystems;
 
 public class RateController : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class RateController : MonoBehaviour
     public GameObject botonRate;
     public int rateado;
     public GameObject popupRate;
+
+    public GameObject botonJugar;
 
     public Sprite estrellavacia;
     public Sprite estrellallena;
@@ -417,15 +420,18 @@ public class RateController : MonoBehaviour
 
         public void cerrarRate()
     {
-        
+
+
+        EventSystem.current.SetSelectedGameObject(estrella1.GetComponentInChildren<Button>().gameObject);
 
         popupRate.SetActive(false);
     }
 
     public void abrirRate()
     {
-        
 
+
+        EventSystem.current.SetSelectedGameObject(botonJugar.GetComponentInChildren<Button>().gameObject);
         popupRate.SetActive(true); 
     }
 

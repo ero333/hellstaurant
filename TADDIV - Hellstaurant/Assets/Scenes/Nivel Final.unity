@@ -7409,8 +7409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelStart: {fileID: 1315016616}
-  healthController: {fileID: 1315016615}
 --- !u!4 &1729272129
 Transform:
   m_ObjectHideFlags: 0
@@ -7689,7 +7687,6 @@ GameObject:
   - component: {fileID: 1890628360}
   - component: {fileID: 1890628365}
   - component: {fileID: 1890628367}
-  - component: {fileID: 1890628368}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -7803,6 +7800,8 @@ MonoBehaviour:
   deathdebug: {fileID: 1729272127}
   botonRestart: {fileID: 1654070970}
   botonOmitir: {fileID: 0}
+  levelStart: {fileID: 1315016616}
+  healthController: {fileID: 1315016615}
 --- !u!114 &1890628367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7819,20 +7818,6 @@ MonoBehaviour:
   bulletpool: {fileID: 1717025584}
   bulletburst: {fileID: 143635451}
   spawnerbichos: {fileID: 1442380930}
---- !u!114 &1890628368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890628359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44407288ccf3d094696a34992c73456a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelStart: {fileID: 1315016616}
-  healthController: {fileID: 1315016615}
 --- !u!1 &1934734270
 GameObject:
   m_ObjectHideFlags: 0
