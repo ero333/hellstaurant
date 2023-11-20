@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Services.Analytics;
+using UnityEngine.Analytics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -83,6 +84,7 @@ public class loseGame : MonoBehaviour
            {"jefeHit", jefeHit},
            {"time", timer}
 };
+
 
 
 
@@ -188,26 +190,26 @@ public class loseGame : MonoBehaviour
 
 
 
-        AnalyticsService.Instance.CustomData("GameOver", DatosGameover);
+        AnalyticsService.Instance.CustomData("LoseGame", DatosGameover);
 
 
-        Debug.Log("GameOver.enemy =" + enemy);
-        Debug.Log("GameOver.healing =" + healing);
-        Debug.Log("GameOver.hit =" + hit);
-        Debug.Log("GameOver.basicoHit =" + basicoHit);
-        Debug.Log("GameOver.basicoPHit =" + basicoPHit);
-        Debug.Log("GameOver.gordoHit =" + gordoHit);
-        Debug.Log("GameOver.gordoPHit =" + gordoPHit);
-        Debug.Log("GameOver.rapidoHit =" + rapidoHit);
-        Debug.Log("GameOver.rapidoPHit =" + rapidoPHit);
-        Debug.Log("GameOver.rodeteHit =" + rodeteHit);
-        Debug.Log("GameOver.rodetePHit =" + rodetePHit);
-        Debug.Log("GameOver.aranaHit =" + aranaHit);
-        Debug.Log("GameOver.cucarachaHit =" + cucarachaHit);
-        Debug.Log("GameOver.jefeHit =" + jefeHit);
+        Debug.Log("LoseGame.enemy =" + enemy);
+        Debug.Log("LoseGame.healing =" + healing);
+        Debug.Log("LoseGame.hit =" + hit);
+        Debug.Log("LoseGame.basicoHit =" + basicoHit);
+        Debug.Log("LoseGame.basicoPHit =" + basicoPHit);
+        Debug.Log("LoseGame.gordoHit =" + gordoHit);
+        Debug.Log("LoseGame.gordoPHit =" + gordoPHit);
+        Debug.Log("LoseGame.rapidoHit =" + rapidoHit);
+        Debug.Log("LoseGame.rapidoPHit =" + rapidoPHit);
+        Debug.Log("LoseGame.rodeteHit =" + rodeteHit);
+        Debug.Log("LoseGame.rodetePHit =" + rodetePHit);
+        Debug.Log("LoseGame.aranaHit =" + aranaHit);
+        Debug.Log("LoseGame.cucarachaHit =" + cucarachaHit);
+        Debug.Log("LoseGame.jefeHit =" + jefeHit);
 
-        Debug.Log("GameOver.time = " + timer);
-        Debug.Log("GameOver.level = " + level);
+        Debug.Log("LoseGame.time = " + timer);
+        Debug.Log("LoseGame.level = " + level);
 
 
 
