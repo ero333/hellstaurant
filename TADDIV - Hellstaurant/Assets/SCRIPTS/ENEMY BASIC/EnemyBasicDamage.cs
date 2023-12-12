@@ -16,6 +16,8 @@ public class EnemyBasicDamage : MonoBehaviour
 
     public AudioSource hitSound;
 
+    public bool dobleMonedas = false;
+
 
 
     void Start()
@@ -53,8 +55,6 @@ public class EnemyBasicDamage : MonoBehaviour
 
             if (enemyLife <= 0)
             {
-                
-
 
                 onDeath();
             }
@@ -65,6 +65,8 @@ public class EnemyBasicDamage : MonoBehaviour
             enemyLife = enemyLife -2; // Le baja 2 de vida al enemigo
             Destroy(other.gameObject); // Destruye la pizza que le peg�
             hitSound.Play();
+
+            dobleMonedas = true;
 
             if (enemyLife <= 0)
             {
@@ -79,10 +81,10 @@ public class EnemyBasicDamage : MonoBehaviour
             Destroy(other.gameObject); // Destruye la pizza que le peg�
             hitSound.Play();
 
+
+
             if (enemyLife <= 0)
             {
-
-
                 onDeath();
             }
         }
@@ -121,7 +123,10 @@ public class EnemyBasicDamage : MonoBehaviour
 
         float dropSelect = Random.Range(0, 100f);
 
-        
+        if (dobleMonedas)
+        {
+            amountToDrop *= 2;
+        }
 
         if (dropSelect <= chanceToDrop) 
         {
@@ -130,6 +135,7 @@ public class EnemyBasicDamage : MonoBehaviour
                 float xOffset = (i - (amountToDrop - 1) * 0.5f) * 0.5f;
                 Instantiate(collectible, transform.position + new Vector3(xOffset, 0, 0), Quaternion.identity);
             }
+
         }
     }
 

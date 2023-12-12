@@ -759,9 +759,16 @@ MonoBehaviour:
   sonidoMuteado: 1
   spriteMuteado: {fileID: 0}
   spriteDesmuteado: {fileID: 0}
+  SFXMuteado: 1
+  spriteSFXMuteado: {fileID: 0}
+  spriteSFXDesmuteado: {fileID: 0}
   botonSonido: {fileID: 0}
   buttonsound: {fileID: 961125797}
   BGMusic: {fileID: 0}
+  SFXSound: {fileID: 0}
+  musicGroup: {fileID: 0}
+  musicAlternate: {fileID: 0}
+  SFXBoton: {fileID: 0}
 --- !u!1001 &333725211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1018,7 +1025,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $120
+  m_Text: $25
 --- !u!222 &645457002
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1488,7 +1495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $200
+  m_Text: $40
 --- !u!222 &991957784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2318,7 +2325,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $70
+  m_Text: $15
 --- !u!222 &1535792071
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2784,7 +2791,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $370
+  m_Text: $60
 --- !u!222 &1804459686
 CanvasRenderer:
   m_ObjectHideFlags: 0

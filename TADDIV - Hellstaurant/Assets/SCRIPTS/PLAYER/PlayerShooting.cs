@@ -183,7 +183,7 @@ public class PlayerShooting : MonoBehaviour
             }
         }
 
-        if (Fugazzetta || Caja || Faina)
+        if (Fugazzetta || Caja)
         {
             //anim.runtimeAnimatorController = normal as RuntimeAnimatorController;
 
@@ -262,7 +262,6 @@ public class PlayerShooting : MonoBehaviour
         if (collision.CompareTag("FugaPickup"))
         {
 
-            StopCoroutine(fuggazzettaPowerUp());
             StartCoroutine(fuggazzettaPowerUp());
             Destroy(collision.gameObject);
         }
@@ -346,6 +345,9 @@ public class PlayerShooting : MonoBehaviour
         timeBarScript.SetActive(true);
 
         PUTime.tiempoEnMarcha = true;
+
+        // Aumentar la velocidad del jugador con el power-up
+        playerMovement.speed = 6f;
 
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Potenciador"), true);
 
