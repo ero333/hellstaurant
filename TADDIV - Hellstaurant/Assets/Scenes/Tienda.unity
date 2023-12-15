@@ -1323,9 +1323,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 247682867}
-        m_TargetAssemblyTypeName: EliminateImage, Assembly-CSharp
-        m_MethodName: OnButtonClick
+      - m_Target: {fileID: 1131430001}
+        m_TargetAssemblyTypeName: UnlockItemHandler, Assembly-CSharp
+        m_MethodName: closePopUpPicante
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3802,9 +3802,9 @@ MonoBehaviour:
   order: 0
   powerSe: 
   popupFuga: {fileID: 693347309}
-  popupFaina: {fileID: 0}
-  popupCaja: {fileID: 0}
-  popupPicante: {fileID: 0}
+  popupFaina: {fileID: 2059766709}
+  popupCaja: {fileID: 1472558903}
+  popupPicante: {fileID: 928457305}
 --- !u!1 &1142955838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4555,9 +4555,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1432231435}
-        m_TargetAssemblyTypeName: EliminateImage, Assembly-CSharp
-        m_MethodName: OnButtonClick
+      - m_Target: {fileID: 1131430001}
+        m_TargetAssemblyTypeName: UnlockItemHandler, Assembly-CSharp
+        m_MethodName: closePopUpFuga
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4702,9 +4702,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1432343148}
-        m_TargetAssemblyTypeName: EliminateImage, Assembly-CSharp
-        m_MethodName: OnButtonClick
+      - m_Target: {fileID: 1131430001}
+        m_TargetAssemblyTypeName: UnlockItemHandler, Assembly-CSharp
+        m_MethodName: closePopUpCaja
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5166,9 +5166,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1530372522}
-        m_TargetAssemblyTypeName: EliminateImage, Assembly-CSharp
-        m_MethodName: OnButtonClick
+      - m_Target: {fileID: 1131430001}
+        m_TargetAssemblyTypeName: UnlockItemHandler, Assembly-CSharp
+        m_MethodName: closePopUpFaina
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5951,7 +5951,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $50
+  m_text: $60
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
   m_sharedMaterial: {fileID: -4622975185388663613, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}

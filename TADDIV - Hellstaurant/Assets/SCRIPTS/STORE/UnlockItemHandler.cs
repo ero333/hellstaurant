@@ -266,6 +266,11 @@ public class UnlockItemHandler : MonoBehaviour
         popupFuga.SetActive(true);
     }
 
+    public void closePopUpFuga()
+    {
+        popupFuga.SetActive(false);
+    }
+
 
     public void BuyFuga()
     {
@@ -314,6 +319,12 @@ public class UnlockItemHandler : MonoBehaviour
     {
         popupFaina.SetActive(true);
     }
+
+    public void closePopUpFaina()
+    {
+        popupFaina.SetActive(false);
+    }
+
     public void BuyFaina()
     {
 
@@ -362,6 +373,11 @@ public class UnlockItemHandler : MonoBehaviour
         popupCaja.SetActive(true);
     }
 
+    public void closePopUpCaja()
+    {
+        popupCaja.SetActive(false);
+    }
+
     public void BuyCaja()
     {
 
@@ -405,6 +421,11 @@ public class UnlockItemHandler : MonoBehaviour
     public void PopupPicante()
     {
         popupPicante.SetActive(true);
+    }
+
+    public void closePopUpPicante()
+    {
+        popupPicante.SetActive(false);
     }
     public void BuyFrenzy()
     {
