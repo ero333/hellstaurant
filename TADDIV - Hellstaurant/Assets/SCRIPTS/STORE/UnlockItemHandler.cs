@@ -42,7 +42,10 @@ public class UnlockItemHandler : MonoBehaviour
 
     public string powerSe;
 
-
+    public GameObject popupFuga;
+    public GameObject popupFaina;
+    public GameObject popupCaja;
+    public GameObject popupPicante;
     
 
     private void Start()
@@ -258,6 +261,12 @@ public class UnlockItemHandler : MonoBehaviour
     }
 
 
+    public void PopupFuga()
+    {
+        popupFuga.SetActive(true);
+    }
+
+
     public void BuyFuga()
     {
         
@@ -297,8 +306,14 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
+        popupFuga.SetActive(false); 
+
     }
 
+    public void PopupFaina()
+    {
+        popupFaina.SetActive(true);
+    }
     public void BuyFaina()
     {
 
@@ -338,7 +353,15 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
+        popupFaina.SetActive(false);
+
     }
+
+    public void PopupCaja()
+    {
+        popupCaja.SetActive(true);
+    }
+
     public void BuyCaja()
     {
 
@@ -376,8 +399,13 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
+        popupCaja.SetActive(false);
     }
 
+    public void PopupPicante()
+    {
+        popupPicante.SetActive(true);
+    }
     public void BuyFrenzy()
     {
 
@@ -416,6 +444,7 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
+        popupPicante.SetActive(false);
     }
 
 
