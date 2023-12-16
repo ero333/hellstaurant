@@ -180,26 +180,26 @@ public class UnlockItemHandler : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
 
-            monedasactuales = monedasactuales + 150;
-
-
-            PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
-            coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            PlayerPrefs.SetInt("FugazzettaUnlocked", 1);
-            PlayerPrefs.SetInt("FainaUnlocked", 1);
-            PlayerPrefs.SetInt("CajaUnlocked", 1);
-            PlayerPrefs.SetInt("FrenzyUnlocked", 1);
+        //    monedasactuales = monedasactuales + 150;
 
 
-        }
+        //    PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
+        //    coindata.currentCoinCount.text = PlayerPrefs.GetInt("MonedasRecolectadas:").ToString();
+
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.O))
+        //{
+        //    PlayerPrefs.SetInt("FugazzettaUnlocked", 1);
+        //    PlayerPrefs.SetInt("FainaUnlocked", 1);
+        //    PlayerPrefs.SetInt("CajaUnlocked", 1);
+        //    PlayerPrefs.SetInt("FrenzyUnlocked", 1);
+
+
+        //}
 
 
         for (int i = 0; i < buttons.Length; i++)
