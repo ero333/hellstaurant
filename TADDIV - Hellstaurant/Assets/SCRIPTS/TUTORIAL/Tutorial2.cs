@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tutorial2 : MonoBehaviour
 {
     //VARIABLES DE CADA CARTEL DEL TUTORIAL//
-    public GameObject cartel1, cartel2, cartel3, cartel4, cartel5, cartel6, cartel7, cartel8, cartel9, cartel10;
+    public GameObject cartel1, cartel2, cartel3, cartel4, cartel5, cartel6, cartel7, cartel8, cartel9, cartel10, cartel11, cartel12, cartel13;
 
     //VARIABLE DEL BOT�N SIGUIENTE//
     public GameObject botonSaltar;
@@ -20,17 +20,25 @@ public class Tutorial2 : MonoBehaviour
     public GameObject íconoMonedas;
     public GameObject timer;
     public GameObject spawner;
+    public GameObject spawner2;
+    public GameObject spawner3;
 
     public GameObject fugaspawn;
     public GameObject fainaspawn;
+    public GameObject cajaspawn;
+    public GameObject picantespawn;
 
     public GameObject fainaspawner;
     public GameObject fugaspawner;
+    public GameObject cajaspawner;
+    public GameObject picantespawner;
 
     public bool canSpawn = true;
 
     public SpawnPotenciadores spawners;
     public SpawnPotenciadores spawners2;
+    public SpawnPotenciadores spawners3;
+    public SpawnPotenciadores spawners4;
 
 
 
@@ -88,6 +96,41 @@ public class Tutorial2 : MonoBehaviour
             cartel7.SetActive(true);
         }
 
+
+        if (contadorCarteles == 8)
+        {
+            cartel7.SetActive(false);
+            cartel8.SetActive(true);
+        }
+
+        if (contadorCarteles == 9)
+        {
+            StartCoroutine(pruebaCaja());
+        }
+
+        if (contadorCarteles == 10)
+        {
+            cartel9.SetActive(false);
+            cartel10.SetActive(true);
+        }
+
+        if (contadorCarteles == 11)
+        {
+           StartCoroutine (pruebaPicante());
+        }
+
+        if (contadorCarteles == 12)
+        {
+            cartel11.SetActive(false);
+            cartel12.SetActive(true);
+        }
+
+        if (contadorCarteles == 13)
+        {
+            cartel12.SetActive(false);
+            cartel13.SetActive(true);
+        }
+
         //if (contadorCarteles == 8)
         //{
         //    cartel7.SetActive(false);
@@ -101,23 +144,29 @@ public class Tutorial2 : MonoBehaviour
         //}
 
 
-        if (contadorCarteles >= 8)
+        if (contadorCarteles >= 14)
         {
             Time.timeScale = 1f;
 
            
-            cartel9.SetActive(false);
+            cartel13.SetActive(false);
             botonSaltar.SetActive(false);
-            //spawner.SetActive(true);
+            spawner.SetActive(true);
+            spawner2.SetActive(true); 
+            spawner3.SetActive(true);
 
             timer.SetActive(true);
             fainaspawner.SetActive(true);
             fugaspawner.SetActive(true);
+            picantespawner.SetActive(true);
+            cajaspawner.SetActive(true);
             contadorMonedas.SetActive(true);
             íconoMonedas.SetActive(true);
 
             spawners.startSpawning();
             spawners2.startSpawning();
+            spawners3.startSpawning();
+            spawners4.startSpawning();
 
         }
 
@@ -176,10 +225,65 @@ public class Tutorial2 : MonoBehaviour
             
             botonSaltar.SetActive(true);
             cartel6.SetActive(true);
-
-
-
         
+    }
+
+    IEnumerator pruebaCaja()
+    {
+
+        Time.timeScale = 1f;
+
+
+        cartel8.SetActive(false);
+        botonSaltar.SetActive(false);
+        //spawner.SetActive(true);
+
+        cajaspawn.SetActive(true);
+        contadorMonedas.SetActive(true);
+        íconoMonedas.SetActive(true);
+
+        yield return new WaitForSeconds(12f);
+
+
+
+        //spawner.SetActive(false);
+        //contadorCarteles++;
+        Time.timeScale = 0f;
+
+
+
+        botonSaltar.SetActive(true);
+        cartel9.SetActive(true);
+
+    }
+
+    IEnumerator pruebaPicante()
+    {
+
+        Time.timeScale = 1f;
+
+
+        cartel10.SetActive(false);
+        botonSaltar.SetActive(false);
+        //spawner.SetActive(true);
+
+        picantespawn.SetActive(true);
+        contadorMonedas.SetActive(true);
+        íconoMonedas.SetActive(true);
+
+        yield return new WaitForSeconds(14f);
+
+
+
+        //spawner.SetActive(false);
+        //contadorCarteles++;
+        Time.timeScale = 0f;
+
+
+
+        botonSaltar.SetActive(true);
+        cartel11.SetActive(true);
+
     }
 
     IEnumerator pruebaHeal()

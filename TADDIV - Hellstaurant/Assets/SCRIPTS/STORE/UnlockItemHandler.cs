@@ -46,6 +46,8 @@ public class UnlockItemHandler : MonoBehaviour
     public GameObject popupFaina;
     public GameObject popupCaja;
     public GameObject popupPicante;
+
+    public GameObject noMonedas;
     
 
     private void Start()
@@ -307,12 +309,22 @@ public class UnlockItemHandler : MonoBehaviour
              { "order", order }
             });
 
-
+            popupFuga.SetActive(false);
 
         }
 
-        popupFuga.SetActive(false); 
+         if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 15 && UnlockedItemsNumber >= 1)
+        {
+            StartCoroutine(timercartelito());
+        }
 
+    }
+
+    IEnumerator timercartelito()
+    {
+        noMonedas.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        noMonedas.SetActive(false);
     }
 
     public void PopupFaina()
@@ -360,11 +372,14 @@ public class UnlockItemHandler : MonoBehaviour
              { "order", order }
             });
 
-
+            popupFaina.SetActive(false);
 
         }
 
-        popupFaina.SetActive(false);
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 25 && UnlockedItemsNumber >= 2)
+        {
+            StartCoroutine(timercartelito());
+        }
 
     }
 
@@ -412,10 +427,13 @@ public class UnlockItemHandler : MonoBehaviour
              { "order", order }
             });
 
-
+            popupCaja.SetActive(false);
         }
 
-        popupCaja.SetActive(false);
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 40 && UnlockedItemsNumber >= 3)
+        {
+            StartCoroutine(timercartelito());
+        }
     }
 
     public void PopupPicante()
@@ -461,11 +479,14 @@ public class UnlockItemHandler : MonoBehaviour
              { "order", order }
             });
 
-
+            popupPicante.SetActive(false);
 
         }
 
-        popupPicante.SetActive(false);
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 60 && UnlockedItemsNumber >= 4)
+        {
+            StartCoroutine(timercartelito());
+        }
     }
 
 
