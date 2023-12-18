@@ -271,6 +271,7 @@ public class UnlockItemHandler : MonoBehaviour
     public void closePopUpFuga()
     {
         popupFuga.SetActive(false);
+        noMonedas.SetActive(false);
     }
 
 
@@ -310,6 +311,7 @@ public class UnlockItemHandler : MonoBehaviour
             });
 
             popupFuga.SetActive(false);
+            noMonedas.SetActive(false);
 
         }
 
@@ -335,6 +337,7 @@ public class UnlockItemHandler : MonoBehaviour
     public void closePopUpFaina()
     {
         popupFaina.SetActive(false);
+        noMonedas.SetActive(false);
     }
 
     public void BuyFaina()
@@ -373,6 +376,7 @@ public class UnlockItemHandler : MonoBehaviour
             });
 
             popupFaina.SetActive(false);
+            noMonedas.SetActive(false);
 
         }
 
@@ -391,6 +395,7 @@ public class UnlockItemHandler : MonoBehaviour
     public void closePopUpCaja()
     {
         popupCaja.SetActive(false);
+        noMonedas.SetActive(false);
     }
 
     public void BuyCaja()
@@ -428,6 +433,7 @@ public class UnlockItemHandler : MonoBehaviour
             });
 
             popupCaja.SetActive(false);
+            noMonedas.SetActive(false);
         }
 
         if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 40 && UnlockedItemsNumber >= 3)
@@ -444,6 +450,7 @@ public class UnlockItemHandler : MonoBehaviour
     public void closePopUpPicante()
     {
         popupPicante.SetActive(false);
+        noMonedas.SetActive(false);
     }
     public void BuyFrenzy()
     {
@@ -480,6 +487,7 @@ public class UnlockItemHandler : MonoBehaviour
             });
 
             popupPicante.SetActive(false);
+            noMonedas.SetActive(false);
 
         }
 
