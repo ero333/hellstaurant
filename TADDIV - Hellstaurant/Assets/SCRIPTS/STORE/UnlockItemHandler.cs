@@ -278,8 +278,7 @@ public class UnlockItemHandler : MonoBehaviour
     public void BuyFuga()
     {
         
-
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 15 && UnlockedItemsNumber >=1)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 15)
         {
 
             monedasactuales = monedasactuales - 15;
@@ -344,7 +343,7 @@ public class UnlockItemHandler : MonoBehaviour
     {
 
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 25 && UnlockedItemsNumber >= 2)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 25)
         {
 
             monedasactuales = monedasactuales - 25;
@@ -402,7 +401,7 @@ public class UnlockItemHandler : MonoBehaviour
     {
 
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 40 && UnlockedItemsNumber >= 3)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 40)
         {
 
             monedasactuales = monedasactuales - 40;
@@ -456,7 +455,7 @@ public class UnlockItemHandler : MonoBehaviour
     {
 
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 60 && UnlockedItemsNumber >= 4)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 60)
         {
 
             monedasactuales = monedasactuales - 60;
