@@ -315,7 +315,7 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
-         if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 15 && UnlockedItemsNumber >= 1)
+         if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 15)
         {
             StartCoroutine(timercartelito());
         }
@@ -380,7 +380,7 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 25 && UnlockedItemsNumber >= 2)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 25)
         {
             StartCoroutine(timercartelito());
         }
@@ -436,7 +436,7 @@ public class UnlockItemHandler : MonoBehaviour
             noMonedas.SetActive(false);
         }
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 40 && UnlockedItemsNumber >= 3)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 40)
         {
             StartCoroutine(timercartelito());
         }
@@ -491,7 +491,7 @@ public class UnlockItemHandler : MonoBehaviour
 
         }
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 60 && UnlockedItemsNumber >= 4)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") < 60)
         {
             StartCoroutine(timercartelito());
         }
