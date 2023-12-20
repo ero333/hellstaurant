@@ -147,9 +147,10 @@ public class UnlockItemHandler : MonoBehaviour
 
 
 
-        //for (int i=0; i<buttons.Length; i++) {
-        //buttons[i].interactable = false;
-        //}
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].interactable = false;
+        }
     }
 
     private void Update()
@@ -160,23 +161,26 @@ public class UnlockItemHandler : MonoBehaviour
         if ( UnlockedItemsNumber >= 1)
         {
             blockFuga.SetActive(false);
+            fugabutton.interactable = true;
 
             
         }
         if (UnlockedItemsNumber >= 2)
         {
             blockFaina.SetActive(false);
-            
+            fainabutton.interactable = true;
         }
         if (UnlockedItemsNumber >= 3)
         {
             blockCaja.SetActive(false);
-            
+            cajabutton.interactable = true;
+
         }
         if (UnlockedItemsNumber >= 4)
         {
-            blockFrenzy.SetActive(false);
-            
+            blockFrenzy.SetActive(false); 
+            frenzybutton.interactable = true;
+
         }
 
 
@@ -202,10 +206,10 @@ public class UnlockItemHandler : MonoBehaviour
         //}
 
 
-        for (int i = 0; i < buttons.Length; i++)
-        {
-            buttons[i].interactable = true;
-        }
+        //for (int i = 0; i < buttons.Length; i++)
+        //{
+        //    buttons[i].interactable = true;
+        //}
 
         if (PlayerPrefs.GetInt("FugazzettaUnlocked") == 1)
         {
@@ -278,6 +282,7 @@ public class UnlockItemHandler : MonoBehaviour
     public void BuyFuga()
     {
         
+
         if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 15)
         {
 
