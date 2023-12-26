@@ -21,6 +21,8 @@ public class PLAYMENU : MonoBehaviour
 
     public PopupController popupController;
 
+    public int partidasCreadas;
+
 
 
     private void Awake()
@@ -37,6 +39,8 @@ public class PLAYMENU : MonoBehaviour
         ultimoNivel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
 
         buttonsound = GameObject.FindGameObjectWithTag ("sonidoboton").GetComponent<AudioSource> ();
+
+        partidasCreadas = PlayerPrefs.GetInt("partidasCreadas");
     }
 
     // Update is called once per frame
@@ -65,6 +69,9 @@ public class PLAYMENU : MonoBehaviour
 
         PlayerPrefs.SetInt("PartidaGuardada", 1);
 
+        partidasCreadas = partidasCreadas + 1;
+        PlayerPrefs.SetInt("partidasCreadas", partidasCreadas);
+
 
     }
 
@@ -84,6 +91,10 @@ public class PLAYMENU : MonoBehaviour
         PlayerPrefs.SetInt("PartidaGuardada", nohaypartida);
 
         SceneManager.LoadScene("Inicial Cutscene");
+
+
+        partidasCreadas = partidasCreadas + 1;
+        PlayerPrefs.SetInt("partidasCreadas", partidasCreadas);
 
     }
 
@@ -146,9 +157,13 @@ public class PLAYMENU : MonoBehaviour
 
         if (PlayerPrefs.GetInt("PartidaGuardada") == nohaypartida)
         {
+            partidasCreadas = partidasCreadas + 1;
+            PlayerPrefs.SetInt("partidasCreadas", partidasCreadas);
+
             botonContinuar.SetActive(true);
             SceneManager.LoadScene("Inicial Cutscene");
             PlayerPrefs.SetInt("PartidaGuardada", 1);
+
 
         }
     }
@@ -163,5 +178,10 @@ public class PLAYMENU : MonoBehaviour
 
         PlayerPrefs.SetInt("UltimoNivelAlcanzado", 20);
         SceneManager.LoadScene("Creditos");
+    }
+
+    public void logros()
+    {
+        SceneManager.LoadScene("LOGROS");
     }
 }
