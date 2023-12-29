@@ -25,6 +25,7 @@ public class PLAYMENU : MonoBehaviour
 
 
 
+
     private void Awake()
     {
 
@@ -41,6 +42,7 @@ public class PLAYMENU : MonoBehaviour
         buttonsound = GameObject.FindGameObjectWithTag ("sonidoboton").GetComponent<AudioSource> ();
 
         partidasCreadas = PlayerPrefs.GetInt("partidasCreadas");
+
     }
 
     // Update is called once per frame
@@ -159,6 +161,7 @@ public class PLAYMENU : MonoBehaviour
         {
             partidasCreadas = partidasCreadas + 1;
             PlayerPrefs.SetInt("partidasCreadas", partidasCreadas);
+
 
             botonContinuar.SetActive(true);
             SceneManager.LoadScene("Inicial Cutscene");

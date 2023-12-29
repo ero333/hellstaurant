@@ -48,11 +48,22 @@ public class UnlockItemHandler : MonoBehaviour
     public GameObject popupPicante;
 
     public GameObject noMonedas;
-    
+
+
+
+    public int achievements;
+
+    public achievementManager achievementObject;
+
 
     private void Start()
     {
         order = PlayerPrefs.GetInt("ordenDePotenciador");
+
+        achievements = achievementObject.achievements;
+
+        achievementObject = GameObject.FindGameObjectWithTag("achievementManager").GetComponent<achievementManager>();
+
 
         //lastlevel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
 
@@ -302,6 +313,20 @@ public class UnlockItemHandler : MonoBehaviour
 
             powerSe = "FUGAZZETTA";
 
+
+
+            if (order >= 4)
+            {
+               achievementObject.achievements++;
+
+                PlayerPrefs.SetInt("achievements", achievementObject.achievements);
+
+                achievementObject.allpotenciadores();
+
+            }
+
+
+
             Debug.Log("BuyPower.powerSe =" + powerSe);
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
@@ -366,6 +391,18 @@ public class UnlockItemHandler : MonoBehaviour
 
             PlayerPrefs.SetInt("ordenDePotenciador",order);
 
+
+            if (order >= 4)
+            {
+                achievementObject.achievements++;
+
+                PlayerPrefs.SetInt("achievements", achievementObject.achievements);
+
+                achievementObject.allpotenciadores();
+
+            }
+
+
             Debug.Log("BuyPower.powerSe =" + powerSe);
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
@@ -424,6 +461,17 @@ public class UnlockItemHandler : MonoBehaviour
 
             PlayerPrefs.SetInt("ordenDePotenciador",order);
 
+            if (order >= 4)
+            {
+                achievements++;
+
+                PlayerPrefs.SetInt("achievements", achievements);
+
+                achievementObject.allpotenciadores();
+
+            }
+
+
             Debug.Log("BuyPower.powerSe =" + powerSe);
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
@@ -475,6 +523,17 @@ public class UnlockItemHandler : MonoBehaviour
             order++;
 
             powerSe = "PICANTE";
+
+            if (order >= 4)
+            {
+                achievementObject.achievements++;
+
+                PlayerPrefs.SetInt("achievements", achievementObject.achievements);
+
+                achievementObject.allpotenciadores();
+
+            }
+
 
             PlayerPrefs.SetInt("ordenDePotenciador",order);
 
