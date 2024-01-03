@@ -16,6 +16,8 @@ public class achievementManager : MonoBehaviour
     public GameObject popupPlatino;
     public GameObject popupSkins;
     public GameObject popupPotenciador;
+    public GameObject popupBossNoHit;
+    public GameObject popupLevelNoHit;
 
 
 
@@ -39,7 +41,7 @@ public class achievementManager : MonoBehaviour
         achievements = PlayerPrefs.GetInt("achievements");
 
 
-        if (PlayerPrefs.GetInt("partidasCreadas") >= 1)
+        if (PlayerPrefs.GetInt("partidasCreadas") == 1)
         {
             if (popupNewGame != null)
             {
@@ -68,6 +70,17 @@ public class achievementManager : MonoBehaviour
     {
         StartCoroutine(allPotAchievement());
     }
+
+    public void bossnohit()
+    {
+        StartCoroutine(bossNoHitAchievement());
+    }
+
+    public void levelnohit()
+    {
+        StartCoroutine(levelNoHitAchievement());
+    }
+
 
 
     IEnumerator newGameAchievement()
@@ -99,6 +112,30 @@ public class achievementManager : MonoBehaviour
         popupPotenciador.SetActive(true);
         yield return new WaitForSeconds(3);
         popupPotenciador.SetActive(false);
+    }
+
+    IEnumerator bossNoHitAchievement()
+    {
+        popupBossNoHit.SetActive(true);
+
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
+
+        yield return new WaitForSeconds(3);
+        popupBossNoHit.SetActive(false);
+    }
+
+    IEnumerator levelNoHitAchievement()
+    {
+        popupLevelNoHit.SetActive(true);
+
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
+
+        yield return new WaitForSeconds(3);
+        popupLevelNoHit.SetActive(false);
     }
 
 

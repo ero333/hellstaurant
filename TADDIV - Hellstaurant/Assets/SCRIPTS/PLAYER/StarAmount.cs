@@ -23,6 +23,12 @@ public class StarAmount : MonoBehaviour
 
     public int lastlevel;
 
+    public achievementManager achievementObject;
+
+    public int noHitCounter;
+
+    public int noHitLevelCount;
+
     [Header("variables diccionario")]
 
     public static int healing;
@@ -75,7 +81,9 @@ public class StarAmount : MonoBehaviour
 
     public void Start()
     {
-
+        noHitCounter = PlayerPrefs.GetInt("NOHITBOSS");
+        noHitLevelCount = PlayerPrefs.GetInt("NOHIT");
+        achievementObject = GameObject.FindGameObjectWithTag("achievementManager").GetComponent<achievementManager>();
 
         star1.SetActive(false);
         star2.SetActive(false);
@@ -413,6 +421,33 @@ public class StarAmount : MonoBehaviour
                 break;
         }
 
+
+        //JEFE NO HIT
+
+        if (level == 14 && hit == 0)
+        {
+            noHitCounter ++;
+            PlayerPrefs.SetInt("NOHITBOSS", noHitCounter);
+
+            if (level == 14 && hit ==0 && noHitCounter <= 1)
+            {
+                achievementObject.bossnohit();
+            }
+        }
+
+        //NIVEL NORMAL NO HIT
+
+        if (level >= 5 && hit == 0)
+
+        {
+            noHitLevelCount++;
+            PlayerPrefs.SetInt("NOHIT", noHitLevelCount);
+
+            if (hit == 0 && noHitLevelCount <= 1)
+            {
+                achievementObject.levelnohit();
+            }
+        }
 
 
 

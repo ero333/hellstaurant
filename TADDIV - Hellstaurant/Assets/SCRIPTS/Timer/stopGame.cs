@@ -45,6 +45,8 @@ public class stopGame : MonoBehaviour
 
     public GameObject popupPotenciador;
 
+    
+
     private void Awake()
     {
         instance = this; 
