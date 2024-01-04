@@ -89,10 +89,12 @@ public class StarAmount : MonoBehaviour
     public void Start()
     {
         noHealCount = PlayerPrefs.GetInt ("noheal");
+
         noShootGot = PlayerPrefs.GetInt("NoShooting");
         shooting = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerShooting>();
         noHitCounter = PlayerPrefs.GetInt("NOHITBOSS");
         noHitLevelCount = PlayerPrefs.GetInt("NOHIT");
+
         achievementObject = GameObject.FindGameObjectWithTag("achievementManager").GetComponent<achievementManager>();
 
         star1.SetActive(false);
@@ -442,9 +444,11 @@ public class StarAmount : MonoBehaviour
 
         //NIVEL NORMAL NO HIT
 
-        if (level >= 5 && hit == 0 && PlayerPrefs.GetInt ("logro6conseguido") == 0)
+        if (hit == 0 && PlayerPrefs.GetInt ("logro6conseguido") == 0)
 
         {
+
+            Debug.Log("logro 6");
                 achievementObject.levelnohit();
 
         }
@@ -453,9 +457,9 @@ public class StarAmount : MonoBehaviour
 
         //NO SHOOT
 
-        if (level >= 5 && shooting.shootNumber <= 0 && PlayerPrefs.GetInt("logro4conseguido") == 0)
+        if (shooting.shootNumber <= 0 && PlayerPrefs.GetInt("logro4conseguido") == 0)
         {
-
+            Debug.Log("logro 4");
             achievementObject.levelnoshoot();
         }
 
