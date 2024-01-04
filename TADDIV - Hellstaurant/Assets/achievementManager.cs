@@ -18,21 +18,25 @@ public class achievementManager : MonoBehaviour
     public GameObject popupPotenciador;
     public GameObject popupBossNoHit;
     public GameObject popupLevelNoHit;
-
+    public GameObject popupLevelNoShoot;
+    public GameObject popupNoHeal;
+    public GameObject popupMoney;
+    public GameObject popupEndless;
+    public GameObject popupNoHealGame;
 
 
     void Awake()
     {
-        if (variable != null)
-        {
-            Destroy(this.gameObject);
-        }
+        //if (variable != null)
+        //{
+        //    Destroy(this.gameObject);
+        //}
 
-        else
-        {
-            variable = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+        //else
+        //{
+        //    variable = this;
+        //    DontDestroyOnLoad(this.gameObject);
+        //}
     }
 
     // Start is called before the first frame update
@@ -53,22 +57,12 @@ public class achievementManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (achievements >= 8) 
+        if (achievements >= 9) 
         {
             StartCoroutine (platinumAchievement());
         }
 
         achievements = PlayerPrefs.GetInt("achievements");
-    }
-
-    public void allskins()
-    {
-       StartCoroutine(allSkinsAchievement());
-    }
-
-    public void allpotenciadores()
-    {
-        StartCoroutine(allPotAchievement());
     }
 
     public void bossnohit()
@@ -81,6 +75,34 @@ public class achievementManager : MonoBehaviour
         StartCoroutine(levelNoHitAchievement());
     }
 
+    public void levelnoshoot()
+    {
+        StartCoroutine(levelNoShootAchievement());
+    }
+
+    public void noheal()
+    {
+        StartCoroutine(noHealAchievement());
+    }
+
+    public void money()
+    {
+        StartCoroutine(moneyAchievement());
+    }
+
+
+    public void endless()
+    {
+        StartCoroutine(endlessAchievement());
+    }
+
+    public void noHealGame()
+    {
+        StartCoroutine(noHealGameAchievement());
+    }
+
+
+
 
 
     IEnumerator newGameAchievement()
@@ -89,6 +111,9 @@ public class achievementManager : MonoBehaviour
         achievements++;
 
         PlayerPrefs.SetInt("achievements", achievements);
+
+        PlayerPrefs.SetInt("logro1conseguido", 1);
+
         yield return new WaitForSeconds(3);
         popupNewGame.SetActive(false);
     }
@@ -96,24 +121,12 @@ public class achievementManager : MonoBehaviour
     IEnumerator platinumAchievement()
     {
         popupPlatino.SetActive(true);
+
+        PlayerPrefs.SetInt("platinoconseguido", 1);
+
         yield return new WaitForSeconds(3);
         popupNewGame.SetActive(false);
     }
-
-    IEnumerator allSkinsAchievement()
-    {
-        popupSkins.SetActive(true);
-        yield return new WaitForSeconds(3);
-        popupSkins.SetActive(false);
-    }
-
-    IEnumerator allPotAchievement()
-    {
-        popupPotenciador.SetActive(true);
-        yield return new WaitForSeconds(3);
-        popupPotenciador.SetActive(false);
-    }
-
     IEnumerator bossNoHitAchievement()
     {
         popupBossNoHit.SetActive(true);
@@ -121,6 +134,8 @@ public class achievementManager : MonoBehaviour
         achievements++;
 
         PlayerPrefs.SetInt("achievements", achievements);
+
+        PlayerPrefs.SetInt("logro7conseguido", 1);
 
         yield return new WaitForSeconds(3);
         popupBossNoHit.SetActive(false);
@@ -134,9 +149,84 @@ public class achievementManager : MonoBehaviour
 
         PlayerPrefs.SetInt("achievements", achievements);
 
+
+        PlayerPrefs.SetInt("logro6conseguido", 1);
+
         yield return new WaitForSeconds(3);
         popupLevelNoHit.SetActive(false);
     }
+
+    IEnumerator levelNoShootAchievement()
+    {
+        popupLevelNoShoot.SetActive(true);
+
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
+
+        PlayerPrefs.SetInt("logro4conseguido", 1);
+
+        yield return new WaitForSeconds(3);
+        popupLevelNoShoot.SetActive(false);
+    }
+
+
+    IEnumerator noHealAchievement()
+    {
+        popupNoHeal.SetActive(true);
+
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
+
+        PlayerPrefs.SetInt("logro5conseguido", 1);
+
+        yield return new WaitForSeconds(3);
+        popupNoHeal.SetActive(false);
+    }
+
+    IEnumerator moneyAchievement()
+    {
+        popupMoney.SetActive(true);
+
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
+
+        PlayerPrefs.SetInt("logro3conseguido", 1);
+
+        yield return new WaitForSeconds(3);
+        popupMoney.SetActive(false);
+    }
+
+    IEnumerator endlessAchievement()
+    {
+        popupEndless.SetActive(true);
+
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
+
+        PlayerPrefs.SetInt("logro9conseguido", 1);
+
+        yield return new WaitForSeconds(3);
+        popupEndless.SetActive(false);
+    }
+
+    IEnumerator noHealGameAchievement()
+    {
+        popupNoHealGame.SetActive(true);
+
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
+
+        PlayerPrefs.SetInt("logro8conseguido", 1);
+
+        yield return new WaitForSeconds(3);
+        popupNoHealGame.SetActive(false);
+    }
+
 
 
 }

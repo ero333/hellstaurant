@@ -9,8 +9,16 @@ public class Pickup : MonoBehaviour
     private bool isCollected; //destruir monedas una vez agarradas
     public float timeToDisappear = 5f; // Tiempo en que las monedas se destruyen si el jugador no las agarra
 
-    
+    public achievementManager manager;
 
+
+    private void Start()
+    {
+
+        manager = GameObject.FindGameObjectWithTag("achievementManager").GetComponent<achievementManager>();
+
+        Invoke("DestroyIfNotCollected", timeToDisappear);
+    }
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -24,9 +32,21 @@ public class Pickup : MonoBehaviour
                 UIController.Instance.UpdateCoinCount(); //Iniciar conteo monedas
                 
 
+
                 isCollected = true;
+
+
+                if (UIController.Instance.coinsCollected >= 300 && PlayerPrefs.GetInt("logro3conseguido") == 0)
+                {
+
+                    manager.money();
+                }
+
                 Destroy(gameObject); //destruir monedas una vez agarradas 
                 
+
+
+
             }
         }
     }
@@ -41,8 +61,5 @@ public class Pickup : MonoBehaviour
     }
 
     // Start a la funcion de destuir las monedas si el jugador no las agarrar
-    private void Start()
-    {
-        Invoke("DestroyIfNotCollected", timeToDisappear);
-    }
+
 }

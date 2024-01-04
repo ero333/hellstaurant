@@ -72,18 +72,11 @@ public class PlayerSelector : MonoBehaviour
     public string skinSe;
 
 
-    public int achievements;
-
-    public achievementManager achievementObject;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
-        
-
-        achievementObject = GameObject.FindGameObjectWithTag("achievementManager").GetComponent<achievementManager>();
 
 
         //foreach (var img in this.selectionBoxes)
@@ -385,22 +378,6 @@ public class PlayerSelector : MonoBehaviour
 
             skinSe = "MUJER";
 
-
-
-            if (order >= 4)
-            {
-                achievementObject.achievements++;
-
-                PlayerPrefs.SetInt("achievements", achievementObject.achievements);
-
-                achievementObject.allskins();
-
-            }
-
-
-
-
-
             Debug.Log("BuySkin.skinSe =" + skinSe);
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
             Debug.Log("BuySkin.order =" + order);
@@ -442,18 +419,6 @@ public class PlayerSelector : MonoBehaviour
             order++;
 
             PlayerPrefs.SetInt("ordenDeSkin", order);
-
-            if (order >= 4)
-            {
-                achievementObject.achievements++;
-
-                PlayerPrefs.SetInt("achievements", achievementObject.achievements);
-
-
-
-                achievementObject.allskins();
-
-            }
 
             skinSe = "HALLOWEEN";
 
@@ -502,17 +467,6 @@ public class PlayerSelector : MonoBehaviour
 
             skinSe = "SPIDERMAN";
 
-            if (order >= 4)
-            {
-                achievementObject.achievements++;
-
-                PlayerPrefs.SetInt("achievements", achievementObject.achievements);
-
-
-
-                achievementObject.allskins();
-
-            }
 
             Debug.Log("BuySkin.skinSe =" + skinSe);
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
@@ -561,19 +515,6 @@ public class PlayerSelector : MonoBehaviour
             PlayerPrefs.SetInt("ordenDeSkin", order);
 
             skinSe = "MESSI";
-
-
-            if (order >= 4)
-            {
-                achievementObject.achievements++;
-
-                PlayerPrefs.SetInt("achievements", achievementObject.achievements);
-
-
-
-                achievementObject.allskins();
-
-            }
 
             Debug.Log("BuySkin.skinSe =" + skinSe);
             Debug.Log("BuySkin.lastLevel =" + lastlevel);

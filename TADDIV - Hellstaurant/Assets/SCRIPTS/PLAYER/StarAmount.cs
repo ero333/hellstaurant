@@ -29,6 +29,13 @@ public class StarAmount : MonoBehaviour
 
     public int noHitLevelCount;
 
+    public PlayerShooting shooting;
+
+    public int noShootGot = 0;
+
+    public int noHealCount;
+
+
     [Header("variables diccionario")]
 
     public static int healing;
@@ -81,6 +88,9 @@ public class StarAmount : MonoBehaviour
 
     public void Start()
     {
+        noHealCount = PlayerPrefs.GetInt ("noheal");
+        noShootGot = PlayerPrefs.GetInt("NoShooting");
+        shooting = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerShooting>();
         noHitCounter = PlayerPrefs.GetInt("NOHITBOSS");
         noHitLevelCount = PlayerPrefs.GetInt("NOHIT");
         achievementObject = GameObject.FindGameObjectWithTag("achievementManager").GetComponent<achievementManager>();
@@ -424,30 +434,55 @@ public class StarAmount : MonoBehaviour
 
         //JEFE NO HIT
 
-        if (level == 14 && hit == 0)
-        {
-            noHitCounter ++;
-            PlayerPrefs.SetInt("NOHITBOSS", noHitCounter);
-
-            if (level == 14 && hit ==0 && noHitCounter <= 1)
+        if (level == 14 && hit ==0 && PlayerPrefs.GetInt ("logro7conseguido") == 0)
             {
                 achievementObject.bossnohit();
             }
-        }
+        
 
         //NIVEL NORMAL NO HIT
 
-        if (level >= 5 && hit == 0)
+        if (level >= 5 && hit == 0 && PlayerPrefs.GetInt ("logro6conseguido") == 0)
 
         {
-            noHitLevelCount++;
-            PlayerPrefs.SetInt("NOHIT", noHitLevelCount);
-
-            if (hit == 0 && noHitLevelCount <= 1)
-            {
                 achievementObject.levelnohit();
-            }
+
         }
+
+
+
+        //NO SHOOT
+
+        if (level >= 5 && shooting.shootNumber <= 0 && PlayerPrefs.GetInt("logro4conseguido") == 0)
+        {
+
+            achievementObject.levelnoshoot();
+        }
+
+
+        //HEALING 
+
+
+        if (level >= 4 && healing <= 0)
+        {
+            noHealCount++;
+
+            PlayerPrefs.SetInt("noheal", noHealCount);
+        }
+
+
+        if (level >= 4 && PlayerPrefs.GetInt ("noheal") >= 14)
+        {
+            achievementObject.noHealGame();
+        }
+
+
+        if (level >= 5 && healing <= 0 && PlayerPrefs.GetInt ("logro5conseguido") == 0)
+        {
+            achievementObject.noheal();
+
+        }
+
 
 
 

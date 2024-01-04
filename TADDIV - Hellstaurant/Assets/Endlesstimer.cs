@@ -27,6 +27,8 @@ public class Endlesstimer : MonoBehaviour
 
     public float spawnRates;
 
+    public achievementManager achievementobject;
+
 
 
     public void Awake()
@@ -36,6 +38,9 @@ public class Endlesstimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        achievementobject=GameObject.FindGameObjectWithTag ("achievementManager").GetComponent<achievementManager> ();
+
         playerAlive = true;
         timeHours = startingTime;
 
@@ -52,6 +57,12 @@ public class Endlesstimer : MonoBehaviour
     private void Update()
     {
         timeText.text = timeHours.ToString();
+
+        if (timeHours >= 90 && playerAlive && PlayerPrefs.GetInt("logro9conseguido") == 0)
+        {
+            achievementobject.endless();
+        }
+
     }
 
     private IEnumerator advanceHourOverTime()

@@ -65,6 +65,7 @@ public class PlayerShooting : MonoBehaviour
 
     public AOEDamage aoedamage;
 
+    public int shootNumber = 0;
 
     public void Start()
     {
@@ -133,6 +134,8 @@ public class PlayerShooting : MonoBehaviour
             if (canShoot && (Input.GetMouseButtonDown(0) || Input.GetKey("up") || Input.GetKey("down") || Input.GetKey("right")|| Input.GetKey("left") || Input.GetKey("joystick button 0") || Input.GetKey("joystick button 1") || Input.GetKey("joystick button 2") || Input.GetKey("joystick button 3")) && Time.time - lastShoot >= cooldown)
             {
                 Debug.Log("Shooting");
+
+                shootNumber++;
 
                 // Establecemos la direccion de disparo
                 Vector3 direction = new Vector3(0,0,0);
