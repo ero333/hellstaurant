@@ -2679,6 +2679,7 @@ MonoBehaviour:
   popupMoney: {fileID: 1908439269}
   popupEndless: {fileID: 0}
   popupNoHealGame: {fileID: 0}
+  popupCompleteGame: {fileID: 0}
 --- !u!4 &533997272
 Transform:
   m_ObjectHideFlags: 0
@@ -4045,10 +4046,10 @@ MonoBehaviour:
   bossDefeated: 0
   levelstart: {fileID: 1315016616}
   lastlevel: 0
-  achievementObject: {fileID: 0}
+  achievementObject: {fileID: 533997271}
   noHitCounter: 0
   noHitLevelCount: 0
-  shooting: {fileID: 0}
+  shooting: {fileID: 1315016619}
   noShootGot: 0
   noHealCount: 0
 --- !u!114 &814449697

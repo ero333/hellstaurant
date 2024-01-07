@@ -23,6 +23,7 @@ public class achievementManager : MonoBehaviour
     public GameObject popupMoney;
     public GameObject popupEndless;
     public GameObject popupNoHealGame;
+    public GameObject popupCompleteGame;
 
 
     void Awake()
@@ -65,6 +66,12 @@ public class achievementManager : MonoBehaviour
         achievements = PlayerPrefs.GetInt("achievements");
     }
 
+
+    public void newGame()
+    {
+        StartCoroutine(newGameAchievement());
+    }
+
     public void bossnohit()
     {
         StartCoroutine(bossNoHitAchievement());
@@ -101,6 +108,10 @@ public class achievementManager : MonoBehaviour
         StartCoroutine(noHealGameAchievement());
     }
 
+    public void completeGame()
+    {
+        StartCoroutine(completeGameAchievement());
+    }
 
 
 
@@ -225,6 +236,20 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupNoHealGame.SetActive(false);
+    }
+
+    IEnumerator completeGameAchievement()
+    {
+        popupCompleteGame.SetActive(true);
+
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
+
+        PlayerPrefs.SetInt("logro2conseguido", 1);
+
+        yield return new WaitForSeconds(3);
+        popupCompleteGame.SetActive(false);
     }
 
 

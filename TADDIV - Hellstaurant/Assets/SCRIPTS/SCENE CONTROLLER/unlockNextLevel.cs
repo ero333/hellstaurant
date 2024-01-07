@@ -43,8 +43,9 @@ public class unlockNextLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+            winscreen = GameObject.FindGameObjectWithTag("winscreen").GetComponent<stopGame>();
+        
 
-        winscreen = GameObject.FindGameObjectWithTag("winscreen").GetComponent<stopGame>();
 
 
         

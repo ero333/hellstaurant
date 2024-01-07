@@ -23,6 +23,8 @@ public class PLAYMENU : MonoBehaviour
 
     public int partidasCreadas;
 
+    public achievementManager achievementManager;
+
 
 
 
@@ -35,6 +37,9 @@ public class PLAYMENU : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        achievementManager = GameObject.FindGameObjectWithTag ("achievementManager").GetComponent<achievementManager> ();
+
         hayPartida = PlayerPrefs.GetInt("PartidaGuardada");
 
         ultimoNivel = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
@@ -67,6 +72,12 @@ public class PLAYMENU : MonoBehaviour
 
         }
 
+        if (PlayerPrefs.GetInt("logro1conseguido") == 0)
+        {
+            achievementManager.newGame();
+        }
+
+
         SceneManager.LoadScene("Selector de Niv");
 
         PlayerPrefs.SetInt("PartidaGuardada", 1);
@@ -92,11 +103,20 @@ public class PLAYMENU : MonoBehaviour
 
         PlayerPrefs.SetInt("PartidaGuardada", nohaypartida);
 
-        SceneManager.LoadScene("Inicial Cutscene");
-
 
         partidasCreadas = partidasCreadas + 1;
         PlayerPrefs.SetInt("partidasCreadas", partidasCreadas);
+
+
+        if (PlayerPrefs.GetInt("logro1conseguido") == 0)
+        {
+            achievementManager.newGame();
+
+            Debug.LogWarning("logro 1 ");
+        }
+
+        SceneManager.LoadScene("Inicial Cutscene");
+
 
     }
 
@@ -159,6 +179,14 @@ public class PLAYMENU : MonoBehaviour
 
         if (PlayerPrefs.GetInt("PartidaGuardada") == nohaypartida)
         {
+
+            if (PlayerPrefs.GetInt("logro1conseguido") == 0)
+            {
+                achievementManager.newGame();
+
+                Debug.LogWarning("logro 1 ");
+            }
+
             partidasCreadas = partidasCreadas + 1;
             PlayerPrefs.SetInt("partidasCreadas", partidasCreadas);
 
@@ -166,6 +194,8 @@ public class PLAYMENU : MonoBehaviour
             botonContinuar.SetActive(true);
             SceneManager.LoadScene("Inicial Cutscene");
             PlayerPrefs.SetInt("PartidaGuardada", 1);
+
+            
 
 
         }
