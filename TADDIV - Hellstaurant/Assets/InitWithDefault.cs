@@ -4,12 +4,16 @@ using Unity.Services.Core;
 using UnityEngine;
 using UnityEngine.Analytics;
 using Unity.Services.Analytics;
+using Unity.Services.Core.Environments;
 
 public class InitWithDefault : MonoBehaviour
 {
     async void Start()
     {
-        await UnityServices.InitializeAsync();
-        AnalyticsService.Instance.StartDataCollection();
+            var options = new InitializationOptions();
+            options.SetEnvironmentName("ochoa-final-tadd4");
+            await UnityServices.InitializeAsync(options);
+
+            AnalyticsService.Instance.StartDataCollection();
     }
-    }
+}
