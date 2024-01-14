@@ -348,11 +348,11 @@ public class PlayerSelector : MonoBehaviour
     public void BuyWomanSkin()
     {
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 100)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 50)
         {
 
 
-            monedasactuales = monedasactuales - 100;
+            monedasactuales = monedasactuales - 50;
 
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
@@ -392,11 +392,11 @@ public class PlayerSelector : MonoBehaviour
     public void BuyHalloweenSkin()
     {
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 125)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 60)
         {
 
 
-            monedasactuales = monedasactuales - 125;
+            monedasactuales = monedasactuales - 60;
 
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
@@ -437,11 +437,11 @@ public class PlayerSelector : MonoBehaviour
     public void BuySpidermanSkin()
     {
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 200)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 75)
         {
 
 
-            monedasactuales = monedasactuales - 200;
+            monedasactuales = monedasactuales - 75;
 
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
@@ -485,11 +485,11 @@ public class PlayerSelector : MonoBehaviour
     public void BuyMessiSkin()
     {
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 333)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 100)
         {
 
 
-            monedasactuales = monedasactuales - 333;
+            monedasactuales = monedasactuales - 100;
 
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
