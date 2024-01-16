@@ -302,10 +302,10 @@ public class UnlockItemHandler : MonoBehaviour
     {
 
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 120 && UnlockedItemsNumber >= 2)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 90 && UnlockedItemsNumber >= 2)
         {
 
-            monedasactuales = monedasactuales - 120;
+            monedasactuales = monedasactuales - 90;
 
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
@@ -342,10 +342,10 @@ public class UnlockItemHandler : MonoBehaviour
     {
 
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 200 && UnlockedItemsNumber >= 3)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 125 && UnlockedItemsNumber >= 3)
         {
 
-            monedasactuales = monedasactuales - 200;
+            monedasactuales = monedasactuales - 125;
 
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
@@ -381,10 +381,10 @@ public class UnlockItemHandler : MonoBehaviour
     {
 
 
-        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 370 && UnlockedItemsNumber >= 4)
+        if (PlayerPrefs.GetInt("MonedasRecolectadas:") >= 150 && UnlockedItemsNumber >= 4)
         {
 
-            monedasactuales = monedasactuales - 370;
+            monedasactuales = monedasactuales - 150;
 
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", monedasactuales);
