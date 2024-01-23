@@ -1044,11 +1044,11 @@ PrefabInstance:
       objectReference: {fileID: 614906684}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.909389
+      value: 2.90313
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6558235
+      value: -0.6558755
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -1550,6 +1550,83 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &336334048
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1595966821}
+    m_Modifications:
+    - target: {fileID: 567358631168614508, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_Name
+      value: Barra cooldown health
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -584
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -533
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9698.239
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023378158254756779, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+      propertyPath: playerHealthController
+      value: 
+      objectReference: {fileID: 1315016615}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+--- !u!114 &336334049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4090187552014001651, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+  m_PrefabInstance: {fileID: 336334048}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a361103add9738a4ab7235df09ddfdf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &336334050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7938514222511596048, guid: 79038018ae48fc14281c70f602d848af, type: 3}
+  m_PrefabInstance: {fileID: 336334048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &383972673
 GameObject:
   m_ObjectHideFlags: 0
@@ -6830,6 +6907,10 @@ PrefabInstance:
       propertyPath: playerDeathDebug
       value: 
       objectReference: {fileID: 1729272127}
+    - target: {fileID: 8460081661388279870, guid: a1a1d130b0ccd7144a45704b4f3393d2, type: 3}
+      propertyPath: playerHealthCooldown
+      value: 
+      objectReference: {fileID: 336334049}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8470,6 +8551,7 @@ RectTransform:
   - {fileID: 1890628364}
   - {fileID: 1605475943}
   - {fileID: 1645528775}
+  - {fileID: 336334050}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

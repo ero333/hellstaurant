@@ -209,6 +209,7 @@ MonoBehaviour:
   girlfrenzymode: {fileID: 0}
   skinName: 
   aoedamage: {fileID: 3320348978845176371, guid: 3f569827cfb949f4085b4371d81a7da9, type: 3}
+  shootNumber: 0
 --- !u!114 &8460081661388279870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +252,8 @@ MonoBehaviour:
   isHealing: 1
   damageSound: {fileID: 0}
   eatingSound: {fileID: 0}
-  cooldown: 10
+  cooldown: 12
+  playerHealthCooldown: {fileID: 0}
 --- !u!114 &6870924815842460318
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -61,7 +61,9 @@ public class PlayerHealthController : MonoBehaviour
 
 
     private float lastHealTime; 
-    public float cooldown = 10.0f; 
+    public float cooldown = 12.0f;
+
+    public PlayerHealthCooldown playerHealthCooldown;
 
 
     void Start()
@@ -90,6 +92,9 @@ public class PlayerHealthController : MonoBehaviour
 
 
         puntaje = GameObject.FindGameObjectWithTag("Score").GetComponent<Puntaje>(); // Asigna el componente Puntaje
+
+        // Asigna la referencia desde el inspector o utilizando FindObjectOfType
+        playerHealthCooldown = FindObjectOfType<PlayerHealthCooldown>();
     }
 
     private void Awake()
@@ -168,11 +173,29 @@ public class PlayerHealthController : MonoBehaviour
 
                 TryStartHealing();
             }
+
+            if (Input.GetMouseButtonDown(1) && !isHealing && playerHealthCooldown.currentTime >= 10f)
+            {
+                if (currentHealth < maxHealth)
+                {
+                    TryStartHealing();
+                    playerHealthCooldown.Reset();
+                }
+            }
         }
 
 
         void TryStartHealing()
         {
+            if (Time.time - lastHealTime > playerHealthCooldown.healingCooldown)
+            {
+                if (currentHealth < maxHealth)
+                {
+                    lastHealTime = Time.time;
+                    isHealing = true;
+                    StartCoroutine(healingProcess());
+                }
+            }
 
             if (Time.time - lastHealTime > cooldown)
             {
@@ -198,6 +221,8 @@ public class PlayerHealthController : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
+        // Llamada a la función que actualiza la interfaz de usuario
+        UIController.Instance.UpdateHealthDisplay();
 
         currentHealth++;
         UIController.Instance.UpdateHealthDisplay();
@@ -207,6 +232,8 @@ public class PlayerHealthController : MonoBehaviour
         healingTimes++;
 
         isHealing = false; // establece isHealing en false al terminar la curaci�n
+
+        playerHealthCooldown.Reset();
     }
 
     public void DealDamage()
