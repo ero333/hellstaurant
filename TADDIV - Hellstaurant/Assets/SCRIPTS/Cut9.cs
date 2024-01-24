@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Cut9 : MonoBehaviour
 {
-    public GameObject animacion1, animacion2, animacion3, animacion4, animacion5, animacion6;
+    public GameObject animacion1, animacion2, animacion3;
 
     public GameObject botonSiguiente;
 
@@ -40,22 +40,6 @@ public class Cut9 : MonoBehaviour
             animacion3.SetActive(true);
         }
         if (contadorAnim == 3)
-        {
-            animacion3.SetActive(false);
-            animacion4.SetActive(true);
-        }
-        if (contadorAnim == 4)
-        {
-            animacion4.SetActive(false);
-            animacion5.SetActive(true);
-        }
-        if (contadorAnim == 5)
-        {
-            animacion5.SetActive(false);
-            animacion6.SetActive(true);
-        }
-
-        if (contadorAnim == 6)
         {
             SceneManager.LoadScene("Nivel 8");
         }
