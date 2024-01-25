@@ -42,60 +42,60 @@ public class LOGROSCREEN : MonoBehaviour
     void Update()
     {   
         
-        if (PlayerPrefs.GetInt("logro1conseguido") == 1)
+        if (PlayerPrefs.GetInt("logro1conseguido") >= 1)
         {
 
             logro1.interactable = true;
         }
 
-        if (PlayerPrefs.GetInt("logro2conseguido") == 2)
+        if (PlayerPrefs.GetInt("logro2conseguido") >= 1)
         {
 
             logro2.interactable = true;
         }
-        if (PlayerPrefs.GetInt("logro3conseguido") == 1)
+        if (PlayerPrefs.GetInt("logro3conseguido") >= 1)
         {
 
             logro3.interactable = true;
         }
 
-        if (PlayerPrefs.GetInt("logro4conseguido") == 1)
+        if (PlayerPrefs.GetInt("logro4conseguido") >= 1)
         {
 
             logro4.interactable = true;
         }
 
-        if (PlayerPrefs.GetInt("logro5conseguido") == 1)
+        if (PlayerPrefs.GetInt("logro5conseguido") >= 1)
         {
 
             logro5.interactable = true;
         }
 
-        if (PlayerPrefs.GetInt("logro6conseguido") == 1)
+        if (PlayerPrefs.GetInt("logro6conseguido") >= 1)
         {
 
             logro6.interactable = true;
         }
 
-        if (PlayerPrefs.GetInt("logro7conseguido") == 1)
+        if (PlayerPrefs.GetInt("logro7conseguido") >= 1)
         {
 
             logro7.interactable = true;
         }
 
-        if (PlayerPrefs.GetInt("logro8conseguido") == 1)
+        if (PlayerPrefs.GetInt("logro8conseguido") >= 1)
         {
 
             logro8.interactable = true;
         }
 
-        if (PlayerPrefs.GetInt("logro9conseguido") == 1)
+        if (PlayerPrefs.GetInt("logro9conseguido") >= 1)
         {
 
             logro9.interactable = true;
         }
 
-        if (PlayerPrefs.GetInt("platinoconseguido") == 1)
+        if (PlayerPrefs.GetInt("platinoconseguido") >= 1)
         {
 
             logro10.interactable = true;

@@ -55,11 +55,18 @@ public class PLAYMENU : MonoBehaviour
     {
         if (hayPartida == 1)
         {
-            botonContinuar.SetActive(true);
+           if (botonContinuar != null)
+            {
+                botonContinuar.SetActive(true);
+            }
+
         }
         if (hayPartida == 0)
         {
-            botonContinuar.SetActive(false);
+            if (botonContinuar != null)
+            {
+                botonContinuar.SetActive(false);
+            }
         }
     }
 
@@ -108,12 +115,12 @@ public class PLAYMENU : MonoBehaviour
         PlayerPrefs.SetInt("partidasCreadas", partidasCreadas);
 
 
-        if (PlayerPrefs.GetInt("logro1conseguido") == 0)
-        {
-            achievementManager.newGame();
+        //if (PlayerPrefs.GetInt("logro1conseguido") == 0)
+        //{
+        //    achievementManager.newGame();
 
-            Debug.LogWarning("logro 1 ");
-        }
+        //    Debug.LogWarning("logro 1 ");
+        //}
 
         SceneManager.LoadScene("Inicial Cutscene");
 
@@ -180,12 +187,12 @@ public class PLAYMENU : MonoBehaviour
         if (PlayerPrefs.GetInt("PartidaGuardada") == nohaypartida)
         {
 
-            if (PlayerPrefs.GetInt("logro1conseguido") == 0)
-            {
-                achievementManager.newGame();
+            //if (PlayerPrefs.GetInt("logro1conseguido") == 0)
+            //{
+            //    achievementManager.newGame();
 
-                Debug.LogWarning("logro 1 ");
-            }
+            //    Debug.LogWarning("logro 1 ");
+            //}
 
             partidasCreadas = partidasCreadas + 1;
             PlayerPrefs.SetInt("partidasCreadas", partidasCreadas);
@@ -194,9 +201,6 @@ public class PLAYMENU : MonoBehaviour
             botonContinuar.SetActive(true);
             SceneManager.LoadScene("Inicial Cutscene");
             PlayerPrefs.SetInt("PartidaGuardada", 1);
-
-            
-
 
         }
     }

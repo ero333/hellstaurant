@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class achievementManager : MonoBehaviour
 {
@@ -46,19 +47,27 @@ public class achievementManager : MonoBehaviour
         achievements = PlayerPrefs.GetInt("achievements");
 
 
-        if (PlayerPrefs.GetInt("partidasCreadas") == 1)
+        //if (PlayerPrefs.GetInt("partidasCreadas") == 1)
+        //{
+        //    if (popupNewGame != null)
+        //    {
+        //        StartCoroutine(newGameAchievement());
+        //    }
+        //}
+
+
+        if (SceneManager.GetActiveScene().buildIndex == 23)
         {
-            if (popupNewGame != null)
-            {
-                StartCoroutine(newGameAchievement());
-            }
+            newGame();
         }
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (achievements >= 9) 
+        if (achievements == 9) 
         {
             StartCoroutine (platinumAchievement());
         }
