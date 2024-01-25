@@ -393,7 +393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &662166416
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -499,8 +499,6 @@ MonoBehaviour:
   animacion2: {fileID: 0}
   animacion3: {fileID: 0}
   animacion4: {fileID: 0}
-  animacion5: {fileID: 0}
-  animacion6: {fileID: 0}
   botonSiguiente: {fileID: 835405629}
   contadorAnim: 0
 --- !u!1 &767961831
@@ -537,7 +535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6.0736084}
+  m_AnchoredPosition: {x: 0.39, y: -6.0736084}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767961833
@@ -560,7 +558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2014HEY GORDO, SOS RE MOLESTO.\nNO TE VOY A DAR MAS PIZZA A VOS.\n\n"
+  m_text: "\u2014HEY GORDO, SOS RE MOLESTO.\nNO TE VOY A DAR OTRA PIZZA A VOS.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
   m_sharedMaterial: {fileID: -4622975185388663613, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
@@ -893,8 +891,6 @@ MonoBehaviour:
   animacion2: {fileID: 892336853}
   animacion3: {fileID: 0}
   animacion4: {fileID: 0}
-  animacion5: {fileID: 0}
-  animacion6: {fileID: 0}
   botonSiguiente: {fileID: 835405629}
   contadorAnim: 0
 --- !u!1 &1139730985
@@ -1009,7 +1005,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.09, y: -6.366852}
+  m_AnchoredPosition: {x: -1.88, y: -6.366852}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5000001, y: 0.5}
 --- !u!114 &1617530659
@@ -1032,7 +1028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2014PERDON, AHORA\nLE TRAIGO SU PIZZA."
+  m_text: "\u2014LO LAMENTO, AHORA\nLE TRAIGO SU PIZZA SE\xD1OR."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
   m_sharedMaterial: {fileID: -4622975185388663613, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
@@ -1095,7 +1091,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -234.72403, y: 0, z: -229.45914, w: 0}
+  m_margin: {x: -234.72403, y: 0, z: -491.29105, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1233,8 +1229,6 @@ MonoBehaviour:
   animacion2: {fileID: 0}
   animacion3: {fileID: 1667888549}
   animacion4: {fileID: 0}
-  animacion5: {fileID: 0}
-  animacion6: {fileID: 0}
   botonSiguiente: {fileID: 835405629}
   contadorAnim: 0
 --- !u!1 &1711308760
@@ -1271,7 +1265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6.0736084}
+  m_AnchoredPosition: {x: 0.3, y: -6.0736084}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711308762
@@ -1294,7 +1288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2014Oh... pero no te enojes..."
+  m_text: "\u2014Ay... pero no te enojes..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
   m_sharedMaterial: {fileID: -4622975185388663613, guid: 01cb5f20d7f556443906dbe5d40970aa, type: 2}
@@ -1389,7 +1383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1794682058
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1474,8 +1468,6 @@ MonoBehaviour:
   animacion2: {fileID: 0}
   animacion3: {fileID: 0}
   animacion4: {fileID: 1794682057}
-  animacion5: {fileID: 0}
-  animacion6: {fileID: 0}
   botonSiguiente: {fileID: 835405629}
   contadorAnim: 0
 --- !u!114 &1794682061
@@ -1494,8 +1486,6 @@ MonoBehaviour:
   animacion2: {fileID: 0}
   animacion3: {fileID: 0}
   animacion4: {fileID: 0}
-  animacion5: {fileID: 0}
-  animacion6: {fileID: 0}
   botonSiguiente: {fileID: 0}
   contadorAnim: 0
 --- !u!1 &1935483280
@@ -1621,8 +1611,6 @@ MonoBehaviour:
   animacion2: {fileID: 892336853}
   animacion3: {fileID: 1667888549}
   animacion4: {fileID: 1794682057}
-  animacion5: {fileID: 0}
-  animacion6: {fileID: 0}
   botonSiguiente: {fileID: 835405629}
   contadorAnim: 0
 --- !u!1660057539 &9223372036854775807
