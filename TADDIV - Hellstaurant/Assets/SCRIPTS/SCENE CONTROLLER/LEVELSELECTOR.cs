@@ -26,73 +26,73 @@ public class LEVELSELECTOR : MonoBehaviour
     public void lvl1()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 1");
+        SceneManager.LoadScene("Cut2");
     }
 
     public void lvl2()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 2");
+        SceneManager.LoadScene("Cut3");
     }
 
     public void lvl3()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 3");
+        SceneManager.LoadScene("Cut4");
     }
 
     public void lvl4()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 4");
+        SceneManager.LoadScene("Cut5");
     }
 
     public void lvl5()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 5");
+        SceneManager.LoadScene("Cut6");
     }
 
     public void lvl6()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 6");
+        SceneManager.LoadScene("Cut7");
     }
 
     public void lvl7()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 7");
+        SceneManager.LoadScene("Cut8");
     }
 
     public void lvl8()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 8");
+        SceneManager.LoadScene("Cut9");
     }
 
     public void lvl9()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 9");
+        SceneManager.LoadScene("Cut10");
     }
 
     public void lvl10()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 10");
+        SceneManager.LoadScene("Cut11");
     }
 
     public void lvl11()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 11");
+        SceneManager.LoadScene("Cut12");
     }
 
     public void lvl12()
     {
         PlayerPrefs.SetInt("PartidaGuardada", 1);
-        SceneManager.LoadScene("Nivel 12");
+        SceneManager.LoadScene("Cut13");
     }
 
     public void lvl14()
