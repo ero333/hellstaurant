@@ -71,7 +71,7 @@ public class PlayerSelector : MonoBehaviour
 
     public string skinSe;
 
-
+    public GameObject textounlock;
 
 
     // Start is called before the first frame update
@@ -201,7 +201,10 @@ public class PlayerSelector : MonoBehaviour
 
 
 
-
+        if (PlayerPrefs.GetInt ("platinoconseguido") >= 1)
+        {
+            textounlock.SetActive(false);
+        }
 
 
     }
@@ -290,6 +293,7 @@ public class PlayerSelector : MonoBehaviour
         if (PlayerPrefs.GetInt("platinoconseguido") >= 1)
         {
             PlayerPrefs.SetInt("goldSkinConseguida", 1);
+
 
         }
 
