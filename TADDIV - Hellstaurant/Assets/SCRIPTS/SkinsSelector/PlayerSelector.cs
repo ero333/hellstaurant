@@ -287,7 +287,7 @@ public class PlayerSelector : MonoBehaviour
             spriteRendererGoldenSkin.sprite = goldSkinLocked;
         }
 
-        if (PlayerPrefs.GetInt("UltimoNivelAlcanzado") >= 18)
+        if (PlayerPrefs.GetInt("platinoconseguido") >= 1)
         {
             PlayerPrefs.SetInt("goldSkinConseguida", 1);
 
