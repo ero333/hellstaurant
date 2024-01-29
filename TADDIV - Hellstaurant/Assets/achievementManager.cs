@@ -145,7 +145,8 @@ public class achievementManager : MonoBehaviour
         PlayerPrefs.SetInt("platinoconseguido", 1);
 
         yield return new WaitForSeconds(3);
-        popupNewGame.SetActive(false);
+
+        popupPlatino.SetActive(false);
     }
     IEnumerator bossNoHitAchievement()
     {

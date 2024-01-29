@@ -25,6 +25,8 @@ public class PLAYMENU : MonoBehaviour
 
     public achievementManager achievementManager;
 
+    
+
 
 
 
@@ -121,6 +123,9 @@ public class PLAYMENU : MonoBehaviour
 
         //    Debug.LogWarning("logro 1 ");
         //}
+
+        achievementManager.achievements = 0;
+        PlayerPrefs.SetInt("achievements", 0);
 
         SceneManager.LoadScene("Inicial Cutscene");
 

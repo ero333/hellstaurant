@@ -487,7 +487,7 @@ public class StarAmount : MonoBehaviour
 
 
 
-            if (level >= 14 && PlayerPrefs.GetInt("noheal") >= 14 && PlayerPrefs.GetInt("logro8conseguido") <= 0)
+            if (level >= 14 && PlayerPrefs.GetInt("noheal") >= 13 && PlayerPrefs.GetInt("logro8conseguido") <= 0)
             {
                 Debug.LogWarning("logro 8");
                 achievementObject.noHealGame();

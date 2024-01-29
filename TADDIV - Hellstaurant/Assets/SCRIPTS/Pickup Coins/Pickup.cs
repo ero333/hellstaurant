@@ -31,9 +31,11 @@ public class Pickup : MonoBehaviour
             if (isCoin)
             {
 
-                UIController.Instance.coinsCollected++; //conteo de monedas
                 totalCoins++;
                 PlayerPrefs.SetInt("totalcoins", totalCoins);
+
+                UIController.Instance.coinsCollected++; //conteo de monedas
+
                 UIController.Instance.UpdateCoinCount(); //Iniciar conteo monedas
                 
 
@@ -41,7 +43,7 @@ public class Pickup : MonoBehaviour
                 isCollected = true;
 
 
-                if (totalCoins >= 300 && PlayerPrefs.GetInt("logro3conseguido") <= 0)
+                if (UIController.Instance.coinsCollected >= 150 && PlayerPrefs.GetInt("logro3conseguido") <= 0)
                 {
 
                     manager.money();
@@ -61,7 +63,7 @@ public class Pickup : MonoBehaviour
     {
         if (!isCollected)
         {
-            Destroy(gameObject); // Destruye las monedas despues de 5 segundos 
+            Destroy(gameObject, 0.2f); // Destruye las monedas despues de 5 segundos 
         }
     }
 
