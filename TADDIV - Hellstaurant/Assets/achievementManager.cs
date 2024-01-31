@@ -1,14 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Services.Analytics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class achievementManager : MonoBehaviour
 {
     static achievementManager variable;
 
 
-    public int achievements; 
+    public static int achievements;
+
+    public static int logro1;
+    public static int logro2;
+    public static int logro3;
+    public static int logro4;
+    public static int logro5;
+    public static int logro6;
+    public static int logro7;
+    public static int logro8;
+    public static int logro9;
+    public static int platino;
 
 
     [Header("VARIABLES LOGROS")]
@@ -26,7 +39,21 @@ public class achievementManager : MonoBehaviour
     public GameObject popupNoHealGame;
     public GameObject popupCompleteGame;
 
+    Dictionary<string, object> DatosLogros = new Dictionary<string, object>()
+{
+           {"logrosTotales", achievements},
+           {"logro1", logro1 },
+           {"logro2", logro2 },
+           {"logro3", logro3 },
+           {"logro4",logro4},
+           {"logro5", logro5 },
+           {"logro6", logro6 },
+           {"logro7", logro7 },
+           {"logro8", logro8 },
+           {"logro9", logro9 },
+           {"platino", platino},
 
+};
     void Awake()
     {
         //if (variable != null)
@@ -44,6 +71,19 @@ public class achievementManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        logro1 = PlayerPrefs.GetInt("logro1conseguido");
+        logro2 = PlayerPrefs.GetInt("logro2conseguido");
+        logro3 = PlayerPrefs.GetInt("logro3conseguido");
+        logro4 = PlayerPrefs.GetInt("logro4conseguido");
+        logro5 = PlayerPrefs.GetInt("logro5conseguido");
+        logro6 = PlayerPrefs.GetInt("logro6conseguido");
+        logro7 = PlayerPrefs.GetInt("logro7conseguido");
+        logro8 = PlayerPrefs.GetInt("logro8conseguido");
+        logro9 = PlayerPrefs.GetInt("logro9conseguido");
+        platino = PlayerPrefs.GetInt("platinoconseguido");
+
+
         achievements = PlayerPrefs.GetInt("achievements");
 
 
@@ -136,17 +176,25 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupNewGame.SetActive(false);
+
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator platinumAchievement()
     {
         popupPlatino.SetActive(true);
+        achievements++;
+
+        PlayerPrefs.SetInt("achievements", achievements);
 
         PlayerPrefs.SetInt("platinoconseguido", 1);
 
         yield return new WaitForSeconds(3);
 
         popupPlatino.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
     IEnumerator bossNoHitAchievement()
     {
@@ -160,6 +208,8 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupBossNoHit.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator levelNoHitAchievement()
@@ -175,6 +225,8 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupLevelNoHit.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator levelNoShootAchievement()
@@ -189,6 +241,8 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupLevelNoShoot.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
 
@@ -204,6 +258,8 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupNoHeal.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator moneyAchievement()
@@ -218,6 +274,8 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupMoney.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator endlessAchievement()
@@ -232,6 +290,8 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupEndless.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator noHealGameAchievement()
@@ -246,6 +306,8 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupNoHealGame.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator completeGameAchievement()
@@ -260,6 +322,8 @@ public class achievementManager : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         popupCompleteGame.SetActive(false);
+
+        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
 
