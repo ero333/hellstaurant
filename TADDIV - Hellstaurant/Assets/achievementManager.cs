@@ -56,16 +56,16 @@ public class achievementManager : MonoBehaviour
 };
     void Awake()
     {
-        if (variable != null)
-        {
-           Destroy(this.gameObject);
-        }
+        //if (variable != null)
+        //{
+        //    Destroy(this.gameObject);
+        //}
 
-        else
-        {
-            variable = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+        //else
+        //{
+        //    variable = this;
+        //    DontDestroyOnLoad(this.gameObject);
+        //}
     }
 
     // Start is called before the first frame update
