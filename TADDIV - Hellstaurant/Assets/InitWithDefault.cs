@@ -11,7 +11,7 @@ public class InitWithDefault : MonoBehaviour
     async void Start()
     {
             var options = new InitializationOptions();
-            options.SetEnvironmentName("bonsignore-final-tadd4");
+            options.SetEnvironmentName("giani-final-tadd4");
             await UnityServices.InitializeAsync(options);
 
             AnalyticsService.Instance.StartDataCollection();
