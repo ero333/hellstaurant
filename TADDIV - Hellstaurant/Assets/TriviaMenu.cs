@@ -12,6 +12,8 @@ public class TriviaMenu : MonoBehaviour
 {
 
     public GameObject pantallatrivia;
+    public GameObject correcto;
+    public GameObject incorrecto;
     public int respuestaCorrecta;
     public int respuestaElegida;
 
@@ -43,6 +45,8 @@ public class TriviaMenu : MonoBehaviour
             PlayerPrefs.SetInt("MonedasRecolectadas:", contadorMonedas + monedasGanadas);
             Debug.Log("Correcto!");
             pantallatrivia.gameObject.SetActive(false);
+            incorrecto.gameObject.SetActive(false);
+            correcto.gameObject.SetActive(true);
 
 
         }
@@ -50,6 +54,8 @@ public class TriviaMenu : MonoBehaviour
         {
             pantallatrivia.gameObject.SetActive(false);
             Debug.Log("Incorrecto!");
+            correcto.gameObject.SetActive(false);
+            incorrecto.gameObject.SetActive(true);
         }
     }
 
@@ -64,6 +70,8 @@ public class TriviaMenu : MonoBehaviour
             PlayerPrefs.SetInt("MonedasRecolectadas:", contadorMonedas + monedasGanadas);
             Debug.Log("Correcto!");
             pantallatrivia.gameObject.SetActive(false);
+            incorrecto.gameObject.SetActive(false);
+            correcto.gameObject.SetActive(true);
 
 
         }
@@ -71,27 +79,9 @@ public class TriviaMenu : MonoBehaviour
         {
             pantallatrivia.gameObject.SetActive(false);
             Debug.Log("Incorrecto!");
+            correcto.gameObject.SetActive(false);
+            incorrecto.gameObject.SetActive(true);
         }
     }
 
-    public void respuesta3()
-    {
-        respuestaElegida = 3;
-
-        if (respuestaElegida == respuestaCorrecta)
-        {
-
-
-            PlayerPrefs.SetInt("MonedasRecolectadas:", contadorMonedas + monedasGanadas);
-            Debug.Log("Correcto!");
-            pantallatrivia.gameObject.SetActive(false);
-
-
-        }
-        else
-        {
-            pantallatrivia.gameObject.SetActive(false);
-            Debug.Log("Incorrecto!");
-        }
-    }
 }
