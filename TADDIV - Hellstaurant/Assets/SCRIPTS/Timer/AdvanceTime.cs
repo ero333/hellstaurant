@@ -67,7 +67,7 @@ public class AdvanceTime : MonoBehaviour
 
             if (timeHours >= 8)
 
-                triviaScreen.gameObject.SetActive(true);
+                
                 WIN.gameObject.SetActive(true);
 
         }
