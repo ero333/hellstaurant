@@ -17,9 +17,18 @@ public class TriviaMenu : MonoBehaviour
     public int respuestaCorrecta;
     public int respuestaElegida;
 
+    public static bool acertado;
+    public static bool  errado;
+
     public int monedasGanadas;
 
     public int contadorMonedas;
+
+    Dictionary<string, object> RespuestasTrivia = new Dictionary<string, object>()
+{
+           {"respuestaAcertada", acertado},
+            {"respuestaErrada", errado},
+};
 
     // Start is called before the first frame update
     void Start()
@@ -41,10 +50,13 @@ public class TriviaMenu : MonoBehaviour
         if (respuestaElegida == respuestaCorrecta)
         {
 
+            acertado = true;
+
+            AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", contadorMonedas + monedasGanadas);
             Debug.Log("Correcto!");
-            pantallatrivia.gameObject.SetActive(false);
+            
             incorrecto.gameObject.SetActive(false);
             correcto.gameObject.SetActive(true);
 
@@ -52,7 +64,11 @@ public class TriviaMenu : MonoBehaviour
         }
         else
         {
-            pantallatrivia.gameObject.SetActive(false);
+
+            errado = true;
+
+            AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
+
             Debug.Log("Incorrecto!");
             correcto.gameObject.SetActive(false);
             incorrecto.gameObject.SetActive(true);
@@ -66,10 +82,13 @@ public class TriviaMenu : MonoBehaviour
         if (respuestaElegida == respuestaCorrecta)
         {
 
+            acertado = true;
+
+            AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", contadorMonedas + monedasGanadas);
             Debug.Log("Correcto!");
-            pantallatrivia.gameObject.SetActive(false);
+            
             incorrecto.gameObject.SetActive(false);
             correcto.gameObject.SetActive(true);
 
@@ -77,11 +96,22 @@ public class TriviaMenu : MonoBehaviour
         }
         else
         {
-            pantallatrivia.gameObject.SetActive(false);
+
+            errado = true;
+
+            AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
+
             Debug.Log("Incorrecto!");
             correcto.gameObject.SetActive(false);
             incorrecto.gameObject.SetActive(true);
         }
+    }
+
+    public void Continuar()
+    {
+        pantallatrivia.gameObject.SetActive(false);
+        correcto.gameObject.SetActive(false);
+        incorrecto.gameObject.SetActive(false);
     }
 
 }

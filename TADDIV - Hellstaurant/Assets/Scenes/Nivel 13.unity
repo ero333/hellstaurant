@@ -2574,7 +2574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -287.99994, y: 76.63498}
+  m_AnchoredPosition: {x: -287.99994, y: 76.63501}
   m_SizeDelta: {x: 367.12, y: 153.27002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496390687
@@ -2923,6 +2923,7 @@ MonoBehaviour:
   timeLimit: 8
   playerAlive: 1
   WIN: {fileID: 843979020}
+  triviaScreen: {fileID: 0}
 --- !u!4 &610370300
 Transform:
   m_ObjectHideFlags: 0
@@ -3729,7 +3730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cb114d3ed36244ca4c094f1f26e336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievements: 0
   popupNewGame: {fileID: 1910929347}
   popupPlatino: {fileID: 524742503}
   popupSkins: {fileID: 0}
@@ -8175,7 +8175,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8359303
+      value: 0.8359305
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow

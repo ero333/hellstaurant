@@ -721,11 +721,11 @@ PrefabInstance:
       objectReference: {fileID: 614906684}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9039378
+      value: 2.9052958
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6558688
+      value: -0.6558576
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -6566,6 +6566,7 @@ MonoBehaviour:
   timeLimit: 8
   playerAlive: 1
   WIN: {fileID: 0}
+  triviaScreen: {fileID: 0}
 --- !u!4 &1438231248
 Transform:
   m_ObjectHideFlags: 0
@@ -8140,7 +8141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cb114d3ed36244ca4c094f1f26e336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievements: 0
   popupNewGame: {fileID: 846538392}
   popupPlatino: {fileID: 1955573938}
   popupSkins: {fileID: 0}
