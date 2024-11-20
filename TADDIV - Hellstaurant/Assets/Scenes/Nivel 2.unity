@@ -3199,7 +3199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317895503885029302, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8138184910358304473, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
       propertyPath: m_Sprite
@@ -3213,6 +3213,11 @@ PrefabInstance:
 --- !u!224 &782322254 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3516144222051884051, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
+  m_PrefabInstance: {fileID: 782322253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &782322255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7317895503885029302, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
   m_PrefabInstance: {fileID: 782322253}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &791011740
@@ -7937,6 +7942,8 @@ MonoBehaviour:
   botonOmitir: {fileID: 0}
   botonSiguiente: {fileID: 943902164}
   popupPotenciador: {fileID: 0}
+  firstTime: {fileID: 1817709976}
+  trivia: {fileID: 782322255}
 --- !u!114 &1877279699
 MonoBehaviour:
   m_ObjectHideFlags: 0

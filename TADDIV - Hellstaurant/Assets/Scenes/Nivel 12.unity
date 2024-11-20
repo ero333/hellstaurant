@@ -3917,6 +3917,8 @@ MonoBehaviour:
   botonOmitir: {fileID: 0}
   botonSiguiente: {fileID: 956574666}
   popupPotenciador: {fileID: 0}
+  firstTime: {fileID: 1315016616}
+  trivia: {fileID: 1521037306}
 --- !u!114 &814449698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6838,6 +6840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CARTEL TRIVIA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7317895503885029302, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8138184910358304473, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6850,6 +6856,11 @@ PrefabInstance:
 --- !u!224 &1521037305 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3516144222051884051, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
+  m_PrefabInstance: {fileID: 1521037304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1521037306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7317895503885029302, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
   m_PrefabInstance: {fileID: 1521037304}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1551314498

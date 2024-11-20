@@ -3404,7 +3404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &814449695
 Animator:
   serializedVersion: 5
@@ -3480,6 +3480,8 @@ MonoBehaviour:
   botonOmitir: {fileID: 0}
   botonSiguiente: {fileID: 530825880}
   popupPotenciador: {fileID: 0}
+  firstTime: {fileID: 1315016616}
+  trivia: {fileID: 1981272097}
 --- !u!114 &814449698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9102,7 +9104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317895503885029302, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8138184910358304473, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
       propertyPath: m_Sprite
@@ -9116,6 +9118,11 @@ PrefabInstance:
 --- !u!224 &1981272096 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3516144222051884051, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
+  m_PrefabInstance: {fileID: 1981272095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1981272097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7317895503885029302, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
   m_PrefabInstance: {fileID: 1981272095}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1983749758

@@ -45,6 +45,10 @@ public class stopGame : MonoBehaviour
 
     public GameObject popupPotenciador;
 
+
+    public levelStart firsttime;
+    public GameObject trivia;
+
     
 
     private void Awake()
@@ -55,6 +59,11 @@ public class stopGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        firsttime = GameObject.FindGameObjectWithTag("Player").GetComponent<levelStart>();
+
+
+
         nivelActual = SceneManager.GetActiveScene().buildIndex;
 
         ultimoNivelDesbloqueado = PlayerPrefs.GetInt("UltimoNivelAlcanzado");
@@ -136,6 +145,15 @@ public class stopGame : MonoBehaviour
 
         }
 
+        if (firsttime.firstTime == true)
+        {
+            trivia.gameObject.SetActive(true);
+        }
+        else
+        {
+            trivia.gameObject.SetActive(false);
+        }
+
         EventSystem.current.SetSelectedGameObject(botonSiguiente.GetComponentInChildren<Button>().gameObject);
     }
 
@@ -163,6 +181,8 @@ public class stopGame : MonoBehaviour
 
     IEnumerator winProcess()
     {
+
+
         if (winSound != null)
         {
             winSound.Play();

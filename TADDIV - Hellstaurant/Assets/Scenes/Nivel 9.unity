@@ -3407,6 +3407,8 @@ MonoBehaviour:
   botonOmitir: {fileID: 0}
   botonSiguiente: {fileID: 1054491710}
   popupPotenciador: {fileID: 0}
+  firstTime: {fileID: 1315016616}
+  trivia: {fileID: 1396568910}
 --- !u!114 &814449698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6311,7 +6313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317895503885029302, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8138184910358304473, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
       propertyPath: m_Sprite
@@ -6325,6 +6327,11 @@ PrefabInstance:
 --- !u!224 &1396568909 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3516144222051884051, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
+  m_PrefabInstance: {fileID: 1396568908}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1396568910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7317895503885029302, guid: 451b96550a7da6148b8370a713c580ff, type: 3}
   m_PrefabInstance: {fileID: 1396568908}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1418093429

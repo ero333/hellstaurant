@@ -18,7 +18,6 @@ public class TriviaMenu : MonoBehaviour
     public int respuestaElegida;
 
     public static bool acertado;
-    public static bool  errado;
 
     public int monedasGanadas;
 
@@ -27,7 +26,7 @@ public class TriviaMenu : MonoBehaviour
     Dictionary<string, object> RespuestasTrivia = new Dictionary<string, object>()
 {
            {"respuestaAcertada", acertado},
-            {"respuestaErrada", errado},
+
 };
 
     // Start is called before the first frame update
@@ -56,6 +55,8 @@ public class TriviaMenu : MonoBehaviour
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", contadorMonedas + monedasGanadas);
             Debug.Log("Correcto!");
+
+
             
             incorrecto.gameObject.SetActive(false);
             correcto.gameObject.SetActive(true);
@@ -65,7 +66,7 @@ public class TriviaMenu : MonoBehaviour
         else
         {
 
-            errado = true;
+            acertado = false;
 
             AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
 
@@ -97,7 +98,7 @@ public class TriviaMenu : MonoBehaviour
         else
         {
 
-            errado = true;
+            acertado = false;
 
             AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
 
