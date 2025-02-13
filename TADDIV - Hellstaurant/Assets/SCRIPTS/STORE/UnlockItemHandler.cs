@@ -309,13 +309,20 @@ public class UnlockItemHandler : MonoBehaviour
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
 
-
-            AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("BuyPower")
             {
-            { "powerSe", powerSe },
-            { "lastLevel", lastlevel },
-             { "order", order }
-            });
+                { "powerSe", powerSe },
+                { "lastLevel", lastlevel },
+                { "order", order }
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            //{
+            //{ "powerSe", powerSe },
+            //{ "lastLevel", lastlevel },
+            // { "order", order }
+            //});
 
             popupFuga.SetActive(false);
             noMonedas.SetActive(false);
@@ -375,13 +382,20 @@ public class UnlockItemHandler : MonoBehaviour
             Debug.Log("BuyPower.order =" + order);
 
 
-
-            AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("BuyPower")
             {
-            { "powerSe", powerSe },
-            { "lastLevel", lastlevel },
-             { "order", order }
-            });
+                { "powerSe", powerSe },
+                { "lastLevel", lastlevel },
+                { "order", order }
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            //{
+            //{ "powerSe", powerSe },
+            //{ "lastLevel", lastlevel },
+            // { "order", order }
+            //});
 
             popupFaina.SetActive(false);
             noMonedas.SetActive(false);
@@ -434,13 +448,20 @@ public class UnlockItemHandler : MonoBehaviour
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
 
-
-            AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("BuyPower")
             {
-            { "powerSe", powerSe },
-            { "lastLevel", lastlevel },
-             { "order", order }
-            });
+                { "powerSe", powerSe },
+                { "lastLevel", lastlevel },
+                { "order", order }
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            //{
+            //{ "powerSe", powerSe },
+            //{ "lastLevel", lastlevel },
+            // { "order", order }
+            //});
 
             popupCaja.SetActive(false);
             noMonedas.SetActive(false);
@@ -488,13 +509,20 @@ public class UnlockItemHandler : MonoBehaviour
             Debug.Log("BuyPower.lastLevel =" + lastlevel);
             Debug.Log("BuyPower.order =" + order);
 
-
-            AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("BuyPower")
             {
-            { "powerSe", powerSe },
-            { "lastLevel", lastlevel },
-             { "order", order }
-            });
+                { "powerSe", powerSe },
+                { "lastLevel", lastlevel },
+                { "order", order }
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("BuyPower", new Dictionary<string, object>
+            //{
+            //{ "powerSe", powerSe },
+            //{ "lastLevel", lastlevel },
+            // { "order", order }
+            //});
 
             popupPicante.SetActive(false);
             noMonedas.SetActive(false);

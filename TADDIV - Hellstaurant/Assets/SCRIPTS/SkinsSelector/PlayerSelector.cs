@@ -387,12 +387,20 @@ public class PlayerSelector : MonoBehaviour
             Debug.Log("BuySkin.order =" + order);
 
 
-            AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("BuySkin")
             {
-            { "order", order },
-             { "lastLevel", lastlevel },
-              { "skinSe", skinSe },
-            });
+                { "skinSe", skinSe },
+                { "lastLevel", lastlevel },
+                { "order", order }
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            //{
+            //{ "order", order },
+            // { "lastLevel", lastlevel },
+            //  { "skinSe", skinSe },
+            //});
 
         }
 
@@ -430,14 +438,20 @@ public class PlayerSelector : MonoBehaviour
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
             Debug.Log("BuySkin.order =" + order);
 
-
-
-            AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("BuySkin")
             {
-            { "order", order },
-             { "lastLevel", lastlevel },
-              { "skinSe", skinSe },
-            });
+                { "skinSe", skinSe },
+                { "lastLevel", lastlevel },
+                { "order", order }
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            //{
+            //{ "order", order },
+            // { "lastLevel", lastlevel },
+            //  { "skinSe", skinSe },
+            //});
 
         }
 
@@ -476,14 +490,20 @@ public class PlayerSelector : MonoBehaviour
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
             Debug.Log("BuySkin.order =" + order);
 
-
-
-            AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("BuySkin")
             {
-            { "order", order },
-             { "lastLevel", lastlevel },
-              { "skinSe", skinSe },
-            });
+                { "skinSe", skinSe },
+                { "lastLevel", lastlevel },
+                { "order", order }
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            //{
+            //{ "order", order },
+            // { "lastLevel", lastlevel },
+            //  { "skinSe", skinSe },
+            //});
 
 
         }
@@ -524,14 +544,20 @@ public class PlayerSelector : MonoBehaviour
             Debug.Log("BuySkin.lastLevel =" + lastlevel);
             Debug.Log("BuySkin.order =" + order);
 
-
-
-            AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("BuySkin")
             {
-            { "order", order },
-             { "lastLevel", lastlevel },
-              { "skinSe", skinSe },
-            });
+                { "skinSe", skinSe },
+                { "lastLevel", lastlevel },
+                { "order", order }
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("BuySkin", new Dictionary<string, object>
+            //{
+            //{ "order", order },
+            // { "lastLevel", lastlevel },
+            //  { "skinSe", skinSe },
+            //});
         }
 
     }

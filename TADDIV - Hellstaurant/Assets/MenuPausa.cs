@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using UnityEngine.Analytics;
 using Unity.Services.Analytics;
+using static Cinemachine.DocumentationSortingAttribute;
 
 
 public class MenuPausa : MonoBehaviour
@@ -114,13 +115,20 @@ public class MenuPausa : MonoBehaviour
         Debug.Log("Quit.Level =" + levelStart.level);
         Debug.Log("Quit.time =" + levelStart.leveltimer);
 
-    AnalyticsService.Instance.CustomData("Quit", new Dictionary<string, object>
-    
-        {
-           { "level", levelStart.level },
-           { "time", levelStart.leveltimer }
+        CustomEvent variable = new CustomEvent("Quit")
+            {
+               { "level", levelStart.level },
+               { "time", levelStart.leveltimer }
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+
+        //AnalyticsService.Instance.CustomData("Quit", new Dictionary<string, object>
+
+        //{
+        //   { "level", levelStart.level },
+        //   { "time", levelStart.leveltimer }
            
-        });
+        //};
     }
 
 

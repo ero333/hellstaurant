@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Analytics;
 using Unity.Services.Analytics;
-using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 
 public class RateController : MonoBehaviour
@@ -401,21 +400,36 @@ public class RateController : MonoBehaviour
         botonRate.SetActive(false);
         PlayerPrefs.SetInt("rateado", 1);
 
-
-        AnalyticsService.Instance.CustomData("RateGame", new Dictionary<string, object>
+        CustomEvent variable = new CustomEvent("RateGame")
             {
-            { "puntuation", puntuationGame },
-             { "lastLevel", lastlevel },
-              { "note", noteGame },
-            });
+                { "puntuation", puntuationGame },
+                { "lastLevel", lastlevel },
+                { "note", noteGame },
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
 
-
-        AnalyticsService.Instance.CustomData("RateArt", new Dictionary<string, object>
+        CustomEvent variableArt = new CustomEvent("RateArt")
             {
-            { "puntuation", puntuation },
-             { "lastLevel", lastlevel },
-              { "note", note },
-            });
+                { "puntuation", puntuationGame },
+                { "lastLevel", lastlevel },
+                { "note", noteGame },
+            };
+        AnalyticsService.Instance.RecordEvent(variableArt);
+
+        //AnalyticsService.Instance.CustomData("RateGame", new Dictionary<string, object>
+        //    {
+        //    { "puntuation", puntuationGame },
+        //     { "lastLevel", lastlevel },
+        //      { "note", noteGame },
+        //    });
+
+
+        //AnalyticsService.Instance.CustomData("RateArt", new Dictionary<string, object>
+        //    {
+        //    { "puntuation", puntuation },
+        //     { "lastLevel", lastlevel },
+        //      { "note", note },
+        //    });
     }
 
         public void cerrarRate()

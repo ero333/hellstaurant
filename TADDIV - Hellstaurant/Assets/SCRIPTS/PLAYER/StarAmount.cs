@@ -504,9 +504,27 @@ public class StarAmount : MonoBehaviour
 
         }
 
+        CustomEvent variable = new CustomEvent("LevelComplete")
+            {
+               {"level", level },
+               {"stars", stars},
+               {"healing", healing},
+               {"hit", hit},
+               {"basicoHit", basicoHit},
+               {"basicoPHit", basicoPHit},
+               {"gordoHit", gordoHit},
+               {"gordoPHit", gordoPHit},
+               {"rapidoHit", rapidoHit},
+               {"rapidoPHit", rapidoPHit},
+               {"rodeteHit", rodeteHit},
+               {"rodetePHit", rodetePHit},
+               {"aranaHit", aranaHit},
+               {"cucarachaHit", cucarachaHit},
+               {"jefeHit", jefeHit}
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
 
-
-        AnalyticsService.Instance.CustomData("LevelComplete", DatosEndgame);
+        //AnalyticsService.Instance.CustomData("LevelComplete", DatosEndgame);
 
 
         Debug.Log("LevelComplete =" + level);

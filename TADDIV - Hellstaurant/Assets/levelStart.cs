@@ -437,14 +437,22 @@ public class levelStart : MonoBehaviour
         Debug.Log("LevelStart.times = " + times);
         Debug.Log("LevelStart.first = " + firstTime);
 
-
-        AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+        CustomEvent variable = new CustomEvent("LevelStart")
             {
-            { "level", level },
-            { "times", times },
-            { "first", firstTime },
-            { "skinSe", skinSe }
-            });
+                { "level", level },
+                { "times", times },
+                { "first", firstTime },
+                { "skinSe", skinSe }
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+
+        //AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+        //    {
+        //    { "level", level },
+        //    { "times", times },
+        //    { "first", firstTime },
+        //    { "skinSe", skinSe }
+        //    });
     }
 
     public void saltear()
@@ -452,11 +460,16 @@ public class levelStart : MonoBehaviour
         skip = true;
         PlayerPrefs.SetInt("LevelStart.skip = " , 1);
 
-
-        AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+        CustomEvent variable = new CustomEvent("LevelStart")
             {
-            { "skip", skip },
-            });
+                { "skip", skip },
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+
+        //AnalyticsService.Instance.CustomData("LevelStart", new Dictionary<string, object>
+        //    {
+        //    { "skip", skip },
+        //    });
     }
 
 
@@ -483,13 +496,19 @@ public class levelStart : MonoBehaviour
         {
             Debug.Log("LevelComplete.time = " + leveltimer);
 
-            AnalyticsService.Instance.CustomData("LevelComplete", new Dictionary<string, object>
+            CustomEvent variable = new CustomEvent("LevelComplete")
             {
                 {"time", leveltimer },
-            });
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("LevelComplete", new Dictionary<string, object>
+            //{
+            //    {"time", leveltimer },
+            //});
 
 
-           bossDefeated = false;
+            bossDefeated = false;
         }
     }
 }

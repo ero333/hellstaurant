@@ -177,8 +177,22 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupNewGame.SetActive(false);
 
-
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+        // AnalyticsService.Instance.CustomData("Achievements", DatosLogros); 
     }
 
     IEnumerator platinumAchievement()
@@ -194,7 +208,23 @@ public class achievementManager : MonoBehaviour
 
         popupPlatino.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+
+        //AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
     IEnumerator bossNoHitAchievement()
     {
@@ -209,7 +239,24 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupBossNoHit.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+
+        //AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator levelNoHitAchievement()
@@ -226,7 +273,22 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupLevelNoHit.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+        // AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator levelNoShootAchievement()
@@ -242,7 +304,22 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupLevelNoShoot.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+        //AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
 
@@ -259,7 +336,22 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupNoHeal.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+        // AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator moneyAchievement()
@@ -275,7 +367,22 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupMoney.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+        // AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator endlessAchievement()
@@ -291,7 +398,22 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupEndless.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+        //AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator noHealGameAchievement()
@@ -307,7 +429,22 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupNoHealGame.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+        //AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
     IEnumerator completeGameAchievement()
@@ -323,7 +460,22 @@ public class achievementManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         popupCompleteGame.SetActive(false);
 
-        AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
+        CustomEvent variable = new CustomEvent("Achievements")
+            {
+               {"logrosTotales", achievements},
+               {"logro1", logro1 },
+               {"logro2", logro2 },
+               {"logro3", logro3 },
+               {"logro4",logro4},
+               {"logro5", logro5 },
+               {"logro6", logro6 },
+               {"logro7", logro7 },
+               {"logro8", logro8 },
+               {"logro9", logro9 },
+               {"platino", platino},
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
+        // AnalyticsService.Instance.CustomData("Achievements", DatosLogros);
     }
 
 

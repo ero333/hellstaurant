@@ -51,7 +51,13 @@ public class TriviaMenu : MonoBehaviour
 
             acertado = true;
 
-            AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
+            CustomEvent variable = new CustomEvent("Trivia")
+            {
+                {"respuestaAcertada", acertado},
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", contadorMonedas + monedasGanadas);
             Debug.Log("Correcto!");
@@ -68,7 +74,13 @@ public class TriviaMenu : MonoBehaviour
 
             acertado = false;
 
-            AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
+            CustomEvent variable = new CustomEvent("Trivia")
+            {
+                {"respuestaAcertada", acertado},
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
 
             Debug.Log("Incorrecto!");
             correcto.gameObject.SetActive(false);
@@ -85,7 +97,13 @@ public class TriviaMenu : MonoBehaviour
 
             acertado = true;
 
-            AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
+            CustomEvent variable = new CustomEvent("Trivia")
+            {
+                {"respuestaAcertada", acertado},
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
 
             PlayerPrefs.SetInt("MonedasRecolectadas:", contadorMonedas + monedasGanadas);
             Debug.Log("Correcto!");
@@ -100,7 +118,13 @@ public class TriviaMenu : MonoBehaviour
 
             acertado = false;
 
-            AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
+            CustomEvent variable = new CustomEvent("Trivia")
+            {
+                {"respuestaAcertada", acertado},
+            };
+            AnalyticsService.Instance.RecordEvent(variable);
+
+            //AnalyticsService.Instance.CustomData("Trivia", RespuestasTrivia);
 
             Debug.Log("Incorrecto!");
             correcto.gameObject.SetActive(false);

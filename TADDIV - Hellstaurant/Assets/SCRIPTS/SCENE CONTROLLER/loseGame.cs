@@ -189,8 +189,28 @@ public class loseGame : MonoBehaviour
         }
 
 
+        CustomEvent variable = new CustomEvent("LoseGame")
+            {
+               {"enemy", enemy },
+               {"level", level },
+               {"healing", healing},
+               {"hit", hit},
+               {"basicoHit", basicoHit},
+               {"basicoPHit", basicoPHit},
+               {"gordoHit", gordoHit},
+               {"gordoPHit", gordoPHit},
+               {"rapidoHit", rapidoHit},
+               {"rapidoPHit", rapidoPHit},
+               {"rodeteHit", rodeteHit},
+               {"rodetePHit", rodetePHit},
+               {"aranaHit", aranaHit},
+               {"cucarachaHit", cucarachaHit},
+               {"jefeHit", jefeHit},
+               {"time", timer}
+            };
+        AnalyticsService.Instance.RecordEvent(variable);
 
-        AnalyticsService.Instance.CustomData("LoseGame", DatosGameover);
+        //AnalyticsService.Instance.CustomData("LoseGame", DatosGameover);
 
 
         Debug.Log("LoseGame.enemy =" + enemy);
