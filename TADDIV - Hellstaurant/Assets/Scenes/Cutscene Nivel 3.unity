@@ -327,7 +327,6 @@ GameObject:
   m_Component:
   - component: {fileID: 106695717}
   - component: {fileID: 106695720}
-  - component: {fileID: 106695719}
   - component: {fileID: 106695718}
   m_Layer: 0
   m_Name: ANIMACION 3
@@ -369,27 +368,6 @@ MonoBehaviour:
   animacion4: {fileID: 0}
   botonSiguiente: {fileID: 0}
   contadorAnim: 0
---- !u!95 &106695719
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106695716}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d13749e28b25acc48bfe3a3ad853ac0b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &106695720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -431,7 +409,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: d111c1a2ed8a92d4986cc9386cc50c8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 609edefede51be54e8dfbea827a0b387, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -452,7 +430,6 @@ GameObject:
   m_Component:
   - component: {fileID: 118776965}
   - component: {fileID: 118776968}
-  - component: {fileID: 118776967}
   - component: {fileID: 118776966}
   m_Layer: 0
   m_Name: ANIMACION 2
@@ -494,27 +471,6 @@ MonoBehaviour:
   animacion4: {fileID: 0}
   botonSiguiente: {fileID: 0}
   contadorAnim: 0
---- !u!95 &118776967
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118776964}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c57c9e1d83e6e242983ba51a21c56d4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &118776968
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -556,7 +512,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: d111c1a2ed8a92d4986cc9386cc50c8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dfba2d81757ef94d8c6a41ca5d58224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -661,7 +617,6 @@ GameObject:
   m_Component:
   - component: {fileID: 613235559}
   - component: {fileID: 613235562}
-  - component: {fileID: 613235561}
   - component: {fileID: 613235560}
   m_Layer: 0
   m_Name: ANIMACION 1
@@ -703,27 +658,6 @@ MonoBehaviour:
   animacion4: {fileID: 753551582}
   botonSiguiente: {fileID: 1198508214}
   contadorAnim: 0
---- !u!95 &613235561
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613235558}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9867b6e29be56ab4eb0941b81066718a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &613235562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1055,7 +989,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 900be0af749f867448ba6ca217a3dcaf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 798cf61165d43024b895a29557a43d25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

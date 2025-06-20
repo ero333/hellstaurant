@@ -407,7 +407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672016852623286109, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.835931
+      value: 0.8359305
       objectReference: {fileID: 0}
     - target: {fileID: 4175706596055039575, guid: 30418214efddfed4999c1a14726939b4, type: 3}
       propertyPath: m_Follow
@@ -1283,7 +1283,6 @@ GameObject:
   m_Component:
   - component: {fileID: 998875619}
   - component: {fileID: 998875620}
-  - component: {fileID: 998875621}
   - component: {fileID: 998875622}
   m_Layer: 0
   m_Name: ANIMACION 2
@@ -1360,27 +1359,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &998875621
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 998875618}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c57c9e1d83e6e242983ba51a21c56d4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &998875622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,7 +1891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cb114d3ed36244ca4c094f1f26e336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievements: 0
   popupNewGame: {fileID: 1220989842}
   popupPlatino: {fileID: 1968650678}
   popupSkins: {fileID: 0}
@@ -1925,6 +1902,7 @@ MonoBehaviour:
   popupMoney: {fileID: 1991743198}
   popupEndless: {fileID: 0}
   popupNoHealGame: {fileID: 0}
+  popupCompleteGame: {fileID: 0}
 --- !u!4 &1402869297
 Transform:
   m_ObjectHideFlags: 0
@@ -2225,7 +2203,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1587164322}
   - component: {fileID: 1587164323}
-  - component: {fileID: 1587164324}
   - component: {fileID: 1587164325}
   m_Layer: 0
   m_Name: ANIMACION 3
@@ -2302,27 +2279,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1587164324
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587164321}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d13749e28b25acc48bfe3a3ad853ac0b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1587164325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2861,7 +2817,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2070604597}
   - component: {fileID: 2070604598}
-  - component: {fileID: 2070604599}
   - component: {fileID: 2070604600}
   m_Layer: 0
   m_Name: ANIMACION 1
@@ -2938,27 +2893,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2070604599
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070604596}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9867b6e29be56ab4eb0941b81066718a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2070604600
 MonoBehaviour:
   m_ObjectHideFlags: 0
